@@ -10,12 +10,17 @@ class MyDocument extends Document {
           <meta name='google' content='notranslate' />
           <meta name='subject' content='A template for nextjs.' />
           <meta name='mobile-web-app-capable' content='yes' />
+          <meta name='keywords' content='Template, React, NextJS' />
+          <meta name='author' content='Peter Damian G' />
+          <meta name='distribution' content='global' />
           <link rel='icon' href='/favicon.ico' />
           <link
             rel='me'
             href='https://github.com/PeterDamianG'
             type='text/html'
           />
+          {/* Need reload cache 48hs */}
+          <meta httpEquiv='expires' content='172800' />
           {/* Facebook Open Graph */}
           <meta property='fb:app_id' content='123456789' />
           <meta
