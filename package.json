@@ -1,11 +1,23 @@
 {
-  "name": "template-next",
+  "name": "@peterdg/template-next",
   "version": "0.1.0",
+  "description": "A personal template for fast-start with next.",
+  "keywords": [
+    "nextjs",
+    "APP",
+    "next",
+    "react",
+    "template"
+  ],
+  "author": "Peter Damian Gómez <PeterDamianG@Gmail.com> (https://github.com/PeterDamianG)",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prettier": "prettier --write src/**/*.{js,jsx,css} && prettier --check src/**/*.{js,jsx,css}",
+    "eslint": "eslint src/**/*.{js,jsx} --fix"
   },
   "dependencies": {
     "next": "10.2.0",
@@ -15,9 +27,11 @@
   "devDependencies": {
     "eslint": "^7.26.0",
     "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.23.2",
-    "eslint-plugin-react-hooks": "^4.2.0"
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.3.0"
   }
 }

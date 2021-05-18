@@ -2,11 +2,17 @@
     "env": {
         "browser": true,
         "es2021": true,
-        "node": true
+        "node": true,
+        "jest": true
+    },
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb"
+        "airbnb",
+        "prettier"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -19,5 +25,17 @@
         "react"
     ],
     "rules": {
+        "react/react-in-jsx-scope": "off",
+        "react/prop-types": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ]
     }
 }
