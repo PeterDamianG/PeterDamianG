@@ -37,10 +37,13 @@
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.0"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
-    "src/**/*.js": [
-      "eslint --fix",
-      "prettier --write"
-    ]
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }
