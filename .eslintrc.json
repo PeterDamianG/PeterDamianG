@@ -3,7 +3,8 @@
         "browser": true,
         "es2021": true,
         "node": true,
-        "jest": true
+        "jest": true,
+        "cypress/globals": true
     },
     "globals": {
         "Atomics": "readonly",
@@ -22,9 +23,11 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "cypress"
     ],
     "rules": {
+        "import/no-extraneous-dependencies": "off",
         "react/react-in-jsx-scope": "off",
         "react/prop-types": "off",
         "react/jsx-props-no-spreading": "off",
@@ -36,6 +39,11 @@
                     ".jsx"
                 ]
             }
-        ]
+        ],
+        "cypress/no-assigning-return-values": "error",
+        "cypress/no-unnecessary-waiting": "error",
+        "cypress/assertion-before-screenshot": "warn",
+        "cypress/no-force": "warn",
+        "cypress/no-async-tests": "error"
     }
 }
