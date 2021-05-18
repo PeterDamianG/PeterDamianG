@@ -13,6 +13,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "export": "next build && next export",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
