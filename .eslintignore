@@ -1,0 +1,14 @@
+# testing
+/coverage
+
+# documentation
+/docs
+
+# config enviroment
+.vscode
+/.husky
+
+# generic
+/.next
+/out
+/public
