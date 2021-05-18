@@ -15,4 +15,5 @@ export default {
     '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest',
     '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
   },
+  testMatch: [ "**/tests/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)" ]
 };
