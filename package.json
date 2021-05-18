@@ -19,7 +19,7 @@
     "prepare": "husky install",
     "prettier": "prettier --write src/**/*.{js,jsx,css} && prettier --check src/**/*.{js,jsx,css}",
     "eslint": "eslint src/**/*.{js,jsx} --fix",
-    "test": "jest --verbose --runInBand",
+    "test": "jest --verbose --runInBand ./src",
     "coverage": "jest --coverage --verbose --runInBand",
     "see-coverage": "cd coverage/lcov-report && index.html",
     "docs": "jsdoc -c jsdoc.json",
