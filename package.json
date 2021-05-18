@@ -38,6 +38,9 @@
     "prettier": "^2.3.0"
   },
   "lint-staged": {
-    "*": "npm run prettier && npm run eslint"
+    "src/**/*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }
