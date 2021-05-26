@@ -20,7 +20,7 @@
     "build": "next build",
     "start": "next start",
     "prepare": "husky install",
-    "prettier": "prettier --check src/**/*.{js,jsx,css} && prettier --write src/**/*.{js,jsx,css}",
+    "prettier": "prettier --write src/**/*.{js,jsx,css} && prettier --check src/**/*.{js,jsx,css}",
     "eslint": "eslint src/**/*.{js,jsx} --fix",
     "test": "jest --verbose --runInBand",
     "coverage": "jest --coverage --verbose --runInBand",
