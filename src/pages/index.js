@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import ThemeChanger from '../components/ThemeChanger';
 
 const Home = () => (
   <div className={styles.container}>
@@ -12,6 +13,8 @@ const Home = () => (
         Welcome to <a href='https://nextjs.org'>Next.js!</a>
       </h1>
       <h2 className={styles.title}>Template Next</h2>
+
+      <ThemeChanger />
 
       <p className={styles.description}>
         Get started by editing{' '}

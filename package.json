@@ -20,7 +20,7 @@
     "build": "next build",
     "start": "next start",
     "prepare": "husky install",
-    "prettier": "prettier --check src/**/*.{js,jsx,css} && prettier --write src/**/*.{js,jsx,css}",
+    "prettier": "prettier --write src/**/*.{js,jsx,css} && prettier --check src/**/*.{js,jsx,css}",
     "eslint": "eslint src/**/*.{js,jsx} --fix",
     "test": "jest --verbose --runInBand",
     "coverage": "jest --coverage --verbose --runInBand",
@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "next": "10.2.0",
+    "next-themes": "^0.0.14",
     "normalize.css": "^8.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
