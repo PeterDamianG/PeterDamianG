@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import App from '../pages/index';
+import App from 'pages/index';
 
 describe('App', () => {
   test('renders without crashing', () => {

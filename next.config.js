@@ -1,1 +1,3 @@
-module.exports = { assetPrefix: './' };
+module.exports = {
+  assetPrefix: './',
+};

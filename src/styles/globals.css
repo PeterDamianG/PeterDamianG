@@ -26,6 +26,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  background-color: var(--background);
+}
+
 * {
   box-sizing: border-box;
 }

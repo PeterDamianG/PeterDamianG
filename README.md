@@ -23,9 +23,9 @@
 
 ### What Is It? - ¿Qué es esto? <a name="what"></a>
 
-An <b>unofficial</b> Template for <b>NextJS.</b> It's a help with start your proyect with ESlint, Prettier, Jest + TestingLibrary, Cypress and more features now/incoming.
+An <b>unofficial</b> Template for <b>NextJS.</b> It's a help with start your proyect with ESlint, Prettier, Next-Themes, Jest + TestingLibrary, Cypress and more features now/incoming.
 
-Una plantilla <b>no oficial,</b> para usar <b>NextJS.</b> Es una ayuda para comenzar tus proyectos con ESLint, Prettier, Jest + TestingLibrary, Cypress y más caracteristicas ahora/proximamente.
+Una plantilla <b>no oficial,</b> para usar <b>NextJS.</b> Es una ayuda para comenzar tus proyectos con ESLint, Prettier, Next-Themes, Jest + TestingLibrary, Cypress y más caracteristicas ahora/proximamente.
 
 ---
 
@@ -202,12 +202,13 @@ Un atajo para abrir <b>Cypress</b> en modo sin cabezera.
 ![React](https://img.shields.io/badge/react-17.0.2-blue) 
 ![swr](https://img.shields.io/badge/swr-0.5.6-blue) 
 ![Normalize](https://img.shields.io/badge/normalize-8.0.1-blue) 
+![Next-Themes](https://img.shields.io/badge/Next-Themes-0.0.14-blue) 
 ![ESLint](https://img.shields.io/badge/ESLint-7.26.0-blue) 
 ![Prettier](https://img.shields.io/badge/Prettier-2.3.0-blue)
 ![Jest](https://img.shields.io/badge/Jest-26.6.3-blue) 
 ![Cypress](https://img.shields.io/badge/Cypress-7.3.0-blue) 
 ![Husky](https://img.shields.io/badge/Husky-6.0.0-blue) 
-![JSDOC](https://img.shields.io/badge/JSDOC-3.6.7-blue) 
+![JSDOC](https://img.shields.io/badge/JSDOC-3.6.7-blue)
 
 ---
 

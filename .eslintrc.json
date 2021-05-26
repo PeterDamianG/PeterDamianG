@@ -45,5 +45,14 @@
         "cypress/assertion-before-screenshot": "warn",
         "cypress/no-force": "warn",
         "cypress/no-async-tests": "error"
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": [
+                    "src"
+                ]
+            }
+        }
     }
 }

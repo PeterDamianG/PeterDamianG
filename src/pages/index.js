@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
-import ThemeChanger from '../components/ThemeChanger';
+import styles from 'styles/Home.module.css';
+import ThemeChanger from 'components/ThemeChanger';
 
 const Home = () => (
   <div className={styles.container}>

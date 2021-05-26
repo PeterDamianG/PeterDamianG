@@ -7,9 +7,13 @@ const ThemeChanger = () => {
   // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), []);
   // Handler
+  const handlerSetTheme = () =>
+    theme === 'light' ? setTheme('dark') : setTheme('light');
+
   if (!mounted) return null;
+
   return (
-    <button type='button' onClick={() => setTheme('light')}>
+    <button type='button' onClick={handlerSetTheme}>
       {theme === 'light' ? 'Dark' : 'Light'}
     </button>
   );
