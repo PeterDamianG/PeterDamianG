@@ -15,15 +15,15 @@
   .svg {
     height: 56px;
     width: 56px;
-    margin: 0 2vh;
+    margin: 0 1.75vh;
     filter: drop-shadow(4px 4px 16px var(--foreground));
-    transition: all 0.5s linear;
+    transition: all 0.2s linear;
   }
 
   .svg:hover {
     height: 60px;
     width: 60px;
     filter: drop-shadow(6px 6px 18px var(--foreground));
-    transition: all 0.5s linear;
+    transition: all 0.2s linear;
   }
 }

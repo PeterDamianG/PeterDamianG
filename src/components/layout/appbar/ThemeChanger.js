@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
-import LightIconSVG from 'components/icons/LightIconSVG';
-import DarkIconSVG from 'components/icons/DarkIconSVG';
+import LightIconSVG from 'components/icons/appbar/LightIconSVG';
+import DarkIconSVG from 'components/icons/appbar/DarkIconSVG';
 import { svg } from './svg.module.css';
 
 const ThemeChanger = () => {

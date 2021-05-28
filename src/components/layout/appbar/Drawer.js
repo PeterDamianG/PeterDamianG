@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import MenuIconSVG from 'components/icons/MenuIconSVG';
+import MenuIconSVG from 'components/icons/appbar/MenuIconSVG';
 import { svg } from './svg.module.css';
 import style from './drawer.module.css';
 

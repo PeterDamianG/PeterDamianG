@@ -20,7 +20,12 @@
 
   .title {
     font-size: 2em;
-    text-shadow: 2px 2px 8px var(--foreground);
+    transition: all 0.5s linear;
+  }
+
+  .title:hover {
+    font-size: 2.1em;
+    transition: all 0.2s linear;
   }
 }
 
@@ -28,14 +33,12 @@
   .headerflex {
     height: 7vh;
     box-shadow: 2px 2px 16px var(--foreground);
-    padding: 0 2vh;
-    transition: all 0.5s linear;
+    transition: all 0.2s linear;
   }
 
   .headerflex:hover {
     box-shadow: 1px 1px 8px var(--foreground);
-    padding: 0 1.5vh;
-    transition: all 0.5s linear;
+    transition: all 0.3s linear;
   }
 
   .title {
