@@ -12,7 +12,7 @@ const ThemeChanger = () => {
   // Handler
   const handlerSetTheme = () =>
     theme === 'light' ? setTheme('dark') : setTheme('light');
-
+  // If not is mounted yet.
   if (!mounted) return null;
 
   return (

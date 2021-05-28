@@ -2,9 +2,15 @@
   /* Default theme */
   --background: #faf6f6;
   --foreground: #0c0a0a;
+  --a-color: #5f5d5d;
+  --a-hover: #030303;
+  --background-nav-modal: #faf6f6b0;
 }
 /* Dark theme */
 [data-theme='dark'] {
   --background: #0c0a0a;
   --foreground: #faf6f6;
+  --a-color: #777474;
+  --a-hover: #ffffff;
+  --background-nav-modal: #0c0a0ada;
 }

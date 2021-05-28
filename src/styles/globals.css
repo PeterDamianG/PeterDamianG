@@ -16,6 +16,7 @@ button {
 }
 
 svg {
+  cursor: pointer;
   fill: var(--foreground);
 }
 
