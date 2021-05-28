@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import AppBar from 'components/layout/appbar';
+import Main from 'components/main';
 import Footer from 'components/layout/footer';
 
 const Home = () => (
@@ -12,9 +13,7 @@ const Home = () => (
       />
     </Head>
     <AppBar />
-    <main>
-      <p>Main</p>
-    </main>
+    <Main />
     <Footer />
   </>
 );
