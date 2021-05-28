@@ -1,14 +1,10 @@
 :root {
   /* Default theme */
-  --background: #f8eded;
+  --background: #faf6f6;
   --foreground: #0c0a0a;
-  --border-color: #eaeaea;
-  --a-color: #0070f3;
 }
 /* Dark theme */
 [data-theme='dark'] {
   --background: #0c0a0a;
-  --foreground: #f8eded;
-  --border-color: #201b1b;
-  --a-color: #030d94;
+  --foreground: #faf6f6;
 }

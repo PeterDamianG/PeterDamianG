@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
+import LightIconSVG from 'components/icons/LightIconSVG';
+import DarkIconSVG from 'components/icons/DarkIconSVG';
+import { svg } from './svg.module.css';
 
 const ThemeChanger = () => {
   const [mounted, setMounted] = useState(false);
@@ -13,9 +16,13 @@ const ThemeChanger = () => {
   if (!mounted) return null;
 
   return (
-    <button type='button' onClick={handlerSetTheme}>
-      {theme === 'light' ? 'Dark' : 'Light'}
-    </button>
+    <>
+      {theme === 'light' ? (
+        <DarkIconSVG onClick={handlerSetTheme} className={svg} />
+      ) : (
+        <LightIconSVG onClick={handlerSetTheme} className={svg} />
+      )}
+    </>
   );
 };
 

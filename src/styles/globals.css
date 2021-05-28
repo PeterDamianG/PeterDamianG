@@ -15,6 +15,10 @@ button {
   background-color: var(--background);
 }
 
+svg {
+  fill: var(--foreground);
+}
+
 * {
   box-sizing: border-box;
 }
