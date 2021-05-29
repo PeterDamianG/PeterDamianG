@@ -1,5 +1,20 @@
+/** @module Icons/Utils */
+/**
+ * Use a svg img like a infinity loader-spinner.
+ * @function LoaderSVG
+ * @param {object} props - A object, with propieties pass to svg tag.
+ * @example
+ * import LoaderSVG from 'components/icons/LoaderSVG'
+ * <LoaderSVG height={32} width={32} />
+ * @returns {JSX.Element} An element of React.
+ */
 const LoaderSVG = (props) => (
-  <svg className='loadersvg' viewBox='-100 -10 300 300' {...props}>
+  <svg
+    aria-label='Loader Spinner'
+    role='progressbar'
+    viewBox='-100 -10 300 300'
+    {...props}
+  >
     <rect width={12} height={12} x={44} y={19} rx={8.8} ry={3.8}>
       <animate
         attributeName='opacity'

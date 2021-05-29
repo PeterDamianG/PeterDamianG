@@ -13,7 +13,8 @@
     "extends": [
         "plugin:react/recommended",
         "airbnb",
-        "prettier"
+        "prettier",
+        "plugin:jsx-a11y/recommended"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -24,7 +25,8 @@
     },
     "plugins": [
         "react",
-        "cypress"
+        "cypress",
+        "jsx-a11y"
     ],
     "rules": {
         "import/no-extraneous-dependencies": "off",
