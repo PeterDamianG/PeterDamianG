@@ -29,7 +29,7 @@ const Drawer = () => {
           <a href='#proyects' onClick={handlerCloseDrawer}>
             Proyectos
           </a>
-          <a href='#contacts' onClick={handlerCloseDrawer}>
+          <a href='#contact' onClick={handlerCloseDrawer}>
             Contacto
           </a>
         </nav>
