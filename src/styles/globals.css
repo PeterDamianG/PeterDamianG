@@ -1,4 +1,9 @@
-html,
+html {
+  scroll-snap-type: mandatory; /* for older browsers */
+  scroll-snap-points-y: repeat(100vh); /* for older browsers */
+  scroll-snap-type: y mandatory;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -22,4 +27,30 @@ svg {
 
 * {
   box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  padding-top: 5vh;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+@media all and (min-width: 640px) and (max-width: 1280px) {
+  section {
+    padding-top: 6vh;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  section {
+    padding-top: 8vh;
+  }
 }

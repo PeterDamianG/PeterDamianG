@@ -1,7 +1,9 @@
 .headerflex {
+  position: fixed;
   background-color: var(--background);
   border-bottom: 1px solid var(--foreground);
   height: 5vh;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
