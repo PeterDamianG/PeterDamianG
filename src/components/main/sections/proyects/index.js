@@ -1,5 +1,5 @@
 const Proyects = () => (
-  <section>
+  <section id='proyects'>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod
       tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

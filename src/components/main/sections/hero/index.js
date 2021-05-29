@@ -1,7 +1,7 @@
 import NotebookSVG from './NotebookSVG';
 
 const Hero = () => (
-  <section>
+  <section id='hero'>
     <p>Hero</p>
     <NotebookSVG />
   </section>

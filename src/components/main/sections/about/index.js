@@ -1,5 +1,5 @@
 const About = () => (
-  <section>
+  <section id='about'>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod
       tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

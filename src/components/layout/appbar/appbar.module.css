@@ -44,12 +44,12 @@
   }
 
   .title {
-    font-size: 4em;
+    font-size: 3.5em;
     text-shadow: 2px 2px 8px var(--foreground);
     transition: all 0.5s linear;
   }
   .title:hover {
-    font-size: 4.5em;
+    font-size: 4em;
     text-shadow: 4px 4px 6px var(--foreground);
     transition: all 0.5s linear;
   }

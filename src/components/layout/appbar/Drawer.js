@@ -20,17 +20,17 @@ const Drawer = () => {
           >
             Back
           </button>
-          <a href='#2' onClick={handlerCloseDrawer}>
-            About
+          <a href='#hero' onClick={handlerCloseDrawer}>
+            Principal
           </a>
-          <a href='#3' onClick={handlerCloseDrawer}>
-            Services
+          <a href='#about' onClick={handlerCloseDrawer}>
+            Sobre Mí
           </a>
-          <a href='#4' onClick={handlerCloseDrawer}>
-            Clients
+          <a href='#proyects' onClick={handlerCloseDrawer}>
+            Proyectos
           </a>
-          <a href='#5' onClick={handlerCloseDrawer}>
-            Contact
+          <a href='#contacts' onClick={handlerCloseDrawer}>
+            Contacto
           </a>
         </nav>
       )}

@@ -10,7 +10,8 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  z-index: 2;
+  z-index: 6;
+  backdrop-filter: blur(2px);
 }
 
 .sidenav a {
