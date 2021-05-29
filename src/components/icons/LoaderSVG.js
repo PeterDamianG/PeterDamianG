@@ -1,6 +1,6 @@
 const LoaderSVG = (props) => (
   <svg className='loadersvg' viewBox='-100 -10 300 300' {...props}>
-    <rect width={12} height={12} x={44} y={19}  rx={8.8} ry={3.8}>
+    <rect width={12} height={12} x={44} y={19} rx={8.8} ry={3.8}>
       <animate
         attributeName='opacity'
         begin='-0.8333333333333334s'
@@ -15,7 +15,6 @@ const LoaderSVG = (props) => (
       height={12}
       x={44}
       y={19}
-      
       rx={8.8}
       ry={3.8}
       transform='rotate(60 50 50)'
@@ -34,7 +33,6 @@ const LoaderSVG = (props) => (
       height={12}
       x={44}
       y={19}
-      
       rx={8.8}
       ry={3.8}
       transform='rotate(120 50 50)'
@@ -53,7 +51,6 @@ const LoaderSVG = (props) => (
       height={12}
       x={44}
       y={19}
-      
       rx={8.8}
       ry={3.8}
       transform='rotate(180 50 50)'
@@ -72,7 +69,6 @@ const LoaderSVG = (props) => (
       height={12}
       x={44}
       y={19}
-      
       rx={8.8}
       ry={3.8}
       transform='rotate(240 50 50)'
@@ -91,7 +87,6 @@ const LoaderSVG = (props) => (
       height={12}
       x={44}
       y={19}
-      
       rx={8.8}
       ry={3.8}
       transform='rotate(300 50 50)'

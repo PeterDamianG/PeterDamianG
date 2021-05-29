@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
-import App from 'pages/index';
+import AppBar from 'components/layout/appbar';
 
 describe('App', () => {
   test('renders without crashing', () => {
-    render(<App />);
+    render(<AppBar />);
     screen.getByText(/Peter DG/);
   });
 });
