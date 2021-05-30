@@ -1,4 +1,5 @@
-.headerflex {
+/* Flat Mode for Mobile Devices */
+.headerFlex {
   position: fixed;
   background-color: var(--background);
   border-bottom: 1px solid var(--foreground);
@@ -9,48 +10,86 @@
   align-items: center;
   padding: 0 1vh;
 }
-
-.title {
+.titleBar {
   color: var(--foreground);
 }
-
+.svgController svg {
+  margin: 0 1vh;
+}
+/* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
 @media all and (min-width: 640px) and (max-width: 1280px) {
-  .headerflex {
+  .headerFlex {
     height: 6vh;
-    box-shadow: 2px 2px 16px var(--foreground);
+    box-shadow: 1px 1px 8px var(--foreground);
+    transition: all 0.2s linear;
   }
-
-  .title {
+  .headerFlex:hover {
+    box-shadow: 3px 3px 16px var(--foreground);
+    transition: all 0.2s linear;
+  }
+  .titleBar {
     font-size: 2em;
-    transition: all 0.5s linear;
+    transition: all 0.2s linear;
   }
-
-  .title:hover {
+  .titleBar:hover {
     font-size: 2.1em;
     transition: all 0.2s linear;
   }
+  .svgController svg {
+    height: 32px;
+    width: 32px;
+    margin: 0 1.5vh;
+    filter: drop-shadow(4px 4px 16px var(--foreground));
+  }
 }
-
+/* Animation Mode for PC and TV Devices */
 @media all and (min-width: 1280px) {
-  .headerflex {
+  .headerFlex {
     height: 7vh;
     box-shadow: 2px 2px 16px var(--foreground);
     transition: all 0.2s linear;
+    animation: barAnimation 2s linear 0.2s 1 normal backwards running;
   }
-
-  .headerflex:hover {
-    box-shadow: 1px 1px 8px var(--foreground);
-    transition: all 0.3s linear;
+  .headerFlex:hover {
+    box-shadow: 3px 3px 20px var(--foreground);
+    transition: all 0.2s linear;
   }
-
-  .title {
+  .titleBar {
     font-size: 3.5em;
-    text-shadow: 2px 2px 8px var(--foreground);
-    transition: all 0.5s linear;
+    text-shadow: 1px 1px 4px var(--foreground);
+    transition: all 0.2s linear;
   }
-  .title:hover {
+  .titleBar:hover {
     font-size: 4em;
     text-shadow: 4px 4px 6px var(--foreground);
-    transition: all 0.5s linear;
+    transition: all 0.2s linear;
+  }
+  .svgController svg {
+    height: 56px;
+    width: 56px;
+    margin: 0 1.75vh;
+    filter: drop-shadow(4px 4px 16px var(--foreground));
+    transition: all 0.2s linear;
+  }
+  .svgController svg:hover {
+    height: 58px;
+    width: 58px;
+    filter: drop-shadow(6px 6px 18px var(--foreground));
+    transition: all 0.2s linear;
+  }
+}
+/* Animations */
+@keyframes barAnimation {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
   }
 }

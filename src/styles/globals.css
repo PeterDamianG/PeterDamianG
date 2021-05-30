@@ -5,32 +5,19 @@ html {
   overscroll-behavior-y: contain;
   scroll-behavior: smooth;
 }
-
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-button {
-  background-color: var(--background);
-}
-
 svg {
   cursor: pointer;
   fill: var(--foreground);
 }
-
 * {
   box-sizing: border-box;
 }
-
 section {
   height: 100vh;
   width: 100vw;
@@ -44,13 +31,11 @@ section {
   background-color: var(--background);
   color: var(--foreground);
 }
-
 @media all and (min-width: 640px) and (max-width: 1280px) {
   section {
     padding-top: 6vh;
   }
 }
-
 @media all and (min-width: 1280px) {
   section {
     padding-top: 8vh;

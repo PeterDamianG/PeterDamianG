@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, cleanup } from '@testing-library/react';
 import MenuIconSVG from 'components/icons/appbar/MenuIconSVG';
 import LightIconSVG from 'components/icons/appbar/LightIconSVG';
 import DarkIconSVG from 'components/icons/appbar/DarkIconSVG';
@@ -6,6 +6,8 @@ import GitHubSVG from 'components/icons/socialmedia/GitHubSVG';
 import InstagramSVG from 'components/icons/socialmedia/InstagramSVG';
 import LinkedInSVG from 'components/icons/socialmedia/LinkedInSVG';
 import LoaderSVG from 'components/icons/LoaderSVG';
+
+afterAll(cleanup);
 
 describe('/src/components/icons - Icons', () => {
   test('render menu icon', () => {

@@ -1,11 +1,21 @@
+/** @module Layout/AppBar */
 import ThemeChanger from './ThemeChanger';
 import MenuIconSVG from './Drawer';
-import { headerflex, title } from './appbar.module.css';
-
-const AppBar = () => (
-  <header className={headerflex}>
-    <h4 className={title}>Peter DG</h4>
-    <aside>
+import { headerFlex, titleBar, svgController } from './appbar.module.css';
+/**
+ * An app bar with title, theme button and drawer like a menu.
+ * @function AppBar
+ * @param {{string}} props.appTitle - A object with property appTitle - string, to set a title for app bar.
+ * @example
+ * import AppBar from 'components/layout/appbar'
+ * <AppBar />
+ * <AppBar appTitle='New Owner Name Here' />
+ * @returns {JSX.Element} An element of React.
+ */
+const AppBar = ({ appTitle = 'Peter DG' }) => (
+  <header className={headerFlex}>
+    <h1 className={titleBar}>{appTitle}</h1>
+    <aside className={svgController}>
       <ThemeChanger />
       <MenuIconSVG />
     </aside>

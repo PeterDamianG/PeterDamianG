@@ -1,9 +1,16 @@
+/** @module Layout/AppBar */
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import LightIconSVG from 'components/icons/appbar/LightIconSVG';
 import DarkIconSVG from 'components/icons/appbar/DarkIconSVG';
-import { svg } from './svg.module.css';
-
+/**
+ * An button to change between themes light and dark.
+ * @function ThemeChanger
+ * @example
+ * import ThemeChanger from 'components/layout/appbar/ThemeChanger'
+ * <ThemeChanger />
+ * @returns {JSX.Element} An element of React.
+ */
 const ThemeChanger = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
@@ -14,16 +21,10 @@ const ThemeChanger = () => {
     theme === 'light' ? setTheme('dark') : setTheme('light');
   // If not is mounted yet.
   if (!mounted) return null;
-
-  return (
-    <>
-      {theme === 'light' ? (
-        <DarkIconSVG onClick={handlerSetTheme} className={svg} />
-      ) : (
-        <LightIconSVG onClick={handlerSetTheme} className={svg} />
-      )}
-    </>
-  );
+  // If is set to light.
+  if (theme === 'light') return <DarkIconSVG onClick={handlerSetTheme} />;
+  // If is set to dark.
+  return <LightIconSVG onClick={handlerSetTheme} />;
 };
 
 export default ThemeChanger;

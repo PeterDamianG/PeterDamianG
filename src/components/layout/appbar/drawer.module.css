@@ -1,3 +1,4 @@
+/* Flat Mode for Mobile Devices */
 .sidenav {
   height: 100vh;
   width: 100vw;
@@ -8,76 +9,60 @@
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  z-index: 6;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(3px);
+  z-index: 1;
 }
-
 .sidenav a {
   text-decoration: none;
   font-size: 2.5em;
-  color: var(--a-color);
+  color: var(--a-hover);
   display: block;
 }
-
-.sidenav a:hover {
-  color: var(--a-hover);
-}
-
 .sidenav .closebtn {
-  font-size: 1.5em;
-  border: none;
-  background-color: transparent;
-  color: var(--a-color);
+  font-size: 2em;
 }
-
-.closebtn:hover {
-  color: var(--a-hover);
-}
-
+/* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
 @media all and (min-width: 640px) and (max-width: 1280px) {
   .sidenav a {
-    transition: all 0.5s linear;
+    color: var(--a-color);
     font-size: 3.5em;
+    transition: all 0.2s linear;
   }
-
   .sidenav a:hover {
-    transition: all 0.5s linear;
+    color: var(--a-hover);
     font-size: 4em;
+    transition: all 0.2s linear;
   }
-
   .sidenav .closebtn {
-    transition: all 0.5s linear;
-    font-size: 2em;
-  }
-
-  .closebtn:hover {
-    transition: all 0.5s linear;
     font-size: 2.5em;
   }
 }
-
+/* Animation Mode for PC and TV Devices */
 @media all and (min-width: 1280px) {
   .sidenav a {
-    transition: all 0.5s linear;
+    color: var(--a-color);
     font-size: 5em;
+    transition: all 0.3s linear;
+    animation: animOpacity 2s linear 0.2s 1 normal backwards running;
   }
-
   .sidenav a:hover {
-    transition: all 0.5s linear;
+    color: var(--a-hover);
     font-size: 6em;
-    text-shadow: 8px 8px 16px var(--foreground);
+    text-shadow: 2px 2px 8px var(--foreground);
+    transition: all 0.3s linear;
   }
-
   .sidenav .closebtn {
-    transition: all 0.5s linear;
-    font-size: 3em;
-  }
-
-  .closebtn:hover {
-    transition: all 0.5s linear;
     font-size: 3.5em;
-    text-shadow: 8px 8px 16px var(--foreground);
+  }
+}
+/* Animations */
+@keyframes animOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
