@@ -1,6 +1,6 @@
 /** @module Main/Sections */
 import dynamic from 'next/dynamic';
-import LoaderSVG from 'components/icons/LoaderSVG';
+import LoaderSVG from 'components/icons/utils/LoaderSVG';
 import { mainStyle } from './main.module.css';
 /** @constant {JSX.Element} */
 const Hero = dynamic(() => import('components/main/sections/hero'), {

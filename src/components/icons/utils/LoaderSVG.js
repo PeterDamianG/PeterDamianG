@@ -4,7 +4,7 @@
  * @function LoaderSVG
  * @param {object} props - A object, with propieties pass to svg tag.
  * @example
- * import LoaderSVG from 'components/icons/LoaderSVG'
+ * import LoaderSVG from 'components/icons/utilsLoaderSVG'
  * <LoaderSVG height={32} width={32} />
  * @returns {JSX.Element} An element of React.
  */

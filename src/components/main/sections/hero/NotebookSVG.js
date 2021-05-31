@@ -9,7 +9,7 @@
  * @returns {JSX.Element} An element of React.
  */
 const NotebookSVG = (props) => (
-  <svg width={200} height={200} viewBox='0 0 2674 1359' y={0} x={0} {...props}>
+  <svg width={350} height={350} viewBox='0 0 2200 1500' {...props}>
     {/* Screen Notebook */}
     <path d='M1939 147v982H250V147l845-1 844 1z' fill='#b3b3b3' />
     {/* Screen Borders */}

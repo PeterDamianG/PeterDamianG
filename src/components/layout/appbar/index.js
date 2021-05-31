@@ -14,7 +14,7 @@ import { headerFlex, titleBar, svgController } from './appbar.module.css';
  */
 const AppBar = ({ appTitle = 'Peter DG' }) => (
   <header className={headerFlex}>
-    <h1 className={titleBar}>{appTitle}</h1>
+    <h2 className={titleBar}>{appTitle}</h2>
     <aside className={svgController}>
       <ThemeChanger />
       <MenuIconSVG />

@@ -1,25 +1,88 @@
 /* Flat Mode for Mobile Devices */
-.mainStyle section {
-  height: 100vh;
-  width: 100vw;
+.sectionStyle {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  text-align: center;
-  scroll-snap-align: center;
-  padding-top: 5vh;
-  background-color: var(--background);
+  background-image: linear-gradient(
+    to bottom,
+    var(--background) 45%,
+    var(--foreground)
+  );
   color: var(--foreground);
+}
+.sectionStyle h1 {
+  font-size: 1.75em;
+}
+.sectionStyle h3 {
+  font-size: 1.5em;
+}
+.sectionStyle h3 {
+  font-size: 1.5em;
+}
+.sectionStyle h4 {
+  font-size: 1.5em;
+  width: 50vw;
+  text-align: center;
+  color: var(--background);
 }
 /* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
 @media all and (min-width: 640px) and (max-width: 1280px) {
-  .mainStyle section {
-    padding-top: 6vh;
+  .sectionStyle h1 {
+    font-size: 3em;
+  }
+  .sectionStyle h3 {
+    font-size: 2.5em;
+  }
+  .sectionStyle h4 {
+    font-size: 2em;
+  }
+  .sectionStyle svg {
+    width: 85vw;
+    height: 35vh;
   }
 }
 /* Animation Mode for PC and TV Devices */
 @media all and (min-width: 1280px) {
-  .mainStyle section {
-    padding-top: 8vh;
+  .sectionStyle {
+    flex-direction: row;
+  }
+  .sectionStyle div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .sectionStyle h1 {
+    font-size: 6em;
+    /* Clip Background Image */
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Animate Background Image */
+    -webkit-text-fill-color: transparent;
+    animation: aitf 80s linear infinite;
+    /* Activate hardware acceleration for smoother animations */
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+  }
+  .sectionStyle h3 {
+    font-size: 5em;
+  }
+  .sectionStyle h4 {
+    font-size: 3.5em;
+  }
+  .sectionStyle svg {
+    width: 100%;
+    height: 100vh;
+  }
+}
+/* Animations */
+@keyframes moveBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
   }
 }

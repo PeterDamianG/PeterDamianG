@@ -5,7 +5,7 @@ import DarkIconSVG from 'components/icons/appbar/DarkIconSVG';
 import GitHubSVG from 'components/icons/socialmedia/GitHubSVG';
 import InstagramSVG from 'components/icons/socialmedia/InstagramSVG';
 import LinkedInSVG from 'components/icons/socialmedia/LinkedInSVG';
-import LoaderSVG from 'components/icons/LoaderSVG';
+import LoaderSVG from 'components/icons/utils/LoaderSVG';
 
 afterAll(cleanup);
 
