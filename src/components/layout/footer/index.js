@@ -2,7 +2,7 @@
 import SocialMedia from './SocialMedia';
 import { footer } from './footer.module.css';
 /**
- * An footer for app web, with social medial links.
+ * A footer for app web, with social medial links.
  * @function Footer
  * @example
  * import Footer from 'components/layout/footer'
