@@ -55,16 +55,6 @@
   }
   .sectionStyle h1 {
     font-size: 6em;
-    /* Clip Background Image */
-    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
-    -webkit-background-clip: text;
-    background-clip: text;
-    /* Animate Background Image */
-    -webkit-text-fill-color: transparent;
-    animation: aitf 80s linear infinite;
-    /* Activate hardware acceleration for smoother animations */
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
   }
   .sectionStyle h3 {
     font-size: 5em;
@@ -75,14 +65,5 @@
   .sectionStyle svg {
     width: 100%;
     height: 100vh;
-  }
-}
-/* Animations */
-@keyframes moveBackground {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
   }
 }

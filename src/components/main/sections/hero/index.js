@@ -1,5 +1,5 @@
 /** @module Main/Sections/Hero */
-import { useMediaLayout } from 'use-media';
+import { useMediaQuery } from 'react-responsive';
 import ScrollDownSVG from 'components/icons/utils/ScrollDownSVG';
 import NotebookSVG from './NotebookSVG';
 import { sectionStyle } from './hero.module.css';
@@ -13,8 +13,10 @@ import { sectionStyle } from './hero.module.css';
  */
 const Hero = () => {
   // Other design with full media.
-  const isFullMedia = useMediaLayout({ minWidth: '1280px' });
-  if (isFullMedia) {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1280px)',
+  });
+  if (isDesktopOrLaptop) {
     return (
       <section id='hero' className={sectionStyle}>
         <div>
@@ -26,7 +28,6 @@ const Hero = () => {
           </h4>
         </div>
         <NotebookSVG />
-        <ScrollDownSVG />
       </section>
     );
   }
@@ -38,7 +39,7 @@ const Hero = () => {
       <h4>
         &quot;Me pregunto. ¿Cuántas veces habré iterado sobre esté código?&quot;
       </h4>
-      <ScrollDownSVG />
+      <ScrollDownSVG width='64px' height='64px' />
     </section>
   );
 };
