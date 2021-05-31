@@ -1,6 +1,6 @@
 /** @module Icons/SocialMedia */
 /**
- * Use a icon to use like a Github Link button.
+ * Use a icon SVG like a Github Link button.
  * @function GitHubSVG
  * @param {object} props - A object, with propieties pass to svg tag.
  * @example

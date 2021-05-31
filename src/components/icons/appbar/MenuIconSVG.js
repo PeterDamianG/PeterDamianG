@@ -1,6 +1,6 @@
 /** @module Icons/AppBar */
 /**
- * Use a icon to use like a menu button.
+ * Use a icon SVG like a menu button.
  * @function MenuIconSVG
  * @param {object} props - A object, with propieties pass to svg tag.
  * @example

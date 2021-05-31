@@ -1,6 +1,6 @@
 /** @module Icons/SocialMedia */
 /**
- * Use a icon to use like a Instagram Link button.
+ * Use a icon SVG like a Instagram Link button.
  * @function InstagramSVG
  * @param {object} props - A object, with propieties pass to svg tag.
  * @example

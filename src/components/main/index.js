@@ -22,7 +22,7 @@ const Contact = dynamic(() => import('components/main/sections/contact'), {
  * A tag main container for sections of the web.
  * @function Main
  * @example
- * import Main from 'components/layout/main'
+ * import Main from 'components/main'
  * <Main />
  * @returns {JSX.Element} An element of React.
  */

@@ -1,3 +1,13 @@
+/** @module Main/Sections/Hero */
+/**
+ * Use a icon to use like a Github Link button.
+ * @function NotebookSVG
+ * @param {object} props - A object, with propieties pass to svg tag.
+ * @example
+ * import NotebookSVG from 'components/main/section/home/NotebookSVG'
+ * <NotebookSVG height={32} width={32} />
+ * @returns {JSX.Element} An element of React.
+ */
 const NotebookSVG = (props) => (
   <svg width={200} height={200} viewBox='0 0 2674 1359' y={0} x={0} {...props}>
     {/* Screen Notebook */}

@@ -1,6 +1,6 @@
 /** @module Icons/SocialMedia */
 /**
- * Use a icon to use like a LinkedIn Link button.
+ * Use a icon SVG like a LinkedIn Link button.
  * @function LinkedInSVG
  * @param {object} props - A object, with propieties pass to svg tag.
  * @example
