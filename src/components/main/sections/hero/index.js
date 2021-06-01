@@ -1,6 +1,6 @@
 /** @module Main/Sections/Hero */
 import { useMediaQuery } from 'react-responsive';
-import ScrollDownSVG from 'components/icons/utils/ScrollDownSVG';
+import ScrollDownSVG from 'components/icons/utils/scrolldown/ScrollDownSVG';
 import NotebookSVG from './NotebookSVG';
 import { sectionStyle } from './hero.module.css';
 /**
@@ -39,7 +39,7 @@ const Hero = () => {
       <h4>
         &quot;Me pregunto. ¿Cuántas veces habré iterado sobre esté código?&quot;
       </h4>
-      <ScrollDownSVG width='64px' height='64px' />
+      <ScrollDownSVG />
     </section>
   );
 };
