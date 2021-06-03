@@ -3,6 +3,7 @@ import MenuIconSVG from 'components/icons/appbar/MenuIconSVG';
 import LightIconSVG from 'components/icons/appbar/LightIconSVG';
 import DarkIconSVG from 'components/icons/appbar/DarkIconSVG';
 import GitHubSVG from 'components/icons/socialmedia/GitHubSVG';
+import GoogleMailSVG from 'components/icons/socialmedia/GoogleMailSVG';
 import InstagramSVG from 'components/icons/socialmedia/InstagramSVG';
 import LinkedInSVG from 'components/icons/socialmedia/LinkedInSVG';
 import LoaderSVG from 'components/icons/utils/LoaderSVG';
@@ -26,6 +27,10 @@ describe('/src/components/icons - Icons', () => {
   test('render github icon', () => {
     render(<GitHubSVG />);
     screen.getByLabelText(/GitHub Button/i);
+  });
+  test('render google mail icon', () => {
+    render(<GoogleMailSVG />);
+    screen.getByLabelText(/GoogleMail Button/i);
   });
   test('render instagram icon', () => {
     render(<InstagramSVG />);
