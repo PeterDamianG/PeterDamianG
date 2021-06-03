@@ -1,22 +1,21 @@
 /** @module Main/Sections */
 import dynamic from 'next/dynamic';
-import LoaderSVG from 'components/icons/utils/LoaderSVG';
 import { mainStyle } from './main.module.css';
 /** @constant {JSX.Element} */
 const Hero = dynamic(() => import('components/main/sections/hero'), {
-  loading: () => <LoaderSVG />,
+  ssr: false,
 });
 /** @constant {JSX.Element} */
 const About = dynamic(() => import('components/main/sections/about'), {
-  loading: () => <LoaderSVG />,
+  ssr: false,
 });
 /** @constant {JSX.Element} */
 const Proyects = dynamic(() => import('components/main/sections/proyects'), {
-  loading: () => <LoaderSVG />,
+  ssr: false,
 });
 /** @constant {JSX.Element} */
 const Contact = dynamic(() => import('components/main/sections/contact'), {
-  loading: () => <LoaderSVG />,
+  ssr: false,
 });
 /**
  * A tag main container for sections of the web.

@@ -11,7 +11,7 @@
   );
   color: var(--foreground);
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #b3b3b3;
+  -webkit-text-stroke-color: #8a8a8a;
 }
 .sectionStyle h1 {
   font-size: 1.75em;
@@ -19,62 +19,166 @@
 .sectionStyle h3 {
   font-size: 1.5em;
 }
-.sectionStyle h3 {
-  font-size: 1.5em;
-}
 .sectionStyle h4 {
   font-size: 1.5em;
-  width: 50vw;
   text-align: center;
   color: var(--background);
-}
-.sectionStyle svg {
-  stroke: var(--background);
+  width: 75vw;
 }
 /* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
 @media all and (min-width: 640px) and (max-width: 1280px) {
   .sectionStyle h1 {
     font-size: 3em;
-    text-shadow: 1px 1px 2px var(--background);
+    text-shadow: 1px 1px 2px var(--foreground);
+    transition: all 0.2s linear;
+  }
+  .sectionStyle h1:hover {
+    font-size: 3.1em;
+    text-shadow: 2px 2px 4px var(--foreground);
+    filter: saturate(200%);
+    transition: all 0.2s linear;
   }
   .sectionStyle h3 {
     font-size: 2.5em;
-    text-shadow: 1px 1px 2px var(--background);
+    text-shadow: 1px 1px 2px var(--foreground);
+    transition: all 0.2s linear;
+  }
+  .sectionStyle h3:hover {
+    font-size: 2.6em;
+    text-shadow: 2px 2px 4px var(--foreground);
+    filter: saturate(200%);
+    transition: all 0.2s linear;
   }
   .sectionStyle h4 {
     font-size: 2em;
-    text-shadow: 1px 1px 2px var(--background);
-  }
-  .sectionStyle svg {
-    width: 85vw;
-    height: 35vh;
+    text-shadow: 1px 1px 2px var(--foreground);
   }
 }
 /* Animation Mode for PC and TV Devices */
 @media all and (min-width: 1280px) {
   .sectionStyle {
-    flex-direction: row;
+    -webkit-text-stroke-width: 2px;
+    display: grid;
+    grid-template-rows: 90% 10%;
+    justify-items: center;
+    align-items: center;
+    animation: animBackground 3.5s linear 0s infinite;
+  }
+  .sectionStyle > article {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-items: center;
+    align-items: center;
+    animation: animOpacity 3.5s linear 0s 1;
   }
   .sectionStyle div {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: center;
   }
   .sectionStyle h1 {
-    font-size: 6em;
+    font-size: 4em;
     text-shadow: 2px 2px 4px var(--background);
   }
   .sectionStyle h3 {
-    font-size: 5em;
-    text-shadow: 2px 2px 4px var(--background);
-  }
-  .sectionStyle h4 {
     font-size: 3.5em;
     text-shadow: 2px 2px 4px var(--background);
   }
-  .sectionStyle svg {
-    width: 100%;
-    height: 100vh;
+  .sectionStyle h4 {
+    font-size: 3em;
+    text-shadow: 2px 2px 4px var(--background);
+    width: 40vw;
+  }
+}
+/* Animations */
+@keyframes animOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes animBackground {
+  0%,
+  100% {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 40%,
+      var(--foreground)
+    );
+  }
+  5%,
+  95% {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 41%,
+      var(--foreground)
+    );
+  }
+  10%,
+  90% {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 42%,
+      var(--foreground)
+    );
+  }
+  15%,
+  85% {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 43%,
+      var(--foreground)
+    );
+  }
+  20%,
+  80% {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 44%,
+      var(--foreground)
+    );
+  }
+  25%,
+  75% {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 45%,
+      var(--foreground)
+    );
+  }
+  30%,
+  70% {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 46%,
+      var(--foreground)
+    );
+  }
+  35%,
+  65% {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 47%,
+      var(--foreground)
+    );
+  }
+  40%,
+  60% {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 48%,
+      var(--foreground)
+    );
+  }
+  45%,
+  55% {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 49%,
+      var(--foreground)
+    );
   }
 }

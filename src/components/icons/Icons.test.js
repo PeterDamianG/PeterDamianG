@@ -6,36 +6,41 @@ import GitHubSVG from 'components/icons/socialmedia/GitHubSVG';
 import InstagramSVG from 'components/icons/socialmedia/InstagramSVG';
 import LinkedInSVG from 'components/icons/socialmedia/LinkedInSVG';
 import LoaderSVG from 'components/icons/utils/LoaderSVG';
+import ScollDownSVG from 'components/icons/utils/scrolldown/ScrollDownSVG';
 
 afterAll(cleanup);
 
 describe('/src/components/icons - Icons', () => {
   test('render menu icon', () => {
     render(<MenuIconSVG />);
-    screen.getByLabelText(/Menu Button/);
+    screen.getByLabelText(/Menu Button/i);
   });
   test('render light icon', () => {
     render(<LightIconSVG />);
-    screen.getByLabelText(/Light Button/);
+    screen.getByLabelText(/Light Button/i);
   });
   test('render dark icon', () => {
     render(<DarkIconSVG />);
-    screen.getByLabelText(/Dark Button/);
+    screen.getByLabelText(/Dark Button/i);
   });
   test('render github icon', () => {
     render(<GitHubSVG />);
-    screen.getByLabelText(/GitHub Button/);
+    screen.getByLabelText(/GitHub Button/i);
   });
   test('render instagram icon', () => {
     render(<InstagramSVG />);
-    screen.getByLabelText(/Instagram Button/);
+    screen.getByLabelText(/Instagram Button/i);
   });
   test('render linkedin icon', () => {
     render(<LinkedInSVG />);
-    screen.getByLabelText(/LinkedIn Button/);
+    screen.getByLabelText(/LinkedIn Button/i);
   });
   test('render loader-spinner icon', () => {
     render(<LoaderSVG />);
-    screen.getByLabelText(/Loader Spinner/);
+    screen.getByLabelText(/Loader Spinner/i);
+  });
+  test('render scroll-down icon', () => {
+    render(<ScollDownSVG />);
+    screen.getByLabelText(/Scroll Down/i);
   });
 });

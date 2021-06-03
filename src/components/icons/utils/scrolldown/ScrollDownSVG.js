@@ -5,7 +5,7 @@ import { all, scrollAnim } from './scrolldownsvg.module.css';
  * @function ScollDownSVG
  * @param {object} props - A object, with propieties pass to svg tag.
  * @example
- * import ScollDownSVG from 'components/icons/utils/ScollDownSVG'
+ * import ScollDownSVG from 'components/icons/utils/scrolldown/ScollDownSVG'
  * <ScollDownSVG />
  * <ScollDownSVG height={32} width={32} />
  * @returns {JSX.Element} An element of React.
@@ -13,8 +13,10 @@ import { all, scrollAnim } from './scrolldownsvg.module.css';
 const ScollDownSVG = (props) => (
   <svg
     className={all}
-    width='100%'
-    height='10%'
+    aria-label='Scroll Down'
+    role='figure'
+    width='48px'
+    height='48px'
     viewBox='0 0 247 390'
     {...props}
   >

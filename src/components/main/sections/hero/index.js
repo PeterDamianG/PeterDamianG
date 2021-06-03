@@ -8,49 +8,57 @@ import { sectionStyle } from './hero.module.css';
  * A var type const for set info to display.
  * @const
  * @example
- * textingContent[0].notebook
+ * objectContent[0].notebook
  * return "<HTML>"
  * @returns {Array} An array of objects.
  */
-const textingContent = [
+const objectContent = [
   {
     notebook: '<HTML>',
-    x: 750,
-    y: 650,
+    x: '750',
+    y: '650',
     caption: `"Me pregunto. ¿Cómo pasamos de tres archivos estáticos, a diez sólo de configuración?"`,
   },
   {
     notebook: '<Script>',
-    x: 750,
-    y: 650,
-    caption: `"Me pregunto. ¿Cuántas veces habré iterado sobre esté
-    código?"`,
+    x: '750',
+    y: '650',
+    caption: `"Me pregunto. ¿Cuántas veces habré iterado sobre esté código?"`,
   },
   {
     notebook: '<Style>',
-    x: 750,
-    y: 650,
+    x: '750',
+    y: '650',
     caption: `"Me pregunto. ¿Es realmente necesario el CSS-in-JSS?"`,
   },
   {
     notebook: '<Main>',
-    x: 750,
-    y: 650,
-    caption: `"Me pregunto. ¿Cuándo la semantica cambie, nos obligaran a adaptarnos nuevamente?"`,
+    x: '750',
+    y: '650',
+    caption: `"Me pregunto. ¿Cuándo la semantica cambie, re-adaptaremos todas las webs?"`,
   },
   {
     notebook: '<br />',
-    x: 800,
-    y: 650,
-    caption: `"Me pregunto. ¿Hace cuánto que no utilizo tantas etiquetas, que apenas recuerdo su funcionamiento?"`,
+    x: '800',
+    y: '650',
+    caption: `"Me pregunto. ¿Hace cuánto que no utilizo algunas etiquetas?"`,
   },
   {
     notebook: '<SVG>',
-    x: 700,
-    y: 650,
-    caption: `"Me pregunto. ¿Cuándo aparecerá el sistema de graficos definitivo que nos una?"`,
+    x: '800',
+    y: '650',
+    caption: `"Me pregunto. ¿Cuándo aparecerá el sistema de graficos definitivo?"`,
   },
 ];
+/**
+ * A function to get a random number of array objectContent.
+ * @function getRandomNumber
+ * @example
+ * getRandomNumber()
+ * return 2
+ * @returns {Number} An integer number.
+ */
+const getRandomNumber = () => Math.floor(Math.random() * objectContent.length);
 /**
  * A section call hero in the web.
  * @function Hero
@@ -61,30 +69,36 @@ const textingContent = [
  */
 const Hero = () => {
   // State for show notebook text and caption.
-  const [number, setNumber] = useState(
-    Math.floor(Math.random() * textingContent.length),
-  );
+  const [number, setNumber] = useState(getRandomNumber());
   // Handler set random number.
-  const handerNumRandom = () =>
-    setNumber(Math.floor(Math.random() * textingContent.length));
+  const handlerNumRandom = () => {
+    const randomNumber = getRandomNumber();
+    return number === randomNumber
+      ? handlerNumRandom()
+      : setNumber(randomNumber);
+  };
   // Other design with full media.
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1280px)',
   });
+  // Render if width is >= 1280px.
   if (isDesktopOrLaptop) {
     return (
       <section id='hero' className={sectionStyle}>
-        <div>
-          <h1>Peter Damián Gómez</h1>
-          <h3>Web Developer</h3>
-          <h4>{textingContent[number].caption}</h4>
-        </div>
-        <NotebookSVG
-          onClick={handerNumRandom}
-          x={textingContent[number].x}
-          y={textingContent[number].y}
-          text={textingContent[number].notebook}
-        />
+        <article>
+          <div>
+            <h1>Peter Damián Gómez</h1>
+            <h3>Web Developer</h3>
+            <h4>{objectContent[number].caption}</h4>
+          </div>
+          <NotebookSVG
+            onClick={handlerNumRandom}
+            x={objectContent[number].x}
+            y={objectContent[number].y}
+            text={objectContent[number].notebook}
+          />
+        </article>
+        <ScrollDownSVG />
       </section>
     );
   }
@@ -93,12 +107,12 @@ const Hero = () => {
       <h1>Peter Damián Gómez</h1>
       <h3>Web Developer</h3>
       <NotebookSVG
-        onClick={handerNumRandom}
-        x={textingContent[number].x}
-        y={textingContent[number].y}
-        text={textingContent[number].notebook}
+        onClick={handlerNumRandom}
+        x={objectContent[number].x}
+        y={objectContent[number].y}
+        text={objectContent[number].notebook}
       />
-      <h4>{textingContent[number].caption}</h4>
+      <h4>{objectContent[number].caption}</h4>
       <ScrollDownSVG />
     </section>
   );
