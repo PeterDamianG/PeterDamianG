@@ -1,6 +1,7 @@
 /** @module Main/Sections/Hero */
 import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
+import SocialMedia from 'components/utils/socialmedia';
 import ScrollDownSVG from 'components/icons/utils/scrolldown/ScrollDownSVG';
 import NotebookSVG from './NotebookSVG';
 import { sectionStyle } from './hero.module.css';
@@ -89,6 +90,7 @@ const Hero = () => {
           <div>
             <h1>Peter Damián Gómez</h1>
             <h3>Web Developer</h3>
+            <SocialMedia type />
             <h4>{objectContent[number].caption}</h4>
           </div>
           <NotebookSVG
@@ -106,6 +108,7 @@ const Hero = () => {
     <section id='hero' className={sectionStyle}>
       <h1>Peter Damián Gómez</h1>
       <h3>Web Developer</h3>
+      <SocialMedia type />
       <NotebookSVG
         onClick={handlerNumRandom}
         x={objectContent[number].x}

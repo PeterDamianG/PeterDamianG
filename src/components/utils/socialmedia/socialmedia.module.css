@@ -1,38 +1,50 @@
 /* Flat Mode for Mobile Devices */
 .socialmedia {
-  display: contents;
+  width: 20vw;
+  display: flex;
+  justify-content: space-around;
 }
 /* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
 @media all and (min-width: 640px) and (max-width: 1280px) {
   .socialmedia {
-    display: flex;
-    width: 100vw;
-    justify-content: space-evenly;
+    width: 40vw;
+    margin-bottom: 1vh;
   }
   .socialmedia svg {
-    height: 24px;
-    width: 24px;
+    filter: drop-shadow(1px 1px 2px var(--foreground));
+    height: 32px;
+    width: 32px;
+    transition: all 0.2s linear;
+  }
+  .socialmedia svg:hover {
+    filter: drop-shadow(2px 2px 3px var(--foreground));
+    transition: all 0.2s linear;
   }
 }
 /* Animation Mode for PC and TV Devices */
 @media all and (min-width: 1280px) {
   .socialmedia {
-    display: flex;
-    width: 100vw;
-    justify-content: space-evenly;
+    width: 15vw;
   }
   .socialmedia svg {
+    filter: drop-shadow(1px 1px 2px var(--foreground));
     height: 36px;
     width: 36px;
-    animation: animOpacity 6s linear 0.2s infinite normal backwards running;
+    transition: all 0.2s linear;
+    animation: animOpacity 2s linear alternate infinite;
+  }
+  .socialmedia svg:hover {
+    filter: drop-shadow(2px 2px 3px var(--foreground));
+    transition: all 0.2s linear;
+    animation: none;
   }
 }
 /* Animations */
 @keyframes animOpacity {
   from {
-    opacity: 0;
+    opacity: 0.75;
   }
   to {
-    opacity: 0.5;
+    opacity: 1;
   }
 }

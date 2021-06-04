@@ -62,14 +62,14 @@
     grid-template-rows: 90% 10%;
     justify-items: center;
     align-items: center;
-    animation: animBackground 3.5s linear 0s infinite;
+    animation: animBackground 4s linear infinite alternate;
   }
   .sectionStyle > article {
     display: grid;
     grid-template-columns: 40% 60%;
     justify-items: center;
     align-items: center;
-    animation: animOpacity 3.5s linear 0s 1;
+    animation: animOpacity 3s linear 0s 1;
   }
   .sectionStyle div {
     display: flex;
@@ -79,105 +79,187 @@
   }
   .sectionStyle h1 {
     font-size: 4em;
-    text-shadow: 2px 2px 4px var(--background);
+    text-shadow: 1px 1px 2px var(--foreground);
+    transition: all 0.2s linear;
+  }
+  .sectionStyle h1:hover {
+    text-shadow: 2px 2px 4px var(--foreground);
+    transition: all 0.2s linear;
   }
   .sectionStyle h3 {
     font-size: 3.5em;
-    text-shadow: 2px 2px 4px var(--background);
+    text-shadow: 1px 1px 2px var(--foreground);
+    transition: all 0.2s linear;
+  }
+  .sectionStyle h3:hover {
+    text-shadow: 2px 2px 4px var(--foreground);
+    transition: all 0.2s linear;
   }
   .sectionStyle h4 {
     font-size: 3em;
-    text-shadow: 2px 2px 4px var(--background);
+    text-shadow: 1px 1px 2px var(--foreground);
     width: 40vw;
+    transition: all 0.2s linear;
+  }
+  .sectionStyle h4:hover {
+    text-shadow: 2px 2px 4px var(--foreground);
+    transition: all 0.2s linear;
   }
 }
 /* Animations */
 @keyframes animOpacity {
   from {
-    opacity: 0;
+    opacity: 0.1;
   }
   to {
     opacity: 1;
   }
 }
 @keyframes animBackground {
-  0%,
-  100% {
+  0% {
     background-image: linear-gradient(
       to bottom,
       var(--background) 40%,
       var(--foreground)
     );
   }
-  5%,
-  95% {
+  5% {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 40.5%,
+      var(--foreground)
+    );
+  }
+  10% {
     background-image: linear-gradient(
       to bottom,
       var(--background) 41%,
       var(--foreground)
     );
   }
-  10%,
-  90% {
+  15% {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 41.5%,
+      var(--foreground)
+    );
+  }
+  20% {
     background-image: linear-gradient(
       to bottom,
       var(--background) 42%,
       var(--foreground)
     );
   }
-  15%,
-  85% {
+  25% {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 42.5%,
+      var(--foreground)
+    );
+  }
+  30% {
     background-image: linear-gradient(
       to bottom,
       var(--background) 43%,
       var(--foreground)
     );
   }
-  20%,
-  80% {
+  35% {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 43.5%,
+      var(--foreground)
+    );
+  }
+  40% {
     background-image: linear-gradient(
       to bottom,
       var(--background) 44%,
       var(--foreground)
     );
   }
-  25%,
-  75% {
+  45% {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 44.5%,
+      var(--foreground)
+    );
+  }
+  50% {
     background-image: linear-gradient(
       to bottom,
       var(--background) 45%,
       var(--foreground)
     );
   }
-  30%,
-  70% {
+  55% {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 45.5%,
+      var(--foreground)
+    );
+  }
+  60% {
     background-image: linear-gradient(
       to bottom,
       var(--background) 46%,
       var(--foreground)
     );
   }
-  35%,
   65% {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 46.5%,
+      var(--foreground)
+    );
+  }
+  70% {
     background-image: linear-gradient(
       to bottom,
       var(--background) 47%,
       var(--foreground)
     );
   }
-  40%,
-  60% {
+  75% {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 47.5%,
+      var(--foreground)
+    );
+  }
+  80% {
     background-image: linear-gradient(
       to bottom,
       var(--background) 48%,
       var(--foreground)
     );
   }
-  45%,
-  55% {
+  85% {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 48.5%,
+      var(--foreground)
+    );
+  }
+  90% {
     background-image: linear-gradient(
       to bottom,
       var(--background) 49%,
+      var(--foreground)
+    );
+  }
+  95% {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 49.5%,
+      var(--foreground)
+    );
+  }
+  100% {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 50%,
       var(--foreground)
     );
   }

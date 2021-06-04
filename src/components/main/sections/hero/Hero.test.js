@@ -8,6 +8,9 @@ describe('/src/components/main/section/hero - <Hero>', () => {
   test('does render section home', () => {
     screen.getByText(/Peter Damián Gómez/i);
     screen.getByText(/Web Developer/i);
+    screen.getByLabelText(/GitHub Button/);
+    screen.getByLabelText(/GoogleMain Button/);
+    screen.getByLabelText(/LinkedIn Button/);
     screen.getByLabelText(/Notebook SVG/i);
     screen.getByText(/Me pregunto/i);
     screen.getByLabelText(/Scroll Down/i);

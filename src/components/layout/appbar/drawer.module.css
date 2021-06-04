@@ -11,7 +11,8 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(3px);
+  z-index: 1;
 }
 .sidenav a {
   text-decoration: none;

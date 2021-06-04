@@ -5,9 +5,9 @@ import InstagramSVG from 'components/icons/socialmedia/InstagramSVG';
 import LinkedInSVG from 'components/icons/socialmedia/LinkedInSVG';
 import { socialmedia } from './socialmedia.module.css';
 /**
- * An container for icons like a links for social medials.
+ * An container for icons like a links for social medias.
  * @function SocialMedia
- * @param {{boolean}} props.type - A object with property type - boolean, to set type appbar is true and to set footer is false.
+ * @param {{boolean}} props.type - A object with property type - boolean, to set type default is true and to set type-footer is false.
  * @example
  * import SocialMedia from 'components/layout/footer/SocialMedia'
  * <SocialMedia /> // Default for Footer.
