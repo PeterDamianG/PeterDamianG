@@ -1,0 +1,18 @@
+.avatarStyle {
+  border-radius: 50%;
+  border: 2px solid var(--background);
+  width: 25vw;
+}
+/* Animation Mode for PC and TV Devices */
+@media all and (min-width: 1280px) {
+  .avatarStyle {
+    border-radius: 50%;
+    border: 6px solid var(--background);
+    width: 15vw;
+    transition: all 0.6s linear;
+  }
+  .avatarStyle:hover {
+    transform: scale(1.1) translate(-35px, 0) rotate3d(1, 1, 0, 360deg);
+    transition: all 0.6s linear;
+  }
+}

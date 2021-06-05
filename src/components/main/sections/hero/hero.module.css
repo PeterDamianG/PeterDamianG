@@ -35,7 +35,6 @@
   .sectionStyle h1:hover {
     font-size: 3.1em;
     text-shadow: 2px 2px 4px var(--foreground);
-    filter: saturate(200%);
     transition: all 0.2s linear;
   }
   .sectionStyle h3 {
@@ -46,7 +45,6 @@
   .sectionStyle h3:hover {
     font-size: 2.6em;
     text-shadow: 2px 2px 4px var(--foreground);
-    filter: saturate(200%);
     transition: all 0.2s linear;
   }
   .sectionStyle h4 {

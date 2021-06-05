@@ -9,7 +9,7 @@ describe('/src/components/main/section/hero - <Hero>', () => {
     screen.getByText(/Peter Damián Gómez/i);
     screen.getByText(/Web Developer/i);
     screen.getByLabelText(/GitHub Button/);
-    screen.getByLabelText(/GoogleMain Button/);
+    screen.getByLabelText(/GoogleMail Button/);
     screen.getByLabelText(/LinkedIn Button/);
     screen.getByLabelText(/Notebook SVG/i);
     screen.getByText(/Me pregunto/i);
