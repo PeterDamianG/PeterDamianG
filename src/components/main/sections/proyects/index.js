@@ -1,14 +1,18 @@
-const Proyects = () => (
-  <section id='proyects'>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod
-      tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi
-      consequat. Quis aute iure reprehenderit in voluptate velit esse cillum
-      dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-  </section>
-);
+import { useEmblaCarousel } from 'embla-carousel/react';
+import { embla, emblaContainer, emblaSlide } from './proyects.module.css';
+
+const Proyects = () => {
+  const [emblaRef] = useEmblaCarousel();
+
+  return (
+    <section className={embla} ref={emblaRef}>
+      <div className={emblaContainer}>
+        <div className={emblaSlide}>Slide 1</div>
+        <div className={emblaSlide}>Slide 2</div>
+        <div className={emblaSlide}>Slide 3</div>
+      </div>
+    </section>
+  );
+};
 
 export default Proyects;
