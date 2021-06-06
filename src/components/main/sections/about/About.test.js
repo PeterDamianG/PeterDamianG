@@ -15,7 +15,7 @@ describe('/src/components/main/section/about - <About>', () => {
     screen.getByText(/Express/i);
     screen.getByText(/ReactJS/i);
     screen.getByText(/C#/i);
-    screen.getByText(/mi GitHub!/i);
+    screen.getByText(/¡Hey puedes/i);
     screen.getByLabelText(/Scroll Down/i);
   });
 });

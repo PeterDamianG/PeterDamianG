@@ -108,9 +108,10 @@ const About = () => {
         <li>Express</li>
         <li>ReactJS</li>
         <li>C#</li>
-        <a href='https://github.com/PeterDamianG'>
-          <li>¡Hey puedes mirar en más detalle en mi GitHub!</li>
-        </a>
+        <li>
+          ¡Hey puedes mirar en más detalle en mi{' '}
+          <a href='https://github.com/PeterDamianG'>GitHub!</a>
+        </li>
       </ul>
       <ScrollDownSVG />
     </section>

@@ -67,7 +67,6 @@
     grid-template-columns: 40% 60%;
     justify-items: center;
     align-items: center;
-    animation: animOpacity 3s linear 0s 1;
   }
   .sectionStyle div {
     display: flex;
@@ -105,14 +104,6 @@
   }
 }
 /* Animations */
-@keyframes animOpacity {
-  from {
-    opacity: 0.1;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes animBackground {
   0% {
     background-image: linear-gradient(
