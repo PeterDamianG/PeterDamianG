@@ -1,7 +1,9 @@
 /** @module Main/Sections/About */
 import ScrollDownSVG from 'components/icons/utils/scrolldown/ScrollDownSVG';
 import { useMediaQuery } from 'react-responsive';
-import Avatar from './Avatar';
+import Avatar from './components/Avatar';
+import ListSkill from './components/ListSkills';
+import ContentAbout from './components/ContentAbout';
 import { sectionStyle } from './about.module.css';
 /**
  * A section call about in the web.
@@ -23,31 +25,9 @@ const About = () => {
     return (
       <section className={sectionStyle} id='about'>
         <h2>Sobre Mí</h2>
-        <p>
-          ¡Hola!, ¡Que estés teniendo un buen día! ¿Qué? ¿Quién soy? Soy un
-          apasionado por la tecnología, juegos y programación.
-        </p>
-        <p>
-          Interesado en aprender las mejores técnicas y más eficientes de
-          programación en la web. Iterando sobre cada detalle. Con el objectivo
-          del producto final en mente.
-        </p>
-        <p>
-          Estos son algunos de los conocimientos que dispongo actualmente, ¡Pero
-          no son todos!:
-        </p>
+        <ContentAbout />
         <aside>
-          <ul>
-            <li>Javascript</li>
-            <li>NodeJS</li>
-            <li>Express</li>
-            <li>ReactJS</li>
-            <li>C#</li>
-            <li>
-              ¡Hey puedes mirar en más detalle en mi
-              <a href='https://github.com/PeterDamianG'>GitHub!</a>
-            </li>
-          </ul>
+          <ListSkill />
           <Avatar />
         </aside>
         <ScrollDownSVG />
@@ -60,30 +40,8 @@ const About = () => {
       <section className={sectionStyle} id='about'>
         <h2>Sobre Mí</h2>
         <Avatar />
-        <p>
-          ¡Hola!, ¡Que estés teniendo un buen día! ¿Qué? ¿Quién soy? Soy un
-          apasionado por la tecnología, juegos y programación.
-        </p>
-        <p>
-          Interesado en aprender las mejores técnicas y más eficientes de
-          programación en la web. Iterando sobre cada detalle. Con el objectivo
-          del producto final en mente.
-        </p>
-        <p>
-          Estos son algunos de los conocimientos que dispongo actualmente, ¡Pero
-          no son todos!:
-        </p>
-        <ul>
-          <li>Javascript</li>
-          <li>NodeJS</li>
-          <li>Express</li>
-          <li>ReactJS</li>
-          <li>C#</li>
-          <li>
-            ¡Hey puedes mirar en más detalle en mi
-            <a href='https://github.com/PeterDamianG'>GitHub!</a>
-          </li>
-        </ul>
+        <ContentAbout />
+        <ListSkill />
         <ScrollDownSVG />
       </section>
     );
@@ -91,30 +49,8 @@ const About = () => {
   return (
     <section className={sectionStyle} id='about'>
       <h2>Sobre Mí</h2>
-      <p>
-        ¡Hola!, ¡Que estés teniendo un buen día! ¿Qué? ¿Quién soy? Soy un
-        apasionado por la tecnología, juegos y programación.
-      </p>
-      <p>
-        Interesado en aprender las mejores técnicas y más eficientes de
-        programación en la web. Iterando sobre cada detalle. Con el objectivo
-        del producto final en mente.
-      </p>
-      <p>
-        Estos son algunos de los conocimientos que dispongo actualmente, ¡Pero
-        no son todos!:
-      </p>
-      <ul>
-        <li>Javascript</li>
-        <li>NodeJS</li>
-        <li>Express</li>
-        <li>ReactJS</li>
-        <li>C#</li>
-        <li>
-          ¡Hey puedes mirar en más detalle en mi
-          <a href='https://github.com/PeterDamianG'>GitHub!</a>
-        </li>
-      </ul>
+      <ContentAbout />
+      <ListSkill />
       <ScrollDownSVG />
     </section>
   );
