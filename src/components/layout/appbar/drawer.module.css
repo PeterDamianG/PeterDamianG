@@ -12,7 +12,7 @@
   justify-content: space-evenly;
   align-items: center;
   backdrop-filter: blur(3px);
-  z-index: 1;
+  z-index: 2;
 }
 .sidenav a {
   text-decoration: none;
@@ -60,7 +60,7 @@
 /* Animations */
 @keyframes animOpacity {
   from {
-    opacity: 0;
+    opacity: 0.1;
   }
   to {
     opacity: 1;

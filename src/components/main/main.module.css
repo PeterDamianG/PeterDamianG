@@ -13,9 +13,11 @@
 }
 /* Animation Mode for PC and TV Devices */
 @media all and (min-width: 1280px) {
+  .mainStyle {
+    animation: animOpacity 3s linear 0s 1;
+  }
   .mainStyle section {
     padding-top: 8vh;
-    animation: animOpacity 2s linear 0s 1;
   }
 }
 /* Animations */
