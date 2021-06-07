@@ -55,7 +55,7 @@
     align-items: center;
   }
   .sectionStyle h2 {
-    font-size: 4em;
+    font-size: 3.75em;
     text-shadow: 2px 2px 2px var(--background);
     transition: all 0.3s linear;
   }
@@ -65,7 +65,7 @@
   }
   .sectionStyle p {
     width: 85vw;
-    font-size: 2.5em;
+    font-size: 2.25em;
     text-shadow: 2px 2px 2px var(--background);
     transition: all 0.3s linear;
   }
@@ -74,7 +74,7 @@
     transition: all 0.3s linear;
   }
   .sectionStyle ul {
-    font-size: 2em;
+    font-size: 1.75em;
     text-shadow: 2px 2px 2px var(--background);
     transition: all 0.3s linear;
   }
