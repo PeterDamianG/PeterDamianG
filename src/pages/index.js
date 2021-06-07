@@ -11,6 +11,12 @@ const Home = () => (
         name='description'
         content='A personal web site. Peter Damian G is a software web developer.'
       />
+      <link
+        rel='preload'
+        href='https://api.github.com/users/peterdamiang/repos'
+        as='fetch'
+        crossOrigin='anonymous'
+      />
     </Head>
     <AppBar />
     <Main />
