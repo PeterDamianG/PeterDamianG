@@ -45,7 +45,7 @@ const Hero = () => {
           <div>
             <h1>Peter Damián Gómez</h1>
             <h3>Web Developer</h3>
-            <SocialMedia type />
+            <SocialMedia />
             <h4>{objectContent[number].caption}</h4>
           </div>
           <NotebookSVG
@@ -63,7 +63,7 @@ const Hero = () => {
     <section id='hero' className={sectionStyle}>
       <h1>Peter Damián Gómez</h1>
       <h3>Web Developer</h3>
-      <SocialMedia type />
+      <SocialMedia />
       <NotebookSVG
         onClick={handlerNumRandom}
         x={objectContent[number].x}

@@ -11,7 +11,7 @@ describe('/src/components/layout/footer - <Footer>', () => {
   });
   test('does render footer icons', () => {
     screen.getByLabelText(/GitHub Button/);
+    screen.getByLabelText(/GoogleMail Button/);
     screen.getByLabelText(/LinkedIn Button/);
-    screen.getByLabelText(/Instagram Button/);
   });
 });
