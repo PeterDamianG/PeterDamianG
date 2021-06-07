@@ -15,7 +15,7 @@
 @media all and (min-width: 1280px) {
   .mainStyle section {
     padding-top: 8vh;
-    animation: animOpacity 3s linear 0s 1;
+    animation: animOpacity 2s linear 0s 1;
   }
 }
 /* Animations */

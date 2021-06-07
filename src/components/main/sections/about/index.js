@@ -80,8 +80,8 @@ const About = () => {
           <li>ReactJS</li>
           <li>C#</li>
           <li>
-            ¡Hey puedes mirar en más detalle en
-            <a href='https://github.com/PeterDamianG'>mi GitHub!</a>
+            ¡Hey puedes mirar en más detalle en mi
+            <a href='https://github.com/PeterDamianG'>GitHub!</a>
           </li>
         </ul>
         <ScrollDownSVG />
@@ -111,7 +111,7 @@ const About = () => {
         <li>ReactJS</li>
         <li>C#</li>
         <li>
-          ¡Hey puedes mirar en más detalle en mi{' '}
+          ¡Hey puedes mirar en más detalle en mi
           <a href='https://github.com/PeterDamianG'>GitHub!</a>
         </li>
       </ul>
