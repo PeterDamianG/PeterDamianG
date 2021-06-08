@@ -1,13 +1,9 @@
 /* Flat Mode for Mobile Devices */
-.embla {
-  overflow: hidden;
-}
-.emblaContainer {
+.sectionStyle {
   display: flex;
-}
-.emblaSlide {
-  position: relative;
-  flex: 0 0 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 /* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
 @media all and (min-width: 640px) and (max-width: 1280px) {

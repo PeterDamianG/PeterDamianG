@@ -1,6 +1,6 @@
 /** @module Main/Sections/About */
-import ScrollDownSVG from 'components/icons/utils/scrolldown/ScrollDownSVG';
 import { useMediaQuery } from 'react-responsive';
+import ScrollDownSVG from 'components/icons/utils/scrolldown/ScrollDownSVG';
 import Avatar from './components/Avatar';
 import ListSkill from './components/ListSkills';
 import ContentAbout from './components/ContentAbout';
