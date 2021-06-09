@@ -1,7 +1,14 @@
+/* Flat Mode for Mobile Devices */
 .avatarStyle {
   border-radius: 50%;
   border: 2px solid var(--background);
   width: 25vw;
+}
+/* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
+@media all and (min-width: 640px) and (max-width: 1280px) {
+  .avatarStyle {
+    width: 20vw;
+  }
 }
 /* Animation Mode for PC and TV Devices */
 @media all and (min-width: 1280px) {

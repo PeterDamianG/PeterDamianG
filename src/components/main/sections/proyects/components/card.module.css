@@ -1,6 +1,6 @@
 /* Flat Mode for Mobile Devices */
 .container {
-  width: 95vw;
+  width: 80vw;
   height: 70vh;
   display: flex;
   flex-direction: column;
@@ -32,7 +32,7 @@
   }
 }
 .container p {
-  width: 75vw;
+  width: 75%;
 }
 .container nav {
   width: 100%;
@@ -48,33 +48,81 @@
   padding: 2px 8px;
   cursor: pointer;
   font-size: 1.25em;
-  transition: all 0.5s linear;
+  transition: all 0.4s linear;
 }
 .container button:hover {
   background-color: var(--background-button-hover);
-  transition: all 0.5s linear;
+  transition: all 0.4s linear;
 }
 /* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
 @media all and (min-width: 640px) and (max-width: 1280px) {
   .container h3 {
-    font-size: 2.5em;
-    text-shadow: 2px 2px 4px var(--background);
+    font-size: 2.25em;
+    text-shadow: 1px 1px 4px var(--background);
+    transition: all 0.3s linear;
+  }
+  .container h3:hover {
+    text-shadow: 2px 2px 6px var(--background);
     transition: all 0.3s linear;
   }
   .container h4 {
-    font-size: 2em;
+    font-size: 1.75em;
     text-shadow: 2px 2px 4px var(--background);
     transition: all 0.3s linear;
   }
+  .container h4:hover {
+    text-shadow: 2px 2px 6px var(--background);
+    transition: all 0.3s linear;
+  }
   .container p {
-    font-size: 2em;
+    font-size: 1.5em;
     text-shadow: 2px 2px 6px var(--background);
   }
   .container button {
     font-size: 2em;
-    text-shadow: 4px 4px 6px var(--background);
+    text-shadow: 2px 2px 4px var(--background);
   }
 }
 /* Animation Mode for PC and TV Devices */
 @media all and (min-width: 1280px) {
+  .container {
+    border-radius: 10%;
+    display: flex;
+    flex-direction: row;
+  }
+  .container aside {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .container h3 {
+    font-size: 2em;
+    text-shadow: 2px 2px 4px var(--background);
+    transition: all 0.3s linear;
+  }
+  .container h3:hover {
+    text-shadow: 3px 3px 6px var(--background);
+    transition: all 0.3s linear;
+  }
+  .container h4 {
+    font-size: 1.75em;
+    text-shadow: 1px 1px 4px var(--background);
+    transition: all 0.3s linear;
+  }
+  .container h4:hover {
+    text-shadow: 3px 3px 6px var(--background);
+    transition: all 0.3s linear;
+  }
+  .container p {
+    width: 90%;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 6px var(--background);
+  }
+  .container button {
+    font-size: 1.75em;
+    text-shadow: 1px 1px 4px var(--background);
+  }
 }
