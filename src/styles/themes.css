@@ -1,6 +1,7 @@
 :root {
   /* Default theme */
   --background: #faf6f6;
+  --background-button-hover: #1d1818;
   --foreground: #0c0a0a;
   --a-color: #5f5d5d;
   --a-hover: #030303;
@@ -9,6 +10,7 @@
 /* Dark theme */
 [data-theme='dark'] {
   --background: #0c0a0a;
+  --background-button-hover: #d4d0d0;
   --foreground: #faf6f6;
   --a-color: #777474;
   --a-hover: #ffffff;

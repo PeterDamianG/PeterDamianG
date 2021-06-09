@@ -1,4 +1,4 @@
-const ListProyects = [
+const listProyects = [
   {
     name: 'Template Next',
     url: 'https://github.com/PeterDamianG/template-next',
@@ -50,4 +50,4 @@ const ListProyects = [
   },
 ];
 
-export default ListProyects;
+export default listProyects;
