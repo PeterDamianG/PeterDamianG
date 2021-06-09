@@ -60,7 +60,7 @@
     grid-template-rows: 90% 10%;
     justify-items: center;
     align-items: center;
-    animation: animBackground 4s linear infinite alternate;
+    animation: animBackground 3.5s linear infinite alternate;
   }
   .sectionStyle > article {
     display: grid;
@@ -75,7 +75,7 @@
     justify-content: center;
   }
   .sectionStyle h1 {
-    font-size: 4em;
+    font-size: 3em;
     text-shadow: 1px 1px 2px var(--foreground);
     transition: all 0.2s linear;
   }
@@ -84,7 +84,7 @@
     transition: all 0.2s linear;
   }
   .sectionStyle h3 {
-    font-size: 3.5em;
+    font-size: 2em;
     text-shadow: 1px 1px 2px var(--foreground);
     transition: all 0.2s linear;
   }
@@ -93,7 +93,7 @@
     transition: all 0.2s linear;
   }
   .sectionStyle h4 {
-    font-size: 3em;
+    font-size: 2em;
     text-shadow: 1px 1px 2px var(--foreground);
     width: 40vw;
     transition: all 0.2s linear;
