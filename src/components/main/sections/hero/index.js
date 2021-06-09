@@ -28,10 +28,11 @@ const Hero = () => {
   const [number, setNumber] = useState(getRandomNumber());
   // Handler set random number.
   const handlerNumRandom = () => {
-    const randomNumber = getRandomNumber();
-    return number === randomNumber
-      ? handlerNumRandom()
-      : setNumber(randomNumber);
+    let randomNumber = getRandomNumber();
+    while (number === randomNumber) {
+      randomNumber = getRandomNumber();
+    }
+    return setNumber(randomNumber);
   };
   // Other design with full media.
   const isDesktopOrLaptop = useMediaQuery({
