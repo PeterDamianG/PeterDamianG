@@ -6,9 +6,13 @@ const SetCards = () => {
   const [index, setIndex] = useState(0);
 
   const handleUpIndex = () =>
-    index === listProyects.length - 1 ? setIndex(0) : setIndex(index + 1);
+    index === listProyects.length - 1
+      ? setIndex(0)
+      : setIndex((prevIndex) => prevIndex + 1);
   const handleDownIndex = () =>
-    index === 0 ? setIndex(listProyects.length - 1) : setIndex(index - 1);
+    index === 0
+      ? setIndex(listProyects.length - 1)
+      : setIndex((prevIndex) => prevIndex - 1);
 
   const { name, url, desc, lang, img } = listProyects[index];
   return (

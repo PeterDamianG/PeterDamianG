@@ -15,6 +15,15 @@
 }
 /* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
 @media all and (min-width: 640px) and (max-width: 1280px) {
+  .sectionStyle h2 {
+    font-size: 4em;
+    text-shadow: 1px 1px 1px var(--background);
+    transition: all 0.3s linear;
+  }
+  .sectionStyle h2:hover {
+    text-shadow: 2px 2px 4px var(--background);
+    transition: all 0.3s linear;
+  }
 }
 /* Animation Mode for PC and TV Devices */
 @media all and (min-width: 1280px) {

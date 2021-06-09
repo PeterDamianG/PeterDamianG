@@ -8,13 +8,13 @@ const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => (
     <p>{desc}</p>
     <nav>
       <button type='button' onClick={downIndex}>
-        Anterior
+        &lt;
       </button>
       <a href={url}>
         <button type='button'>¡Ir a GitHub!</button>
       </a>
       <button type='button' onClick={upIndex}>
-        Siguiente
+        &gt;
       </button>
     </nav>
   </article>

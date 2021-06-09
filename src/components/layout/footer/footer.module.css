@@ -21,6 +21,6 @@
 /* Animation Mode for PC and TV Devices */
 @media all and (min-width: 1280px) {
   .footer {
-    font-size: 3em;
+    font-size: 1.5em;
   }
 }

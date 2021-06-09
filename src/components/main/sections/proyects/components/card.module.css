@@ -9,7 +9,7 @@
   border: 2px solid var(--background);
   background-color: var(--foreground);
   color: var(--background);
-  text-align: center;
+  text-align: justify;
 }
 .container h3 {
   text-decoration: underline;
@@ -38,15 +38,16 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 1vh;
+  margin-bottom: 4px;
 }
 .container button {
   background-color: var(--foreground);
   color: var(--background);
   border: 1px solid var(--background-nav-modal);
   border-radius: 6px;
-  padding: 5px 16px;
+  padding: 2px 8px;
   cursor: pointer;
+  font-size: 1.25em;
   transition: all 0.5s linear;
 }
 .container button:hover {
@@ -55,6 +56,24 @@
 }
 /* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
 @media all and (min-width: 640px) and (max-width: 1280px) {
+  .container h3 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px var(--background);
+    transition: all 0.3s linear;
+  }
+  .container h4 {
+    font-size: 2em;
+    text-shadow: 2px 2px 4px var(--background);
+    transition: all 0.3s linear;
+  }
+  .container p {
+    font-size: 2em;
+    text-shadow: 2px 2px 6px var(--background);
+  }
+  .container button {
+    font-size: 2em;
+    text-shadow: 4px 4px 6px var(--background);
+  }
 }
 /* Animation Mode for PC and TV Devices */
 @media all and (min-width: 1280px) {
