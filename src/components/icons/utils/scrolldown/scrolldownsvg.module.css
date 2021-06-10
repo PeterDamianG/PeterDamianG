@@ -1,6 +1,5 @@
-/* Flat Mode for Mobile Devices */
 .all {
-  margin: 0.5vh;
+  margin: 0.25vh;
   stroke: var(--background);
   cursor: all-scroll;
 }
