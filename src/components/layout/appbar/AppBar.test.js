@@ -3,7 +3,7 @@ import AppBar from './index';
 
 afterAll(cleanup);
 
-describe('/src/components/layout/appbar - <AppBar>', () => {
+describe('/src/components/layout/appbar - <AppBar> - Render AppBar', () => {
   test('does render app bar', () => {
     render(<AppBar />);
     screen.getByRole('heading');

@@ -7,7 +7,7 @@ import DarkIconSVG from 'components/icons/appbar/DarkIconSVG';
  * An button to change between themes light and dark.
  * @function ThemeChanger
  * @example
- * import ThemeChanger from 'components/layout/appbar/ThemeChanger'
+ * import ThemeChanger from 'components/layout/appbar/themechanger'
  * <ThemeChanger />
  * @returns {JSX.Element} An element of React.
  */

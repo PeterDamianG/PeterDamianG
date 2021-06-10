@@ -1,7 +1,7 @@
 /** @module Layout/AppBar */
-import ThemeChanger from './ThemeChanger';
-import MenuIconSVG from './Drawer';
-import { headerFlex, titleBar, svgController } from './appbar.module.css';
+import ThemeChanger from './themechanger';
+import Drawer from './drawer';
+import { headerFlex, svgController } from './appbar.module.css';
 /**
  * An app bar with title, theme button and drawer like a menu.
  * @function AppBar
@@ -14,10 +14,10 @@ import { headerFlex, titleBar, svgController } from './appbar.module.css';
  */
 const AppBar = ({ appTitle = 'Peter DG' }) => (
   <header className={headerFlex}>
-    <h2 className={titleBar}>{appTitle}</h2>
+    <h2>{appTitle}</h2>
     <aside className={svgController}>
       <ThemeChanger />
-      <MenuIconSVG />
+      <Drawer />
     </aside>
   </header>
 );

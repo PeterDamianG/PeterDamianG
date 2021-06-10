@@ -1,5 +1,5 @@
 import { render, screen, cleanup, fireEvent } from '@testing-library/react';
-import Drawer from './Drawer';
+import Drawer from '.';
 
 beforeEach(() => render(<Drawer />));
 afterAll(cleanup);

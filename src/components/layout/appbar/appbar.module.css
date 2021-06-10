@@ -10,8 +10,6 @@
   align-items: center;
   padding: 0 1vh;
   z-index: 1;
-}
-.titleBar {
   color: var(--foreground);
 }
 .svgController svg {
@@ -28,11 +26,11 @@
     box-shadow: 3px 3px 16px var(--foreground);
     transition: all 0.3s linear;
   }
-  .titleBar {
+  .headerFlex h2 {
     font-size: 2em;
     transition: all 0.3s linear;
   }
-  .titleBar:hover {
+  .headerFlex h2 :hover {
     font-size: 2.1em;
     transition: all 0.3s linear;
   }
@@ -54,12 +52,12 @@
     box-shadow: 3px 3px 20px var(--foreground);
     transition: all 0.3s linear;
   }
-  .titleBar {
+  .headerFlex h2 {
     font-size: 2.5em;
     text-shadow: 1px 1px 4px var(--foreground);
     transition: all 0.3s linear;
   }
-  .titleBar:hover {
+  .headerFlex h2 :hover {
     text-shadow: 4px 4px 6px var(--foreground);
     transition: all 0.3s linear;
   }
