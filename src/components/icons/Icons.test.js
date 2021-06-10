@@ -6,7 +6,7 @@ import GitHubSVG from 'components/icons/socialmedia/GitHubSVG';
 import GoogleMailSVG from 'components/icons/socialmedia/GoogleMailSVG';
 import LinkedInSVG from 'components/icons/socialmedia/LinkedInSVG';
 import LoaderSVG from 'components/icons/utils/LoaderSVG';
-import ScollDownSVG from 'components/icons/utils/scrolldown/ScrollDownSVG';
+import ScollDownSVG from 'components/icons/utils/scrolldown';
 
 afterAll(cleanup);
 

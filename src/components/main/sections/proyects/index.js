@@ -1,4 +1,4 @@
-import ScrollDownSVG from 'components/icons/utils/scrolldown/ScrollDownSVG';
+import ScrollDownSVG from 'components/icons/utils/scrolldown';
 import { sectionStyle } from './proyects.module.css';
 import SetCards from './components/SetCards';
 

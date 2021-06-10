@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import SocialMedia from 'components/utils/socialmedia';
-import ScrollDownSVG from 'components/icons/utils/scrolldown/ScrollDownSVG';
+import ScrollDownSVG from 'components/icons/utils/scrolldown';
 import NotebookSVG from './components/NotebookSVG';
 import { sectionStyle, animateStyle } from './hero.module.css';
 import objectContent from './components/objectContent';
