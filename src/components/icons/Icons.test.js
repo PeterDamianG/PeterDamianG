@@ -9,7 +9,7 @@ import ScollDownSVG from 'components/icons/utils/scrolldown';
 
 afterAll(cleanup);
 
-describe('/src/components/icons - Icons', () => {
+describe('/src/components/icons - Icons - Render Icons', () => {
   test('render menu icon', () => {
     render(<MenuIconSVG />);
     screen.getByLabelText(/Menu Button/i);
