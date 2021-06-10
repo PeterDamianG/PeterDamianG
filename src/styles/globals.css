@@ -24,6 +24,20 @@ svg {
   cursor: pointer;
   fill: var(--foreground);
 }
+button {
+  background-color: var(--foreground);
+  color: var(--background);
+  border: 1px solid var(--background-nav-modal);
+  border-radius: 6px;
+  padding: 2px 8px;
+  cursor: pointer;
+  font-size: 1.25em;
+  transition: all 0.4s linear;
+}
+button:hover {
+  background-color: var(--background-button-hover);
+  transition: all 0.4s linear;
+}
 * {
   box-sizing: border-box;
 }

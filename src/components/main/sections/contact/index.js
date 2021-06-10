@@ -1,13 +1,24 @@
+import SocialMedia from 'components/utils/socialmedia';
+import { sectionStyle, asideStyle } from './contact.module.css';
+
 const Contact = () => (
-  <section id='contact'>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod
-      tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi
-      consequat. Quis aute iure reprehenderit in voluptate velit esse cillum
-      dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+  <section id='contact' className={sectionStyle}>
+    <h2>Contacto</h2>
+    <aside className={asideStyle}>
+      <h3>¿Y ahora, qué?</h3>
+      <p>
+        ¿Quiéres contactarme?, ¡Puedes a través de redes sociales o correo
+        electrónico!
+      </p>
+      <SocialMedia />
+    </aside>
+    <aside className={asideStyle}>
+      <h3>¿Necesitas un CV o Resume?</h3>
+      <a href='Link a Resume'>
+        <button type='button'>Resume</button>
+      </a>
+    </aside>
+    <h5>Gracias por su atención.</h5>
   </section>
 );
 

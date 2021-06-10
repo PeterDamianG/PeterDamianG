@@ -14,13 +14,13 @@ import { socialmedia } from './socialmedia.module.css';
 const SocialMedia = () => (
   <aside className={socialmedia}>
     <a href='https://github.com/PeterDamianG'>
-      <GitHubSVG height={16} width={16} />
+      <GitHubSVG height={20} width={20} />
     </a>
     <a href='mailto:PeterDamianG@Gmail.com'>
-      <GoogleMailSVG height={16} width={16} />
+      <GoogleMailSVG height={20} width={20} />
     </a>
     <a href='https://www.linkedin.com/in/peterdamiang/'>
-      <LinkedInSVG height={16} width={16} />
+      <LinkedInSVG height={20} width={20} />
     </a>
   </aside>
 );

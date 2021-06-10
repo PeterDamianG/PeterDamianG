@@ -40,20 +40,6 @@
   justify-content: space-evenly;
   margin-bottom: 4px;
 }
-.container button {
-  background-color: var(--foreground);
-  color: var(--background);
-  border: 1px solid var(--background-nav-modal);
-  border-radius: 6px;
-  padding: 2px 8px;
-  cursor: pointer;
-  font-size: 1.25em;
-  transition: all 0.4s linear;
-}
-.container button:hover {
-  background-color: var(--background-button-hover);
-  transition: all 0.4s linear;
-}
 /* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
 @media all and (min-width: 640px) and (max-width: 1280px) {
   .container h3 {

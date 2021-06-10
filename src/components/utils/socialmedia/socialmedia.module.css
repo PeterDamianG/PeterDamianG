@@ -1,6 +1,6 @@
 /* Flat Mode for Mobile Devices */
 .socialmedia {
-  width: 20vw;
+  width: 30vw;
   display: flex;
   justify-content: space-around;
 }
