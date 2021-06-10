@@ -4,7 +4,7 @@ import { useMediaQuery } from 'react-responsive';
 import SocialMedia from 'components/utils/socialmedia';
 import ScrollDownSVG from 'components/icons/utils/scrolldown/ScrollDownSVG';
 import NotebookSVG from './components/NotebookSVG';
-import { sectionStyle } from './hero.module.css';
+import { sectionStyle, animateStyle } from './hero.module.css';
 import objectContent from './components/objectContent';
 /**
  * A function to get a random number of array objectContent.
@@ -26,13 +26,18 @@ const getRandomNumber = () => Math.floor(Math.random() * objectContent.length);
 const Hero = () => {
   // State for show notebook text and caption.
   const [number, setNumber] = useState(getRandomNumber());
-  // Handler set random number.
-  const handlerNumRandom = () => {
+  // State for handle animation.
+  const [animate, setAnimate] = useState(false);
+  // Set random number.
+  const handlerClickNotebook = () => {
     let randomNumber = getRandomNumber();
     while (number === randomNumber) {
       randomNumber = getRandomNumber();
     }
-    return setNumber(randomNumber);
+    clearTimeout();
+    setAnimate(true);
+    setTimeout(() => setAnimate(false), 500);
+    setNumber(randomNumber);
   };
   // Other design with full media.
   const isDesktopOrLaptop = useMediaQuery({
@@ -47,10 +52,13 @@ const Hero = () => {
             <h1>Peter Damián Gómez</h1>
             <h3>Web Developer</h3>
             <SocialMedia />
-            <h4>{objectContent[number].caption}</h4>
+            <h4 className={animate ? animateStyle : ''}>
+              {objectContent[number].caption}
+            </h4>
           </div>
           <NotebookSVG
-            onClick={handlerNumRandom}
+            className={animate ? animateStyle : ''}
+            onClick={handlerClickNotebook}
             x={objectContent[number].x}
             y={objectContent[number].y}
             text={objectContent[number].notebook}
@@ -66,12 +74,15 @@ const Hero = () => {
       <h3>Web Developer</h3>
       <SocialMedia />
       <NotebookSVG
-        onClick={handlerNumRandom}
+        className={animate ? animateStyle : ''}
+        onClick={handlerClickNotebook}
         x={objectContent[number].x}
         y={objectContent[number].y}
         text={objectContent[number].notebook}
       />
-      <h4>{objectContent[number].caption}</h4>
+      <h4 className={animate ? animateStyle : ''}>
+        {objectContent[number].caption}
+      </h4>
       <ScrollDownSVG />
     </section>
   );

@@ -25,6 +25,9 @@
   color: var(--background);
   width: 75vw;
 }
+.animateStyle {
+  animation: animOpacity 0.5s linear 1;
+}
 /* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
 @media all and (min-width: 640px) and (max-width: 1280px) {
   .sectionStyle h1 {
@@ -104,6 +107,14 @@
   }
 }
 /* Animations */
+@keyframes animOpacity {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes animBackground {
   0% {
     background-image: linear-gradient(

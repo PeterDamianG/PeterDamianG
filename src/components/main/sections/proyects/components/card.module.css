@@ -40,6 +40,9 @@
   justify-content: space-evenly;
   margin-bottom: 4px;
 }
+.animateStyle {
+  animation: animOpacity 1s linear 1;
+}
 /* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
 @media all and (min-width: 640px) and (max-width: 1280px) {
   .container h3 {
@@ -110,5 +113,14 @@
   .container button {
     font-size: 1.75em;
     text-shadow: 1px 1px 4px var(--background);
+  }
+}
+/* Animations */
+@keyframes animOpacity {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
   }
 }

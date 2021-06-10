@@ -38,6 +38,14 @@ button:hover {
   background-color: var(--background-button-hover);
   transition: all 0.4s linear;
 }
+@keyframes animOpacity {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
 * {
   box-sizing: border-box;
 }
