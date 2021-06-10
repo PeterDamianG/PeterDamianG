@@ -5,7 +5,6 @@ import DarkIconSVG from 'components/icons/appbar/DarkIconSVG';
 import GitHubSVG from 'components/icons/socialmedia/GitHubSVG';
 import GoogleMailSVG from 'components/icons/socialmedia/GoogleMailSVG';
 import LinkedInSVG from 'components/icons/socialmedia/LinkedInSVG';
-import LoaderSVG from 'components/icons/utils/LoaderSVG';
 import ScollDownSVG from 'components/icons/utils/scrolldown';
 
 afterAll(cleanup);
@@ -34,10 +33,6 @@ describe('/src/components/icons - Icons', () => {
   test('render linkedin icon', () => {
     render(<LinkedInSVG />);
     screen.getByLabelText(/LinkedIn Button/i);
-  });
-  test('render loader-spinner icon', () => {
-    render(<LoaderSVG />);
-    screen.getByLabelText(/Loader Spinner/i);
   });
   test('render scroll-down icon', () => {
     render(<ScollDownSVG />);
