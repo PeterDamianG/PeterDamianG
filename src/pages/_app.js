@@ -4,7 +4,7 @@ import 'styles/themes.css';
 import 'styles/globals.css';
 import { ThemeProvider } from 'next-themes';
 
-if (process.env.NODE_ENV !== 'production' && !(typeof window === 'undefined')) {
+if (process.env.NODE_ENV === 'production' && !(typeof window === 'undefined')) {
   // we import react-dom and @axe-core/react dynamically
   // so that we'll receive warning in our console about inaccessible code.
   import('react-dom').then((ReactDOM) => {

@@ -12,48 +12,66 @@
   justify-content: space-evenly;
   align-items: center;
   backdrop-filter: blur(3px);
+  font-weight: bold;
   z-index: 2;
 }
 .sidenav a {
   text-decoration: none;
-  font-size: 2.5em;
-  color: var(--a-hover);
-  display: block;
-}
-.sidenav .closebtn {
   font-size: 2em;
+  color: var(--a-hover);
+}
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--foreground);
+  font-size: 2em;
+}
+.closebtn:hover {
+  background-color: transparent;
 }
 /* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
 @media all and (min-width: 640px) and (max-width: 1280px) {
   .sidenav a {
     color: var(--a-color);
     font-size: 3.5em;
-    transition: all 0.2s linear;
+    transition: all 0.3s linear;
   }
   .sidenav a:hover {
     color: var(--a-hover);
     font-size: 4em;
-    transition: all 0.2s linear;
+    letter-spacing: 0.1em;
+    transition: all 0.3s linear;
   }
-  .sidenav .closebtn {
+  .closebtn {
     font-size: 2.5em;
+    transition: all 0.3s linear;
+  }
+  .closebtn:hover {
+    font-size: 2.75em;
+    transition: all 0.3s linear;
+  }
+  .sidenav small {
+    font-size: 1.5em;
   }
 }
 /* Animation Mode for PC and TV Devices */
 @media all and (min-width: 1280px) {
   .sidenav a {
     color: var(--a-color);
-    font-size: 3em;
+    font-size: 2.5em;
     transition: all 0.3s linear;
     animation: animOpacity 2s linear 0.2s 1 normal backwards running;
   }
   .sidenav a:hover {
     color: var(--a-hover);
-    font-size: 3.5em;
+    font-size: 3em;
     text-shadow: 2px 2px 8px var(--foreground);
     transition: all 0.3s linear;
   }
-  .sidenav .closebtn {
+  .closebtn {
     font-size: 2.5em;
   }
 }
