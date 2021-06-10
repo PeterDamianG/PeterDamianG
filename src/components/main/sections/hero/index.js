@@ -24,6 +24,10 @@ const getRandomNumber = () => Math.floor(Math.random() * objectContent.length);
  * @returns {JSX.Element} An element of React.
  */
 const Hero = () => {
+  // Other design with full media.
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1280px)',
+  });
   // State for show notebook text and caption.
   const [number, setNumber] = useState(getRandomNumber());
   // State for handle animation.
@@ -39,10 +43,6 @@ const Hero = () => {
     setTimeout(() => setAnimate(false), 500);
     setNumber(randomNumber);
   };
-  // Other design with full media.
-  const isDesktopOrLaptop = useMediaQuery({
-    query: '(min-width: 1280px)',
-  });
   // Render if width is >= 1280px.
   if (isDesktopOrLaptop) {
     return (

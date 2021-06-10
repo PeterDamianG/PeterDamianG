@@ -47,11 +47,11 @@
   }
   .closebtn {
     font-size: 2.5em;
-    transition: all 0.3s linear;
+    transition: font-size 0.3s linear;
   }
   .closebtn:hover {
     font-size: 2.75em;
-    transition: all 0.3s linear;
+    transition: font-size 0.3s linear;
   }
   .sidenav small {
     font-size: 1.5em;
@@ -59,7 +59,74 @@
 }
 /* Animation Mode for PC and TV Devices */
 @media all and (min-width: 1280px) {
+  .sidenav {
+    display: grid;
+    grid-template-areas:
+      'hero about detail'
+      'proyects contact detail';
+    justify-content: normal;
+    text-align: center;
+  }
+  .hero {
+    grid-area: hero;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px solid var(--foreground);
+  }
+  .about {
+    grid-area: about;
+    height: 100%;
+    background-color: var(--background-nav-modal-invert);
+    color: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px solid var(--foreground);
+  }
+  .proyects {
+    grid-area: proyects;
+    height: 100%;
+    background-color: var(--background-nav-modal-invert);
+    color: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px solid var(--foreground);
+  }
+  .contact {
+    grid-area: contact;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px solid var(--foreground);
+  }
+  .detail {
+    grid-area: detail;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px solid var(--foreground);
+  }
+  .detail aside {
+    width: 100%;
+  }
+  .sidenav p {
+    font-size: 1.5em;
+    width: 65%;
+    margin: 0 auto;
+  }
+  .sidenav h3 {
+    font-size: 2.5em;
+  }
+  .sidenav small {
+    font-size: 1.5em;
+  }
   .sidenav a {
+    text-decoration: underline;
     color: var(--a-color);
     font-size: 2.5em;
     transition: all 0.3s linear;
@@ -67,12 +134,19 @@
   }
   .sidenav a:hover {
     color: var(--a-hover);
-    font-size: 3em;
     text-shadow: 2px 2px 8px var(--foreground);
     transition: all 0.3s linear;
   }
   .closebtn {
+    color: var(--a-color);
     font-size: 2.5em;
+    transition: all 0.3s linear;
+  }
+  .closebtn:hover {
+    color: var(--a-hover);
+    font-size: 3em;
+    text-shadow: 1px 1px 4px var(--foreground);
+    transition: all 0.3s linear;
   }
 }
 /* Animations */

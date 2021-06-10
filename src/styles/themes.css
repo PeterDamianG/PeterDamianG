@@ -6,6 +6,7 @@
   --a-color: #5f5d5d;
   --a-hover: #030303;
   --background-nav-modal: #faf6f6b0;
+  --background-nav-modal-invert: #0c0a0ada;
 }
 /* Dark theme */
 [data-theme='dark'] {
@@ -15,4 +16,5 @@
   --a-color: #777474;
   --a-hover: #ffffff;
   --background-nav-modal: #0c0a0ada;
+  --background-nav-modal-invert: #faf6f6b0;
 }
