@@ -63,7 +63,7 @@
     color: var(--a-color);
     font-size: 2.5em;
     transition: all 0.3s linear;
-    animation: animOpacity 2s linear 0.2s 1 normal backwards running;
+    animation: animOpacity 2s linear 1;
   }
   .sidenav a:hover {
     color: var(--a-hover);
