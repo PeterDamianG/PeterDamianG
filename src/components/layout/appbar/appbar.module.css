@@ -20,19 +20,19 @@
   .headerFlex {
     height: 5vh;
     box-shadow: 1px 1px 8px var(--foreground);
-    transition: all 0.3s linear;
+    transition: box-shadow 0.3s linear;
   }
   .headerFlex:hover {
     box-shadow: 3px 3px 16px var(--foreground);
-    transition: all 0.3s linear;
+    transition: box-shadow 0.3s linear;
   }
   .headerFlex h2 {
     font-size: 2em;
-    transition: all 0.3s linear;
+    transition: font-size 0.3s linear;
   }
   .headerFlex h2 :hover {
     font-size: 2.1em;
-    transition: all 0.3s linear;
+    transition: font-size 0.3s linear;
   }
   .svgController svg {
     height: 32px;
@@ -46,20 +46,20 @@
   .headerFlex {
     height: 6vh;
     box-shadow: 2px 2px 16px var(--foreground);
-    transition: all 0.3s linear;
+    transition: box-shadow 0.3s linear;
   }
   .headerFlex:hover {
     box-shadow: 3px 3px 20px var(--foreground);
-    transition: all 0.3s linear;
+    transition: box-shadow 0.3s linear;
   }
   .headerFlex h2 {
     font-size: 2.5em;
     text-shadow: 1px 1px 4px var(--foreground);
-    transition: all 0.3s linear;
+    transition: text-shadow 0.3s linear;
   }
-  .headerFlex h2 :hover {
+  .headerFlex h2:hover {
     text-shadow: 4px 4px 6px var(--foreground);
-    transition: all 0.3s linear;
+    transition: text-shadow 0.3s linear;
   }
   .svgController svg {
     height: 36px;
