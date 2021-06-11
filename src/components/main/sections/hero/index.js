@@ -5,16 +5,7 @@ import SocialMedia from 'components/utils/socialmedia';
 import ScrollDownSVG from 'components/icons/utils/scrolldown';
 import NotebookSVG from './components/NotebookSVG';
 import { sectionStyle, animateStyle } from './hero.module.css';
-import objectContent from './components/objectContent';
-/**
- * A function to get a random number of array objectContent.
- * @function getRandomNumber
- * @example
- * getRandomNumber()
- * // return 2
- * @returns {Number} An integer number of length to objectContent.
- */
-const getRandomNumber = () => Math.floor(Math.random() * objectContent.length);
+import textContent from './components/textContent';
 /**
  * A section call hero in the web.
  * @function Hero
@@ -29,19 +20,19 @@ const Hero = () => {
     query: '(min-width: 1280px)',
   });
   // State for show notebook text and caption.
-  const [number, setNumber] = useState(getRandomNumber());
+  const [number, setNumber] = useState(0);
   // State for handle animation.
   const [animate, setAnimate] = useState(false);
   // Set random number.
   const handlerClickNotebook = () => {
-    let randomNumber = getRandomNumber();
-    while (number === randomNumber) {
-      randomNumber = getRandomNumber();
-    }
     clearTimeout();
     setAnimate(true);
     setTimeout(() => setAnimate(false), 500);
-    setNumber(randomNumber);
+    if (number === textContent.length - 1) {
+      setNumber(0);
+    } else {
+      setNumber((prevNumber) => prevNumber + 1);
+    }
   };
   // Render if width is >= 1280px.
   if (isDesktopOrLaptop) {
@@ -53,15 +44,15 @@ const Hero = () => {
             <h3>Web Developer</h3>
             <SocialMedia />
             <h4 className={animate ? animateStyle : ''}>
-              {objectContent[number].caption}
+              {textContent[number].caption}
             </h4>
           </div>
           <NotebookSVG
             className={animate ? animateStyle : ''}
             onClick={handlerClickNotebook}
-            x={objectContent[number].x}
-            y={objectContent[number].y}
-            text={objectContent[number].notebook}
+            x={textContent[number].x}
+            y={textContent[number].y}
+            text={textContent[number].notebook}
           />
         </article>
         <ScrollDownSVG />
@@ -76,12 +67,12 @@ const Hero = () => {
       <NotebookSVG
         className={animate ? animateStyle : ''}
         onClick={handlerClickNotebook}
-        x={objectContent[number].x}
-        y={objectContent[number].y}
-        text={objectContent[number].notebook}
+        x={textContent[number].x}
+        y={textContent[number].y}
+        text={textContent[number].notebook}
       />
       <h4 className={animate ? animateStyle : ''}>
-        {objectContent[number].caption}
+        {textContent[number].caption}
       </h4>
       <ScrollDownSVG />
     </section>

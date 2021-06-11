@@ -1,13 +1,13 @@
 /** @module Main/Sections/Hero */
 /**
- * A var type const for set info to display.
+ * A var type const for contain info set to display.
  * @const
  * @example
- * objectContent[0].notebook
- * return "<HTML>"
+ * textContent[0].notebook
+ * // return "<HTML>"
  * @returns {Array} An array of objects.
  */
-const objectContent = [
+const textContent = [
   {
     notebook: '<HTML>',
     x: '750',
@@ -46,4 +46,4 @@ const objectContent = [
   },
 ];
 
-export default objectContent;
+export default textContent;
