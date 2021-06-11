@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import SocialMedia from 'components/utils/socialmedia';
 import ScrollDownSVG from 'components/icons/utils/scrolldown';
+import animationHelper from 'components/utils/animationHelper';
 import NotebookSVG from './components/NotebookSVG';
 import { sectionStyle, animateStyle } from './hero.module.css';
 import textContent from './components/textContent';
@@ -23,11 +24,9 @@ const Hero = () => {
   const [number, setNumber] = useState(0);
   // State for handle animation.
   const [animate, setAnimate] = useState(false);
-  // Set random number.
+  // Handler click on Notebook SVG
   const handlerClickNotebook = () => {
-    clearTimeout();
-    setAnimate(true);
-    setTimeout(() => setAnimate(false), 500);
+    animationHelper(setAnimate, 500);
     if (number === textContent.length - 1) {
       setNumber(0);
     } else {
