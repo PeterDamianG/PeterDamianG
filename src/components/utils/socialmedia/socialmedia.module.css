@@ -1,6 +1,6 @@
 /* Flat Mode for Mobile Devices */
 .socialmedia {
-  width: 30vw;
+  width: 35vw;
   display: flex;
   justify-content: space-around;
 }
@@ -24,7 +24,7 @@
 /* Animation Mode for PC and TV Devices */
 @media all and (min-width: 1280px) {
   .socialmedia {
-    width: 15vw;
+    width: 20vw;
   }
   .socialmedia svg {
     filter: drop-shadow(1px 1px 2px var(--foreground));

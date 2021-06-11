@@ -26,32 +26,30 @@
   width: 75vw;
 }
 .animateStyle {
-  animation: animOpacity 0.5s linear 1;
+  animation: animOpacity 0.45s linear 1;
 }
 /* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
 @media all and (min-width: 640px) and (max-width: 1280px) {
   .sectionStyle h1 {
-    font-size: 3em;
+    font-size: 3.25em;
     text-shadow: 1px 1px 2px var(--foreground);
-    transition: all 0.2s linear;
+    transition: text-shadow 0.3s linear;
   }
   .sectionStyle h1:hover {
-    font-size: 3.1em;
     text-shadow: 2px 2px 4px var(--foreground);
-    transition: all 0.2s linear;
+    transition: text-shadow 0.3s linear;
   }
   .sectionStyle h3 {
-    font-size: 2.5em;
+    font-size: 2.75em;
     text-shadow: 1px 1px 2px var(--foreground);
-    transition: all 0.2s linear;
+    transition: text-shadow 0.3s linear;
   }
   .sectionStyle h3:hover {
-    font-size: 2.6em;
     text-shadow: 2px 2px 4px var(--foreground);
-    transition: all 0.2s linear;
+    transition: text-shadow 0.3s linear;
   }
   .sectionStyle h4 {
-    font-size: 2em;
+    font-size: 2.25em;
     text-shadow: 1px 1px 2px var(--foreground);
   }
 }
@@ -60,15 +58,15 @@
   .sectionStyle {
     -webkit-text-stroke-width: 2px;
     display: grid;
-    grid-template-rows: 90% 10%;
+    grid-template-rows: 9fr 1fr;
     justify-items: center;
     align-items: center;
     animation: animBackground 3.5s linear infinite alternate;
   }
   .sectionStyle > article {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    justify-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
     align-items: center;
   }
   .sectionStyle div {
@@ -80,30 +78,30 @@
   .sectionStyle h1 {
     font-size: 3em;
     text-shadow: 1px 1px 2px var(--foreground);
-    transition: all 0.2s linear;
+    transition: text-shadow 0.3s linear;
   }
   .sectionStyle h1:hover {
     text-shadow: 2px 2px 4px var(--foreground);
-    transition: all 0.2s linear;
+    transition: text-shadow 0.3s linear;
   }
   .sectionStyle h3 {
     font-size: 2em;
     text-shadow: 1px 1px 2px var(--foreground);
-    transition: all 0.2s linear;
+    transition: text-shadow 0.3s linear;
   }
   .sectionStyle h3:hover {
     text-shadow: 2px 2px 4px var(--foreground);
-    transition: all 0.2s linear;
+    transition: text-shadow 0.3s linear;
   }
   .sectionStyle h4 {
     font-size: 2em;
     text-shadow: 1px 1px 2px var(--foreground);
     width: 40vw;
-    transition: all 0.2s linear;
+    transition: text-shadow 0.3s linear;
   }
   .sectionStyle h4:hover {
     text-shadow: 2px 2px 4px var(--foreground);
-    transition: all 0.2s linear;
+    transition: text-shadow 0.3s linear;
   }
 }
 /* Animations */

@@ -27,11 +27,8 @@ const Hero = () => {
   // Handler click on Notebook SVG
   const handlerClickNotebook = () => {
     animationHelper(setAnimate, 500);
-    if (number === textContent.length - 1) {
-      setNumber(0);
-    } else {
-      setNumber((prevNumber) => prevNumber + 1);
-    }
+    if (number === textContent.length - 1) setNumber(0);
+    else setNumber((prevNumber) => prevNumber + 1);
   };
   // Render if width is >= 1280px.
   if (isDesktopOrLaptop) {
@@ -58,6 +55,7 @@ const Hero = () => {
       </section>
     );
   }
+  // Render normal.
   return (
     <section id='hero' className={sectionStyle}>
       <h1>Peter Damián Gómez</h1>
