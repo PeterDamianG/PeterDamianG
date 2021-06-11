@@ -1,12 +1,12 @@
-/** @module Main/Sections/Hero */
+/** @module Sections/Hero */
 import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import SocialMedia from 'components/utils/socialmedia';
 import ScrollDownSVG from 'components/icons/utils/scrolldown';
 import animationHelper from 'components/utils/animationHelper';
-import NotebookSVG from './components/NotebookSVG';
+import NotebookSVG from './notebook/NotebookSVG';
 import { sectionStyle, animateStyle } from './hero.module.css';
-import textContent from './components/textContent';
+import textContent from './content/textContent';
 /**
  * A section call hero in the web.
  * @function Hero

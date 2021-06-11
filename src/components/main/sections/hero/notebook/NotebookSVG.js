@@ -1,5 +1,4 @@
-/** @module Main/Sections/Hero */
-import { notebookStyle } from './notebook.module.css';
+/** @module Sections/Hero */
 /**
  * Use a icon to use like a Github Link button.
  * @function NotebookSVG
@@ -13,7 +12,6 @@ const NotebookSVG = (props) => {
   const { text, x, y } = props;
   return (
     <svg
-      className={notebookStyle}
       aria-label='Notebook SVG'
       role='figure'
       width={350}

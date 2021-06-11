@@ -1,4 +1,4 @@
-/** @module Main/Sections/Hero */
+/** @module Sections/Hero */
 /**
  * A var type const for contain info set to display.
  * @const
