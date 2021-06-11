@@ -68,7 +68,7 @@ const ContentNav = ({ close }) => {
         X
       </button>
       <a href='#hero' onClick={close}>
-        Principal
+        Inicio
       </a>
       <a href='#about' onClick={close}>
         Sobre Mí
