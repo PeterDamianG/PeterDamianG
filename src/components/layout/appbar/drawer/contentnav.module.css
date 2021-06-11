@@ -66,6 +66,7 @@
       'proyects contact detail';
     justify-content: normal;
     text-align: center;
+    animation: animOpacity 1.5s linear 1;
   }
   .hero {
     grid-area: hero;
@@ -130,7 +131,6 @@
     color: var(--a-color);
     font-size: 2.5em;
     transition: all 0.3s linear;
-    animation: animOpacity 2s linear 1;
   }
   .sidenav a:hover {
     color: var(--a-hover);
