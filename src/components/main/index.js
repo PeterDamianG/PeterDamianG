@@ -1,4 +1,4 @@
-/** @module Main/Sections */
+/** @module Sections */
 import dynamic from 'next/dynamic';
 import { mainStyle } from './main.module.css';
 /** @constant {JSX.Element} */
