@@ -3,6 +3,7 @@
  * A var type const for contain info set to display.
  * @const
  * @example
+ * import Card from 'components/main/sections/hero/content/textContent'
  * textContent[0].notebook
  * // return "<HTML>"
  * @returns {Array} An array of objects.

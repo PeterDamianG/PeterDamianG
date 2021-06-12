@@ -1,3 +1,13 @@
+/** @module Sections/Proyects */
+/**
+ * An array with contain info about proyectos for set to display.
+ * @const
+ * @example
+ * import Card from 'components/main/sections/setproyects/list/listProyect'
+ * listProyects[0].name
+ * // return "Template Next"
+ * @returns {Array} An array of objects.
+ */
 const listProyects = [
   {
     name: 'Template Next',

@@ -1,22 +1,27 @@
+/** @module Sections/Proyects */
 import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
+import animationHelper from 'components/utils/animationHelper';
 import { container, animateStyle } from './card.module.css';
-
+/**
+ * A component to render cards.
+ * @function Card
+ * @example
+ * import Card from 'components/main/sections/setproyects/card/Card'
+ * <Card />
+ * @returns {JSX.Element} An element of React.
+ */
 const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
   // State for handle animation.
   const [animate, setAnimate] = useState(false);
-
+  // Handle Click Left Arrow.
   const handleClickLeftArrow = () => {
-    clearTimeout();
-    setAnimate(true);
-    setTimeout(() => setAnimate(false), 1000);
+    animationHelper(setAnimate, 500);
     downIndex();
   };
-
+  // Handle Click Right Arrow.
   const handleClickRightArrow = () => {
-    clearTimeout();
-    setAnimate(true);
-    setTimeout(() => setAnimate(false), 1000);
+    animationHelper(setAnimate, 500);
     upIndex();
   };
   // Other design with full media.
@@ -28,9 +33,9 @@ const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
     return (
       <article className={container}>
         <aside>
-          <h3>{name}</h3>
-          <h4>{lang}</h4>
-          <p>{desc}</p>
+          <h3 className={animate ? animateStyle : ''}>{name}</h3>
+          <h4 className={animate ? animateStyle : ''}>{lang}</h4>
+          <p className={animate ? animateStyle : ''}>{desc}</p>
           <nav>
             <button type='button' onClick={handleClickLeftArrow}>
               &lt;
@@ -43,10 +48,11 @@ const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
             </button>
           </nav>
         </aside>
-        <img alt={name} src={img} />
+        <img className={animate ? animateStyle : ''} alt={name} src={img} />
       </article>
     );
   }
+  // Render Normal.
   return (
     <article className={container}>
       <h3 className={animate ? animateStyle : ''}>{name}</h3>
