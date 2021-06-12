@@ -23,11 +23,13 @@ describe('/src/components/main/section/hero - <Hero> - Renders', () => {
 });
 
 describe('/src/components/main/section/hero - <Hero> - Responsive', () => {
-  beforeEach(() => render(
-    <ResponsiveContext.Provider value={{ width: 1280 }}>
-      <Hero />
-    </ResponsiveContext.Provider>,
-  ));
+  beforeEach(() =>
+    render(
+      <ResponsiveContext.Provider value={{ width: 1280 }}>
+        <Hero />
+      </ResponsiveContext.Provider>,
+    ),
+  );
   test('Does renders home in screen width >= 1280', () => {
     screen.getByText(/Peter Damián Gómez/i);
     screen.getByText(/Web Developer/i);

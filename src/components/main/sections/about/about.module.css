@@ -10,11 +10,11 @@
   -webkit-text-stroke-width: 1px;
 }
 .sectionStyle p {
-  width: 75vw;
-  text-align: justify;
+  width: 85vw;
+  text-align: center;
 }
 .sectionStyle ul {
-  width: 65vw;
+  width: 75vw;
   text-decoration: underline;
 }
 /* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */

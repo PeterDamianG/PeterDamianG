@@ -1,9 +1,9 @@
-/** @module Main/Sections/About */
+/** @module Sections/About */
 import { useMediaQuery } from 'react-responsive';
 import ScrollDownSVG from 'components/icons/utils/scrolldown';
-import Avatar from './components/Avatar';
-import ListSkill from './components/ListSkills';
-import ContentAbout from './components/ContentAbout';
+import Avatar from './avatar/Avatar';
+import ListSkill from './listskill/ListSkills';
+import ContentAbout from './content/ContentAbout';
 import { sectionStyle } from './about.module.css';
 /**
  * A section call about in the web.
@@ -18,8 +18,6 @@ const About = () => {
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1280px)',
   });
-  // Design with tablet or more media.
-  const isTabletOrMore = useMediaQuery({ minWidth: 640, maxWidth: 1280 });
   // Render if width is >= 1280px.
   if (isDesktopOrLaptop) {
     return (
@@ -34,21 +32,11 @@ const About = () => {
       </section>
     );
   }
-  // Render if width is >= 640px.
-  if (isTabletOrMore) {
-    return (
-      <section className={sectionStyle} id='about'>
-        <h2>Sobre Mí</h2>
-        <Avatar />
-        <ContentAbout />
-        <ListSkill />
-        <ScrollDownSVG />
-      </section>
-    );
-  }
+  // Render normal.
   return (
     <section className={sectionStyle} id='about'>
       <h2>Sobre Mí</h2>
+      <Avatar />
       <ContentAbout />
       <ListSkill />
       <ScrollDownSVG />
