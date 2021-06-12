@@ -16,7 +16,7 @@ const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
   const [animate, setAnimate] = useState(false);
   // Handle Click Arrow.
   const handleClickArrow = (upOrDown) => {
-    animationHelper(setAnimate, 500);
+    animationHelper(setAnimate, 1000);
     upOrDown();
   };
   // Other design with full media.
