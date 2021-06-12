@@ -34,4 +34,4 @@ describe('/src/components/main/section/about - <About> - Responsive', () => {
     screen.getByText(/NextJS/i);
     screen.getByLabelText(/Scroll Down/i);
   });
-})
+});
