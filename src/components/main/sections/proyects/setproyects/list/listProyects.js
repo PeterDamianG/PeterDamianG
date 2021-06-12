@@ -12,14 +12,14 @@ const listProyects = [
   {
     name: 'Template Next',
     url: 'https://github.com/PeterDamianG/template-next',
-    desc: 'A template for use NextJS. Una plantilla para usar NextJS.',
-    lang: 'JavaScript React',
+    desc: 'Una plantilla para nuevos proyectos, utilizando toda la potencia de NextJS.',
+    lang: 'JavaScript Next',
     img: 'https://nextjs.org/_next/image?url=%2Fstatic%2Fimages%2Flearn.png&w=1080&q=75',
   },
   {
     name: 'Template Snowpack + React',
     url: 'https://github.com/PeterDamianG/template-snowpack-react',
-    desc: 'A template for use Snowpack + React. Una plantilla para usar Snowpack + React.',
+    desc: 'Una plantilla para nuevos proyectos, utilizando toda la potencia de Snowpack más React.',
     lang: 'TypeScript React',
     img: 'https://raw.githubusercontent.com/PeterDamianG/template-snowpack-react/main/logoreadme.jpg',
   },
@@ -40,14 +40,14 @@ const listProyects = [
   {
     name: 'LoRHelper',
     url: 'https://github.com/PeterDamianG/LoRHelper',
-    desc: 'This app is a deck tracker and helper for Legends Of Runeterra.',
-    lang: 'C#',
+    desc: 'Esta es un prototipo de una APP de escritorio, a modo de tracker para el juego de cartas de Legends of Runeterra.',
+    lang: 'C# WPF',
     img: 'https://github.com/PeterDamianG/LoRHelper/raw/master/Desktop/Resources/LoRHelperLogo.png',
   },
   {
     name: 'ArtifactHelper',
     url: 'https://github.com/PeterDamianG/ArtifactHelper',
-    desc: 'An unofficial application, for the game Artifact Card Game Dota 2. On the web (in-comming) and for the desktop, is an assistant with the purpose of providing the latest news, changeslogs, decks/cards and more.',
+    desc: 'Un prototipo para una APP no oficial, a modo de "helper" para el juego de cartas de Artifact Card Game Dota2.',
     lang: 'JavaScript Electron',
     img: 'https://github.com/PeterDamianG/ArtifactHelper/raw/master/previewimages/previewmainpanel.jpg',
   },
@@ -55,8 +55,15 @@ const listProyects = [
     name: 'InvertirArgentina',
     url: 'https://github.com/PeterDamianG/InvertirArgentina',
     desc: 'Prototipo de una página web, desarrollada con React y Firebase. Con la tematica de economía y finanzas en argentina.',
-    lang: 'JavaScript',
+    lang: 'JavaScript Firebase',
     img: 'https://github.com/PeterDamianG/InvertirArgentina/raw/master/screenshots/noticias.jpg',
+  },
+  {
+    name: 'PeterDamianG Site Web',
+    url: 'https://github.com/PeterDamianG/PeterDamianG',
+    desc: 'El desarrollo del sitio web personal, donde te encuentras actualmente.',
+    lang: 'JavaScript Next',
+    img: 'https://raw.githubusercontent.com/PeterDamianG/template-snowpack-react/main/logoreadme.jpg',
   },
 ];
 
