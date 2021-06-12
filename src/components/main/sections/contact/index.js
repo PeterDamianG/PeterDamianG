@@ -1,6 +1,14 @@
+/** @module Sections/Contact */
 import SocialMedia from 'components/utils/socialmedia';
 import { sectionStyle, asideStyle } from './contact.module.css';
-
+/**
+ * A section call contact in the web.
+ * @function Contact
+ * @example
+ * import Contact from 'components/main/sections/contact'
+ * <Contact />
+ * @returns {JSX.Element} An element of React.
+ */
 const Contact = () => (
   <section id='contact' className={sectionStyle}>
     <h2>Contacto</h2>
