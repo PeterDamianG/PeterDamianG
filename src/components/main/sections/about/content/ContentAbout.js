@@ -1,4 +1,4 @@
-/** @module Main/Sections/About */
+/** @module Sections/About */
 /**
  * A component to render a content of section about.
  * @function ContentAbout
@@ -15,7 +15,7 @@ const ContentAbout = () => (
     </p>
     <p>
       Interesado en aprender las mejores técnicas y más eficientes de
-      programación en la web. Iterando sobre cada detalle. Con el objectivo del
+      programación en la web. Iterando siempre sobre cada detalle. Con el objectivo del
       producto final en mente.
     </p>
     <p>

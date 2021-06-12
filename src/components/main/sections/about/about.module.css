@@ -17,35 +17,68 @@
   width: 75vw;
   text-decoration: underline;
 }
+.sectionStyle a:visited {
+  color: black;
+}
 /* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
 @media all and (min-width: 640px) and (max-width: 1280px) {
   .sectionStyle h2 {
-    font-size: 4em;
+    font-size: 3em;
     text-shadow: 1px 1px 1px var(--background);
-    transition: all 0.3s linear;
+    transition: text-shadow 0.3s linear;
   }
   .sectionStyle h2:hover {
     text-shadow: 2px 2px 4px var(--background);
-    transition: all 0.3s linear;
+    transition: text-shadow 0.3s linear;
   }
   .sectionStyle p {
     width: 85vw;
     font-size: 1.5em;
     text-shadow: 1px 1px 1px var(--background);
-    transition: all 0.3s linear;
+    transition: text-shadow 0.3s linear;
   }
   .sectionStyle p:hover {
     text-shadow: 2px 2px 4px var(--background);
-    transition: all 0.3s linear;
+    transition: text-shadow 0.3s linear;
   }
   .sectionStyle ul {
     font-size: 1.25em;
     text-shadow: 1px 1px 1px var(--background);
-    transition: all 0.3s linear;
+    transition: text-shadow 0.3s linear;
   }
   .sectionStyle ul:hover {
     text-shadow: 2px 2px 4px var(--background);
-    transition: all 0.3s linear;
+    transition: text-shadow 0.3s linear;
+  }
+}
+@media all and (min-width: 640px) and (max-width: 1280px) and (orientation: landscape) {
+  .sectionStyle h2 {
+    font-size: 2.5em;
+    text-shadow: 1px 1px 1px var(--background);
+    transition: text-shadow 0.3s linear;
+  }
+  .sectionStyle h2:hover {
+    text-shadow: 2px 2px 4px var(--background);
+    transition: text-shadow 0.3s linear;
+  }
+  .sectionStyle p {
+    width: 85vw;
+    font-size: 1.25em;
+    text-shadow: 1px 1px 1px var(--background);
+    transition: text-shadow 0.3s linear;
+  }
+  .sectionStyle p:hover {
+    text-shadow: 2px 2px 4px var(--background);
+    transition: text-shadow 0.3s linear;
+  }
+  .sectionStyle ul {
+    font-size: 1.15em;
+    text-shadow: 1px 1px 1px var(--background);
+    transition: text-shadow 0.3s linear;
+  }
+  .sectionStyle ul:hover {
+    text-shadow: 2px 2px 4px var(--background);
+    transition: text-shadow 0.3s linear;
   }
 }
 /* Animation Mode for PC and TV Devices */
@@ -57,29 +90,29 @@
   .sectionStyle h2 {
     font-size: 2.25em;
     text-shadow: 2px 2px 2px var(--background);
-    transition: all 0.3s linear;
+    transition: text-shadow 0.3s linear;
   }
   .sectionStyle h2:hover {
     text-shadow: 2px 2px 6px var(--background);
-    transition: all 0.3s linear;
+    transition: text-shadow 0.3s linear;
   }
   .sectionStyle p {
     width: 85vw;
     font-size: 1.5em;
     text-shadow: 2px 2px 2px var(--background);
-    transition: all 0.3s linear;
+    transition: text-shadow 0.3s linear;
   }
   .sectionStyle p:hover {
     text-shadow: 2px 2px 6px var(--background);
-    transition: all 0.3s linear;
+    transition: text-shadow 0.3s linear;
   }
   .sectionStyle ul {
     font-size: 1.25em;
     text-shadow: 2px 2px 2px var(--background);
-    transition: all 0.3s linear;
+    transition: text-shadow 0.3s linear;
   }
   .sectionStyle ul:hover {
     text-shadow: 2px 2px 6px var(--background);
-    transition: all 0.3s linear;
+    transition: text-shadow 0.3s linear;
   }
 }

@@ -1,4 +1,4 @@
-/** @module Main/Sections/About */
+/** @module Sections/About */
 /**
  * A component to render a list of programming skills.
  * @function ListSkills
@@ -9,10 +9,9 @@
  */
 const ListSkills = () => (
   <ul>
-    <li>Javascript</li>
-    <li>NodeJS</li>
-    <li>Express</li>
     <li>ReactJS</li>
+    <li>NextJS</li>
+    <li>Express</li>
     <li>C#</li>
     <li>
       ¡Hey puedes mirar en más detalle en mi{' '}

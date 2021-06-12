@@ -1,4 +1,4 @@
-/** @module Main/Sections/About */
+/** @module Sections/About */
 import { avatarStyle } from './avatar.module.css';
 /**
  * A component to render Avatar.
