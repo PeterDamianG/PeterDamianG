@@ -31,7 +31,93 @@
 }
 /* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
 @media all and (min-width: 640px) and (max-width: 1280px) {
+  .sectionStyle h2 {
+    font-size: 3.5em;
+    text-shadow: 1px 1px 2px var(--background);
+    transition: text-shadow 0.3s linear;
+  }
+  .sectionStyle h2:hover {
+    text-shadow: 2px 2px 4px var(--background);
+    transition: text-shadow 0.3s linear;
+  }
+  .sectionStyle h3 {
+    font-size: 2.75em;
+    text-shadow: 1px 1px 2px var(--background);
+    transition: text-shadow 0.3s linear;
+  }
+  .sectionStyle h3:hover {
+    text-shadow: 2px 2px 4px var(--background);
+    transition: text-shadow 0.3s linear;
+  }
+  .sectionStyle p {
+    width: 75%;
+    font-size: 2em;
+    text-shadow: 1px 1px 4px var(--background);
+  }
+  .sectionStyle h5 {
+    font-size: 1.25em;
+  }
+  .sectionStyle svg {
+    width: 48px;
+    height: 48px;
+    filter: drop-shadow(2px 2px 4px var(--background));
+    transition: filter 0.3s linear;
+  }
+  .sectionStyle svg:hover {
+    filter: drop-shadow(3px 3px 8px var(--background));
+    transition: filter 0.3s linear;
+  }
+  .sectionStyle aside button {
+    font-size: 2em;
+    border: 2px solid var(--background-nav-modal);
+  }
+  .sectionStyle aside button:hover {
+    border-radius: 10px;
+  }
 }
 /* Animation Mode for PC and TV Devices */
 @media all and (min-width: 1280px) {
+  .sectionStyle h2 {
+    font-size: 3em;
+    text-shadow: 1px 1px 2px var(--background);
+    transition: text-shadow 0.3s linear;
+  }
+  .sectionStyle h2:hover {
+    text-shadow: 2px 2px 4px var(--background);
+    transition: text-shadow 0.3s linear;
+  }
+  .sectionStyle h3 {
+    font-size: 2em;
+    text-shadow: 1px 1px 2px var(--background);
+    transition: text-shadow 0.3s linear;
+  }
+  .sectionStyle h3:hover {
+    text-shadow: 2px 2px 4px var(--background);
+    transition: text-shadow 0.3s linear;
+  }
+  .sectionStyle p {
+    width: 100%;
+    font-size: 2em;
+    text-shadow: 1px 1px 4px var(--background);
+  }
+  .sectionStyle h5 {
+    font-size: 1.25em;
+  }
+  .sectionStyle svg {
+    width: 48px;
+    height: 48px;
+    filter: drop-shadow(2px 2px 4px var(--background));
+    transition: filter 0.3s linear;
+  }
+  .sectionStyle svg:hover {
+    filter: drop-shadow(3px 3px 8px var(--background));
+    transition: filter 0.3s linear;
+  }
+  .sectionStyle aside button {
+    font-size: 2em;
+    border: 2px solid var(--background-nav-modal);
+  }
+  .sectionStyle aside button:hover {
+    border-radius: 8px;
+  }
 }

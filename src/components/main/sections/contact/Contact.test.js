@@ -13,6 +13,6 @@ describe('/src/components/main/section/contact - <Contact> - Render', () => {
     screen.getByLabelText(/GoogleMail Button/);
     screen.getByLabelText(/LinkedIn Button/);
     screen.getByText(/¿Necesitas un CV o Resume?/i);
-    screen.getByText(/Gracias por su atención./i);
+    screen.getByText(/Gracias por su consideración./i);
   });
 });

@@ -26,7 +26,7 @@ const Contact = () => (
         <button type='button'>Resume</button>
       </a>
     </aside>
-    <h5>Gracias por su atención.</h5>
+    <h5>Gracias por su consideración.</h5>
   </section>
 );
 
