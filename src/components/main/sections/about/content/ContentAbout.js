@@ -15,8 +15,8 @@ const ContentAbout = () => (
     </p>
     <p>
       Interesado en aprender las mejores técnicas y más eficientes de
-      programación en la web. Iterando siempre sobre cada detalle. Con el objectivo del
-      producto final en mente.
+      programación en la web. Iterando siempre sobre cada detalle. Con el
+      objectivo del producto final en mente.
     </p>
     <p>
       Estos son algunos de los conocimientos que dispongo actualmente, ¡Pero no
