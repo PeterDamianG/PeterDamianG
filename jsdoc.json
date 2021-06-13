@@ -19,7 +19,7 @@
       "template": "./node_modules/clean-jsdoc-theme",
       "theme_opts": {
         "theme": "dark",
-        "title": "Template Next",
+        "title": "Personal Web Peter DG",
         "meta": [
           {
             "name": "author",
@@ -27,7 +27,7 @@
           },
           {
             "name": "description",
-            "content": "A Template for NextJS."
+            "content": "La documentación del desarrollo de la web personal de Peter DG."
           }
         ],
         "footer": "<footer>Copyright © 2021. All rights reserved. All trademarks are property of their respective owners in the US and other countries. By Peter Damian G.</footer>"
