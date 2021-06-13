@@ -1,17 +1,17 @@
 {
-  "name": "@peterdg/template-next",
-  "version": "0.1.1",
-  "description": "A personal template for fast-start with next.",
+  "name": "@peterdg/peterdg-personalweb",
+  "version": "0.1.0",
+  "description": "Una Web Personal, para el desarrollador Peter Damián Gómez",
   "keywords": [
     "nextjs",
     "APP",
     "next",
     "react",
-    "template"
+    "web",
+    "personal"
   ],
-  "author": "Peter Damian Gómez <PeterDamianG@Gmail.com> (https://github.com/PeterDamianG)",
+  "author": "Peter Damián Gómez <PeterDamianG@Gmail.com> (https://github.com/PeterDamianG)",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "export": "next build && next export",
     "see-export": "cd out && index.html",

@@ -4,6 +4,7 @@
 /cypress
 /docs
 /node_modules
+/out
 /public
 /tutorials
 BUGS.md
