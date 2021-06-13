@@ -21,6 +21,11 @@ describe('/src/components/layout/appbar/Drawer.js - <Drawer> - Renders', () => {
     screen.getByLabelText(/LinkedIn Button/);
     screen.getByText(/Peter DG./i);
   });
+  test('Does renders close drawer', () => {
+    fireEvent.click(screen.getByRole('button'));
+    fireEvent.click(screen.getByText('X'));
+    screen.getByRole('button');
+  });
 });
 
 describe('/src/components/layout/appbar/Drawer.js - <Drawer> - Responsive', () => {

@@ -1,5 +1,6 @@
 import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 import { Context as ResponsiveContext } from 'react-responsive';
+import textContent from './content/textContent';
 import Hero from './index';
 
 afterAll(cleanup);
@@ -19,6 +20,12 @@ describe('/src/components/main/section/hero - <Hero> - Renders', () => {
   test('Does renders new content when click figure notebook', () => {
     fireEvent.click(screen.getByLabelText(/Notebook SVG/i));
     screen.getByText(/Me pregunto/i);
+  });
+  test('Does restart content when array is finish', () => {
+    textContent.forEach(() => {
+      fireEvent.click(screen.getByLabelText(/Notebook SVG/i));
+    });
+    screen.getByText(textContent[0].caption);
   });
 });
 
@@ -43,5 +50,11 @@ describe('/src/components/main/section/hero - <Hero> - Responsive', () => {
   test('Does renders new content when click figure notebook in screen width >= 1280', () => {
     fireEvent.click(screen.getByLabelText(/Notebook SVG/i));
     screen.getByText(/Me pregunto/i);
+  });
+  test('Does restart content when array is finish', () => {
+    textContent.forEach(() => {
+      fireEvent.click(screen.getByLabelText(/Notebook SVG/i));
+    });
+    screen.getByText(textContent[0].caption);
   });
 });

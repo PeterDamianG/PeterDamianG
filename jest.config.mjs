@@ -7,10 +7,13 @@ export default {
     '**/?(*.)+(spec|test).[jt]s?(x)',
   ],
   testPathIgnorePatterns: [
-    '<rootDir>/.next/',
-    '<rootDir>/node_modules/',
     '<rootDir>/.husky/',
+    '<rootDir>/.next/',
+    '<rootDir>/coverage/',
     '<rootDir>/cypress/',
+    '<rootDir>/node_modules/',
+    '<rootDir>/public/',
+    '<rootDir>/tutorials/',
   ],
   moduleNameMapper: {
     '\\.(css|less|scss|sass)$': 'identity-obj-proxy',

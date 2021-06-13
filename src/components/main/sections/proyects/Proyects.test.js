@@ -25,12 +25,26 @@ describe('/src/components/main/section/proyects - <Proyects> - Render', () => {
     screen.getByAltText(listProyects[1].name);
     screen.getByText(listProyects[1].desc);
   });
+  test('Does renders correct content when is last index array', () => {
+    listProyects.forEach(() => {
+      fireEvent.click(screen.getByText('>'));
+    });
+    screen.getByText(listProyects[0].name);
+    screen.getByText(listProyects[0].lang);
+    screen.getByAltText(listProyects[0].name);
+    screen.getByText(listProyects[0].desc);
+  });
   test('Does renders new content when click on previous button', () => {
     fireEvent.click(screen.getByText('<'));
     screen.getByText(listProyects[listProyects.length - 1].name);
     screen.getByText(listProyects[listProyects.length - 1].lang);
     screen.getByAltText(listProyects[listProyects.length - 1].name);
     screen.getByText(listProyects[listProyects.length - 1].desc);
+    fireEvent.click(screen.getByText('<'));
+    screen.getByText(listProyects[listProyects.length - 2].name);
+    screen.getByText(listProyects[listProyects.length - 2].lang);
+    screen.getByAltText(listProyects[listProyects.length - 2].name);
+    screen.getByText(listProyects[listProyects.length - 2].desc);
   });
 });
 
