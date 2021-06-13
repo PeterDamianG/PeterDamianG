@@ -1,8 +1,8 @@
 In console:
 
-`git clone https://github.com/PeterDamianG/template-next.git`
+`git clone https://github.com/PeterDamianG/PeterDamianG.git PersonalWeb`
 
-`cd template-next`
+`cd PersonalWeb`
 
 `npm install`
 
