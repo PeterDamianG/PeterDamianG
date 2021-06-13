@@ -10,7 +10,6 @@ import { avatarStyle } from './avatar.module.css';
  */
 const Avatar = () => (
   <img
-    role='figure'
     aria-label='Avatar'
     alt='Peter DG'
     src='./me.png'

@@ -13,7 +13,7 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #8a8a8a;
 }
-.sectionStyle h1 {
+.sectionStyle h2 {
   font-size: 1.75em;
 }
 .sectionStyle h3 {
@@ -30,12 +30,12 @@
 }
 /* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
 @media all and (min-width: 640px) and (max-width: 1280px) {
-  .sectionStyle h1 {
+  .sectionStyle h2 {
     font-size: 3.25em;
     text-shadow: 1px 1px 2px var(--foreground);
     transition: text-shadow 0.3s linear;
   }
-  .sectionStyle h1:hover {
+  .sectionStyle h2:hover {
     text-shadow: 2px 2px 4px var(--foreground);
     transition: text-shadow 0.3s linear;
   }
@@ -75,12 +75,12 @@
     align-items: center;
     justify-content: center;
   }
-  .sectionStyle h1 {
+  .sectionStyle h2 {
     font-size: 3em;
     text-shadow: 1px 1px 2px var(--foreground);
     transition: text-shadow 0.3s linear;
   }
-  .sectionStyle h1:hover {
+  .sectionStyle h2:hover {
     text-shadow: 2px 2px 4px var(--foreground);
     transition: text-shadow 0.3s linear;
   }

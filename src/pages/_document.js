@@ -8,7 +8,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang='es-AR'>
         <Head>
           <meta name='application-name' content='Peter DG Sitio Web' />
           <meta name='robots' content='index,follow' />

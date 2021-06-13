@@ -54,7 +54,7 @@
     font-size: 2em;
     text-shadow: 1px 1px 4px var(--background);
   }
-  .sectionStyle h5 {
+  .sectionStyle h4 {
     font-size: 1.25em;
   }
   .sectionStyle svg {
@@ -100,7 +100,7 @@
     font-size: 2em;
     text-shadow: 1px 1px 4px var(--background);
   }
-  .sectionStyle h5 {
+  .sectionStyle h4 {
     font-size: 1.25em;
   }
   .sectionStyle svg {

@@ -36,7 +36,7 @@ const Hero = () => {
       <section id='hero' className={sectionStyle}>
         <article>
           <div>
-            <h1>Peter Damián Gómez</h1>
+            <h2>Peter Damián Gómez</h2>
             <h3>Web Developer</h3>
             <SocialMedia />
             <h4 className={animate ? animateStyle : ''}>
@@ -58,7 +58,7 @@ const Hero = () => {
   // Render normal.
   return (
     <section id='hero' className={sectionStyle}>
-      <h1>Peter Damián Gómez</h1>
+      <h2>Peter Damián Gómez</h2>
       <h3>Web Developer</h3>
       <SocialMedia />
       <NotebookSVG

@@ -14,11 +14,11 @@ import { headerFlex, svgController } from './appbar.module.css';
  */
 const AppBar = ({ appTitle = 'Peter DG' }) => (
   <header className={headerFlex}>
-    <h2>{appTitle}</h2>
-    <aside className={svgController}>
+    <h1>{appTitle}</h1>
+    <article className={svgController}>
       <ThemeChanger />
       <Drawer />
-    </aside>
+    </article>
   </header>
 );
 

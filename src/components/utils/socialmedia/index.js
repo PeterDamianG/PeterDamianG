@@ -12,7 +12,7 @@ import { socialmedia } from './socialmedia.module.css';
  * @returns {JSX.Element} An element of React.
  */
 const SocialMedia = () => (
-  <aside className={socialmedia}>
+  <article className={socialmedia}>
     <a href='https://github.com/PeterDamianG'>
       <GitHubSVG height={20} width={20} />
     </a>
@@ -22,7 +22,7 @@ const SocialMedia = () => (
     <a href='https://www.linkedin.com/in/peterdamiang/'>
       <LinkedInSVG height={20} width={20} />
     </a>
-  </aside>
+  </article>
 );
 
 export default SocialMedia;
