@@ -15,6 +15,7 @@ class MyDocument extends Document {
           <meta name='google' content='notranslate' />
           <meta name='subject' content='Sitio web de Peter Damián Gómez.' />
           <meta name='mobile-web-app-capable' content='yes' />
+          <meta httpEquiv='Content-Type' content='text/html' charset='utf-8' />
           <meta
             name='keywords'
             content='Peter, Damián, Gómez, Personal, Web, Sitio'
