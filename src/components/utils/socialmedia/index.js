@@ -1,4 +1,4 @@
-/** @module Layout/Footer */
+/** @module Utils */
 import GitHubSVG from 'components/icons/socialmedia/GitHubSVG';
 import GoogleMailSVG from 'components/icons/socialmedia/GoogleMailSVG';
 import LinkedInSVG from 'components/icons/socialmedia/LinkedInSVG';
