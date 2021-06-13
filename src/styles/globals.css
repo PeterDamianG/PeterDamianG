@@ -30,7 +30,7 @@ svg {
 button {
   background-color: var(--foreground);
   color: var(--background);
-  border: 1px solid var(--background-nav-modal);
+  border: 2px solid var(--background-nav-modal);
   border-radius: 6px;
   padding: 2px 8px;
   cursor: pointer;
