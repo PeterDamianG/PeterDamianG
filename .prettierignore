@@ -1,20 +1,20 @@
-# dependencies
-/node_modules
-/.vscode
-/public
-
-# testing
+/.husky
+/.next
 /coverage
-
-# documentation
+/cypress
 /docs
-
-# Build
-/build
-.next
-/out
-
-# files
-.vscode
-.env
+/node_modules
+/public
+/tutorials
+BUGS.md
+CHANGELOGS.md
+cypress.json
+env.local.example
+jest.config.mjs
+jsconfig.json
+jsdoc.json
+LICENSE
+next.config.js
 package-lock.json
+package.json
+README.md

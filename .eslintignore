@@ -1,14 +1,20 @@
-# testing
-/coverage
-
-# documentation
-/docs
-
-# config enviroment
-.vscode
 /.husky
-
-# generic
 /.next
-/out
+/coverage
+/cypress
+/docs
+/node_modules
 /public
+/tutorials
+BUGS.md
+CHANGELOGS.md
+cypress.json
+env.local.example
+jest.config.mjs
+jsconfig.json
+jsdoc.json
+LICENSE
+next.config.js
+package-lock.json
+package.json
+README.md
