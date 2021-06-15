@@ -3,4 +3,3 @@
 
 npm run eslint
 npm run prettier
-npm run test
