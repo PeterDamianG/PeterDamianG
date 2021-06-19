@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import animationHelper from 'components/utils/animationHelper';
+import Image from 'next/image';
 import { container, animateStyle } from './card.module.css';
 /**
  * A component to render cards.
@@ -43,7 +44,13 @@ const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
             </button>
           </nav>
         </aside>
-        <img className={animate ? animateStyle : ''} alt={name} src={img} />
+        <Image
+          className={animate ? animateStyle : ''}
+          objectFit='cover'
+          src={img}
+          alt={name}
+          layout='responsive'
+        />
       </article>
     );
   }
@@ -52,7 +59,13 @@ const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
     <article className={container}>
       <h3 className={animate ? animateStyle : ''}>{name}</h3>
       <h4 className={animate ? animateStyle : ''}>{lang}</h4>
-      <img className={animate ? animateStyle : ''} alt={name} src={img} />
+      <Image
+        className={animate ? animateStyle : ''}
+        objectFit='cover'
+        src={img}
+        alt={name}
+        layout='responsive'
+      />
       <p className={animate ? animateStyle : ''}>{desc}</p>
       <nav>
         <button type='button' onClick={() => handleClickArrow(downIndex)}>
