@@ -24,10 +24,10 @@ const About = () => {
       <section className={sectionStyle} id='about'>
         <h2>Sobre Mí</h2>
         <ContentAbout />
-        <aside>
+        <article>
           <ListSkill />
           <Avatar />
-        </aside>
+        </article>
         <ScrollDownSVG />
       </section>
     );

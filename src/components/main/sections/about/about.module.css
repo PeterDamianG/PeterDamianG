@@ -80,7 +80,7 @@
 }
 /* Animation Mode for PC and TV Devices */
 @media all and (min-width: 1280px) {
-  .sectionStyle aside {
+  .sectionStyle article {
     display: flex;
     align-items: center;
   }
