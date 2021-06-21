@@ -14,7 +14,8 @@
         "plugin:react/recommended",
         "airbnb",
         "prettier",
-        "plugin:jsx-a11y/recommended"
+        "plugin:jsx-a11y/recommended",
+        "next"
     ],
     "parserOptions": {
         "ecmaFeatures": {
