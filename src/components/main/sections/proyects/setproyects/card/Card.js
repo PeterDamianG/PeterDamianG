@@ -24,6 +24,8 @@ const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1280px)',
   });
+  // Design for medium device like a tablet.
+  const isMediumDevice = useMediaQuery({ minWidth: 640, maxWidth: 1280 });
   // Render if width is >= 1280px.
   if (isDesktopOrLaptop) {
     return (
@@ -46,10 +48,10 @@ const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
         </aside>
         <Image
           className={animate ? animateStyle : ''}
-          objectFit='cover'
           src={img}
           alt={name}
-          layout='responsive'
+          width={800}
+          height={600}
         />
       </article>
     );
@@ -61,10 +63,10 @@ const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
       <h4 className={animate ? animateStyle : ''}>{lang}</h4>
       <Image
         className={animate ? animateStyle : ''}
-        objectFit='cover'
         src={img}
         alt={name}
-        layout='responsive'
+        width={isMediumDevice ? 550 : 300}
+        height={isMediumDevice ? 600 : 400}
       />
       <p className={animate ? animateStyle : ''}>{desc}</p>
       <nav>
