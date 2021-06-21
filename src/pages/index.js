@@ -1,6 +1,6 @@
 /** @module Pages */
 import Head from 'next/head';
-import AppBar from 'components/layout/appbar';
+import AppBar from 'layout/appbar';
 import Main from 'components/main';
 /**
  * A component home is entry of page web.

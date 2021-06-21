@@ -4,7 +4,7 @@ import 'normalize.css';
 import 'styles/themes.css';
 import 'styles/globals.css';
 import { ThemeProvider } from 'next-themes';
-import Footer from 'components/layout/footer';
+import Footer from 'layout/footer';
 // Conditional import for add a11y with axe-core
 if (process.env.NODE_ENV !== 'production' && !(typeof window === 'undefined')) {
   // we import react-dom and @axe-core/react dynamically
