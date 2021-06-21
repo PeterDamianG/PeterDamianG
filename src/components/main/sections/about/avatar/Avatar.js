@@ -17,37 +17,20 @@ const Avatar = () => {
   });
   // Design for medium device like a tablet.
   const isMediumDevice = useMediaQuery({ minWidth: 640, maxWidth: 1280 });
-  if (isDesktopOrLaptop)
-    return (
-      <Image
-        aria-label='Avatar'
-        alt='Picture of Author. Peter DG.'
-        src='/me.png'
-        width={150}
-        height={150}
-        priority
-        className={avatarStyle}
-      />
-    );
-  if (isMediumDevice)
-    return (
-      <Image
-        aria-label='Avatar'
-        alt='Picture of Author. Peter DG.'
-        src='/me.png'
-        width={125}
-        height={125}
-        priority
-        className={avatarStyle}
-      />
-    );
+  // eslint-disable-next-line no-nested-ternary
+  const { avatarWidth, avatarHeight } = isDesktopOrLaptop
+    ? { avatarWidth: 150, avatarHeight: 150 }
+    : isMediumDevice
+    ? { avatarWidth: 125, avatarHeight: 125 }
+    : { avatarWidth: 100, avatarHeight: 100 };
+  // Render.
   return (
     <Image
       aria-label='Avatar'
       alt='Picture of Author. Peter DG.'
       src='/me.png'
-      width={100}
-      height={100}
+      width={avatarWidth}
+      height={avatarHeight}
       priority
       className={avatarStyle}
     />
