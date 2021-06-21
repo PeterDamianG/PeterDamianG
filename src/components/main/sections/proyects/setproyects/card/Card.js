@@ -30,7 +30,7 @@ const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
   if (isDesktopOrLaptop) {
     return (
       <article className={container}>
-        <aside>
+        <article>
           <h3 className={animate ? animateStyle : ''}>{name}</h3>
           <h4 className={animate ? animateStyle : ''}>{lang}</h4>
           <p className={animate ? animateStyle : ''}>{desc}</p>
@@ -45,13 +45,13 @@ const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
               &gt;
             </button>
           </nav>
-        </aside>
+        </article>
         <Image
           className={animate ? animateStyle : ''}
           src={img}
           alt={name}
           width={800}
-          height={600}
+          height={800}
         />
       </article>
     );
