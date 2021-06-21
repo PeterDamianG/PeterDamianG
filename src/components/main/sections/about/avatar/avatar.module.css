@@ -1,30 +1,15 @@
-/* Flat Mode for Mobile Devices */
 .avatarStyle {
   border-radius: 50%;
-  border: 2px solid var(--background);
-  width: 25vw;
-}
-/* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
-@media all and (min-width: 640px) and (max-width: 1280px) {
-  .avatarStyle {
-    width: 20vw;
-  }
-}
-@media all and (min-width: 640px) and (max-width: 1280px) and (orientation: landscape) {
-  .avatarStyle {
-    width: 12vw;
-  }
+  border: 2px solid var(--background) !important;
 }
 /* Animation Mode for PC and TV Devices */
 @media all and (min-width: 1280px) {
   .avatarStyle {
-    border-radius: 50%;
-    border: 4px solid var(--background);
-    width: 12vw;
-    transition: transform 0.5s linear;
+    border: 4px solid var(--background) !important;
+    transition: transform 0.4s linear;
   }
   .avatarStyle:hover {
-    transform: scale(1.05) translate(-35px, 0) rotate3d(1, 1, 0, 360deg);
-    transition: transform 0.5s linear;
+    transform: rotate3d(1, 1, 0, 360deg);
+    transition: transform 0.4s linear;
   }
 }
