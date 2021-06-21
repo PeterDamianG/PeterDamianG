@@ -1,21 +1,22 @@
 /** @module Sections */
 import dynamic from 'next/dynamic';
+import LoaderSpinner from 'components/icons/utils/LoaderSpinner';
 import { mainStyle } from './main.module.css';
 /** @constant {JSX.Element} */
 const Hero = dynamic(() => import('components/main/sections/hero'), {
-  ssr: false,
+  loading: <LoaderSpinner />,
 });
 /** @constant {JSX.Element} */
 const About = dynamic(() => import('components/main/sections/about'), {
-  ssr: false,
+  loading: <LoaderSpinner />,
 });
 /** @constant {JSX.Element} */
 const Proyects = dynamic(() => import('components/main/sections/proyects'), {
-  ssr: false,
+  loading: <LoaderSpinner />,
 });
 /** @constant {JSX.Element} */
 const Contact = dynamic(() => import('components/main/sections/contact'), {
-  ssr: false,
+  loading: <LoaderSpinner />,
 });
 /**
  * A tag main container for sections of the web.
