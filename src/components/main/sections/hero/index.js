@@ -4,6 +4,7 @@ import { useMediaQuery } from 'react-responsive';
 import SocialMedia from 'components/utils/socialmedia';
 import ScrollDownSVG from 'components/icons/utils/scrolldown';
 import animationHelper from 'components/utils/animationHelper';
+import useNextContent from 'components/utils/useNextContent';
 import NotebookSVG from './notebook/NotebookSVG';
 import { sectionStyle, animateStyle } from './hero.module.css';
 import textContent from './content/textContent';
@@ -24,6 +25,8 @@ const Hero = () => {
   const [number, setNumber] = useState(0);
   // State for handle animation.
   const [animate, setAnimate] = useState(false);
+  // Hook to change states automatic.
+  useNextContent(number, setNumber, textContent.length - 1);
   // Handler click on Notebook SVG
   const handlerClickNotebook = () => {
     animationHelper(setAnimate, 500);
