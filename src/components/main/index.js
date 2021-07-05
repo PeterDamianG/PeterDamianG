@@ -27,10 +27,10 @@ const Contact = dynamic(() => import('components/main/sections/contact'), {
  */
 const Main = () => (
   <main className={mainStyle}>
-        <Hero />
-        <About />
-        <Proyects />
-        <Contact />
+    <Hero />
+    <About />
+    <Proyects />
+    <Contact />
   </main>
 );
 
