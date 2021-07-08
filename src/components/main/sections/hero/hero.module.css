@@ -4,11 +4,12 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-image: linear-gradient(
+  background: linear-gradient(
     to bottom,
     var(--background) 45%,
     var(--foreground)
   );
+  background-size: 200% 200%;
   color: var(--foreground);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #8a8a8a;
@@ -58,7 +59,7 @@
     grid-template-rows: 9fr 1fr;
     justify-items: center;
     align-items: center;
-    animation: animBackground 3.5s linear infinite alternate;
+    animation: animBackground 4s linear infinite alternate;
   }
   .sectionStyle > article {
     width: 100%;
@@ -104,150 +105,9 @@
 /* Animations */
 @keyframes animBackground {
   0% {
-    background-image: linear-gradient(
-      to bottom,
-      var(--background) 40%,
-      var(--foreground)
-    );
-  }
-  5% {
-    background-image: linear-gradient(
-      to bottom,
-      var(--background) 40.5%,
-      var(--foreground)
-    );
-  }
-  10% {
-    background-image: linear-gradient(
-      to bottom,
-      var(--background) 41%,
-      var(--foreground)
-    );
-  }
-  15% {
-    background-image: linear-gradient(
-      to bottom,
-      var(--background) 41.5%,
-      var(--foreground)
-    );
-  }
-  20% {
-    background-image: linear-gradient(
-      to bottom,
-      var(--background) 42%,
-      var(--foreground)
-    );
-  }
-  25% {
-    background-image: linear-gradient(
-      to bottom,
-      var(--background) 42.5%,
-      var(--foreground)
-    );
-  }
-  30% {
-    background-image: linear-gradient(
-      to bottom,
-      var(--background) 43%,
-      var(--foreground)
-    );
-  }
-  35% {
-    background-image: linear-gradient(
-      to bottom,
-      var(--background) 43.5%,
-      var(--foreground)
-    );
-  }
-  40% {
-    background-image: linear-gradient(
-      to bottom,
-      var(--background) 44%,
-      var(--foreground)
-    );
-  }
-  45% {
-    background-image: linear-gradient(
-      to bottom,
-      var(--background) 44.5%,
-      var(--foreground)
-    );
-  }
-  50% {
-    background-image: linear-gradient(
-      to bottom,
-      var(--background) 45%,
-      var(--foreground)
-    );
-  }
-  55% {
-    background-image: linear-gradient(
-      to bottom,
-      var(--background) 45.5%,
-      var(--foreground)
-    );
-  }
-  60% {
-    background-image: linear-gradient(
-      to bottom,
-      var(--background) 46%,
-      var(--foreground)
-    );
-  }
-  65% {
-    background-image: linear-gradient(
-      to bottom,
-      var(--background) 46.5%,
-      var(--foreground)
-    );
-  }
-  70% {
-    background-image: linear-gradient(
-      to bottom,
-      var(--background) 47%,
-      var(--foreground)
-    );
-  }
-  75% {
-    background-image: linear-gradient(
-      to bottom,
-      var(--background) 47.5%,
-      var(--foreground)
-    );
-  }
-  80% {
-    background-image: linear-gradient(
-      to bottom,
-      var(--background) 48%,
-      var(--foreground)
-    );
-  }
-  85% {
-    background-image: linear-gradient(
-      to bottom,
-      var(--background) 48.5%,
-      var(--foreground)
-    );
-  }
-  90% {
-    background-image: linear-gradient(
-      to bottom,
-      var(--background) 49%,
-      var(--foreground)
-    );
-  }
-  95% {
-    background-image: linear-gradient(
-      to bottom,
-      var(--background) 49.5%,
-      var(--foreground)
-    );
+    background-position: 50% 50%;
   }
   100% {
-    background-image: linear-gradient(
-      to bottom,
-      var(--background) 50%,
-      var(--foreground)
-    );
+    background-position: 50% 65%;
   }
 }
