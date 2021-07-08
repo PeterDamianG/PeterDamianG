@@ -25,7 +25,8 @@ const Hero = () => {
     if (number === textContent.length - 1) setNumber(0);
     else setNumber((prevNumber) => prevNumber + 1);
   };
-  // Other design with full media.
+  // Other design responsive.
+  const isPortrait = useMediaQuery({ orientation: 'portrait' });
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1280px)',
   });
@@ -55,14 +56,16 @@ const Hero = () => {
   return (
     <section id='hero' className={sectionStyle}>
       <h2>Peter Damián Gómez</h2>
-      <h3>Web Developer</h3>
+      {isPortrait && <h3>Web Developer</h3>}
       <SocialMedia />
-      <NotebookSVG
-        onClick={handlerClickNotebook}
-        x={textContent[number].x}
-        y={textContent[number].y}
-        text={textContent[number].notebook}
-      />
+      {isPortrait && (
+        <NotebookSVG
+          onClick={handlerClickNotebook}
+          x={textContent[number].x}
+          y={textContent[number].y}
+          text={textContent[number].notebook}
+        />
+      )}
       <h4>{textContent[number].caption}</h4>
       <ScrollDownSVG />
     </section>
