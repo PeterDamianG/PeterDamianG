@@ -3,10 +3,9 @@ import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import SocialMedia from 'components/utils/socialmedia';
 import ScrollDownSVG from 'components/icons/utils/scrolldown';
-import animationHelper from 'components/utils/animationHelper';
 import useNextContent from 'components/utils/useNextContent';
 import NotebookSVG from './notebook/NotebookSVG';
-import { sectionStyle, animateStyle } from './hero.module.css';
+import { sectionStyle } from './hero.module.css';
 import textContent from './content/textContent';
 /**
  * A section call hero in the web.
@@ -17,22 +16,19 @@ import textContent from './content/textContent';
  * @returns {JSX.Element} An element of React.
  */
 const Hero = () => {
-  // Other design with full media.
-  const isDesktopOrLaptop = useMediaQuery({
-    query: '(min-width: 1280px)',
-  });
   // State for show notebook text and caption.
   const [number, setNumber] = useState(0);
-  // State for handle animation.
-  const [animate, setAnimate] = useState(false);
   // Hook to change states automatic.
   useNextContent(number, setNumber, textContent.length - 1);
   // Handler click on Notebook SVG
   const handlerClickNotebook = () => {
-    animationHelper(setAnimate, 500);
     if (number === textContent.length - 1) setNumber(0);
     else setNumber((prevNumber) => prevNumber + 1);
   };
+  // Other design with full media.
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1280px)',
+  });
   // Render if width is >= 1280px.
   if (isDesktopOrLaptop) {
     return (
@@ -42,12 +38,9 @@ const Hero = () => {
             <h2>Peter Damián Gómez</h2>
             <h3>Web Developer</h3>
             <SocialMedia />
-            <h4 className={animate ? animateStyle : ''}>
-              {textContent[number].caption}
-            </h4>
+            <h4>{textContent[number].caption}</h4>
           </div>
           <NotebookSVG
-            className={animate ? animateStyle : ''}
             onClick={handlerClickNotebook}
             x={textContent[number].x}
             y={textContent[number].y}
@@ -65,15 +58,12 @@ const Hero = () => {
       <h3>Web Developer</h3>
       <SocialMedia />
       <NotebookSVG
-        className={animate ? animateStyle : ''}
         onClick={handlerClickNotebook}
         x={textContent[number].x}
         y={textContent[number].y}
         text={textContent[number].notebook}
       />
-      <h4 className={animate ? animateStyle : ''}>
-        {textContent[number].caption}
-      </h4>
+      <h4>{textContent[number].caption}</h4>
       <ScrollDownSVG />
     </section>
   );
