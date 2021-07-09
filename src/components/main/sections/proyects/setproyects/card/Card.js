@@ -20,7 +20,6 @@ const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
     query: '(min-width: 1280px)',
   });
   const isMediumDevice = useMediaQuery({ minWidth: 640, maxWidth: 1280 });
-  const isLandscape = useMediaQuery({ orientation: 'landscape' });
   // Render if width is >= 1280px.
   if (isDesktopOrLaptop) {
     return (
@@ -48,7 +47,7 @@ const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
   // Render Normal.
   return (
     <article className={container}>
-      {isLandscape || <h3>{name}</h3>}
+      <h3>{name}</h3>
       <h4>{lang}</h4>
       <Image
         src={img}

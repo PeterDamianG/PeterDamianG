@@ -34,9 +34,6 @@
   justify-content: space-evenly;
   margin-bottom: 4px;
 }
-.animateStyle {
-  animation: animOpacity 0.95s linear 1;
-}
 /* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
 @media all and (min-width: 640px) and (max-width: 1280px) {
   .container h3 {
@@ -111,12 +108,20 @@
     text-shadow: 1px 1px 4px var(--background);
   }
 }
-/* Animations */
-@keyframes animOpacity {
-  from {
-    opacity: 0.1;
+/* Landscape */
+@media all and (max-height: 640px) and (orientation: landscape) {
+  .container h3 {
+    font-size: 1.5em;
+    margin: 0;
   }
-  to {
-    opacity: 1;
+  .container h4 {
+    font-size: 1.25em;
+    margin: 0;
+  }
+  .container p {
+    font-size: 0.75em;
+  }
+  .container button {
+    font-size: 1em;
   }
 }
