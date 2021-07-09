@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(
+  background: linear-gradient(
     to bottom,
     var(--foreground),
     var(--background),
