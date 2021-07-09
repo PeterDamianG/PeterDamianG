@@ -17,13 +17,6 @@ const listProyects = [
     img: '/proyects/TemplateNext.jpg',
   },
   {
-    name: 'Template Snowpack + React',
-    url: 'https://github.com/PeterDamianG/template-snowpack-react',
-    desc: 'Una plantilla para nuevos proyectos, utilizando toda la potencia de Snowpack más React.',
-    lang: 'TypeScript React',
-    img: '/proyects/SnowpackReact.jpg',
-  },
-  {
     name: 'ChallengeJS Alkemy',
     url: 'https://github.com/PeterDamianG/challengejs-alkemy',
     desc: 'Este repositorio, es una posible solución al desafío de javascript propuesto por la aceleradora Alkemy.',
