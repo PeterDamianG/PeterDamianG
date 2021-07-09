@@ -14,10 +14,10 @@ import { sectionStyle } from './about.module.css';
  * @returns {JSX.Element} An element of React.
  */
 const About = () => {
-  // Design with full media.
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1280px)',
   });
+  const isPortrait = useMediaQuery({ orientation: 'portrait' });
   // Render if width is >= 1280px.
   if (isDesktopOrLaptop) {
     return (
@@ -36,7 +36,7 @@ const About = () => {
   return (
     <section className={sectionStyle} id='about'>
       <h2>Sobre Mí</h2>
-      <Avatar />
+      {isPortrait && <Avatar />}
       <ContentAbout />
       <ListSkill />
       <ScrollDownSVG />
