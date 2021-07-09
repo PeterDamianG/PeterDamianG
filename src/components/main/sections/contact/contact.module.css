@@ -32,16 +32,17 @@
 /* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
 @media all and (min-width: 640px) and (max-width: 1280px) {
   .sectionStyle h2 {
-    font-size: 3.5em;
+    font-size: 4em;
     text-shadow: 1px 1px 2px var(--background);
     transition: text-shadow 0.3s linear;
+    margin: 0;
   }
   .sectionStyle h2:hover {
     text-shadow: 2px 2px 4px var(--background);
     transition: text-shadow 0.3s linear;
   }
   .sectionStyle h3 {
-    font-size: 2.75em;
+    font-size: 3em;
     text-shadow: 1px 1px 2px var(--background);
     transition: text-shadow 0.3s linear;
   }
@@ -50,12 +51,13 @@
     transition: text-shadow 0.3s linear;
   }
   .sectionStyle p {
-    width: 75%;
-    font-size: 2em;
+    width: 85%;
+    font-size: 2.5em;
+    text-align: justify;
     text-shadow: 1px 1px 4px var(--background);
   }
   .sectionStyle h4 {
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
   .sectionStyle svg {
     width: 48px;
@@ -68,7 +70,7 @@
     transition: filter 0.3s linear;
   }
   .sectionStyle aside button {
-    font-size: 2em;
+    font-size: 2.75em;
     border: 2px solid var(--background-nav-modal);
   }
   .sectionStyle aside button:hover {
@@ -119,5 +121,19 @@
   }
   .sectionStyle aside button:hover {
     border-radius: 8px;
+  }
+}
+/* Landscape */
+@media all and (max-height: 640px) and (orientation: landscape) {
+  .sectionStyle h2 {
+    font-size: 1.75em;
+    margin: 0;
+  }
+  .sectionStyle h3 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  .sectionStyle p {
+    font-size: 1.25em;
   }
 }
