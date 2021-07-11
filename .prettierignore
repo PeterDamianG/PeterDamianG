@@ -1,7 +1,6 @@
 /.husky
 /.next
 /coverage
-/cypress
 /docs
 /node_modules
 /out
@@ -9,7 +8,6 @@
 /tutorials
 BUGS.md
 CHANGELOGS.md
-cypress.json
 env.local.example
 jest.config.mjs
 jsconfig.json

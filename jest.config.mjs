@@ -10,7 +10,6 @@ export default {
     '<rootDir>/.husky/',
     '<rootDir>/.next/',
     '<rootDir>/coverage/',
-    '<rootDir>/cypress/',
     '<rootDir>/node_modules/',
     '<rootDir>/public/',
     '<rootDir>/tutorials/',
