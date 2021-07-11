@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import SocialMedia from 'components/utils/socialmedia';
 import ScrollDownSVG from 'components/icons/utils/scrolldown';
-import useNextContent from 'hooks/useNextContent';
+import useFunction from 'hooks/useFunction';
 import NotebookSVG from './notebook/NotebookSVG';
 import { sectionStyle } from './hero.module.css';
 import textContent from './content/textContent';
@@ -18,13 +18,13 @@ import textContent from './content/textContent';
 const Hero = () => {
   // State for show notebook text and caption.
   const [number, setNumber] = useState(0);
-  // Hook to change states automatic.
-  useNextContent(number, setNumber, textContent.length - 1);
   // Handler click on Notebook SVG
   const handlerClickNotebook = () => {
     if (number === textContent.length - 1) setNumber(0);
     else setNumber((prevNumber) => prevNumber + 1);
   };
+  // Hook to change states automatic.
+  useFunction(handlerClickNotebook);
   // Other design responsive.
   const isPortrait = useMediaQuery({ orientation: 'portrait' });
   const isDesktopOrLaptop = useMediaQuery({

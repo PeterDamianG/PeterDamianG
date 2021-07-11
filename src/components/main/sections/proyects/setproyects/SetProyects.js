@@ -1,6 +1,6 @@
 /** @module Sections/Proyects */
 import { useState } from 'react';
-import useNextContent from 'hooks/useNextContent';
+import useFunction from 'hooks/useFunction';
 import listProyects from './list/listProyects';
 import Card from './card/Card';
 /**
@@ -14,8 +14,6 @@ import Card from './card/Card';
 const SetProyects = () => {
   // State of index about actual element.
   const [index, setIndex] = useState(0);
-  // Hook to change states automatic.
-  useNextContent(index, setIndex, listProyects.length - 1, 10000);
   // Handler for states.
   const handleUpIndex = () =>
     index === listProyects.length - 1
@@ -25,6 +23,8 @@ const SetProyects = () => {
     index === 0
       ? setIndex(listProyects.length - 1)
       : setIndex((prevIndex) => prevIndex - 1);
+  // Hook to change states automatic.
+  useFunction(handleUpIndex, 10000);
   // Destructuring
   const { name, url, desc, lang, img } = listProyects[index];
   return (
