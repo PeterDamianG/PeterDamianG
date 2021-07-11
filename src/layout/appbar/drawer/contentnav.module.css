@@ -6,20 +6,22 @@
   top: 0;
   left: 0;
   background-color: var(--background-nav-modal);
-  overflow-x: hidden;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
-  font-weight: bold;
   z-index: 2;
 }
 .sidenav a {
   text-decoration: none;
-  font-size: 2em;
+  font-size: 2.25em;
   color: var(--a-hover);
+  font-weight: bold;
+  letter-spacing: 2vw;
+  -webkit-text-stroke: 2px var(--foreground);
 }
 .closebtn {
   position: absolute;
@@ -38,13 +40,11 @@
   .sidenav a {
     color: var(--a-color);
     font-size: 3.5em;
-    transition: all 0.3s linear;
+    transition: aletter-spacing 0.3s linear;
   }
   .sidenav a:hover {
-    color: var(--a-hover);
-    font-size: 4em;
-    letter-spacing: 0.1em;
-    transition: all 0.3s linear;
+    letter-spacing: 3.1vw;
+    transition: letter-spacing 0.3s linear;
   }
   .closebtn {
     font-size: 2.5em;
@@ -132,12 +132,12 @@
     text-decoration: underline;
     color: var(--a-color);
     font-size: 2.5em;
-    transition: all 0.3s linear;
+    transition: text-shadow 0.3s linear;
+    letter-spacing: 1vw;
   }
   .sidenav a:hover {
-    color: var(--a-hover);
     text-shadow: 2px 2px 8px var(--foreground);
-    transition: all 0.3s linear;
+    transition: text-shadow 0.3s linear;
   }
   .closebtn {
     color: var(--a-color);
@@ -146,9 +146,20 @@
   }
   .closebtn:hover {
     color: var(--a-hover);
-    font-size: 3em;
+    font-size: 2.6em;
     text-shadow: 1px 1px 4px var(--foreground);
     transition: all 0.3s linear;
+  }
+}
+/* LandScape */
+@media all and (max-height: 640px) and (orientation: landscape) {
+  .sidenav a {
+    font-size: 2em;
+    letter-spacing: 3vw;
+    -webkit-text-stroke: 2px var(--foreground);
+  }
+  .sidenav small {
+    font-size: 0.75em;
   }
 }
 /* Animations */
