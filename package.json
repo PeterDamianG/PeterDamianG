@@ -26,9 +26,7 @@
     "coverage": "jest --coverage --verbose --runInBand",
     "see-coverage": "cd coverage/lcov-report && index.html",
     "docs": "jsdoc -c jsdoc.json",
-    "see-docs": "cd docs && index.html",
-    "cypress": "cypress open",
-    "cypress-headless": "cypress run"
+    "see-docs": "cd docs && index.html"
   },
   "dependencies": {
     "next": "^11.0.0",
@@ -45,7 +43,6 @@
     "@testing-library/react": "^11.2.7",
     "babel-jest": "^26.6.3",
     "clean-jsdoc-theme": "^3.2.7",
-    "cypress": "^7.5.0",
     "eslint": "^7.29.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-next": "^11.0.0",
