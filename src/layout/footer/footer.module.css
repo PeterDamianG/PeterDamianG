@@ -18,7 +18,7 @@
 /* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
 @media all and (min-width: 640px) and (max-width: 1280px) {
   .footer {
-    font-size: large;
+    font-size: 3.5vw;
     flex-direction: column;
     align-items: center;
   }
@@ -26,6 +26,6 @@
 /* Animation Mode for PC and TV Devices */
 @media all and (min-width: 1280px) {
   .footer {
-    font-size: 1.5em;
+    font-size: 2.5vw;
   }
 }
