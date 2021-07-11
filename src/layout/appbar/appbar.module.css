@@ -14,7 +14,7 @@
 }
 .headerFlex h1 {
   font-size: 1.5em;
-  transition: font-size 0.3s linear;
+  letter-spacing: 1vw;
 }
 .svgController svg {
   margin: 0 1vh;
@@ -57,7 +57,7 @@
     transition: box-shadow 0.3s linear;
   }
   .headerFlex h1 {
-    font-size: 2.5em;
+    font-size: 2.4em;
     text-shadow: 1px 1px 4px var(--foreground);
     transition: text-shadow 0.3s linear;
   }
@@ -66,16 +66,28 @@
     transition: text-shadow 0.3s linear;
   }
   .svgController svg {
-    height: 36px;
-    width: 36px;
-    margin: 0 1.75vh;
+    height: 32px;
+    width: 32px;
+    margin: 0 4vh;
     filter: drop-shadow(4px 4px 16px var(--foreground));
     transition: all 0.3s linear;
   }
   .svgController svg:hover {
-    height: 37px;
-    width: 37px;
+    height: 34px;
+    width: 34px;
     filter: drop-shadow(6px 6px 18px var(--foreground));
     transition: all 0.3s linear;
+  }
+}
+/* LandScape */
+@media all and (max-height: 640px) and (orientation: landscape) {
+  .headerFlex h1 {
+    font-size: 1em;
+    letter-spacing: 1vw;
+  }
+  .svgController svg {
+    height: 18px;
+    width: 18px;
+    margin: 0 5vh;
   }
 }
