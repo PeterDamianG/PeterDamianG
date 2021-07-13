@@ -1,5 +1,6 @@
 /** @module Layout/AppBar */
 import { useState } from 'react';
+import { useHotkeys } from 'react-hotkeys-hook';
 import MenuIconSVG from 'components/icons/appbar/MenuIconSVG';
 import ContentNav from './ContentNav';
 /**
@@ -15,6 +16,8 @@ const Drawer = () => {
   // Handlers
   const openDrawer = () => setIsOpen(true);
   const closeDrawer = () => setIsOpen(false);
+  // Set hotkey to open/close drawer.
+  useHotkeys('m', () => setIsOpen((open) => !open));
   // Render Component
   return (
     <>
