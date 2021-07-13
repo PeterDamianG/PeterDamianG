@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import LightIconSVG from 'components/icons/appbar/LightIconSVG';
 import DarkIconSVG from 'components/icons/appbar/DarkIconSVG';
+import { useHotkeys } from 'react-hotkeys-hook';
 /**
  * An button to change between themes light and dark.
  * @function ThemeChanger
@@ -19,6 +20,8 @@ const ThemeChanger = () => {
   // Handler
   const handlerSetTheme = () =>
     theme === 'light' ? setTheme('dark') : setTheme('light');
+  // Set hotkey to change theme.
+  useHotkeys('t', handlerSetTheme, {}, [theme]);
   // If not is mounted yet.
   if (!mounted) return null;
   // If is set to light.
