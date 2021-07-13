@@ -1,5 +1,6 @@
 /** @module Sections/Proyects */
 import { useState } from 'react';
+import { useHotkeys } from 'react-hotkeys-hook';
 import useFunction from 'hooks/useFunction';
 import listProyects from './list/listProyects';
 import Card from './card/Card';
@@ -25,6 +26,10 @@ const SetProyects = () => {
       : setIndex((prevIndex) => prevIndex - 1);
   // Hook to change states automatic.
   useFunction(handleUpIndex, 10000);
+  // Set hotkey go to next proyect show.
+  useHotkeys('right', handleUpIndex, {}, [index]);
+  // Set hotkey go to previus proyect show.
+  useHotkeys('left', handleDownIndex, {}, [index]);
   // Destructuring
   const { name, url, desc, lang, img } = listProyects[index];
   return (
