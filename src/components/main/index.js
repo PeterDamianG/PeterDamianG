@@ -4,6 +4,10 @@ import dynamic from 'next/dynamic';
 import LoaderSpinner from 'components/icons/utils/LoaderSpinner';
 import { mainStyle } from './main.module.css';
 /** @constant {JSX.Element} */
+const ReactTooltip = dynamic(() => import('react-tooltip'), {
+  ssr: false,
+});
+/** @constant {JSX.Element} */
 const Hero = dynamic(() => import('components/main/sections/hero'), {
   loading: () => <LoaderSpinner />,
   ssr: false,
@@ -37,6 +41,7 @@ const Main = () => (
     <About />
     <Proyects />
     <Contact />
+    <ReactTooltip delayShow={200} />
   </main>
 );
 

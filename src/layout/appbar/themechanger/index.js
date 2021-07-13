@@ -25,9 +25,20 @@ const ThemeChanger = () => {
   // If not is mounted yet.
   if (!mounted) return null;
   // If is set to light.
-  if (theme === 'light') return <DarkIconSVG onClick={handlerSetTheme} />;
+  if (theme === 'light')
+    return (
+      <DarkIconSVG
+        data-tip='Cambiar a Light Theme o presiona T.'
+        onClick={handlerSetTheme}
+      />
+    );
   // If is set to dark.
-  return <LightIconSVG onClick={handlerSetTheme} />;
+  return (
+    <LightIconSVG
+      data-tip='Cambiar a Dark Theme o presiona T.'
+      onClick={handlerSetTheme}
+    />
+  );
 };
 
 export default ThemeChanger;
