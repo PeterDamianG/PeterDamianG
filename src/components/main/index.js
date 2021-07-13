@@ -2,6 +2,7 @@
 /** @module Sections */
 import dynamic from 'next/dynamic';
 import LoaderSpinner from 'components/icons/utils/LoaderSpinner';
+import { useTheme } from 'next-themes';
 import { mainStyle } from './main.module.css';
 /** @constant {JSX.Element} */
 const ReactTooltip = dynamic(() => import('react-tooltip'), {
@@ -35,14 +36,17 @@ const Contact = dynamic(() => import('components/main/sections/contact'), {
  * <Main />
  * @returns {JSX.Element} An element of React.
  */
-const Main = () => (
-  <main className={mainStyle}>
-    <Hero />
-    <About />
-    <Proyects />
-    <Contact />
-    <ReactTooltip delayShow={200} />
-  </main>
-);
+const Main = () => {
+  const { theme } = useTheme();
+  return (
+    <main className={mainStyle}>
+      <Hero />
+      <About />
+      <Proyects />
+      <Contact />
+      <ReactTooltip delayShow={100} delayHide={200} type={theme} border />
+    </main>
+  );
+};
 
 export default Main;

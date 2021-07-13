@@ -28,14 +28,14 @@ const ThemeChanger = () => {
   if (theme === 'light')
     return (
       <DarkIconSVG
-        data-tip='Cambiar a Light Theme o presiona T.'
+        data-tip='Cambiar a Dark Theme o presiona T.'
         onClick={handlerSetTheme}
       />
     );
   // If is set to dark.
   return (
     <LightIconSVG
-      data-tip='Cambiar a Dark Theme o presiona T.'
+      data-tip='Cambiar a Light Theme o presiona T.'
       onClick={handlerSetTheme}
     />
   );
