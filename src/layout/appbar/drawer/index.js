@@ -35,7 +35,10 @@ const Drawer = () => {
   return (
     <>
       {/* SVG Button to open Drawer */}
-      <MenuIconSVG onClick={openDrawer} />
+      <MenuIconSVG
+        data-tip='Abrir/Cerrar el Menú de navegación o presiona M.'
+        onClick={openDrawer}
+      />
       {/* Show Drawer */}
       {isOpen && <ContentNav close={closeDrawer} />}
     </>
