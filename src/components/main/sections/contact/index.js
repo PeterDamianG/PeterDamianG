@@ -23,7 +23,9 @@ const Contact = () => (
     <aside className={asideStyle}>
       <h3>¿Necesitas un CV o Resume?</h3>
       <a href='Link a Resume'>
-        <button type='button'>Resume</button>
+        <button data-tip='Curriculum Vitae' type='button'>
+          Resume
+        </button>
       </a>
     </aside>
     <h4>Gracias por su consideración.</h4>
