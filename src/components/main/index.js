@@ -1,33 +1,9 @@
-/* eslint-disable react/display-name */
 /** @module Sections */
-import dynamic from 'next/dynamic';
-import LoaderSpinner from 'components/icons/utils/LoaderSpinner';
-import { useTheme } from 'next-themes';
 import { mainStyle } from './main.module.css';
-/** @constant {JSX.Element} */
-const ReactTooltip = dynamic(() => import('react-tooltip'), {
-  ssr: false,
-});
-/** @constant {JSX.Element} */
-const Hero = dynamic(() => import('components/main/sections/hero'), {
-  loading: () => <LoaderSpinner />,
-  ssr: false,
-});
-/** @constant {JSX.Element} */
-const About = dynamic(() => import('components/main/sections/about'), {
-  loading: () => <LoaderSpinner />,
-  ssr: false,
-});
-/** @constant {JSX.Element} */
-const Proyects = dynamic(() => import('components/main/sections/proyects'), {
-  loading: () => <LoaderSpinner />,
-  ssr: false,
-});
-/** @constant {JSX.Element} */
-const Contact = dynamic(() => import('components/main/sections/contact'), {
-  loading: () => <LoaderSpinner />,
-  ssr: false,
-});
+import Hero from './sections/hero';
+import About from './sections/about';
+import Proyects from './sections/proyects';
+import Contact from './sections/contact';
 /**
  * A tag main container for sections of the web.
  * @function Main
@@ -36,17 +12,13 @@ const Contact = dynamic(() => import('components/main/sections/contact'), {
  * <Main />
  * @returns {JSX.Element} An element of React.
  */
-const Main = () => {
-  const { theme } = useTheme();
-  return (
-    <main className={mainStyle}>
-      <Hero />
-      <About />
-      <Proyects />
-      <Contact />
-      <ReactTooltip delayShow={100} delayHide={200} type={theme} border />
-    </main>
-  );
-};
+const Main = () => (
+  <main className={mainStyle}>
+    <Hero />
+    <About />
+    <Proyects />
+    <Contact />
+  </main>
+);
 
 export default Main;
