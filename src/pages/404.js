@@ -11,22 +11,24 @@ const Page404 = () => {
   const router = useRouter();
   // State for show info about time to redirect.
   const [time, setTime] = useState(5);
-  // Effect
+  // Effect timer down.
   useEffect(() => {
-    setInterval(() => {
+    setTimeout(() => {
       if (time !== 0) setTime((prevState) => prevState - 1);
     }, 1000);
-    setTimeout(() => {
-      clearInterval();
+    return function cleanup() {
       clearTimeout();
+    };
+  }, [time]);
+  // Effect redirect.
+  useEffect(() => {
+    setTimeout(() => {
       router.push('/');
     }, 5000);
     return function cleanup() {
-      clearInterval();
       clearTimeout();
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [router]);
   // Render
   return (
     <main className={mainStyle}>
