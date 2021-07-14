@@ -37,6 +37,10 @@ button:hover {
   background-color: var(--background-button-hover);
   transition: all 0.4s linear;
 }
+.extraToolTip {
+  z-index: 10;
+  text-align: justify;
+}
 * {
   box-sizing: border-box;
 }
