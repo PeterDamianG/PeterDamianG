@@ -10,6 +10,7 @@
  */
 const GitHubSVG = (props) => (
   <svg
+    data-tip='Ir a mi GitHub.'
     aria-label='GitHub Button'
     role='button'
     height={24}

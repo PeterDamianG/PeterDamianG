@@ -10,6 +10,7 @@
  */
 const LinkedInSVG = (props) => (
   <svg
+    data-tip='Ir a mi LinkedIn.'
     aria-label='LinkedIn Button'
     role='button'
     height={24}

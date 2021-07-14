@@ -10,6 +10,7 @@
  */
 const GoogleMailSVG = (props) => (
   <svg
+    data-tip='Enviarme un Mail.'
     aria-label='GoogleMail Button'
     role='button'
     height={24}
