@@ -4,6 +4,7 @@ import { useTheme } from 'next-themes';
 import LightIconSVG from 'components/icons/appbar/LightIconSVG';
 import DarkIconSVG from 'components/icons/appbar/DarkIconSVG';
 import { useHotkeys } from 'react-hotkeys-hook';
+import ReactTooltip from 'react-tooltip';
 /**
  * An button to change between themes light and dark.
  * @function ThemeChanger
@@ -15,8 +16,10 @@ import { useHotkeys } from 'react-hotkeys-hook';
 const ThemeChanger = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
-  // When mounted on client, now we can show the UI
+  // When mounted on client, now we can show the UI.
   useEffect(() => setMounted(true), []);
+  // Effect for recreat tooltips after change theme.
+  useEffect(() => ReactTooltip.rebuild(), [theme]);
   // Handler
   const handlerSetTheme = () =>
     theme === 'light' ? setTheme('dark') : setTheme('light');
