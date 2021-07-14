@@ -2,6 +2,7 @@
 import { useMediaQuery } from 'react-responsive';
 import Image from 'next/image';
 import { container } from './card.module.css';
+import CardNav from './CardNav';
 /**
  * A component to render cards.
  * @function Card
@@ -28,17 +29,12 @@ const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
           <h3>{name}</h3>
           <h4>{lang}</h4>
           <p>{desc}</p>
-          <nav>
-            <button type='button' onClick={() => handleClickArrow(downIndex)}>
-              &lt;
-            </button>
-            <a href={url}>
-              <button type='button'>¡Ir a GitHub!</button>
-            </a>
-            <button type='button' onClick={() => handleClickArrow(upIndex)}>
-              &gt;
-            </button>
-          </nav>
+          <CardNav
+            handleClickArrow={handleClickArrow}
+            upIndex={upIndex}
+            downIndex={downIndex}
+            url={url}
+          />
         </article>
         <Image src={img} alt={name} width={800} height={800} />
       </article>
@@ -56,17 +52,12 @@ const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
         height={isMediumDevice ? 600 : 400}
       />
       <p>{desc}</p>
-      <nav>
-        <button type='button' onClick={() => handleClickArrow(downIndex)}>
-          &lt;
-        </button>
-        <a href={url}>
-          <button type='button'>¡Ir a GitHub!</button>
-        </a>
-        <button type='button' onClick={() => handleClickArrow(upIndex)}>
-          &gt;
-        </button>
-      </nav>
+      <CardNav
+        handleClickArrow={handleClickArrow}
+        upIndex={upIndex}
+        downIndex={downIndex}
+        url={url}
+      />
     </article>
   );
 };
