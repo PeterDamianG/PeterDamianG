@@ -1,7 +1,8 @@
 /** @module Layout/AppBar */
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import MenuIconSVG from 'components/icons/appbar/MenuIconSVG';
+import ReactTooltip from 'react-tooltip';
 import ContentNav from './ContentNav';
 /**
  * An drawer for contain a menu to navigate.
@@ -13,6 +14,8 @@ import ContentNav from './ContentNav';
  */
 const Drawer = () => {
   const [isOpen, setIsOpen] = useState(false);
+  // Effect for recreat tooltips after open/close drawer.
+  useEffect(() => ReactTooltip.rebuild(), [isOpen]);
   // Handlers
   const openDrawer = () => setIsOpen(true);
   const closeDrawer = () => setIsOpen(false);

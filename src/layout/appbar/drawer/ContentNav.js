@@ -26,29 +26,50 @@ const ContentNav = ({ close }) => {
   if (isDesktopOrLaptop) {
     return (
       <nav className={sidenav}>
-        <button type='button' className={closebtn} onClick={close}>
+        <button
+          data-tip='Cierra el menú de navegación.'
+          type='button'
+          className={closebtn}
+          onClick={close}
+        >
           X
         </button>
         <article className={hero}>
-          <a href='#hero' onClick={close}>
+          <a
+            data-tip='Presiona H, para acceder rápidamente a esa sección.'
+            href='#hero'
+            onClick={close}
+          >
             Inicio
           </a>
           <p>Inicio de la web, donde les comparto algunos pensamientos.</p>
         </article>
         <article className={about}>
-          <a href='#about' onClick={close}>
+          <a
+            data-tip='Presiona A, para acceder rápidamente a esa sección.'
+            href='#about'
+            onClick={close}
+          >
             Sobre Mí
           </a>
           <p>Conoceme más. Algunos detalles más de mí persona.</p>
         </article>
         <article className={proyects}>
-          <a href='#proyects' onClick={close}>
+          <a
+            data-tip='Presiona P, para acceder rápidamente a esa sección.'
+            href='#proyects'
+            onClick={close}
+          >
             Proyectos
           </a>
           <p>Los proyectos que he llevado a cabo. No todos ellos.</p>
         </article>
         <article className={contact}>
-          <a href='#contact' onClick={close}>
+          <a
+            data-tip='Presiona C, para acceder rápidamente a esa sección.'
+            href='#contact'
+            onClick={close}
+          >
             Contacto
           </a>
           <p>Sí estás interesado en contactarme, aquí las mejores opciones.</p>
@@ -67,16 +88,32 @@ const ContentNav = ({ close }) => {
       <button type='button' className={closebtn} onClick={close}>
         X
       </button>
-      <a href='#hero' onClick={close}>
+      <a
+        data-tip='Presiona H, para acceder rápidamente a esa sección.'
+        href='#hero'
+        onClick={close}
+      >
         Inicio
       </a>
-      <a href='#about' onClick={close}>
+      <a
+        data-tip='Presiona A, para acceder rápidamente a esa sección.'
+        href='#about'
+        onClick={close}
+      >
         Sobre Mí
       </a>
-      <a href='#proyects' onClick={close}>
+      <a
+        data-tip='Presiona P, para acceder rápidamente a esa sección.'
+        href='#proyects'
+        onClick={close}
+      >
         Proyectos
       </a>
-      <a href='#contact' onClick={close}>
+      <a
+        data-tip='Presiona C, para acceder rápidamente a esa sección.'
+        href='#contact'
+        onClick={close}
+      >
         Contacto
       </a>
       <SocialMedia />
