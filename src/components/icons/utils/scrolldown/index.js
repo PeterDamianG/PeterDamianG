@@ -19,6 +19,7 @@ const ScollDownSVG = (props) => (
     height='48px'
     viewBox='0 0 247 390'
     {...props}
+    data-tip='Baja para seguir viendo más secciones.'
   >
     <path
       className={scrollAnim}
