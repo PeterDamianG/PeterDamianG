@@ -4,6 +4,7 @@ import 'normalize.css';
 import 'styles/themes.css';
 import 'styles/globals.css';
 import { ThemeProvider } from 'next-themes';
+import AppBar from 'layout/appbar';
 import Footer from 'layout/footer';
 // Conditional import for add a11y with axe-core
 if (process.env.NODE_ENV !== 'production' && !(typeof window === 'undefined')) {
@@ -22,6 +23,7 @@ if (process.env.NODE_ENV !== 'production' && !(typeof window === 'undefined')) {
  */
 const App = ({ Component, pageProps }) => (
   <ThemeProvider>
+    <AppBar />
     <Component {...pageProps} />
     <Footer />
   </ThemeProvider>

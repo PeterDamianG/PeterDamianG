@@ -4,7 +4,6 @@ import dynamic from 'next/dynamic';
 import LoaderSpinner from 'components/icons/utils/LoaderSpinner';
 import { useTheme } from 'next-themes';
 import Head from 'next/head';
-import AppBar from 'layout/appbar';
 /** @constant {JSX.Element} */
 const Main = dynamic(() => import('components/main'), {
   loading: () => <LoaderSpinner />,
@@ -30,7 +29,6 @@ const Home = () => {
           content='Sitio Personal del desarrollador web, Peter Damián Gómez.'
         />
       </Head>
-      <AppBar />
       <Main />
       <ReactTooltip
         place='bottom'
