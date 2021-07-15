@@ -1,4 +1,5 @@
 /** @module Sections/Hero */
+import { useTheme } from 'next-themes';
 /**
  * Use a icon to use like a Github Link button.
  * @function NotebookSVG
@@ -9,6 +10,7 @@
  * @returns {JSX.Element} An element of React.
  */
 const NotebookSVG = (props) => {
+  const { theme } = useTheme();
   const { text, x, y } = props;
   return (
     <svg
@@ -20,25 +22,30 @@ const NotebookSVG = (props) => {
       {...props}
     >
       {/* Screen Notebook */}
-      <path d='M1939 147v982H250V147l845-1 844 1z' fill='#b3b3b3' />
+      <path
+        d='M1939 147v982H250V147l845-1 844 1z'
+        fill={theme === 'light' ? '#f1eeee' : '#333'}
+      />
       <text
         x={x}
         y={y}
         fontSize='12em'
         dominantBaseline='middle'
         strokeWidth='6'
+        color={theme === 'light' ? '#000' : '#fff'}
+        fontWeight='bold'
       >
         {text}
       </text>
       {/* Screen Borders */}
       <path
         d='M1979 956V123a52 52 0 00-52-52H263c-10 0-20 3-29 8a53 53 0 00-24 44v1079h1769V956zm-40-220v393H250V147l845-1h844v492z'
-        fill='#333'
+        fill={theme === 'light' ? '#0f0f0f' : '#dadada'}
       />
       {/* Touchpad Notebook */}
       <path
         d='M991 1202h207c0 6 1 12-2 17-3 4-8 5-12 5h-179c-4 0-8-1-11-4-4-5-3-12-3-18z'
-        fill='#999'
+        fill={theme === 'light' ? '#2c2a2a' : '#dadada'}
         stroke='#999'
         strokeWidth={0.1}
       />
@@ -51,7 +58,7 @@ const NotebookSVG = (props) => {
       />
       <path
         d='M132 1223l9 2 10-2c-2 3-5 6-9 6-5 0-7-4-10-7z'
-        fill='#4e4e4e'
+        fill={theme === 'light' ? '#0f0f0f' : '#b3b3b3'}
         stroke='#4e4e4e'
         strokeWidth={0.1}
       />
@@ -64,15 +71,14 @@ const NotebookSVG = (props) => {
       />
       <path
         d='M191 1223c6 2 12 2 18 1-4 6-14 6-18-1z'
-        fill='#4f4f4f'
+        fill={theme === 'light' ? '#0f0f0f' : '#b3b3b3'}
         stroke='#4f4f4f'
         strokeWidth={0.1}
       />
       {/* Base Notebook */}
       <path
         d='M57 1237c7-2 14-1 20-1h2035c7 0 14-1 20 1-1 9-7 16-16 19H72c-8-3-14-10-15-19z'
-        fill='#b3b3b3'
-        stroke='#b3b3b3'
+        fill={theme === 'light' ? '#0f0f0f' : '#dadada'}
         strokeWidth={0.1}
       />
     </svg>
