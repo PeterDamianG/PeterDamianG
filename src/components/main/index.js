@@ -17,7 +17,7 @@ import Contact from './sections/contact';
  * @returns {JSX.Element} An element of React.
  */
 const Main = () => {
-  const absoluteThreshold = 0.25;
+  const absoluteThreshold = 0.6;
   const { theme } = useTheme();
   return (
     <main className={mainStyle}>
