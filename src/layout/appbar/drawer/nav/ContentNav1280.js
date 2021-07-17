@@ -89,7 +89,7 @@ const ContentNav1280 = ({ close }) => {
           onClick={handlerClickText}
           aria-hidden='true'
         >
-          No olvides de adaptarte a tú resolución preferida.
+          {textContent[number]}
         </p>
         <small>© {new Date().getFullYear()} Peter DG.</small>
       </article>
