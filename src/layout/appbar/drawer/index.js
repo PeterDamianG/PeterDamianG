@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import MenuIconSVG from 'components/icons/appbar/MenuIconSVG';
 import ReactTooltip from 'react-tooltip';
-import ContentNav from './ContentNav';
+import ContentNav from './nav/ContentNav';
 /**
  * An drawer for contain a menu to navigate.
  * @function Drawer
