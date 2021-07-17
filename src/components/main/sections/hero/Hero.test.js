@@ -9,23 +9,11 @@ describe('/src/components/main/section/hero - <Hero> - Renders', () => {
   beforeEach(() => render(<Hero />));
   test('does render section home', () => {
     screen.getByText(/Peter Damián Gómez/i);
-    screen.getByText(/Web Developer/i);
     screen.getByLabelText(/GitHub Button/);
     screen.getByLabelText(/GoogleMail Button/);
     screen.getByLabelText(/LinkedIn Button/);
-    screen.getByLabelText(/Notebook SVG/i);
     screen.getByText(/Me pregunto/i);
     screen.getByLabelText(/Scroll Down/i);
-  });
-  test('Does renders new content when click figure notebook', () => {
-    fireEvent.click(screen.getByLabelText(/Notebook SVG/i));
-    screen.getByText(/Me pregunto/i);
-  });
-  test('Does restart content when array is finish', () => {
-    textContent.forEach(() => {
-      fireEvent.click(screen.getByLabelText(/Notebook SVG/i));
-    });
-    screen.getByText(textContent[0].caption);
   });
 });
 
