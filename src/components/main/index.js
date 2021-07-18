@@ -19,6 +19,9 @@ import Contact from './sections/contact';
 const Main = () => {
   const absoluteThreshold = 0.6;
   const { theme } = useTheme();
+  const setPathHash = (stringHash) => {
+    window.location.hash = stringHash;
+  };
   return (
     <main className={mainStyle}>
       {/* Section Hero Intersection */}
@@ -35,6 +38,7 @@ const Main = () => {
                 />
               </Head>
             )}
+            {inView && setPathHash('hero')}
           </div>
         )}
       </InView>
@@ -52,6 +56,7 @@ const Main = () => {
                 />
               </Head>
             )}
+            {inView && setPathHash('about')}
           </div>
         )}
       </InView>
@@ -69,6 +74,7 @@ const Main = () => {
                 />
               </Head>
             )}
+            {inView && setPathHash('proyects')}
           </div>
         )}
       </InView>
@@ -86,6 +92,7 @@ const Main = () => {
                 />
               </Head>
             )}
+            {inView && setPathHash('contact')}
           </div>
         )}
       </InView>
