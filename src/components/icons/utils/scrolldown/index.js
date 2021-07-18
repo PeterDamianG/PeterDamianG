@@ -1,5 +1,6 @@
 /** @module Icons/Utils */
 import { all, scrollAnim } from './scrolldownsvg.module.css';
+import redirectHash from './redirectHash';
 /**
  * Use a svg img like a scroll down visual help.
  * @function ScollDownSVG
@@ -13,6 +14,7 @@ import { all, scrollAnim } from './scrolldownsvg.module.css';
 const ScollDownSVG = (props) => (
   <svg
     className={all}
+    onClick={redirectHash}
     aria-label='Scroll Down'
     role='figure'
     width='48px'
