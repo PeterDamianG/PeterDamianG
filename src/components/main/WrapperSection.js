@@ -35,7 +35,7 @@ const WrapperSection = ({
               <meta name='description' content={descriptionText} />
             </Head>
           )}
-          {inView && setPathHash({ hashRouter })}
+          {inView && setPathHash(hashRouter)}
         </motion.div>
       )}
     </InView>
