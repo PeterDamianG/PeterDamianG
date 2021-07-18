@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { useTheme } from 'next-themes';
 import ReactTooltip from 'react-tooltip';
 import { InView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 import { mainStyle } from './main.module.css';
 import Hero from './sections/hero';
 import About from './sections/about';
@@ -27,7 +28,12 @@ const Main = () => {
       {/* Section Hero Intersection */}
       <InView threshold={absoluteThreshold}>
         {({ inView, ref }) => (
-          <div ref={ref}>
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0 }}
+            animate={inView ? { opacity: 1 } : ''}
+            transition={{ duration: 1 }}
+          >
             <Hero />
             {inView && (
               <Head>
@@ -39,13 +45,18 @@ const Main = () => {
               </Head>
             )}
             {inView && setPathHash('hero')}
-          </div>
+          </motion.div>
         )}
       </InView>
       {/* Section About Intersection */}
       <InView threshold={absoluteThreshold}>
         {({ inView, ref }) => (
-          <div ref={ref}>
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0 }}
+            animate={inView ? { opacity: 1 } : ''}
+            transition={{ duration: 1 }}
+          >
             <About />
             {inView && (
               <Head>
@@ -57,13 +68,18 @@ const Main = () => {
               </Head>
             )}
             {inView && setPathHash('about')}
-          </div>
+          </motion.div>
         )}
       </InView>
       {/* Section Proyect Intersection */}
       <InView threshold={absoluteThreshold}>
         {({ inView, ref }) => (
-          <div ref={ref}>
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0 }}
+            animate={inView ? { opacity: 1 } : ''}
+            transition={{ duration: 1 }}
+          >
             <Proyects />
             {inView && (
               <Head>
@@ -75,13 +91,18 @@ const Main = () => {
               </Head>
             )}
             {inView && setPathHash('proyects')}
-          </div>
+          </motion.div>
         )}
       </InView>
       {/* Section Contact Intersection */}
       <InView threshold={absoluteThreshold}>
         {({ inView, ref }) => (
-          <div ref={ref}>
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0 }}
+            animate={inView ? { opacity: 1 } : ''}
+            transition={{ duration: 1 }}
+          >
             <Contact />
             {inView && (
               <Head>
@@ -93,7 +114,7 @@ const Main = () => {
               </Head>
             )}
             {inView && setPathHash('contact')}
-          </div>
+          </motion.div>
         )}
       </InView>
       <ReactTooltip
