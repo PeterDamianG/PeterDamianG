@@ -4,6 +4,7 @@ import { useMediaQuery } from 'react-responsive';
 import SocialMedia from 'components/utils/socialmedia';
 import ScrollDownSVG from 'components/icons/utils/scrolldown';
 import useFunction from 'hooks/useFunction';
+import { motion } from 'framer-motion';
 import NotebookSVG from './notebook/NotebookSVG';
 import { sectionStyle } from './hero.module.css';
 import textContent from './content/textContent';
@@ -13,7 +14,6 @@ import textContent from './content/textContent';
  * @example
  * import Hero from 'components/main/sections/hero'
  * <Hero />
- * @returns {JSX.Element} An element of React.
  */
 const Hero = () => {
   // State for show notebook text and caption.
@@ -35,12 +35,12 @@ const Hero = () => {
     return (
       <section id='hero' className={sectionStyle}>
         <article>
-          <div>
+          <motion.div layout transition={{ duration: 1 }}>
             <h2>Peter Damián Gómez</h2>
             <h3>Web Developer</h3>
             <SocialMedia />
             <h4>{textContent[number].caption}</h4>
-          </div>
+          </motion.div>
           <NotebookSVG
             onClick={handlerClickNotebook}
             x={textContent[number].x}
@@ -66,7 +66,9 @@ const Hero = () => {
           text={textContent[number].notebook}
         />
       )}
-      <h4>{textContent[number].caption}</h4>
+      <motion.h4 layout transition={{ duration: 1 }}>
+        {textContent[number].caption}
+      </motion.h4>
       <ScrollDownSVG />
     </section>
   );
