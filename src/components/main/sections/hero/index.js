@@ -44,15 +44,15 @@ const Hero = () => {
             <h2>Peter Damián Gómez</h2>
             <h3>Web Developer</h3>
             <SocialMedia />
-            {textContent[number].caption.split().map((text) => (
+            {[number].map((numberInt) => (
               <motion.h4
-                key={text + number}
+                key={numberInt}
                 variants={{
                   hidden: { opacity: 0 },
                   visible: { opacity: 1, transition: { duration: 1.5 } },
                 }}
               >
-                {text}
+                {textContent[number].caption}
               </motion.h4>
             ))}
           </motion.div>
@@ -69,23 +69,38 @@ const Hero = () => {
   }
   // Render normal.
   return (
-    <section id='hero' className={sectionStyle}>
-      <h2>Peter Damián Gómez</h2>
-      {isPortrait && <h3>Web Developer</h3>}
-      <SocialMedia />
-      {isPortrait && (
-        <NotebookSVG
-          onClick={handlerClickNotebook}
-          x={textContent[number].x}
-          y={textContent[number].y}
-          text={textContent[number].notebook}
-        />
-      )}
-      <motion.h4 layout transition={{ duration: 1 }}>
-        {textContent[number].caption}
-      </motion.h4>
-      <ScrollDownSVG />
-    </section>
+    <motion.div
+      layout
+      initial='hidden'
+      animate='visible'
+      transition={{ duration: 1 }}
+    >
+      <section id='hero' className={sectionStyle}>
+        <h2>Peter Damián Gómez</h2>
+        {isPortrait && <h3>Web Developer</h3>}
+        <SocialMedia />
+        {isPortrait && (
+          <NotebookSVG
+            onClick={handlerClickNotebook}
+            x={textContent[number].x}
+            y={textContent[number].y}
+            text={textContent[number].notebook}
+          />
+        )}
+        {[number].map((numberInt) => (
+          <motion.h4
+            key={numberInt}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { opacity: 1, transition: { duration: 1.5 } },
+            }}
+          >
+            {textContent[number].caption}
+          </motion.h4>
+        ))}
+        <ScrollDownSVG />
+      </section>
+    </motion.div>
   );
 };
 
