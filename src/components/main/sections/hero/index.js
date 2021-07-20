@@ -35,11 +35,26 @@ const Hero = () => {
     return (
       <section id='hero' className={sectionStyle}>
         <article>
-          <motion.div layout transition={{ duration: 1 }}>
+          <motion.div
+            layout
+            initial='hidden'
+            animate='visible'
+            transition={{ duration: 1 }}
+          >
             <h2>Peter Damián Gómez</h2>
             <h3>Web Developer</h3>
             <SocialMedia />
-            <h4>{textContent[number].caption}</h4>
+            {textContent[number].caption.split().map((text) => (
+              <motion.h4
+                key={text + number}
+                variants={{
+                  hidden: { opacity: 0 },
+                  visible: { opacity: 1, transition: { duration: 1.5 } },
+                }}
+              >
+                {text}
+              </motion.h4>
+            ))}
           </motion.div>
           <NotebookSVG
             onClick={handlerClickNotebook}
@@ -75,3 +90,12 @@ const Hero = () => {
 };
 
 export default Hero;
+
+/*             <motion.h4 variants={sentence} initial='hidden' animate='visible'>
+              {textForShow.map((char, index) => (
+                <motion.span key={char + index} variants={letter}>
+                  {char}
+                </motion.span>
+              ))}
+            </motion.h4>
+            */
