@@ -13,8 +13,11 @@
   color: var(--foreground);
 }
 .headerFlex h1 {
+  position: relative;
   font-size: 1.5em;
   letter-spacing: 1vw;
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: enterTitle 2s linear;
 }
 .svgController svg {
   margin: 0 1vh;
@@ -89,5 +92,14 @@
     height: 18px;
     width: 18px;
     margin: 0 5vh;
+  }
+}
+/* Animations */
+@keyframes enterTitle {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 0;
   }
 }
