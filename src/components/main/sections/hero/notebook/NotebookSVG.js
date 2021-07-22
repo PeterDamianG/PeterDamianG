@@ -1,5 +1,6 @@
 /** @module Sections/Hero */
 import { useTheme } from 'next-themes';
+import { motion } from 'framer-motion';
 /**
  * Use a icon to use like a Github Link button.
  * @function NotebookSVG
@@ -9,9 +10,8 @@ import { useTheme } from 'next-themes';
  * <NotebookSVG height={32} width={32} />
  * @returns {JSX.Element} An element of React.
  */
-const NotebookSVG = (props) => {
+const NotebookSVG = ({ text, x, y, ...rest }) => {
   const { theme } = useTheme();
-  const { text, x, y } = props;
   return (
     <svg
       aria-label='Notebook SVG'
@@ -19,24 +19,32 @@ const NotebookSVG = (props) => {
       width='75%'
       height='75%'
       viewBox='0 0 2200 1500'
-      {...props}
+      {...rest}
     >
       {/* Screen Notebook */}
       <path
         d='M1939 147v982H250V147l845-1 844 1z'
         fill={theme === 'light' ? '#f1eeee' : '#333'}
       />
-      <text
-        x={x}
-        y={y}
-        fontSize='12em'
-        dominantBaseline='middle'
-        strokeWidth='6'
-        color={theme === 'light' ? '#000' : '#fff'}
-        fontWeight='bold'
-      >
-        {text}
-      </text>
+      {[text].map((key) => (
+        <motion.text
+          key={key}
+          x={x}
+          y={y}
+          fontSize='12em'
+          dominantBaseline='middle'
+          strokeWidth='6'
+          color={theme === 'light' ? '#000' : '#fff'}
+          fontWeight='bold'
+          layout
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 1, transition: { duration: 1.5 } },
+          }}
+        >
+          {text}
+        </motion.text>
+      ))}
       {/* Screen Borders */}
       <path
         d='M1979 956V123a52 52 0 00-52-52H263c-10 0-20 3-29 8a53 53 0 00-24 44v1079h1769V956zm-40-220v393H250V147l845-1h844v492z'

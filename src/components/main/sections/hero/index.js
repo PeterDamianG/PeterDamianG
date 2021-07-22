@@ -56,12 +56,19 @@ const Hero = () => {
               </motion.h4>
             ))}
           </motion.div>
-          <NotebookSVG
-            onClick={handlerClickNotebook}
-            x={textContent[number].x}
-            y={textContent[number].y}
-            text={textContent[number].notebook}
-          />
+          <motion.div
+            layout
+            initial='hidden'
+            animate='visible'
+            transition={{ duration: 1.5 }}
+          >
+            <NotebookSVG
+              onClick={handlerClickNotebook}
+              x={textContent[number].x}
+              y={textContent[number].y}
+              text={textContent[number].notebook}
+            />
+          </motion.div>
         </article>
         <ScrollDownSVG />
       </section>
@@ -80,12 +87,19 @@ const Hero = () => {
         {isPortrait && <h3>Web Developer</h3>}
         <SocialMedia />
         {isPortrait && (
-          <NotebookSVG
-            onClick={handlerClickNotebook}
-            x={textContent[number].x}
-            y={textContent[number].y}
-            text={textContent[number].notebook}
-          />
+          <motion.div
+            layout
+            initial='hidden'
+            animate='visible'
+            transition={{ duration: 1.5 }}
+          >
+            <NotebookSVG
+              onClick={handlerClickNotebook}
+              x={textContent[number].x}
+              y={textContent[number].y}
+              text={textContent[number].notebook}
+            />
+          </motion.div>
         )}
         {[number].map((numberInt) => (
           <motion.h4
@@ -105,12 +119,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-/*             <motion.h4 variants={sentence} initial='hidden' animate='visible'>
-              {textForShow.map((char, index) => (
-                <motion.span key={char + index} variants={letter}>
-                  {char}
-                </motion.span>
-              ))}
-            </motion.h4>
-            */
