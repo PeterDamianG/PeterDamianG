@@ -38,14 +38,14 @@ const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
               <h3>{name}</h3>
               <h4>{lang}</h4>
               <p>{desc}</p>
+              <CardNav
+                handleClickArrow={handleClickArrow}
+                upIndex={upIndex}
+                downIndex={downIndex}
+                url={url}
+              />
             </motion.div>
           ))}
-          <CardNav
-            handleClickArrow={handleClickArrow}
-            upIndex={upIndex}
-            downIndex={downIndex}
-            url={url}
-          />
         </article>
         {[name].map((key) => (
           <motion.div
@@ -81,14 +81,14 @@ const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
             height={isMediumDevice ? 600 : 400}
           />
           <p>{desc}</p>
+          <CardNav
+            handleClickArrow={handleClickArrow}
+            upIndex={upIndex}
+            downIndex={downIndex}
+            url={url}
+          />
         </motion.div>
       ))}
-      <CardNav
-        handleClickArrow={handleClickArrow}
-        upIndex={upIndex}
-        downIndex={downIndex}
-        url={url}
-      />
     </article>
   );
 };
