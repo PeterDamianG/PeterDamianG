@@ -1,6 +1,7 @@
 /** @module Sections/Proyects */
 import { useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
+import { motion } from 'framer-motion';
 import useFunction from 'hooks/useFunction';
 import listProyects from './list/listProyects';
 import Card from './card/Card';
@@ -33,15 +34,22 @@ const SetProyects = () => {
   // Destructuring
   const { name, url, desc, lang, img } = listProyects[index];
   return (
-    <Card
-      name={name}
-      url={url}
-      desc={desc}
-      lang={lang}
-      img={img}
-      upIndex={handleUpIndex}
-      downIndex={handleDownIndex}
-    />
+    <motion.div
+      layout
+      initial='hidden'
+      animate='visible'
+      transition={{ duration: 1 }}
+    >
+      <Card
+        name={name}
+        url={url}
+        desc={desc}
+        lang={lang}
+        img={img}
+        upIndex={handleUpIndex}
+        downIndex={handleDownIndex}
+      />
+    </motion.div>
   );
 };
 

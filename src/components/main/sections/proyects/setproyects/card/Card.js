@@ -1,6 +1,7 @@
 /** @module Sections/Proyects */
 import { useMediaQuery } from 'react-responsive';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import { container } from './card.module.css';
 import CardNav from './CardNav';
 /**
@@ -26,9 +27,19 @@ const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
     return (
       <article className={container}>
         <article>
-          <h3>{name}</h3>
-          <h4>{lang}</h4>
-          <p>{desc}</p>
+          {[name].map((key) => (
+            <motion.div
+              key={key}
+              variants={{
+                hidden: { opacity: 0 },
+                visible: { opacity: 1, transition: { duration: 1.5 } },
+              }}
+            >
+              <h3>{name}</h3>
+              <h4>{lang}</h4>
+              <p>{desc}</p>
+            </motion.div>
+          ))}
           <CardNav
             handleClickArrow={handleClickArrow}
             upIndex={upIndex}
@@ -36,22 +47,42 @@ const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
             url={url}
           />
         </article>
-        <Image src={img} alt={name} width={800} height={800} />
+        {[name].map((key) => (
+          <motion.div
+            key={key}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { opacity: 1, transition: { duration: 2 } },
+            }}
+          >
+            <Image src={img} alt={name} width={800} height={800} />
+          </motion.div>
+        ))}
       </article>
     );
   }
   // Render Normal.
   return (
     <article className={container}>
-      <h3>{name}</h3>
-      <h4>{lang}</h4>
-      <Image
-        src={img}
-        alt={name}
-        width={isMediumDevice ? 550 : 300}
-        height={isMediumDevice ? 600 : 400}
-      />
-      <p>{desc}</p>
+      {[name].map((key) => (
+        <motion.div
+          key={key}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 1, transition: { duration: 2 } },
+          }}
+        >
+          <h3>{name}</h3>
+          <h4>{lang}</h4>
+          <Image
+            src={img}
+            alt={name}
+            width={isMediumDevice ? 550 : 300}
+            height={isMediumDevice ? 600 : 400}
+          />
+          <p>{desc}</p>
+        </motion.div>
+      ))}
       <CardNav
         handleClickArrow={handleClickArrow}
         upIndex={upIndex}
