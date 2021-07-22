@@ -14,6 +14,7 @@
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   z-index: 2;
+  animation: animOpacity 1s linear;
 }
 .sidenav a {
   text-decoration: none;
@@ -71,7 +72,6 @@
       'proyects contact detail';
     justify-content: normal;
     text-align: center;
-    animation: animOpacity 1.5s linear 1;
   }
   .hero {
     grid-area: hero;
