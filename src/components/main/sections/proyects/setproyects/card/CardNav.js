@@ -12,21 +12,13 @@
  */
 const CardNav = ({ handleClickArrow, downIndex, upIndex, url }) => (
   <nav>
-    <button
-      data-tip='Ir al anterior o presiona flecha izquierda en tu teclado.'
-      type='button'
-      onClick={() => handleClickArrow(downIndex)}
-    >
+    <button type='button' onClick={() => handleClickArrow(downIndex)}>
       &lt;
     </button>
     <a href={url}>
       <button type='button'>¡Ir a GitHub!</button>
     </a>
-    <button
-      data-tip='Ir al siguiente o presiona flecha derecha en tu teclado.'
-      type='button'
-      onClick={() => handleClickArrow(upIndex)}
-    >
+    <button type='button' onClick={() => handleClickArrow(upIndex)}>
       &gt;
     </button>
   </nav>
