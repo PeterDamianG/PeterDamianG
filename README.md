@@ -1,11 +1,34 @@
+
+
+
+
+
+<p align="center" width="300">
+   <img align="center" width="200" style="border-radius: 50%; border: 4px solid #000;" src="https://avatars.githubusercontent.com/u/43484809?v=4" />
+</p>
+
 <h1 align="center">Hola 👋, Soy Peter!</h1>
 <h3 align="center">Un programador autodidacta. En el desarrollo Web Frontend y Backend.</h3>
 
 ---
 
-- 👨‍💻 Puedes revisar mi portafolio en [Web Personal PeterDG](https://peterdg.com.ar)
+<p >
+    
+```javascript
+import me from 'life'​;
 
-- ⚡ Entre mis pasatiempos, me encantan los videojuegos, maratonear serias y juntarme con amig@s.
+const objLife = me;
+
+objLife.portfolio = 
+'Puedes revisar mi portafolio en https://peterdg.com.ar';
+objLife.skills = ['javascript', 'react', 'express', 'more']; 
+objLife.hobbies = 
+'Me encantan los videojuegos, maratonear series y juntarme con amig@s.';
+
+console.log(objLife?.urcurius); 
+​
+```
+</p>
 
 ---
 
