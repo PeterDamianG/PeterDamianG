@@ -26,8 +26,13 @@ objLife.hobbies =
 'Me encantan los videojuegos, maratonear series y juntarme con amig@s.';
 
 console.log(objLife?.urcurius); 
+console.log(objLife.visitorNumber); 
 ​
 ```
+</p>
+
+<p  align="center">
+  <img src="https://visitor-badge.glitch.me/badge?page_id=PeterDamianG.PeterDamianG" alt="visitor badge"/>
 </p>
 
 ---
