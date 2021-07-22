@@ -13,8 +13,7 @@
   "author": "Peter Damián Gómez <PeterDamianG@Gmail.com> (https://github.com/PeterDamianG)",
   "license": "MIT",
   "scripts": {
-    "export": "next build && next export",
-    "see-export": "cd out && index.html",
+    "export": "next build && next export && cd out && index.html",
     "dev": "next dev",
     "dev-debug": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
@@ -23,10 +22,8 @@
     "prettier": "prettier --write src/**/*.{js,jsx,css} && prettier --check src/**/*.{js,jsx,css}",
     "eslint": "next lint",
     "test": "jest --verbose --runInBand",
-    "coverage": "jest --coverage --verbose --runInBand",
-    "see-coverage": "cd coverage/lcov-report && index.html",
-    "docs": "jsdoc -c jsdoc.json",
-    "see-docs": "cd docs && index.html"
+    "coverage": "jest --coverage --verbose --runInBand && cd coverage/lcov-report && index.html",
+    "docs": "jsdoc -c jsdoc.json && cd docs && index.html"
   },
   "dependencies": {
     "framer-motion": "^4.1.17",
