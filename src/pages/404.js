@@ -34,7 +34,7 @@ const Page404 = () => {
     <main className={mainStyle}>
       <h2>404 - Página no encontrada.</h2>
       <p>Serás redireccionado a la página principal en {time} segundos.</p>
-      <h3>Lo siento, no se ha encontrado lo que buscas.</h3>
+      <h3>Lo siento, la página que buscabas no se encuentra.</h3>
     </main>
   );
 };
