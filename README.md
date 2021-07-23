@@ -15,24 +15,55 @@
 <p >
     
 ```javascript
-import me from 'life'​;
+import me from 'me'​;
+import VisitorBadge from 'components/utils/VisitorBadge';
+import WebsiteButton from 'components/buttons/WebsiteButton';
 
-const objLife = me;
+const objMe = me;
 
-objLife.portfolio = 
-'Puedes revisar mi portafolio en https://peterdg.com.ar';
-objLife.skills = ['javascript', 'react', 'express', 'more']; 
-objLife.hobbies = 
+objMe.web = 'https://peterdg.com.ar';
+objMe.skills = ['javascript', 'react', 'express', 'more']; 
+objMe.hobbies = 
 'Me encantan los videojuegos, maratonear series y juntarme con amig@s.';
 
-console.log(objLife?.urcurius); 
-console.log(objLife.visitorNumber); 
+console.log(objMe?.urcurius); // ;)
+
+export const Render = () => (
+  <>
+    <VisitorBadge profile={objMe.profile} />
+    <WebsiteButton url={objMe.web} />
+  </>
+);
 ​
 ```
 </p>
 
-<p  align="center">
+<p align="center">
   <img src="https://visitor-badge.glitch.me/badge?page_id=PeterDamianG.PeterDamianG" alt="visitor badge"/>
+</p>
+<p align="center">
+  <button 
+  style="
+    background-color: var(--color-btn-bg);
+    border-color: var(--color-btn-border);
+    box-shadow: var(--color-btn-shadow),var(--color-btn-inset-shadow);
+    color: var(--color-btn-text);
+    transition: .2s cubic-bezier(.3,0,.5,1);
+    transition-property: all;
+    transition-property: color,background-color,border-color;
+    border: 1px solid;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 5px 16px;
+    position: relative;
+    white-space: nowrap;"
+  >
+    <a href="https://peterdg.com.ar/" title="Website Peter DG" target="_blank">My Website</a>
+  </button>
 </p>
 
 ---
