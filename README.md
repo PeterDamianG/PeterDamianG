@@ -1,8 +1,3 @@
-
-
-
-
-
 <p align="center" width="300">
    <img align="center" width="200" style="border-radius: 50%; border: 4px solid #000;" src="https://avatars.githubusercontent.com/u/43484809?v=4" />
 </p>
