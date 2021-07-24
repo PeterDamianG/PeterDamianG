@@ -70,7 +70,7 @@ const Hero = () => {
             />
           </motion.div>
         </article>
-        <ScrollDownSVG />
+        <ScrollDownSVG hash='about' />
       </section>
     );
   }
@@ -112,7 +112,7 @@ const Hero = () => {
             {textContent[number].caption}
           </motion.h4>
         ))}
-        <ScrollDownSVG />
+        <ScrollDownSVG hash='about' />
       </section>
     </motion.div>
   );

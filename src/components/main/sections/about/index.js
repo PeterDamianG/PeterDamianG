@@ -28,7 +28,7 @@ const About = () => {
           <ListSkill />
           <Avatar />
         </article>
-        <ScrollDownSVG />
+        <ScrollDownSVG hash='proyects' />
       </section>
     );
   }
@@ -39,7 +39,7 @@ const About = () => {
       {isPortrait && <Avatar />}
       <ContentAbout />
       <ListSkill />
-      <ScrollDownSVG />
+      <ScrollDownSVG hash='proyects' />
     </section>
   );
 };

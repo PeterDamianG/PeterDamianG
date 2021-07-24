@@ -14,7 +14,7 @@ const Proyects = () => (
   <section id='proyects' className={sectionStyle}>
     <h2>Proyectos</h2>
     <SetProyects />
-    <ScrollDownSVG />
+    <ScrollDownSVG hash='contact' />
   </section>
 );
 
