@@ -24,7 +24,11 @@ const WrapperSection = ({
   transitionTime = 0.5,
 }) => {
   const setPathHash = (stringHash) => {
-    window.location.hash = stringHash;
+    if (window.history.pushState) {
+      window.history.pushState(null, null, `#${stringHash}`);
+    } else {
+      window.location.hash = `#${stringHash}`;
+    }
   };
   return (
     <InView threshold={absoluteThreshold}>
