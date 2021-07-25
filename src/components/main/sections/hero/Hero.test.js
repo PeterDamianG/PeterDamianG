@@ -15,6 +15,9 @@ describe('/src/components/main/section/hero - <Hero> - Renders', () => {
     screen.getByText(/Me pregunto/i);
     screen.getByLabelText(/Scroll Down/i);
   });
+  test('does click in arrow up', () => {
+    fireEvent.click(screen.getByLabelText(/Scroll Down/i));
+  });
 });
 
 describe('/src/components/main/section/hero - <Hero> - Responsive', () => {
@@ -36,6 +39,29 @@ describe('/src/components/main/section/hero - <Hero> - Responsive', () => {
     screen.getByLabelText(/Scroll Down/i);
   });
   test('Does renders new content when click figure notebook in screen width >= 1280', () => {
+    fireEvent.click(screen.getByLabelText(/Notebook SVG/i));
+    screen.getByText(/Me pregunto/i);
+  });
+  test('Does restart content when array is finish', () => {
+    textContent.forEach(() => {
+      fireEvent.click(screen.getByLabelText(/Notebook SVG/i));
+    });
+    screen.getByText(textContent[0].caption);
+  });
+});
+
+describe('/src/components/main/section/hero - <Hero> - Responsive Portrait', () => {
+  beforeEach(() =>
+    render(
+      <ResponsiveContext.Provider value={{ orientation: 'portrait' }}>
+        <Hero />
+      </ResponsiveContext.Provider>,
+    ),
+  );
+  test('Does renders home in screen portrait', () => {
+    screen.getByLabelText(/Notebook SVG/i);
+  });
+  test('Does renders new content when click figure notebook in screen portrait', () => {
     fireEvent.click(screen.getByLabelText(/Notebook SVG/i));
     screen.getByText(/Me pregunto/i);
   });
