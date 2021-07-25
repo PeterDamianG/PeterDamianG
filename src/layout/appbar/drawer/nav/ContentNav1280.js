@@ -33,6 +33,13 @@ const ContentNav1280 = ({ close }) => {
   };
   // Hook to change states automatic.
   useFunction(handlerClickText, 10000);
+  // Utility to set Style object.
+  const utilSetStyle = (hash) =>
+    window.location.hash === `#${hash}`
+      ? {
+          textDecoration: 'underline',
+        }
+      : {};
   return (
     <nav className={sidenav}>
       <button
@@ -49,13 +56,7 @@ const ContentNav1280 = ({ close }) => {
           href='#hero'
           onClick={close}
           className={window.location.href === 'hero' ? active : ''}
-          style={
-            window.location.hash === '#hero'
-              ? {
-                  textDecoration: 'underline',
-                }
-              : {}
-          }
+          style={utilSetStyle('hero')}
         >
           Inicio
         </a>
@@ -67,13 +68,7 @@ const ContentNav1280 = ({ close }) => {
           href='#about'
           onClick={close}
           className={window.location.href === 'about' ? active : ''}
-          style={
-            window.location.hash === '#about'
-              ? {
-                  textDecoration: 'underline',
-                }
-              : {}
-          }
+          style={utilSetStyle('about')}
         >
           Sobre Mí
         </a>
@@ -85,13 +80,7 @@ const ContentNav1280 = ({ close }) => {
           href='#proyects'
           onClick={close}
           className={window.location.href === 'proyects' ? active : ''}
-          style={
-            window.location.hash === '#proyects'
-              ? {
-                  textDecoration: 'underline',
-                }
-              : {}
-          }
+          style={utilSetStyle('proyects')}
         >
           Proyectos
         </a>
@@ -103,13 +92,7 @@ const ContentNav1280 = ({ close }) => {
           href='#contact'
           onClick={close}
           className={window.location.href === 'contact' ? active : ''}
-          style={
-            window.location.hash === '#contact'
-              ? {
-                  textDecoration: 'underline',
-                }
-              : {}
-          }
+          style={utilSetStyle('contact')}
         >
           Contacto
         </a>

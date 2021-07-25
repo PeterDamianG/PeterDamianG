@@ -15,6 +15,13 @@ const ContentNav = ({ close }) => {
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1280px)',
   });
+  // Utility to set Style object.
+  const utilSetStyle = (hash) =>
+    window.location.hash === `#${hash}`
+      ? {
+          textDecoration: 'underline',
+        }
+      : {};
   // Show design for 1280 or more.
   if (isDesktopOrLaptop) return <ContentNav1280 close={close} />;
   // Normal design return.
@@ -27,13 +34,7 @@ const ContentNav = ({ close }) => {
         data-tip='Presiona H, para acceder rápidamente a esa sección.'
         href='#hero'
         onClick={close}
-        style={
-          window.location.hash === '#hero'
-            ? {
-                textDecoration: 'underline',
-              }
-            : {}
-        }
+        style={utilSetStyle('hero')}
       >
         Inicio
       </a>
@@ -41,13 +42,7 @@ const ContentNav = ({ close }) => {
         data-tip='Presiona A, para acceder rápidamente a esa sección.'
         href='#about'
         onClick={close}
-        style={
-          window.location.hash === '#about'
-            ? {
-                textDecoration: 'underline',
-              }
-            : {}
-        }
+        style={utilSetStyle('about')}
       >
         Sobre Mí
       </a>
@@ -55,13 +50,7 @@ const ContentNav = ({ close }) => {
         data-tip='Presiona P, para acceder rápidamente a esa sección.'
         href='#proyects'
         onClick={close}
-        style={
-          window.location.hash === '#proyects'
-            ? {
-                textDecoration: 'underline',
-              }
-            : {}
-        }
+        style={utilSetStyle('proyects')}
       >
         Proyectos
       </a>
@@ -69,13 +58,7 @@ const ContentNav = ({ close }) => {
         data-tip='Presiona C, para acceder rápidamente a esa sección.'
         href='#contact'
         onClick={close}
-        style={
-          window.location.hash === '#contact'
-            ? {
-                textDecoration: 'underline',
-              }
-            : {}
-        }
+        style={utilSetStyle('contact')}
       >
         Contacto
       </a>
