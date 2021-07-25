@@ -1,5 +1,6 @@
 /** @module Sections/Contact */
 import SocialMedia from 'components/utils/socialmedia';
+import ArrowUp from 'components/icons/utils/arrowup/ArrowUp';
 import { sectionStyle, asideStyle } from './contact.module.css';
 /**
  * A section call contact in the web.
@@ -29,6 +30,7 @@ const Contact = () => (
       </a>
     </aside>
     <h4>Gracias por su consideración.</h4>
+    <ArrowUp hash='hero' />
   </section>
 );
 
