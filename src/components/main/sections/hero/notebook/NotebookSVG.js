@@ -16,8 +16,8 @@ const NotebookSVG = ({ text, x, y, ...rest }) => {
     <svg
       aria-label='Notebook SVG'
       role='figure'
-      width='75%'
-      height='75%'
+      width='90%'
+      height='90%'
       viewBox='0 0 2200 1500'
       {...rest}
     >
