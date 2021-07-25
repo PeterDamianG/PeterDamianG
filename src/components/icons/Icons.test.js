@@ -6,6 +6,7 @@ import GitHubSVG from 'components/icons/socialmedia/GitHubSVG';
 import GoogleMailSVG from 'components/icons/socialmedia/GoogleMailSVG';
 import LinkedInSVG from 'components/icons/socialmedia/LinkedInSVG';
 import ScollDownSVG from 'components/icons/utils/scrolldown';
+import ArrowUp from 'components/icons/utils/arrowup/ArrowUp';
 
 afterAll(cleanup);
 
@@ -37,5 +38,9 @@ describe('/src/components/icons - Icons - Render Icons', () => {
   test('render scroll-down icon', () => {
     render(<ScollDownSVG />);
     screen.getByLabelText(/Scroll Down/i);
+  });
+  test('render arrow up icon', () => {
+    render(<ArrowUp />);
+    screen.getByLabelText(/Arrow Up/i);
   });
 });

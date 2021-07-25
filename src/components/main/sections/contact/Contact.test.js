@@ -1,11 +1,12 @@
-import { render, screen, cleanup } from '@testing-library/react';
+import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 import Contact from './index';
+
+beforeEach(() => render(<Contact />));
 
 afterAll(cleanup);
 
 describe('/src/components/main/section/contact - <Contact> - Render', () => {
   test('does render section contact', () => {
-    render(<Contact />);
     screen.getByText(/Contacto/i);
     screen.getByText(/¿Y ahora, qué?/i);
     screen.getByText(/¿Quiéres contactarme?/i);
@@ -14,5 +15,8 @@ describe('/src/components/main/section/contact - <Contact> - Render', () => {
     screen.getByLabelText(/LinkedIn Button/);
     screen.getByText(/¿Necesitas un CV o Resume?/i);
     screen.getByText(/Gracias por su consideración./i);
+  });
+  test('does click in arrow up', () => {
+    fireEvent.click(screen.getByLabelText(/Arrow Up/i));
   });
 });
