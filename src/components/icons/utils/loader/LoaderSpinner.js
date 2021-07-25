@@ -1,4 +1,5 @@
 /** @module Icons/Utils */
+import { loader } from './loadersvg.module.css';
 /**
  * Svg img a spinnner to use like a loader.
  * @function LoaderSpinner
@@ -10,13 +11,7 @@
  * @returns {JSX.Element} An element of React.
  */
 const LoaderSpinner = (props) => (
-  <svg
-    preserveAspectRatio='xMidYMid'
-    viewBox='-100 -10 300 300'
-    height={256}
-    width={256}
-    {...props}
-  >
+  <svg viewBox='-100 -10 300 125' className={loader} {...props}>
     <rect width={12} height={12} x={44} y={19} rx={8.8} ry={3.8}>
       <animate
         attributeName='opacity'
