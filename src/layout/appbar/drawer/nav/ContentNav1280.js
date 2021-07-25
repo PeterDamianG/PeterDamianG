@@ -12,6 +12,7 @@ import {
   contact,
   detail,
   textContentStyle,
+  active,
 } from './contentnav.module.css';
 /**
  * A content of navigation when you have in 1280 or more of resolution width.
@@ -46,6 +47,14 @@ const ContentNav1280 = ({ close }) => {
           data-tip='Presiona H, para acceder rápidamente a esa sección.'
           href='#hero'
           onClick={close}
+          className={window.location.href === 'hero' ? active : ''}
+          style={
+            window.location.hash === '#hero'
+              ? {
+                  textDecoration: 'underline',
+                }
+              : {}
+          }
         >
           Inicio
         </a>
@@ -56,6 +65,14 @@ const ContentNav1280 = ({ close }) => {
           data-tip='Presiona A, para acceder rápidamente a esa sección.'
           href='#about'
           onClick={close}
+          className={window.location.href === 'about' ? active : ''}
+          style={
+            window.location.hash === '#about'
+              ? {
+                  textDecoration: 'underline',
+                }
+              : {}
+          }
         >
           Sobre Mí
         </a>
@@ -66,6 +83,14 @@ const ContentNav1280 = ({ close }) => {
           data-tip='Presiona P, para acceder rápidamente a esa sección.'
           href='#proyects'
           onClick={close}
+          className={window.location.href === 'proyects' ? active : ''}
+          style={
+            window.location.hash === '#proyects'
+              ? {
+                  textDecoration: 'underline',
+                }
+              : {}
+          }
         >
           Proyectos
         </a>
@@ -76,6 +101,14 @@ const ContentNav1280 = ({ close }) => {
           data-tip='Presiona C, para acceder rápidamente a esa sección.'
           href='#contact'
           onClick={close}
+          className={window.location.href === 'contact' ? active : ''}
+          style={
+            window.location.hash === '#contact'
+              ? {
+                  textDecoration: 'underline',
+                }
+              : {}
+          }
         >
           Contacto
         </a>
