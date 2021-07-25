@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 /** @module Pages */
 import dynamic from 'next/dynamic';
-import LoaderSpinner from 'components/icons/utils/LoaderSpinner';
+import LoaderSpinner from 'components/icons/utils/loader/LoaderSpinner';
 import Head from 'next/head';
 /** @constant {JSX.Element} */
 const Main = dynamic(() => import('components/main'), {
