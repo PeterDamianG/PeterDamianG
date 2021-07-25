@@ -18,6 +18,7 @@ const LoaderSpinner = (props) => (
     }}
     width='50%'
     height='50%'
+    aria-label='Arrow Up'
     {...props}
   >
     <path d='M477 217L263 3a11 11 0 00-15 0L35 217a11 11 0 008 18h117v267c0 5 5 10 11 10h171c6 0 10-5 10-10V235h117a11 11 0 008-18z' />
