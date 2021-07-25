@@ -1,5 +1,6 @@
 /** @module Layout/AppBar */
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import useFunction from 'hooks/useFunction';
 import SocialMedia from 'components/utils/socialmedia';
 import textContent from './textContent';
@@ -117,13 +118,27 @@ const ContentNav1280 = ({ close }) => {
       <article className={detail}>
         <h3>Peter DG</h3>
         <SocialMedia />
-        <p
-          className={textContentStyle}
-          onClick={handlerClickText}
-          aria-hidden='true'
+        <motion.div
+          layout
+          initial='hidden'
+          animate='visible'
+          transition={{ duration: 1 }}
         >
-          {textContent[number]}
-        </p>
+          {[number].map((numberInt) => (
+            <motion.p
+              className={textContentStyle}
+              onClick={handlerClickText}
+              aria-hidden='true'
+              key={numberInt}
+              variants={{
+                hidden: { opacity: 0 },
+                visible: { opacity: 1, transition: { duration: 1 } },
+              }}
+            >
+              {textContent[number]}
+            </motion.p>
+          ))}
+        </motion.div>
         <small>© {new Date().getFullYear()} Peter DG.</small>
       </article>
     </nav>
