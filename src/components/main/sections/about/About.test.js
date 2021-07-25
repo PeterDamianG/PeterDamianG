@@ -33,4 +33,12 @@ describe('/src/components/main/section/about - <About> - Responsive', () => {
     screen.getByText(/NextJS/i);
     screen.getByLabelText(/Scroll Down/i);
   });
+  test('does render section about avatar with portrait responsive', () => {
+    render(
+      <ResponsiveContext.Provider value={{ orientation: 'portrait' }}>
+        <About />
+      </ResponsiveContext.Provider>,
+    );
+    screen.getByLabelText(/Avatar/i);
+  });
 });
