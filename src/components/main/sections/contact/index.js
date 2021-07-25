@@ -23,7 +23,11 @@ const Contact = () => (
     </article>
     <aside className={asideStyle}>
       <h3>¿Necesitas un CV o Resume?</h3>
-      <a href='https://www.peterdg.com.ar/cv.pdf'>
+      <a
+        href='https://www.peterdg.com.ar/cv.pdf'
+        target='_blank'
+        rel='noreferrer'
+      >
         <button data-tip='Curriculum Vitae' type='button'>
           Resume
         </button>
