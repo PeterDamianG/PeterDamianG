@@ -1,7 +1,13 @@
 import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import '@testing-library/jest-dom/extend-expect';
 import { Context as ResponsiveContext } from 'react-responsive';
 import Drawer from '.';
+
+beforeEach(() => {
+  delete window.location;
+  window.location = new URL('https://www.mock.com');
+});
 
 afterAll(cleanup);
 
@@ -27,15 +33,25 @@ describe('/src/components/layout/appbar/Drawer.js - <Drawer> - Renders', () => {
     fireEvent.click(screen.getByText('X'));
     screen.getByRole('button');
   });
+  test('Does set the style if we are in the place right', () => {
+    window.location.hash = 'hero';
+    expect(window.location.hash).toBe('#hero');
+    fireEvent.click(screen.getByRole('button'));
+    expect(screen.getByText('Inicio')).toHaveStyle(
+      'text-decoration: underline',
+    );
+  });
 });
 
 describe('/src/components/layout/appbar/Drawer.js - <Drawer> - Responsive', () => {
-  test('Does renders open drawer in screen width >= 1280', () => {
+  beforeEach(() =>
     render(
       <ResponsiveContext.Provider value={{ width: 1280 }}>
         <Drawer />
       </ResponsiveContext.Provider>,
-    );
+    ),
+  );
+  test('Does renders open drawer in screen width >= 1280', () => {
     const arrOfSections = ['X', 'Inicio', 'Sobre Mí', 'Proyectos', 'Contacto'];
     fireEvent.click(screen.getByRole('button'));
     arrOfSections.forEach((element) => {
@@ -50,6 +66,14 @@ describe('/src/components/layout/appbar/Drawer.js - <Drawer> - Responsive', () =
     screen.getByText(/aquí las mejores opciones./i);
     screen.getByText(/resolución preferida./i);
     screen.getByText(/Peter DG./i);
+  });
+  test('Does set the style if we are in the place right in width >= 1280', () => {
+    window.location.hash = 'contact';
+    expect(window.location.hash).toBe('#contact');
+    fireEvent.click(screen.getByRole('button'));
+    expect(screen.getByText('Contacto')).toHaveStyle(
+      'text-decoration: underline',
+    );
   });
 });
 
