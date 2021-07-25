@@ -6,10 +6,5 @@
 @media all and (min-width: 1280px) {
   .avatarStyle {
     border: 4px solid var(--background) !important;
-    transition: transform 0.4s linear;
-  }
-  .avatarStyle:hover {
-    transform: rotate3d(1, 1, 0, 360deg);
-    transition: transform 0.4s linear;
   }
 }
