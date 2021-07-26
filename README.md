@@ -1,7 +1,3 @@
-<p align="center" width="300">
-   <img align="center" width="200" style="border-radius: 50%; border: 4px solid #000;" src="https://avatars.githubusercontent.com/u/43484809?v=4" />
-</p>
-
 <h1 align="center">Hola 👋, Soy Peter!</h1>
 <h3 align="center">Un programador autodidacta. En el desarrollo Web Frontend y Backend.</h3>
 
@@ -37,26 +33,7 @@ export const Render = () => (
   <img src="https://visitor-badge.glitch.me/badge?page_id=PeterDamianG.PeterDamianG" alt="visitor badge"/>
 </p>
 <p align="center">
-  <button 
-  style="
-    background-color: var(--color-btn-bg);
-    border-color: var(--color-btn-border);
-    box-shadow: var(--color-btn-shadow),var(--color-btn-inset-shadow);
-    color: var(--color-btn-text);
-    transition: .2s cubic-bezier(.3,0,.5,1);
-    transition-property: all;
-    transition-property: color,background-color,border-color;
-    border: 1px solid;
-    border-radius: 6px;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    padding: 5px 16px;
-    position: relative;
-    white-space: nowrap;"
-  >
+  <button>
     <a href="https://peterdg.com.ar/" title="Website Peter DG" target="_blank">My Website</a>
   </button>
 </p>
