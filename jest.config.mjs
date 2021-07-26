@@ -4,7 +4,7 @@ export default {
   coverageProvider: 'babel',
   coverageThreshold: {
     global: {
-        branches: 95,
+        branches: 75,
         functions: 95,
         lines: 95,
         statements: 95,
