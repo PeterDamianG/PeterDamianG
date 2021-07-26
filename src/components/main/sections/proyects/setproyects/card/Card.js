@@ -12,7 +12,16 @@ import CardNav from './CardNav';
  * <Card />
  * @returns {JSX.Element} An element of React.
  */
-const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
+const Card = ({
+  name,
+  url,
+  desc,
+  lang,
+  img,
+  isBitbucket,
+  upIndex,
+  downIndex,
+}) => {
   // Handle Click Arrow.
   const handleClickArrow = (upOrDown) => {
     upOrDown();
@@ -43,6 +52,7 @@ const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
                 upIndex={upIndex}
                 downIndex={downIndex}
                 url={url}
+                isBitbucket={isBitbucket}
               />
             </motion.div>
           ))}
@@ -95,6 +105,7 @@ const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
             upIndex={upIndex}
             downIndex={downIndex}
             url={url}
+            isBitbucket={isBitbucket}
           />
         </motion.div>
       ))}

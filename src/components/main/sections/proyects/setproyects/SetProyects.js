@@ -32,7 +32,7 @@ const SetProyects = () => {
   // Set hotkey go to previus proyect show.
   useHotkeys('left', handleDownIndex, {}, [index]);
   // Destructuring
-  const { name, url, desc, lang, img } = listProyects[index];
+  const { name, url, desc, lang, img, isBitbucket } = listProyects[index];
   return (
     <motion.div
       layout
@@ -48,6 +48,7 @@ const SetProyects = () => {
         img={img}
         upIndex={handleUpIndex}
         downIndex={handleDownIndex}
+        isBitbucket={isBitbucket}
       />
     </motion.div>
   );
