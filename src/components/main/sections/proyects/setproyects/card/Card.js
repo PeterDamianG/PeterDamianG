@@ -55,7 +55,14 @@ const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
               visible: { opacity: 1, transition: { duration: 2 } },
             }}
           >
-            <Image src={img} alt={name} width={800} height={800} />
+            <Image
+              src={img}
+              alt={name}
+              width={800}
+              height={800}
+              placeholder='blur'
+              blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkmAkAAJ8AmzsOXcYAAAAASUVORK5CYII='
+            />
           </motion.div>
         ))}
       </article>
@@ -79,6 +86,8 @@ const Card = ({ name, url, desc, lang, img, upIndex, downIndex }) => {
             alt={name}
             width={isMediumDevice ? 550 : 300}
             height={isMediumDevice ? 600 : 400}
+            placeholder='blur'
+            blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkmAkAAJ8AmzsOXcYAAAAASUVORK5CYII='
           />
           <p>{desc}</p>
           <CardNav
