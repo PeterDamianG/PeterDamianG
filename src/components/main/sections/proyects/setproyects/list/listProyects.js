@@ -17,6 +17,22 @@ const listProyects = [
     img: '/proyects/TemplateNext.jpg',
   },
   {
+    name: 'ONG Team 42 - t42-project Client',
+    url: 'https://bitbucket.org/alkemy-dev/t42-project-client/src/master/',
+    desc: 'Proyecto colaborativo entre más de 10 personas, conformado por desarrolladores y supervisores. Cliente del proyecto.',
+    lang: 'JavaScript React',
+    img: '/proyects/ONGClient.jpg',
+    isBitbucket: true,
+  },
+  {
+    name: 'ONG Team 42 - t42-project Server',
+    url: 'https://bitbucket.org/alkemy-dev/t42-project-server/src/master/',
+    desc: 'Proyecto colaborativo entre más de 10 personas, conformado por desarrolladores y supervisores. Servidor del proyecto',
+    lang: 'JavaScript NodeJS',
+    img: '/proyects/ONGServer.jpg',
+    isBitbucket: true,
+  },
+  {
     name: 'ChallengeJS Alkemy',
     url: 'https://github.com/PeterDamianG/challengejs-alkemy',
     desc: 'Este repositorio, es una posible solución al desafío de javascript propuesto por la aceleradora Alkemy.',
