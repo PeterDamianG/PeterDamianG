@@ -1,6 +1,7 @@
 /** @module Sections/About */
 import Image from 'next/image';
 import { useMediaQuery } from 'react-responsive';
+import me from './me.jpg';
 import { avatarStyle } from './avatar.module.css';
 /**
  * A component to render Avatar.
@@ -28,7 +29,7 @@ const Avatar = () => {
     <Image
       aria-label='Avatar'
       alt='Picture of Author. Peter DG.'
-      src='/me.png'
+      src={me}
       width={avatarWidth}
       height={avatarHeight}
       priority
