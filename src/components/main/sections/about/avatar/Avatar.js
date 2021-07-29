@@ -20,10 +20,10 @@ const Avatar = () => {
   const isMediumDevice = useMediaQuery({ minWidth: 640, maxWidth: 1280 });
   // eslint-disable-next-line no-nested-ternary
   const { avatarWidth, avatarHeight } = isDesktopOrLaptop
-    ? { avatarWidth: 150, avatarHeight: 150 }
+    ? { avatarWidth: 160, avatarHeight: 175 }
     : isMediumDevice
-    ? { avatarWidth: 125, avatarHeight: 125 }
-    : { avatarWidth: 100, avatarHeight: 100 };
+    ? { avatarWidth: 125, avatarHeight: 135 }
+    : { avatarWidth: 100, avatarHeight: 105 };
   // Render.
   return (
     <Image
@@ -34,6 +34,7 @@ const Avatar = () => {
       height={avatarHeight}
       priority
       className={avatarStyle}
+      placeholder='blur'
     />
   );
 };
