@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 /** @module Sections/Contact */
 import SocialMedia from 'components/utils/socialmedia';
 import ArrowUp from 'components/icons/utils/arrowup/ArrowUp';
@@ -23,11 +24,7 @@ const Contact = () => (
     </article>
     <aside className={asideStyle}>
       <h3>¿Necesitas un CV o Resume?</h3>
-      <a
-        href='https://www.peterdg.com.ar/cv.pdf'
-        target='_blank'
-        rel='noreferrer'
-      >
+      <a href='/cv.pdf' target='_blank' rel='noreferrer'>
         <button data-tip='Curriculum Vitae' type='button'>
           Resume
         </button>
