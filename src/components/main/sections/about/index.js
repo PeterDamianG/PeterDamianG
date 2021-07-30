@@ -21,7 +21,7 @@ const About = () => {
   // Render if width is >= 1280px.
   if (isDesktopOrLaptop) {
     return (
-      <section className={sectionStyle} id='about'>
+      <section className={sectionStyle}>
         <h2>Sobre Mí</h2>
         <ContentAbout />
         <article>
@@ -34,7 +34,7 @@ const About = () => {
   }
   // Render normal.
   return (
-    <section className={sectionStyle} id='about'>
+    <section className={sectionStyle}>
       <h2>Sobre Mí</h2>
       {isPortrait && <Avatar />}
       <ContentAbout />

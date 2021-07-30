@@ -11,7 +11,7 @@ import SetProyects from './setproyects/SetProyects';
  * @returns {JSX.Element} An element of React.
  */
 const Proyects = () => (
-  <section id='proyects' className={sectionStyle}>
+  <section className={sectionStyle}>
     <h2>Proyectos</h2>
     <SetProyects />
     <ScrollDownSVG hash='contact' />

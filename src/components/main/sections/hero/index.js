@@ -33,7 +33,7 @@ const Hero = () => {
   // Render if width is >= 1280px.
   if (isDesktopOrLaptop) {
     return (
-      <section id='hero' className={sectionStyle}>
+      <section className={sectionStyle}>
         <article>
           <motion.div
             layout
@@ -82,7 +82,7 @@ const Hero = () => {
       animate='visible'
       transition={{ duration: 1 }}
     >
-      <section id='hero' className={sectionStyle}>
+      <section className={sectionStyle}>
         <h2>Peter Damián Gómez</h2>
         {isPortrait && <h3>Web Developer</h3>}
         <SocialMedia />

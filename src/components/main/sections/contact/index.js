@@ -12,7 +12,7 @@ import { sectionStyle, asideStyle } from './contact.module.css';
  * @returns {JSX.Element} An element of React.
  */
 const Contact = () => (
-  <section id='contact' className={sectionStyle}>
+  <section className={sectionStyle}>
     <h2>Contacto</h2>
     <article className={asideStyle}>
       <h3>¿Y ahora, qué?</h3>

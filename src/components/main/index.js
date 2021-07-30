@@ -23,6 +23,7 @@ const Main = () => {
         titleText='Sección Hero - Peter Damián Gómez'
         descriptionText='Sección hero de la web personal de Peter Damián Gómez. Donde se muestra una entrada simple y dinámica para los visitantes.'
         hashRouter='hero'
+        IDPath='hero'
       >
         <Hero />
       </WrapperSection>
@@ -31,6 +32,7 @@ const Main = () => {
         titleText='Sección Sobre Mí - Peter Damián Gómez'
         descriptionText='Sección sobre mí de la web personal de Peter Damián Gómez. Un extracto sobre mí persona.'
         hashRouter='about'
+        IDPath='about'
       >
         <About />
       </WrapperSection>
@@ -39,6 +41,7 @@ const Main = () => {
         titleText='Sección Proyectos - Peter Damián Gómez'
         descriptionText='Sección proyectos de la web personal de Peter Damián Gómez. Aquellos proyectos donde he aprendido, desarrollado y practicado sobre la programación web.'
         hashRouter='proyects'
+        IDPath='proyects'
       >
         <Proyects />
       </WrapperSection>
@@ -47,6 +50,7 @@ const Main = () => {
         titleText='Sección Contacto - Peter Damián Gómez'
         descriptionText='Sección contacto de la web personal de Peter Damián Gómez. Aquí puedes encontrar algunas formas de como contactarme.'
         hashRouter='contact'
+        IDPath='contact'
       >
         <Contact />
       </WrapperSection>
