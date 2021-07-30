@@ -42,9 +42,9 @@ const WrapperSection = ({
           style={{ height: '100vh', scrollSnapAlign: 'center' }}
           id={IDPath}
         >
-          {inView && children}
           {inView && (
             <>
+              {children}
               <Head>
                 <title>{titleText}</title>
                 <meta name='description' content={descriptionText} />
