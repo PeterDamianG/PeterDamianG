@@ -59,8 +59,7 @@ const Main = () => {
         place='bottom'
         delayShow={600}
         delayHide={200}
-        type={theme}
-        border
+        type={theme || 'light'}
         className='extraToolTip'
       />
     </main>
