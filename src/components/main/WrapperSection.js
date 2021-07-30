@@ -22,6 +22,7 @@ const WrapperSection = ({
   hashRouter,
   absoluteThreshold = 0.6,
   transitionTime = 0.5,
+  IDPath,
 }) => {
   const setPathHash = (stringHash) => {
     if (window.history.pushState) {
@@ -38,8 +39,10 @@ const WrapperSection = ({
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : ''}
           transition={{ duration: transitionTime }}
+          style={{ height: '100vh', scrollSnapAlign: 'center' }}
+          id={IDPath}
         >
-          {children}
+          {inView && children}
           {inView && (
             <>
               <Head>
