@@ -2,6 +2,8 @@
 import Head from 'next/head';
 import { InView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
+import { ErrorBoundary } from 'react-error-boundary';
+import ErrorFallback from './ErrorFallback';
 /**
  * A Wrapper for add sections with intersection observer, frame motion and next/head .
  * @function WrapperSection
@@ -20,8 +22,8 @@ const WrapperSection = ({
   titleText,
   descriptionText,
   hashRouter,
-  absoluteThreshold = 0.6,
-  transitionTime = 0.5,
+  absoluteThreshold = 0.75,
+  transitionTime = 0.35,
   IDPath,
 }) => {
   const setPathHash = (stringHash) => {
@@ -32,29 +34,31 @@ const WrapperSection = ({
     }
   };
   return (
-    <InView threshold={absoluteThreshold}>
-      {({ inView, ref }) => (
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : ''}
-          transition={{ duration: transitionTime }}
-          style={{ height: '100vh', scrollSnapAlign: 'center' }}
-          id={IDPath}
-        >
-          {inView && (
-            <>
-              {children}
-              <Head>
-                <title>{titleText}</title>
-                <meta name='description' content={descriptionText} />
-              </Head>
-              {setPathHash(hashRouter)}
-            </>
-          )}
-        </motion.div>
-      )}
-    </InView>
+    <ErrorBoundary FallbackComponent={ErrorFallback}>
+      <InView threshold={absoluteThreshold}>
+        {({ inView, ref }) => (
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0 }}
+            animate={inView ? { opacity: 1 } : ''}
+            transition={{ duration: transitionTime }}
+            style={{ height: '100vh', scrollSnapAlign: 'center' }}
+            id={IDPath}
+          >
+            {inView && (
+              <>
+                {children}
+                <Head>
+                  <title>{titleText}</title>
+                  <meta name='description' content={descriptionText} />
+                </Head>
+                {setPathHash(hashRouter)}
+              </>
+            )}
+          </motion.div>
+        )}
+      </InView>
+    </ErrorBoundary>
   );
 };
 
