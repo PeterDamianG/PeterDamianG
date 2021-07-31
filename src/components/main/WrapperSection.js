@@ -1,4 +1,5 @@
 /** @module Sections */
+import { useState } from 'react';
 import Head from 'next/head';
 import { InView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
@@ -23,9 +24,10 @@ const WrapperSection = ({
   descriptionText,
   hashRouter,
   absoluteThreshold = 0.75,
-  transitionTime = 0.35,
+  transitionTime = 1.75,
   IDPath,
 }) => {
+  const [exist, isExist] = useState(false);
   const setPathHash = (stringHash) => {
     if (window.history.pushState) {
       window.history.pushState(null, null, `#${stringHash}`);
@@ -40,14 +42,15 @@ const WrapperSection = ({
           <motion.div
             ref={ref}
             initial={{ opacity: 0 }}
-            animate={inView ? { opacity: 1 } : ''}
+            animate={exist ? { opacity: 1 } : ''}
             transition={{ duration: transitionTime }}
             style={{ height: '100vh', scrollSnapAlign: 'center' }}
             id={IDPath}
           >
+            {exist && children}
             {inView && (
               <>
-                {children}
+                {isExist(true)}
                 <Head>
                   <title>{titleText}</title>
                   <meta name='description' content={descriptionText} />
