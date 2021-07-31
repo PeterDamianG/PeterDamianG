@@ -63,8 +63,6 @@
     grid-template-rows: 9fr 1fr;
     justify-items: center;
     align-items: center;
-    background-size: 100% 110%;
-    animation: animBackground 4s linear infinite alternate;
   }
   .sectionStyle > article {
     width: 100%;
@@ -124,14 +122,5 @@
   }
   .sectionStyle h4 {
     font-size: 1.5em;
-  }
-}
-/* Animations */
-@keyframes animBackground {
-  0% {
-    background-position: 50% 10%;
-  }
-  100% {
-    background-position: 50% 90%;
   }
 }

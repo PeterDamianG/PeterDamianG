@@ -38,10 +38,6 @@
 }
 /* Animation Mode for PC and TV Devices */
 @media all and (min-width: 1280px) {
-  .sectionStyle {
-    background-size: 110% 110%;
-    animation: animBackground 6s linear infinite alternate;
-  }
   .sectionStyle h2 {
     font-size: 2.5em;
     text-shadow: 1px 1px 1px var(--background);
@@ -57,14 +53,5 @@
   .sectionStyle h2 {
     font-size: 2em;
     margin: 0;
-  }
-}
-/* Animations */
-@keyframes animBackground {
-  0% {
-    background-position: 50% 0%;
-  }
-  100% {
-    background-position: 50% 95%;
   }
 }
