@@ -68,6 +68,13 @@ const listProyects = [
     img: '/proyects/InvertirArgentina.jpg',
   },
   {
+    name: 'Challenge Angular Blog',
+    url: 'https://github.com/PeterDamianG/ChallengeAngularBlog',
+    desc: 'Desarrollo de un blog en angular.',
+    lang: 'TypeScript Angular',
+    img: '/proyects/AngularBlogHome.jpg',
+  },
+  {
     name: 'PeterDamianG Site Web',
     url: 'https://github.com/PeterDamianG/PeterDamianG',
     desc: 'El desarrollo del sitio web personal, donde te encuentras actualmente.',
