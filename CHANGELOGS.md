@@ -4,6 +4,7 @@ _v 0.2:_ Coming Soon - Proximamente
 
 - Add logs folder for control versions.
 - Add changelogs file.
+- Update cv file.
 
 
 _v 0.1:_
