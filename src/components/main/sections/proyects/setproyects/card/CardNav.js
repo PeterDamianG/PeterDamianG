@@ -22,7 +22,7 @@ const CardNav = ({
     <button type='button' onClick={() => handleClickArrow(downIndex)}>
       &lt;
     </button>
-    <a href={url}>
+    <a href={url} target='_blank' rel='noreferrer'>
       <button type='button'>
         {isBitbucket ? '¡Ir a BitBucket!' : '¡Ir a GitHub!'}
       </button>
