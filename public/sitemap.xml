@@ -2,5 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.peterdg.com.ar/</loc>
+    <loc>https://www.peterdg.com.ar/#hero</loc>
+    <loc>https://www.peterdg.com.ar/#about</loc>
+    <loc>https://www.peterdg.com.ar/#proyects</loc>
+    <loc>https://www.peterdg.com.ar/#contact</loc>
   </url>
 </urlset>
