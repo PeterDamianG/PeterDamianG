@@ -1,18 +1,16 @@
-/** @module Icons/Utils */
-import { all, scrollAnim } from './scrolldownsvg.module.css';
+import { SVGProps } from 'react';
+import * as css from './scrolldownsvg.module.css';
 /**
  * Use a svg img like a scroll down visual help.
- * @function ScollDownSVG
- * @param {object} props - A object, with propieties pass to svg tag.
+ * @param props - A object type SVGProps, with propieties pass to svg tag.
  * @example
  * import ScollDownSVG from 'components/icons/utils/scrolldown/ScollDownSVG'
  * <ScollDownSVG />
  * <ScollDownSVG height={32} width={32} />
- * @returns {JSX.Element} An element of React.
  */
-const ScollDownSVG = (props) => (
+const ScollDownSVG = (props: SVGProps<SVGSVGElement>): JSX.Element => (
   <svg
-    className={all}
+    className={css['all']}
     onClick={() => {
       window.location.hash = props.hash;
     }}
@@ -22,10 +20,10 @@ const ScollDownSVG = (props) => (
     height='48px'
     viewBox='0 0 247 390'
     {...props}
-    data-tip='Baja para seguir viendo más secciones.'
   >
+    <title>Baja para seguir viendo más secciones.</title>
     <path
-      className={scrollAnim}
+      className={css['scrollAnim']}
       d='M123.359,79.775l0,72.843'
       strokeWidth={25}
     />

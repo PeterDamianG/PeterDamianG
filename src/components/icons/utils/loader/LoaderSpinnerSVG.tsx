@@ -1,17 +1,16 @@
-/** @module Icons/Utils */
-import { loader } from './loadersvg.module.css';
+import { SVGProps } from 'react';
+import * as css from './loadersvg.module.css';
 /**
  * Svg img a spinnner to use like a loader.
- * @function LoaderSpinner
- * @param {object} props - A object, with propieties pass to svg tag.
+ * @param props - A object type SVGProps, with propieties pass to svg tag.
  * @example
- * import LoaderSpinner from 'components/icons/utils/LoaderSpinner'
- * <LoaderSpinner />
- * <LoaderSpinner height={128} width={128} />
- * @returns {JSX.Element} An element of React.
+ * import LoaderSpinnerSVG from 'components/icons/utils/LoaderSpinnerSVG'
+ * <LoaderSpinnerSVG />
+ * <LoaderSpinnerSVG height={128} width={128} />
  */
-const LoaderSpinner = (props) => (
-  <svg viewBox='-100 -10 300 125' className={loader} {...props}>
+const LoaderSpinnerSVG = (props: SVGProps<SVGSVGElement>): JSX.Element => (
+  <svg viewBox='-100 -10 300 125' className={css['loader']} {...props}>
+    <title>Estoy cargando, no te impacientes.</title>
     <rect width={12} height={12} x={44} y={19} rx={8.8} ry={3.8}>
       <animate
         attributeName='opacity'
@@ -115,4 +114,4 @@ const LoaderSpinner = (props) => (
   </svg>
 );
 
-export default LoaderSpinner;
+export default LoaderSpinnerSVG;

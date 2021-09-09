@@ -5,8 +5,8 @@ import DarkIconSVG from 'components/icons/appbar/DarkIconSVG';
 import GitHubSVG from 'components/icons/socialmedia/GitHubSVG';
 import GoogleMailSVG from 'components/icons/socialmedia/GoogleMailSVG';
 import LinkedInSVG from 'components/icons/socialmedia/LinkedInSVG';
-import ScollDownSVG from 'components/icons/utils/scrolldown';
-import ArrowUp from 'components/icons/utils/arrowup/ArrowUp';
+import ScollDownSVG from '@components/icons/utils/scrolldown/ScrollDownSVG';
+import ArrowUp from '@components/icons/utils/arrowup/ArrowUpSVG';
 
 afterAll(cleanup);
 

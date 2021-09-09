@@ -1,5 +1,5 @@
 /** @module Sections/Proyects */
-import ScrollDownSVG from 'components/icons/utils/scrolldown';
+import ScrollDownSVG from '@components/icons/utils/scrolldown/ScrollDownSVG';
 import { sectionStyle } from './proyects.module.css';
 import SetProyects from './setproyects/SetProyects';
 /**
