@@ -1,8 +1,7 @@
-/** @module Icons/AppBar */
 import { SVGProps } from 'react';
 /**
  * Use a icon with shape of moon in svg to make a dark theme button.
- * @param {object} props - A object, with propieties pass to svg tag.
+ * @param props - A object type SVGProps, with propieties pass to svg tag.
  * @example
  * import DarkIconSVG from 'components/icons/appbar/DarkIconSVG'
  * <DarkIconSVG height={32} width={32} />
