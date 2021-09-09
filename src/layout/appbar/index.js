@@ -14,7 +14,11 @@ import { headerFlex, svgController } from './appbar.module.css';
  */
 const AppBar = ({ appTitle = 'Peter DG' }) => (
   <header className={headerFlex}>
-    <h1>{appTitle}</h1>
+    <h1>
+      <a title='¡Soy yo! Haz me click para volver al inicio.' href='#hero'>
+        {appTitle}
+      </a>
+    </h1>
     <article className={svgController}>
       <ThemeChanger />
       <Drawer />
