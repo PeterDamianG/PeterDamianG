@@ -1,5 +1,5 @@
 /** @module Layout/Footer */
-import SocialMedia from 'components/utils/socialmedia';
+import SocialMedia from '@components/ui/socialmedia/SocialMedia';
 import { footer } from './footer.module.css';
 /**
  * A footer for app web, with social medial links.

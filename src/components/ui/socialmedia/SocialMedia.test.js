@@ -1,5 +1,5 @@
 import { render, screen, cleanup } from '@testing-library/react';
-import SocialMedia from './index';
+import SocialMedia from './SocialMedia';
 
 afterAll(cleanup);
 

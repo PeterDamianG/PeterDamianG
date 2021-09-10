@@ -1,7 +1,7 @@
 /** @module Sections/Hero */
 import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import SocialMedia from 'components/utils/socialmedia';
+import SocialMedia from '@components/ui/socialmedia/SocialMedia';
 import ScrollDownSVG from '@components/icons/utils/scrolldown/ScrollDownSVG';
 import useFunction from 'hooks/useFunction';
 import { motion } from 'framer-motion';

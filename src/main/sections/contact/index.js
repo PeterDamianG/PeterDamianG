@@ -1,6 +1,6 @@
 /* eslint-disable global-require */
 /** @module Sections/Contact */
-import SocialMedia from 'components/utils/socialmedia';
+import SocialMedia from '@components/ui/socialmedia/SocialMedia';
 import ArrowUp from '@components/icons/utils/arrowup/ArrowUpSVG';
 import { sectionStyle, asideStyle } from './contact.module.css';
 /**

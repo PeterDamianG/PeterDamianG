@@ -1,6 +1,6 @@
 /** @module Layout/AppBar */
 import { useMediaQuery } from 'react-responsive';
-import SocialMedia from 'components/utils/socialmedia';
+import SocialMedia from '@components/ui/socialmedia/SocialMedia';
 import ContentNav1280 from './ContentNav1280';
 import { sidenav, closebtn } from './contentnav.module.css';
 /**

@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import useFunction from 'hooks/useFunction';
-import SocialMedia from 'components/utils/socialmedia';
+import SocialMedia from '@components/ui/socialmedia/SocialMedia';
 import textContent from './textContent';
 import {
   sidenav,
