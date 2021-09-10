@@ -19,7 +19,7 @@
     "build": "next build",
     "start": "next start",
     "prepare": "husky install",
-    "prettier": "prettier --write src/**/*.{js,jsx,css} && prettier --check src/**/*.{js,jsx,css}",
+    "prettier": "prettier --write src/**/*.{js,jsx,css,ts,tsx} && prettier --check src/**/*.{js,jsx,css,ts,tsx}",
     "eslint": "next lint",
     "test": "jest --verbose --runInBand",
     "coverage": "jest --coverage --verbose --runInBand && cd coverage/lcov-report && index.html"
