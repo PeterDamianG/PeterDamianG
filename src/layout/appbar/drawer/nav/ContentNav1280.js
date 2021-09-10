@@ -1,7 +1,7 @@
 /** @module Layout/AppBar */
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import useFunction from 'hooks/useFunction';
+import useFunctionOverTime from 'hooks/useFunctionOverTime';
 import SocialMedia from '@components/ui/socialmedia/SocialMedia';
 import textContent from './textContent';
 import {
@@ -32,7 +32,7 @@ const ContentNav1280 = ({ close }) => {
     else setNumber((prevNumber) => prevNumber + 1);
   };
   // Hook to change states automatic.
-  useFunction(handlerClickText, 10000);
+  useFunctionOverTime(handlerClickText, 10000);
   // Utility to set Style object.
   const utilSetStyle = (hash) =>
     window.location.hash === `#${hash}`

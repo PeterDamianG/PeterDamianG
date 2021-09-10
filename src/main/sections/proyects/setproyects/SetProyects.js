@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { motion } from 'framer-motion';
-import useFunction from 'hooks/useFunction';
+import useFunctionOverTime from 'hooks/useFunctionOverTime';
 import listProyects from './list/listProyects';
 import Card from './card/Card';
 /**
@@ -26,7 +26,7 @@ const SetProyects = () => {
       ? setIndex(listProyects.length - 1)
       : setIndex((prevIndex) => prevIndex - 1);
   // Hook to change states automatic.
-  useFunction(handleUpIndex, 10000);
+  useFunctionOverTime(handleUpIndex, 10000);
   // Set hotkey go to next proyect show.
   useHotkeys('right', handleUpIndex, {}, [index]);
   // Set hotkey go to previus proyect show.

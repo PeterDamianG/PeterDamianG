@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import SocialMedia from '@components/ui/socialmedia/SocialMedia';
 import ScrollDownSVG from '@components/icons/utils/scrolldown/ScrollDownSVG';
-import useFunction from 'hooks/useFunction';
+import useFunctionOverTime from 'hooks/useFunctionOverTime';
 import { motion } from 'framer-motion';
 import NotebookSVG from './notebook/NotebookSVG';
 import { sectionStyle } from './hero.module.css';
@@ -24,7 +24,7 @@ const Hero = () => {
     else setNumber((prevNumber) => prevNumber + 1);
   };
   // Hook to change states automatic.
-  useFunction(handlerClickNotebook);
+  useFunctionOverTime(handlerClickNotebook);
   // Other design responsive.
   const isPortrait = useMediaQuery({ orientation: 'portrait' });
   const isDesktopOrLaptop = useMediaQuery({
