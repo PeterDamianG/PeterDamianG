@@ -29,7 +29,6 @@
   "plugins": ["react", "jsx-a11y", "@typescript-eslint"],
   "rules": {
     "indent": ["error", 2],
-    "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": [
@@ -47,7 +46,8 @@
         "js": "never",
         "jsx": "never",
         "ts": "never",
-        "tsx": "never"
+        "tsx": "never",
+        "css": "never"
       }
     ],
     "prefer-const": "error",
