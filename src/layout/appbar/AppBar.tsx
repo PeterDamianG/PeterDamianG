@@ -1,5 +1,5 @@
 import ThemeChanger from './themechanger/ThemeChanger';
-import Drawer from './drawer';
+import Drawer from './drawer/Drawer';
 import * as css from './appbar.module.css';
 
 type PropsAppBar = {
