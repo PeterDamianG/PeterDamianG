@@ -36,6 +36,8 @@ const WrapperSection = ({
   transitionTime = 1,
   IDPath,
 }: WrapperProps): JSX.Element => {
+  const temR: any = 2;
+  console.log(temR);
   const [exist, isExist] = useState(false);
   const setPathHash = (stringHash: string): void => {
     if (window.history.pushState) {
