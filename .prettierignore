@@ -5,15 +5,13 @@
 /node_modules
 /out
 /public
-/tutorials
-BUGS.md
 CHANGELOGS.md
 env.local.example
 jest.config.mjs
-jsconfig.json
-jsdoc.json
 LICENSE
+next-env.d.ts
 next.config.js
 package-lock.json
 package.json
+tsconfig.json
 README.md
