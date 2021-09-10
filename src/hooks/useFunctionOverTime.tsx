@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
  * @param callback - A function to exec.
  * @param time - A number integer to set timer in ms.
  * @example
- * import useFunctionOverTime from 'components/utils/useFunctionOverTime';
+ * import useFunctionOverTime from 'hooks/useFunctionOverTime';
  * useFunctionOverTime(myFunc);
  * useFunctionOverTime(myFunc, 3000);
  */
