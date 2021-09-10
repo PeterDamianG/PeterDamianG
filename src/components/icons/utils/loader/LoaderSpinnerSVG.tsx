@@ -4,7 +4,7 @@ import * as css from './loadersvg.module.css';
  * Svg img a spinnner to use like a loader.
  * @param props - A object type SVGProps, with propieties pass to svg tag.
  * @example
- * import LoaderSpinnerSVG from 'components/icons/utils/LoaderSpinnerSVG'
+ * import LoaderSpinnerSVG from 'components/icons/utils/loader/LoaderSpinnerSVG'
  * <LoaderSpinnerSVG />
  * <LoaderSpinnerSVG height={128} width={128} />
  */
