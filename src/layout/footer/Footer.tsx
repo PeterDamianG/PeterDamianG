@@ -3,7 +3,7 @@ import * as css from './footer.module.css';
 /**
  * A footer for app web, with social medial links.
  * @example
- * import Footer from 'components/layout/footer/Footer'
+ * import Footer from 'layout/footer/Footer'
  * <Footer />
  */
 const Footer = (): JSX.Element => (
