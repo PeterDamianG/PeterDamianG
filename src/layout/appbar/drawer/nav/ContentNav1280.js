@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import useFunctionOverTime from 'hooks/useFunctionOverTime';
 import SocialMedia from '@components/ui/socialmedia/SocialMedia';
-import textContent from './textContent';
+import textContent from './textDinamicNav';
 import {
   sidenav,
   closebtn,
