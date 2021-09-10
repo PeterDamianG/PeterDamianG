@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 import LoaderSpinner from '@components/icons/utils/loader/LoaderSpinnerSVG';
 import Head from 'next/head';
 /** @constant {JSX.Element} */
-const Main = dynamic(() => import('components/main'), {
+const Main = dynamic(() => import('@components/main/Main'), {
   loading: () => <LoaderSpinner />,
   ssr: false,
 });
