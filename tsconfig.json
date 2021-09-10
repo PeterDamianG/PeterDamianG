@@ -26,6 +26,7 @@
     "noFallthroughCasesInSwitch": true,
     "suppressImplicitAnyIndexErrors": true,
     "noImplicitAny": true,
+    "strictFunctionTypes": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["node_modules", ".next", "logs", "public", "out", "build", "coverage"]
