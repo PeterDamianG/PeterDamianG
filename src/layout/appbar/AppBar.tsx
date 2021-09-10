@@ -1,4 +1,4 @@
-import ThemeChanger from './themechanger';
+import ThemeChanger from './themechanger/ThemeChanger';
 import Drawer from './drawer';
 import * as css from './appbar.module.css';
 

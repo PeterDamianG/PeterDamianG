@@ -6,6 +6,9 @@ _v 0.2:_ Coming Soon - Proximamente
 - Add changelogs file.
 - Update cv file.
 - Add typescript and become proyect to typescript.
+- Add configuration for typescript.
+- Better structure to folders.
+- Reduce CSS and animations.
 
 
 _v 0.1:_
