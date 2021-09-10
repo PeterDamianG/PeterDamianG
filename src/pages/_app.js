@@ -4,7 +4,7 @@ import 'normalize.css';
 import 'styles/themes.css';
 import 'styles/globals.css';
 import { ThemeProvider } from 'next-themes';
-import AppBar from 'layout/appbar';
+import AppBar from '@layout/appbar/AppBar';
 import Footer from '@layout/footer/Footer';
 // Conditional import for add a11y with axe-core
 if (process.env.NODE_ENV !== 'production' && !(typeof window === 'undefined')) {
