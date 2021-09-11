@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import MenuIconSVG from 'components/icons/appbar/MenuIconSVG';
-import ContentNav from './nav/ContentNav';
+import ContainerNav from './ContainerNav';
 /**
  * An drawer for contain a menu to navigate.
  * @example
@@ -37,7 +37,7 @@ const Drawer = (): JSX.Element => {
       {/* SVG Button to open Drawer */}
       <MenuIconSVG onClick={openDrawer} />
       {/* Show Drawer */}
-      {isOpen && <ContentNav close={closeDrawer} />}
+      {isOpen && <ContainerNav close={closeDrawer} />}
     </>
   );
 };
