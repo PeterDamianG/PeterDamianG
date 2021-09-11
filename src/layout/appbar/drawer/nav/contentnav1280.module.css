@@ -42,7 +42,7 @@
 .textDinamicNavStyle :global {
   cursor: pointer;
   font-weight: bold;
-  animation: animOpacity 1s linear;
+  animation: animOpacity 1.5s linear;
 }
 .closebtn {
   position: absolute;

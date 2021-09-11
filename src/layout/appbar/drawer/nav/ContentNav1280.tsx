@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 import useFunctionOverTime from 'hooks/useFunctionOverTime';
 import SocialMedia from '@components/ui/socialmedia/SocialMedia';
 import textDinamicNav from './textDinamicNav';
@@ -75,27 +74,16 @@ const ContentNav1280 = ({ close }: { close: Function }): JSX.Element => {
       <article className={css['detail']}>
         <h3>Peter DG</h3>
         <SocialMedia />
-        <motion.div
-          layout
-          initial='hidden'
-          animate='visible'
-          transition={{ duration: 1 }}
-        >
-          {[number].map((numberInt) => (
-            <motion.p
-              className={css['textDinamicNavStyle']}
-              onClick={handlerClickText}
-              aria-hidden='true'
-              key={numberInt}
-              variants={{
-                hidden: { opacity: 0 },
-                visible: { opacity: 1, transition: { duration: 1 } },
-              }}
-            >
-              {textDinamicNav[number]}
-            </motion.p>
-          ))}
-        </motion.div>
+        {[number].map((numberInt) => (
+          <p
+            className={css['textDinamicNavStyle']}
+            onClick={handlerClickText}
+            aria-hidden='true'
+            key={numberInt}
+          >
+            {textDinamicNav[number]}
+          </p>
+        ))}
         <small>© {new Date().getFullYear()} Peter DG.</small>
       </article>
     </nav>
