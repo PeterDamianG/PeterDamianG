@@ -8,7 +8,6 @@ import { useState, useEffect } from 'react';
  * useFunctionOverTime(myFunc);
  * useFunctionOverTime(myFunc, 3000);
  */
-// eslint-disable-next-line @typescript-eslint/ban-types
 const useFunctionOverTime = (callback: Function, time = 6000): number => {
   const [count, setCount] = useState(0);
   useEffect(() => {
