@@ -1,0 +1,108 @@
+.sidenav :global {
+  /* Position */
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--background-nav-modal);
+  overflow: hidden;
+  backdrop-filter: blur(3px);
+  z-index: 2;
+  /* Grid */
+  display: grid;
+  grid-template-areas:
+    'hero about detail'
+    'proyects contact detail';
+  justify-content: normal;
+  text-align: center;
+  animation: animOpacity 1s linear;
+}
+.sidenav p {
+  font-size: 1.5em;
+  width: 75%;
+  margin: 0 auto;
+}
+.sidenav h3 {
+  font-size: 2.75em;
+}
+.sidenav a {
+  text-decoration: none;
+  font-size: 2.5em;
+  color: var(--a-color);
+  font-weight: bold;
+  letter-spacing: 1.75vw;
+  -webkit-text-stroke: 2px var(--foreground);
+  transition: text-shadow 0.2s linear;
+}
+.sidenav a:hover {
+  text-shadow: 2px 2px 3px var(--foreground);
+  transition: text-shadow 0.2s linear;
+}
+.textDinamicNavStyle :global {
+  cursor: pointer;
+  font-weight: bold;
+  animation: animOpacity 1s linear;
+}
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--a-color);
+  font-size: 2.5em;
+  transition: all 0.2s linear;
+}
+.closebtn:hover {
+  background-color: transparent;
+  color: var(--a-hover);
+  font-size: 2.6em;
+  text-shadow: 1px 1px 4px var(--foreground);
+  transition: all 0.2s linear;
+}
+.hero {
+  grid-area: hero;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid var(--foreground);
+}
+.about {
+  grid-area: about;
+  height: 100%;
+  background-color: var(--background-nav-modal-invert);
+  color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid var(--foreground);
+}
+.proyects {
+  grid-area: proyects;
+  height: 100%;
+  background-color: var(--background-nav-modal-invert);
+  color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid var(--foreground);
+}
+.contact {
+  grid-area: contact;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid var(--foreground);
+}
+.detail {
+  grid-area: detail;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid var(--foreground);
+}
