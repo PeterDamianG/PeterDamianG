@@ -21,15 +21,19 @@ const Drawer = (): JSX.Element => {
   // Set hotkey to handler move between sections.
   useHotkeys('h', () => {
     window.location.hash = 'hero'; // Go hero section.
+    closeDrawer();
   });
   useHotkeys('a', () => {
     window.location.hash = 'about'; // Go about section.
+    closeDrawer();
   });
   useHotkeys('p', () => {
     window.location.hash = 'proyects'; // Go proyects section.
+    closeDrawer();
   });
   useHotkeys('c', () => {
     window.location.hash = 'contact'; // Go contact section.
+    closeDrawer();
   });
   // Render Component
   return (
