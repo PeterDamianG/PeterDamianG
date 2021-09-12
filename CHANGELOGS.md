@@ -9,6 +9,7 @@ _v 0.2:_ Coming Soon - Proximamente
 - Add configuration for typescript.
 - Better structure to folders.
 - Reduce CSS and animations.
+- Remove JSDOC.
 
 
 _v 0.1:_
