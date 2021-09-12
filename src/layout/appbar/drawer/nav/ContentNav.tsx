@@ -14,7 +14,7 @@ const ContentNav = ({ close }: { close: Function }): JSX.Element => (
       className={css['closebtn']}
       onClick={(): Function => close()}
     >
-      X
+      ×
     </button>
     <a
       title='Presiona H, para acceder rápidamente a esa sección.'

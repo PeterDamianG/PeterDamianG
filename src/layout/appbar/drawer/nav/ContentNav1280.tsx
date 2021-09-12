@@ -29,7 +29,7 @@ const ContentNav1280 = ({ close }: { close: Function }): JSX.Element => {
         className={css['closebtn']}
         onClick={(): Function => close()}
       >
-        X
+        ×
       </button>
       <article className={css['hero']}>
         <a
