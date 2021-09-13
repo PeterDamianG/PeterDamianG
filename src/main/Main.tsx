@@ -29,37 +29,33 @@ const Main = (): JSX.Element => (
   <main className={css['mainStyle']}>
     {/* Section Hero */}
     <WrapperSection
-      titleText='Sección Hero - Peter Damián Gómez'
-      descriptionText='Sección hero de la web personal de Peter Damián Gómez. Donde se muestra una entrada simple y dinámica para los visitantes.'
-      hashRouter='hero'
-      IDPath='hero'
+      title='Sección Hero - Peter Damián Gómez'
+      description='Sección hero de la web personal de Peter Damián Gómez. Donde se muestra una entrada simple y dinámica para los visitantes.'
+      hash='hero'
     >
       <Hero />
     </WrapperSection>
     {/* Section About */}
     <WrapperSection
-      titleText='Sección Sobre Mí - Peter Damián Gómez'
-      descriptionText='Sección sobre mí de la web personal de Peter Damián Gómez. Un extracto sobre mí persona.'
-      hashRouter='about'
-      IDPath='about'
+      title='Sección Sobre Mí - Peter Damián Gómez'
+      description='Sección sobre mí de la web personal de Peter Damián Gómez. Un extracto sobre mí persona.'
+      hash='about'
     >
       <About />
     </WrapperSection>
     {/* Section Proyect */}
     <WrapperSection
-      titleText='Sección Proyectos - Peter Damián Gómez'
-      descriptionText='Sección proyectos de la web personal de Peter Damián Gómez. Aquellos proyectos donde he aprendido, desarrollado y practicado sobre la programación web.'
-      hashRouter='proyects'
-      IDPath='proyects'
+      title='Sección Proyectos - Peter Damián Gómez'
+      description='Sección proyectos de la web personal de Peter Damián Gómez. Aquellos proyectos donde he aprendido, desarrollado y practicado sobre la programación web.'
+      hash='proyects'
     >
       <Proyects />
     </WrapperSection>
     {/* Section Contact */}
     <WrapperSection
-      titleText='Sección Contacto - Peter Damián Gómez'
-      descriptionText='Sección contacto de la web personal de Peter Damián Gómez. Aquí puedes encontrar algunas formas de como contactarme.'
-      hashRouter='contact'
-      IDPath='contact'
+      title='Sección Contacto - Peter Damián Gómez'
+      description='Sección contacto de la web personal de Peter Damián Gómez. Aquí puedes encontrar algunas formas de como contactarme.'
+      hash='contact'
     >
       <Contact />
     </WrapperSection>
