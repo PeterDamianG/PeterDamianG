@@ -1,9 +1,15 @@
-/** @module Layout/AppBar */
 import dynamic from 'next/dynamic';
+import LoaderSpinner from '@components/icons/utils/loader/LoaderSpinnerSVG';
 import { useMediaQuery } from 'react-responsive';
 
-const ContentNav = dynamic(() => import('./nav/ContentNav'));
-const ContentNav1280 = dynamic(() => import('./nav/ContentNav1280'));
+const ContentNav = dynamic(() => import('./nav/ContentNav'), {
+  loading: () => <LoaderSpinner />,
+  ssr: false,
+});
+const ContentNav1280 = dynamic(() => import('./nav/ContentNav1280'), {
+  loading: () => <LoaderSpinner />,
+  ssr: false,
+});
 /**
  * A container navigation separate by resolution of navigation in drawer.
  * @example

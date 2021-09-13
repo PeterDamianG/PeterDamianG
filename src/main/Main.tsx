@@ -1,16 +1,28 @@
 import dynamic from 'next/dynamic';
+import LoaderSpinner from '@components/icons/utils/loader/LoaderSpinnerSVG';
 import * as css from './main.module.css';
 import WrapperSection from './WrapperSection';
 
-const Hero = dynamic(() => import('./sections/hero'));
-const About = dynamic(() => import('./sections/about'));
-const Proyects = dynamic(() => import('./sections/proyects'));
-const Contact = dynamic(() => import('./sections/contact'));
-
+const Hero = dynamic(() => import('./sections/hero'), {
+  loading: () => <LoaderSpinner />,
+  ssr: false,
+});
+const About = dynamic(() => import('./sections/about'), {
+  loading: () => <LoaderSpinner />,
+  ssr: false,
+});
+const Proyects = dynamic(() => import('./sections/proyects'), {
+  loading: () => <LoaderSpinner />,
+  ssr: false,
+});
+const Contact = dynamic(() => import('./sections/contact'), {
+  loading: () => <LoaderSpinner />,
+  ssr: false,
+});
 /**
  * A tag main container for sections of the web.
  * @example
- * import Main from 'components/main'
+ * import Main from 'components/main/Main'
  * <Main />
  */
 const Main = (): JSX.Element => (
