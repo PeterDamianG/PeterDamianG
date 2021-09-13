@@ -1,6 +1,5 @@
 import dynamic from 'next/dynamic';
 import LoaderSpinner from '@components/icons/utils/loader/LoaderSpinnerSVG';
-import * as css from './main.module.css';
 import WrapperSection from './WrapperSection';
 
 const Hero = dynamic(() => import('./sections/hero'), {
@@ -26,7 +25,7 @@ const Contact = dynamic(() => import('./sections/contact'), {
  * <Main />
  */
 const Main = (): JSX.Element => (
-  <main className={css['mainStyle']}>
+  <main>
     {/* Section Hero */}
     <WrapperSection
       title='Sección Hero - Peter Damián Gómez'
