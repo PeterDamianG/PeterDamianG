@@ -1,44 +1,38 @@
-/** @module Sections */
 import { useState } from 'react';
 import Head from 'next/head';
 import { InView } from 'react-intersection-observer';
-import { motion } from 'framer-motion';
 import { ErrorBoundary } from 'react-error-boundary';
-import ErrorFallback from './ErrorFallback';
+import ErrorFallback from '@components/utils/errorfallback/ErrorFallback';
+import * as css from './wrappersection.module.css';
 
 type WrapperProps = {
   children: JSX.Element | JSX.Element[];
-  titleText: string;
-  descriptionText: string;
-  hashRouter: 'hero' | 'about' | 'proyects' | 'contact';
-  IDPath: 'hero' | 'about' | 'proyects' | 'contact';
-  absoluteThreshold?: number;
-  transitionTime?: number;
+  title: string;
+  description: string;
+  hash: 'hero' | 'about' | 'proyects' | 'contact';
+  threshold?: number;
 };
 /**
  * A Wrapper for add sections with intersection observer, frame motion and next/head .
  * @param children - A component of react.
- * @param titleText - A title for change seo, change title tag in html document.
- * @param descriptionText - A description for seo, changre meta description tag in html document.
- * @param hashRouter - A string to make a hash router redirection.
- * @param absoluteThreshold - A number in range [0,1], to set percent of show component to set inView true or false.
- * @param transitionTime - A number fo set en ms, time of animation.
+ * @param title - A title for change seo, change title tag in html document.
+ * @param description - A description for seo, changre meta description tag in html document.
+ * @param hash - A string to make a hash router redirection.
+ * @param threshold - A number in range [0,1], to set percent of show component to set inView true or false.
  * @example
- * import WrapperSection from 'components/WrapperSection'
+ * import WrapperSection from 'main/WrapperSection'
  * <WrapperSection />
  */
 const WrapperSection = ({
   children,
-  titleText,
-  descriptionText,
-  hashRouter,
-  absoluteThreshold = 0.75,
-  transitionTime = 1,
-  IDPath,
+  title,
+  description,
+  hash,
+  threshold = 0.75,
 }: WrapperProps): JSX.Element => {
-  const temR: any = 2;
-  console.log(temR);
+  // State for check element exist to render or not.
   const [exist, isExist] = useState(false);
+  // Function to change history in browser.
   const setPathHash = (stringHash: string): void => {
     if (window.history.pushState) {
       window.history.pushState(null, '', `#${stringHash}`);
@@ -46,30 +40,24 @@ const WrapperSection = ({
       window.location.hash = `#${stringHash}`;
     }
   };
+  // Render.
   return (
     <ErrorBoundary FallbackComponent={ErrorFallback}>
-      <InView threshold={absoluteThreshold}>
-        {({ inView, ref }) => (
-          <motion.div
-            ref={ref}
-            initial={{ opacity: 0 }}
-            animate={exist ? { opacity: 1 } : ''}
-            transition={{ duration: transitionTime }}
-            style={{ height: '100vh', scrollSnapAlign: 'center' }}
-            id={IDPath}
-          >
-            {exist && children}
+      <InView threshold={threshold}>
+        {({ inView, ref }): JSX.Element => (
+          <section ref={ref} className={css['sectionStyle']} id={hash}>
             {inView && (
               <>
+                {exist && children}
                 {isExist(true)}
                 <Head>
-                  <title>{titleText}</title>
-                  <meta name='description' content={descriptionText} />
+                  <title>{title}</title>
+                  <meta name='description' content={description} />
                 </Head>
-                {setPathHash(hashRouter)}
+                {setPathHash(hash)}
               </>
             )}
-          </motion.div>
+          </section>
         )}
       </InView>
     </ErrorBoundary>
