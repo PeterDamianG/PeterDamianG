@@ -1,0 +1,84 @@
+.containerMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  text-shadow: 1px 1px 1px var(--foreground);
+  transition: text-shadow 0.2s linear;
+}
+.containerMain svg {
+  height: 26px;
+  width: 26px;
+}
+.title {
+  font-size: 1.75em;
+  margin: 2vh 0;
+}
+.subtitle {
+  font-size: 1.5em;
+  margin: 0 0 2vh 0;
+}
+.title:hover,
+.subtitle:hover {
+  text-shadow: 2px 2px 2px var(--foreground);
+  transition: text-shadow 0.2s linear;
+}
+.containerDinamic :global {
+  text-align: center;
+  width: 90vw;
+  animation: animOpacity 1s linear;
+  cursor: pointer;
+}
+.textContent {
+  margin: 6px;
+  font-size: 1.5em;
+}
+@media all and (max-height: 640px) and (orientation: landscape) {
+  .title {
+    font-size: 3em;
+  }
+  .subtitle {
+    font-size: 2em;
+  }
+  .containerMain svg {
+    height: 40px;
+    width: 40px;
+  }
+  .textContent {
+    font-size: 2em;
+  }
+}
+@media all and (min-width: 640px) and (max-width: 1280px) {
+  .title {
+    font-size: 3.5em;
+  }
+  .subtitle {
+    font-size: 3em;
+  }
+  .containerMain svg {
+    height: 46px;
+    width: 46px;
+  }
+  .textContent {
+    font-size: 2.5em;
+  }
+}
+@media all and (min-width: 640px) and (max-width: 1280px) and (orientation: landscape) {
+  .title {
+    font-size: 3.5em;
+  }
+  .subtitle {
+    font-size: 2.5em;
+  }
+  .containerMain svg {
+    height: 40px;
+    width: 40px;
+  }
+  .textContent {
+    font-size: 2em;
+  }
+  .containerDinamic {
+    width: 60vw;
+  }
+}
