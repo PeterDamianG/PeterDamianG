@@ -1,25 +1,17 @@
 import { SVGProps } from 'react';
 import * as css from './scrolldownsvg.module.css';
 
-type giveHashURL = {
-  hash: string;
-};
 /**
  * Use a svg img like a scroll down visual help.
  * @param props - A object type SVGProps, with propieties pass to svg tag.
  * @example
  * import ScollDownSVG from 'components/icons/utils/scrolldown/ScollDownSVG'
- * <ScollDownSVG hash='about' />
- * <ScollDownSVG height={32} width={32} hash='contact' />
+ * <ScollDownSVG />
+ * <ScollDownSVG height={32} width={32} />
  */
-const ScollDownSVG = (
-  props: SVGProps<SVGSVGElement> & giveHashURL,
-): JSX.Element => (
+const ScollDownSVG = (props: SVGProps<SVGSVGElement>): JSX.Element => (
   <svg
     className={css['all']}
-    onClick={() => {
-      window.location.hash = props.hash;
-    }}
     aria-label='Scroll Down'
     role='figure'
     width='48px'

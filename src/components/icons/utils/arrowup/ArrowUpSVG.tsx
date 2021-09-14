@@ -1,24 +1,16 @@
 import { SVGProps } from 'react';
 import * as css from './arrowup.module.css';
 
-type giveHashURL = {
-  hash: string;
-};
 /**
  * Svg img an arrow up to redirect initial section.
  * @param props - A object type SVGProps, with propieties pass to svg tag.
  * @example
  * import ArrowUpSVG from 'components/icons/utils/arrowup/ArrowUpSVG'
- * <ArrowUpSVG hash='hero' />
+ * <ArrowUpSVG />
  */
-const ArrowUpSVG = (
-  props: SVGProps<SVGSVGElement> & giveHashURL,
-): JSX.Element => (
+const ArrowUpSVG = (props: SVGProps<SVGSVGElement>): JSX.Element => (
   <svg
     className={css['arrow']}
-    onClick={() => {
-      window.location.hash = props.hash;
-    }}
     viewBox='0 0 512 512'
     width='50%'
     height='50%'
