@@ -8,6 +8,11 @@
   --background-nav-modal: #faf6f6b0;
   --background-nav-modal-invert: #0c0a0ada;
   --subtitle-card-color: #c2b3b3;
+  /* IDE colors */
+  --ide-backgroud: #edeff3;
+  --ide-title: #1f2022;
+  --ide-properties: #3604be;
+  --ide-values: #794408;
 }
 /* Dark theme */
 [data-theme='dark'] {
@@ -19,4 +24,9 @@
   --background-nav-modal: #0c0a0ada;
   --background-nav-modal-invert: #faf6f6b0;
   --subtitle-card-color: #464646;
+  /* IDE colors */
+  --ide-backgroud: #1d1e22;
+  --ide-title: #c5c8d4;
+  --ide-properties: #bd1f34;
+  --ide-values: #ddba1f;
 }
