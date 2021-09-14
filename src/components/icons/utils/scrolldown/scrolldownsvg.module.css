@@ -1,6 +1,6 @@
 .all {
   margin: 0.25vh;
-  stroke: var(--background);
+  stroke: var(--foreground);
   cursor: all-scroll;
 }
 .scrollAnim {
