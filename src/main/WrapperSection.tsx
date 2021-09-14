@@ -46,9 +46,9 @@ const WrapperSection = ({
       <InView threshold={threshold}>
         {({ inView, ref }): JSX.Element => (
           <section ref={ref} className={css['sectionStyle']} id={hash}>
+            {exist && children}
             {inView && (
               <>
-                {exist && children}
                 {isExist(true)}
                 <Head>
                   <title>{title}</title>
