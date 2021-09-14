@@ -2,7 +2,7 @@ import dynamic from 'next/dynamic';
 import LoaderSpinner from '@components/icons/utils/loader/LoaderSpinnerSVG';
 import WrapperSection from './WrapperSection';
 
-const Hero = dynamic(() => import('./sections/hero'), {
+const Hero = dynamic(() => import('./sections/hero/Hero'), {
   loading: () => <LoaderSpinner />,
   ssr: false,
 });
