@@ -34,8 +34,8 @@ const WrapperSection = ({
   const [exist, isExist] = useState(false);
   // Function to change history in browser.
   const setPathHash = (stringHash: string): void => {
-    if (window.history.pushState) {
-      window.history.pushState(null, '', `#${stringHash}`);
+    if (window.history.replaceState) {
+      window.history.replaceState(null, '', `#${stringHash}`);
     } else {
       window.location.hash = `#${stringHash}`;
     }
