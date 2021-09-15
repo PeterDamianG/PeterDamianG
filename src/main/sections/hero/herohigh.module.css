@@ -1,0 +1,68 @@
+.containerMain {
+  height: 100%;
+  width: 100%;
+  /* Display Grid */
+  display: grid;
+  grid-template-columns: [x0] 1fr [x1] 1fr [x2];
+  grid-template-rows: [y0] 7fr [y1] 2.5fr [y2] 0.5fr [y3];
+  align-items: center;
+  justify-items: center;
+}
+/* Header content in grid */
+.header {
+  height: 100%;
+  width: 100%;
+  grid-column: x0 / x1;
+  grid-row: y0 / y1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.containerMain svg {
+  height: 48px;
+  width: 48px;
+}
+.title {
+  font-size: 3em;
+  text-shadow: 1px 1px 1px var(--foreground);
+  transition: text-shadow 0.2s linear;
+}
+.subtitle {
+  font-size: 2em;
+  text-shadow: 1px 1px 1px var(--foreground);
+  transition: text-shadow 0.2s linear;
+}
+.title:hover,
+.subtitle:hover {
+  text-shadow: 2px 2px 2px var(--foreground);
+  transition: text-shadow 0.2s linear;
+}
+/* Container IDE in grid */
+.containerIDE :global {
+  height: 80%;
+  width: 100%;
+  animation: animOpacity 1s linear;
+  cursor: pointer;
+  grid-column: x1 / x2;
+}
+/* Container Text in grid */
+.textContent :global {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  animation: animOpacity 1s linear;
+  cursor: pointer;
+  grid-column: x0 / x2;
+  grid-row: y1 / y2;
+  font-size: 2.5em;
+  vertical-align: middle;
+}
+/* ScrollSVG in grid */
+.scrollsvg {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  grid-column: x0 / x2;
+  grid-row: y2 / y3;
+}
