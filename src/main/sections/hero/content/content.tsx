@@ -74,11 +74,9 @@ const content = [
         <p>
           <span className={css['prop']}>
             &lt;abbr title=
-            <span className={css['val']}>
-              &quot;World Health Organization&quot;
-            </span>
+            <span className={css['val']}>&quot;Buenos Aires&quot;</span>
           </span>
-          <span className={css['prop']}>&gt;</span>WHO
+          <span className={css['prop']}>&gt;</span>BS AS
           <span className={css['prop']}>&lt;/abbr&gt;</span>
         </p>
         <p>
@@ -111,7 +109,7 @@ const content = [
             <span className={css['val']}>&quot;myCanvas&quot;</span>
             &gt;
           </span>
-          <br /> <br />
+          <br />
           &nbsp;&nbsp;Your browser does not support canvas tag.
         </p>
         <p>
