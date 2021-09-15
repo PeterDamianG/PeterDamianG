@@ -1,6 +1,8 @@
 import * as css from './content.module.css';
 /**
  * A var type const for contain info set to display in section Hero.
+ * @remarks
+ * Limits of <p> tags in html props is 6, for effect typing.
  * @const
  * @example
  * import content from 'main/sections/hero/content/content'
@@ -24,7 +26,7 @@ const content = [
           &nbsp;&nbsp;<span className={css['prop']}>react</span>&quot;: &quot;
           <span className={css['val']}>^17.0.2</span>&quot;,
         </p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;. &nbsp; . &nbsp; .</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;. &nbsp;&nbsp; . &nbsp;&nbsp; .</p>
       </>
     ),
   },
@@ -47,7 +49,10 @@ const content = [
         </p>
         <p>
           <span className={css['prop']}>&lt;footer&gt;</span>
-          <span className={css['prop']}>&lt;small&gt;</span>Good © Peter DG
+          <span className={css['prop']}>&lt;small&gt;</span>
+        </p>
+        <p>&nbsp;&nbsp;Good © Peter DG</p>
+        <p>
           <span className={css['prop']}>&lt;/small&gt;</span>
           <span className={css['prop']}>&lt;/footer&gt;</span>
         </p>
@@ -79,8 +84,10 @@ const content = [
           </span>
         </p>
         <p>
-          <span className={css['prop']}>&lt;cite&gt;</span>You Aren&apos;t Gonna
-          Need It
+          <span className={css['prop']}>&lt;cite&gt;</span>
+        </p>
+        <p>&nbsp;&nbsp;You Aren&apos;t Gonna Need It</p>
+        <p>
           <span className={css['prop']}>&lt;/cite&gt;</span>
         </p>
       </>
@@ -97,7 +104,9 @@ const content = [
             <span className={css['val']}>&quot;myCanvas&quot;</span>
             &gt;
           </span>
-          Your browser does not support the canvas tag.
+        </p>
+        <p>&nbsp;&nbsp;Your browser does not support the canvas tag.</p>
+        <p>
           <span className={css['prop']}>&lt;/canvas&gt;</span>
         </p>
         <p>
