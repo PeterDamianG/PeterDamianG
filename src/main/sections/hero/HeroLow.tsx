@@ -21,7 +21,7 @@ const HeroLow = (): JSX.Element => {
     else setNumber((prevNumber) => prevNumber + 1);
   };
   // Hook to change states automatic.
-  useFunctionOverTime(handlerClickChangeState, 12000);
+  useFunctionOverTime(handlerClickChangeState, 15000);
   // Other design responsive.
   const isPortrait = useMediaQuery({ orientation: 'portrait' });
   const isEnoughWidth = useMediaQuery({
