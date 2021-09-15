@@ -46,7 +46,12 @@ const HeroLow = (): JSX.Element => {
           {(isPortrait || isEnoughWidth) && (
             <Ide title={content[number].title}>{content[number].html()}</Ide>
           )}
-          <h4 className={css['textContent']}>{content[number].caption}</h4>
+          <h4
+            title='Haz me click, para leer el siguiente de mis pensamientos.'
+            className={css['textContent']}
+          >
+            {content[number].caption}
+          </h4>
         </article>
       ))}
       <a href='#about'>
