@@ -12,7 +12,10 @@ const Ide = ({
   title: string;
   children: JSX.Element | JSX.Element[];
 }): JSX.Element => (
-  <section className={css['containerIde']}>
+  <section
+    title='Haz me click, para leer el siguiente de mis pensamientos.'
+    className={css['containerIde']}
+  >
     <p className={css['headerIde']}>{title}</p>
     <div className={css['contentCode']}>
       <code>{children}</code>
