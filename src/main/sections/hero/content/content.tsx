@@ -16,14 +16,21 @@ const content = [
     html: (): JSX.Element => (
       <>
         <p>
-          <span className={css['prop']}>&quot;dependencies</span>&quot;: &#123;
+          &quot;<span className={css['prop']}>dependencies</span>&quot;: &#123;
         </p>
         <p>
-          &nbsp;&nbsp;<span className={css['prop']}>next</span>&quot;: &quot;
+          &nbsp;&nbsp;&quot;<span className={css['prop']}>next</span>&quot;:
+          &quot;
           <span className={css['val']}>^11.1.2</span>&quot;,
         </p>
         <p>
-          &nbsp;&nbsp;<span className={css['prop']}>react</span>&quot;: &quot;
+          &nbsp;&nbsp;&quot;<span className={css['prop']}>react</span>&quot;:
+          &quot;
+          <span className={css['val']}>^17.0.2</span>&quot;,
+        </p>
+        <p>
+          &nbsp;&nbsp;&quot;<span className={css['prop']}>react-dom</span>
+          &quot;: &quot;
           <span className={css['val']}>^17.0.2</span>&quot;,
         </p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;. &nbsp;&nbsp; . &nbsp;&nbsp; .</p>
@@ -86,7 +93,7 @@ const content = [
         <p>
           <span className={css['prop']}>&lt;cite&gt;</span>
         </p>
-        <p>&nbsp;&nbsp;You Aren&apos;t Gonna Need It</p>
+        <p>&nbsp;&nbsp;You Aren&apos;t Gonna Need It.</p>
         <p>
           <span className={css['prop']}>&lt;/cite&gt;</span>
         </p>
@@ -104,8 +111,9 @@ const content = [
             <span className={css['val']}>&quot;myCanvas&quot;</span>
             &gt;
           </span>
+          <br /> <br />
+          &nbsp;&nbsp;Your browser does not support canvas tag.
         </p>
-        <p>&nbsp;&nbsp;Your browser does not support the canvas tag.</p>
         <p>
           <span className={css['prop']}>&lt;/canvas&gt;</span>
         </p>
@@ -118,23 +126,23 @@ const content = [
             </span>
             &gt;
           </span>
-          <p>
-            &nbsp; &nbsp;
+        </p>
+        <p>
+          &nbsp; &nbsp;
+          <span className={css['prop']}>
+            &lt;circle cx=
+            <span className={css['val']}>&quot;50&quot;</span>
             <span className={css['prop']}>
-              &lt;circle cx=
-              <span className={css['val']}>&quot;50&quot;</span>
-              <span className={css['prop']}>
-                &nbsp;cy=<span className={css['val']}>&quot;50&quot;</span>
-              </span>
-              <span className={css['prop']}>
-                &nbsp;r=<span className={css['val']}>&quot;50&quot;</span>
-              </span>
-              &nbsp;/&gt;
+              &nbsp;cy=<span className={css['val']}>&quot;50&quot;</span>
             </span>
-          </p>
-          <p>
-            <span className={css['prop']}>&lt;/svg&gt;</span>
-          </p>
+            <span className={css['prop']}>
+              &nbsp;r=<span className={css['val']}>&quot;50&quot;</span>
+            </span>
+            &nbsp;/&gt;
+          </span>
+        </p>
+        <p>
+          <span className={css['prop']}>&lt;/svg&gt;</span>
         </p>
         <p>
           <span className={css['prop']}>
