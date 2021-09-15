@@ -13,7 +13,9 @@ const content = [
     caption: '¿Cómo pasamos de tres archivos, a montones de dependencias?',
     html: (): JSX.Element => (
       <>
-        <span className={css['prop']}>&quot;dependencies</span>&quot;: &#123;
+        <p>
+          <span className={css['prop']}>&quot;dependencies</span>&quot;: &#123;
+        </p>
         <p>
           &nbsp;&nbsp;<span className={css['prop']}>next</span>&quot;: &quot;
           <span className={css['val']}>^11.1.2</span>&quot;,
@@ -31,8 +33,10 @@ const content = [
     caption: '¿Cuándo la semantica cambie, re-adaptaremos todas las webs?',
     html: (): JSX.Element => (
       <>
-        <span className={css['prop']}>&lt;div&gt;</span>Bad for sections
-        <span className={css['prop']}>&lt;/div&gt;</span>
+        <p>
+          <span className={css['prop']}>&lt;div&gt;</span>Bad for sections
+          <span className={css['prop']}>&lt;/div&gt;</span>
+        </p>
         <p>
           <span className={css['prop']}>&lt;section&gt;</span>Good
           <span className={css['prop']}>&lt;/section&gt;</span>
@@ -55,14 +59,16 @@ const content = [
     caption: '¿Hace cuánto que no utilizo algunas etiquetas?',
     html: (): JSX.Element => (
       <>
-        <span className={css['prop']}>
-          &lt;abbr title=
-          <span className={css['val']}>
-            &quot;World Health Organization&quot;
+        <p>
+          <span className={css['prop']}>
+            &lt;abbr title=
+            <span className={css['val']}>
+              &quot;World Health Organization&quot;
+            </span>
           </span>
-        </span>
-        <span className={css['prop']}>&gt;</span>WHO
-        <span className={css['prop']}>&lt;/abbr&gt;</span>
+          <span className={css['prop']}>&gt;</span>WHO
+          <span className={css['prop']}>&lt;/abbr&gt;</span>
+        </p>
         <p>
           <span className={css['prop']}>
             &lt;base href=
@@ -85,13 +91,15 @@ const content = [
     caption: '¿Cuándo aparecerá el sistema de gráficos definitivo?',
     html: (): JSX.Element => (
       <>
-        <span className={css['prop']}>
-          &lt;canvas id=
-          <span className={css['val']}>&quot;myCanvas&quot;</span>
-          &gt;
-        </span>
-        Your browser does not support the canvas tag.
-        <span className={css['prop']}>&lt;/canvas&gt;</span>
+        <p>
+          <span className={css['prop']}>
+            &lt;canvas id=
+            <span className={css['val']}>&quot;myCanvas&quot;</span>
+            &gt;
+          </span>
+          Your browser does not support the canvas tag.
+          <span className={css['prop']}>&lt;/canvas&gt;</span>
+        </p>
         <p>
           <span className={css['prop']}>
             &lt;svg width=
