@@ -40,14 +40,15 @@
     border-radius: 6px;
   }
   .headerIde {
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .contentCode {
-    font-size: 1.75em;
+    font-size: 1.5em;
   }
 }
 /* The typing effect */
 .contentCode p {
+  margin: 0.2vh 0;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
 }
