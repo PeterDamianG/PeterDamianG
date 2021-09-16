@@ -18,6 +18,8 @@ const Drawer = (): JSX.Element => {
    */
   // Set hotkey to open/close drawer.
   useHotkeys('m', () => setIsOpen((open) => !open));
+  // Set hotkey escape to close drawer.
+  useHotkeys('escape', () => closeDrawer());
   // Set hotkey to handler move between sections.
   useHotkeys('h', () => {
     window.location.hash = 'hero'; // Go hero section.
