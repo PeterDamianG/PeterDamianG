@@ -6,7 +6,7 @@ const Hero = dynamic(() => import('./sections/hero/Hero'), {
   loading: () => <LoaderSpinner />,
   ssr: false,
 });
-const About = dynamic(() => import('./sections/about'), {
+const About = dynamic(() => import('./sections/about/About'), {
   loading: () => <LoaderSpinner />,
   ssr: false,
 });

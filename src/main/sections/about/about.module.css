@@ -1,132 +1,77 @@
-/* Flat Mode for Mobile Devices */
-.sectionStyle {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--foreground);
-  color: var(--background);
-  -webkit-text-stroke-color: var(--background);
-  -webkit-text-stroke-width: 1px;
+.title {
+  font-size: 2em;
+  text-shadow: 0px 1px 1px var(--foreground);
+  transition: text-shadow 0.2s linear;
+  margin: 1vh;
 }
-.sectionStyle p {
+.title:hover {
+  text-shadow: 1px 2px 2px var(--foreground);
+  transition: text-shadow 0.2s linear;
+}
+.content p {
   width: 85vw;
   text-align: center;
+  font-size: 1.2em;
+  text-shadow: 0px 0px 1px var(--foreground);
 }
-.sectionStyle ul {
-  width: 75vw;
-  text-decoration: underline;
+.resumeButton {
+  font-size: 1em;
 }
-/* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
+.certificationButton {
+  cursor: pointer;
+}
+
 @media all and (min-width: 640px) and (max-width: 1280px) {
-  .sectionStyle h2 {
-    font-size: 3em;
-    text-shadow: 1px 1px 1px var(--background);
-    transition: text-shadow 0.3s linear;
+  .title {
+    font-size: 3.5em;
   }
-  .sectionStyle h2:hover {
-    text-shadow: 2px 2px 4px var(--background);
-    transition: text-shadow 0.3s linear;
+  .content p {
+    width: 75vw;
+    font-size: 2.25em;
+    text-align: center;
   }
-  .sectionStyle p {
-    width: 85vw;
-    font-size: 1.75em;
-    text-shadow: 1px 1px 1px var(--background);
-    transition: text-shadow 0.3s linear;
-  }
-  .sectionStyle p:hover {
-    text-shadow: 2px 2px 4px var(--background);
-    transition: text-shadow 0.3s linear;
-  }
-  .sectionStyle ul {
-    font-size: 1.5em;
-    text-shadow: 1px 1px 1px var(--background);
-    transition: text-shadow 0.3s linear;
-  }
-  .sectionStyle ul:hover {
-    text-shadow: 2px 2px 4px var(--background);
-    transition: text-shadow 0.3s linear;
+  .resumeButton {
+    font-size: 2em;
   }
 }
 @media all and (min-width: 640px) and (max-width: 1280px) and (orientation: landscape) {
-  .sectionStyle h2 {
-    font-size: 3.5em;
-    text-shadow: 1px 1px 1px var(--background);
-    transition: text-shadow 0.3s linear;
+  .title {
+    font-size: 3em;
   }
-  .sectionStyle h2:hover {
-    text-shadow: 2px 2px 4px var(--background);
-    transition: text-shadow 0.3s linear;
-  }
-  .sectionStyle p {
-    width: 85vw;
-    margin: 0;
-    font-size: 1.75em;
-    text-shadow: 1px 1px 1px var(--background);
-    transition: text-shadow 0.3s linear;
-  }
-  .sectionStyle p:hover {
-    text-shadow: 2px 2px 4px var(--background);
-    transition: text-shadow 0.3s linear;
-  }
-  .sectionStyle ul {
-    width: 40vw;
-    font-size: 1.5em;
-    text-shadow: 1px 1px 1px var(--background);
-    transition: text-shadow 0.3s linear;
-  }
-  .sectionStyle ul:hover {
-    text-shadow: 2px 2px 4px var(--background);
-    transition: text-shadow 0.3s linear;
-  }
-}
-/* Animation Mode for PC and TV Devices */
-@media all and (min-width: 1280px) {
-  .sectionStyle article {
-    display: flex;
-    align-items: center;
-  }
-  .sectionStyle h2 {
+  .content p {
+    width: 95vw;
     font-size: 2.25em;
-    text-shadow: 2px 2px 2px var(--background);
-    transition: text-shadow 0.3s linear;
+    text-align: left;
   }
-  .sectionStyle h2:hover {
-    text-shadow: 2px 2px 6px var(--background);
-    transition: text-shadow 0.3s linear;
-  }
-  .sectionStyle p {
-    width: 85vw;
+  .resumeButton {
     font-size: 1.5em;
-    text-shadow: 2px 2px 2px var(--background);
-    transition: text-shadow 0.3s linear;
-  }
-  .sectionStyle p:hover {
-    text-shadow: 2px 2px 6px var(--background);
-    transition: text-shadow 0.3s linear;
-  }
-  .sectionStyle ul {
-    font-size: 1.25em;
-    text-shadow: 2px 2px 2px var(--background);
-    transition: text-shadow 0.3s linear;
-  }
-  .sectionStyle ul:hover {
-    text-shadow: 2px 2px 6px var(--background);
-    transition: text-shadow 0.3s linear;
   }
 }
-/* Landscape */
-@media all and (max-height: 640px) and (orientation: landscape) {
-  .sectionStyle h2 {
+@media all and (min-width: 1280px) {
+  .title {
+    font-size: 3em;
+  }
+  .content p {
+    width: 95vw;
+    font-size: 2em;
+    text-align: left;
+    margin: 1vh;
+  }
+  .resumeButton {
     font-size: 1.5em;
   }
-  .sectionStyle p {
-    font-size: 1em;
-    text-align: justify;
-    margin: 0;
+}
+@media all and (max-height: 640px) and (orientation: landscape) {
+  .title {
+    font-size: 1.5em;
   }
-  .sectionStyle ul {
-    font-size: 1em;
-    margin: 0;
+  .content p {
+    width: 95vw;
+    font-size: 1.2em;
+    text-align: left;
+    margin: 1vh;
+  }
+  .resumeButton {
+    font-size: 0.75em;
   }
 }
