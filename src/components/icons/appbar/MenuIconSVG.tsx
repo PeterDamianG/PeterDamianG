@@ -15,7 +15,7 @@ const MenuIconSVG = (props: SVGProps<SVGSVGElement>): JSX.Element => (
     {...props}
     viewBox='0 -53 384 384'
   >
-    <title>Abrir/Cerrar el menú de navegación o presiona la tecla M.</title>
+    <title>Abrir el menú de navegación.</title>
     <path d='M368 155H16a16 16 0 010-32h352a16 16 0 010 32zm0-123H16a16 16 0 010-32h352a16 16 0 010 32zm0 245H16a16 16 0 010-32h352a16 16 0 010 32zm0 0' />
   </svg>
 );
