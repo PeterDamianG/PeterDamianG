@@ -32,7 +32,7 @@
 .textDinamicNavStyle :global {
   cursor: pointer;
   font-weight: bold;
-  animation: animOpacity 1.5s linear;
+  animation: animOpacity 1.25s linear;
 }
 .hero {
   grid-area: hero;
