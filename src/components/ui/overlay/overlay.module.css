@@ -8,6 +8,7 @@
   background-color: var(--background-nav-modal);
   backdrop-filter: blur(4px);
   z-index: 2;
+  animation: animOpacity 1s linear;
 }
 .overlayShowButton {
   background-color: transparent;
