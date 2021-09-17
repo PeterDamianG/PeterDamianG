@@ -24,6 +24,7 @@
   border-color: transparent;
   color: var(--a-color);
   font-size: 2.5em;
+  cursor: pointer;
   transition: all 0.2s linear;
 }
 .closebtn:hover {
@@ -35,9 +36,17 @@
 }
 @media all and (min-width: 640px) and (max-width: 1280px) {
   .closebtn {
-    font-size: 3em;
+    font-size: 3.5em;
   }
   .closebtn:hover {
-    font-size: 3.25em;
+    font-size: 3.75em;
+  }
+}
+@media all and (min-width: 1280px) {
+  .closebtn {
+    font-size: 4em;
+  }
+  .closebtn:hover {
+    font-size: 4.25em;
   }
 }
