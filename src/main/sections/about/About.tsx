@@ -3,7 +3,7 @@ import Button from '@components/ui/button/Button';
 import Overlay from '@components/ui/overlay/Overlay';
 import Avatar from './avatar/Avatar';
 import * as css from './about.module.css';
-import Certification from './cert/Certification';
+import ListCertification from './cert/ListCertification';
 /**
  * A section call about in the web.
  * @example
@@ -30,7 +30,7 @@ const About = (): JSX.Element => (
               </em>
             </u>
           }
-          ChildrenAside={<Certification />}
+          ChildrenAside={<ListCertification />}
         />
       </p>
       <p>
