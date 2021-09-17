@@ -9,6 +9,11 @@
   backdrop-filter: blur(4px);
   z-index: 2;
 }
+.overlayShowButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
 .closebtn {
   position: absolute;
   top: 10px;
