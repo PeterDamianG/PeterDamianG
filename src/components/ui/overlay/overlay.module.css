@@ -11,8 +11,9 @@
   animation: animOpacity 1s linear;
 }
 .overlayShowButton {
-  background-color: transparent;
+  background: transparent;
   border: none;
+  color: var(--foreground);
   cursor: pointer;
 }
 .closebtn {
