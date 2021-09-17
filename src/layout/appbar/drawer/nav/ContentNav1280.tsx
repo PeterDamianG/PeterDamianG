@@ -9,7 +9,11 @@ import * as css from './contentnav1280.module.css';
  * import ContentNav1280 from 'layout/appbar/drawer/nav/ContentNav1280'
  * <ContentNav1280 />
  */
-const ContentNav1280 = (): JSX.Element => {
+const ContentNav1280 = ({
+  close = (): Function | null => null,
+}: {
+  close?: Function;
+}): JSX.Element => {
   // State for show/change textDinamicNav.
   const [number, setNumber] = useState(0);
   // Handler click on textDinamicNav.
@@ -26,6 +30,7 @@ const ContentNav1280 = (): JSX.Element => {
         <a
           title='Presiona H, para acceder rápidamente a esa sección.'
           href='#hero'
+          onClick={(): void => close()}
         >
           Inicio
         </a>
@@ -35,6 +40,7 @@ const ContentNav1280 = (): JSX.Element => {
         <a
           title='Presiona A, para acceder rápidamente a esa sección.'
           href='#about'
+          onClick={(): void => close()}
         >
           Sobre Mí
         </a>
@@ -44,6 +50,7 @@ const ContentNav1280 = (): JSX.Element => {
         <a
           title='Presiona P, para acceder rápidamente a esa sección.'
           href='#proyects'
+          onClick={(): void => close()}
         >
           Proyectos
         </a>
@@ -53,6 +60,7 @@ const ContentNav1280 = (): JSX.Element => {
         <a
           title='Presiona C, para acceder rápidamente a esa sección.'
           href='#contact'
+          onClick={(): void => close()}
         >
           Contacto
         </a>

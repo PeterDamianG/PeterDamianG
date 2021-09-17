@@ -6,26 +6,37 @@ import * as css from './contentnav.module.css';
  * import ContentNav from 'layout/appbar/drawer/nav/ContentNav'
  * <ContentNav />
  */
-const ContentNav = (): JSX.Element => (
+const ContentNav = ({
+  close = (): Function | null => null,
+}: {
+  close?: Function;
+}): JSX.Element => (
   <nav className={css['sidenav']}>
-    <a title='Presiona H, para acceder rápidamente a esa sección.' href='#hero'>
+    <a
+      title='Presiona H, para acceder rápidamente a esa sección.'
+      href='#hero'
+      onClick={(): void => close()}
+    >
       Inicio
     </a>
     <a
       title='Presiona A, para acceder rápidamente a esa sección.'
       href='#about'
+      onClick={(): void => close()}
     >
       Sobre Mí
     </a>
     <a
       title='Presiona P, para acceder rápidamente a esa sección.'
       href='#proyects'
+      onClick={(): void => close()}
     >
       Proyectos
     </a>
     <a
       title='Presiona C, para acceder rápidamente a esa sección.'
       href='#contact'
+      onClick={(): void => close()}
     >
       Contacto
     </a>
