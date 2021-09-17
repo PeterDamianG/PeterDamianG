@@ -5,12 +5,11 @@ import textDinamicNav from './textDinamicNav';
 import * as css from './contentnav1280.module.css';
 /**
  * A content of navigation when you have in 1280 or more of resolution width.
- * @param props.close - Function to close nav drawer.
  * @example
  * import ContentNav1280 from 'layout/appbar/drawer/nav/ContentNav1280'
- * <ContentNav1280 close={handleClose} />
+ * <ContentNav1280 />
  */
-const ContentNav1280 = ({ close }: { close: Function }): JSX.Element => {
+const ContentNav1280 = (): JSX.Element => {
   // State for show/change textDinamicNav.
   const [number, setNumber] = useState(0);
   // Handler click on textDinamicNav.
@@ -23,19 +22,10 @@ const ContentNav1280 = ({ close }: { close: Function }): JSX.Element => {
   // Render.
   return (
     <nav className={css['sidenav']}>
-      <button
-        title='Cierra el menú de navegación.'
-        type='button'
-        className={css['closebtn']}
-        onClick={(): Function => close()}
-      >
-        ×
-      </button>
       <article className={css['hero']}>
         <a
           title='Presiona H, para acceder rápidamente a esa sección.'
           href='#hero'
-          onClick={(): Function => close()}
         >
           Inicio
         </a>
@@ -45,7 +35,6 @@ const ContentNav1280 = ({ close }: { close: Function }): JSX.Element => {
         <a
           title='Presiona A, para acceder rápidamente a esa sección.'
           href='#about'
-          onClick={(): Function => close()}
         >
           Sobre Mí
         </a>
@@ -55,7 +44,6 @@ const ContentNav1280 = ({ close }: { close: Function }): JSX.Element => {
         <a
           title='Presiona P, para acceder rápidamente a esa sección.'
           href='#proyects'
-          onClick={(): Function => close()}
         >
           Proyectos
         </a>
@@ -65,7 +53,6 @@ const ContentNav1280 = ({ close }: { close: Function }): JSX.Element => {
         <a
           title='Presiona C, para acceder rápidamente a esa sección.'
           href='#contact'
-          onClick={(): Function => close()}
         >
           Contacto
         </a>
