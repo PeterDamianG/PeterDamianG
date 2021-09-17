@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import OverlayHotKeys from './OverlayHotKeys';
 import * as css from './overlay.module.css';
 /**
@@ -42,7 +42,7 @@ const Overlay = ({
           >
             ×
           </button>
-          {ChildrenAside}
+          {React.cloneElement(ChildrenAside, { close: closeOverlay })}
         </aside>
       )}
     </>
