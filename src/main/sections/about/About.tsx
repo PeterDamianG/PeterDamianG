@@ -23,7 +23,13 @@ const About = (): JSX.Element => (
         Estoy interesado en formarme constantemente y mejorar día a día. Aquí
         puedes observar algunas de mis
         <Overlay
-          ChildrenButton={<b>certificaciones.</b>}
+          ChildrenButton={
+            <u>
+              <em>
+                <b>certificaciones.</b>
+              </em>
+            </u>
+          }
           ChildrenAside={<Certification />}
         />
       </p>
