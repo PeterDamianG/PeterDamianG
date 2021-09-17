@@ -1,50 +1,38 @@
-import { useState } from 'react';
-import { useHotkeys } from 'react-hotkeys-hook';
 import MenuIconSVG from 'components/icons/appbar/MenuIconSVG';
-import ContainerNav from './ContainerNav';
+import Overlay from '@components/ui/overlay/Overlay';
+import dynamic from 'next/dynamic';
+import LoaderSpinner from '@components/icons/utils/loader/LoaderSpinnerSVG';
+import { useMediaQuery } from 'react-responsive';
+
+const ContentNav = dynamic(() => import('./nav/ContentNav'), {
+  loading: () => <LoaderSpinner />,
+  ssr: false,
+});
+const ContentNav1280 = dynamic(() => import('./nav/ContentNav1280'), {
+  loading: () => <LoaderSpinner />,
+  ssr: false,
+});
 /**
- * An drawer for contain a menu to navigate.
+ * An drawer for contain a menu to navigate using component Overlay and render by resolution.
  * @example
  * import Drawer from 'layout/appbar/drawer/Drawer'
- * <AppBar />
+ * <Drawer />
  */
 const Drawer = (): JSX.Element => {
-  const [isOpen, setIsOpen] = useState(false);
-  // Handlers
-  const openDrawer = (): void => setIsOpen(true);
-  const closeDrawer = (): void => setIsOpen(false);
-  /*
-   ** All Hotkeys for Drawer
-   */
-  // Set hotkey to open/close drawer.
-  useHotkeys('m', () => setIsOpen((open) => !open));
-  // Set hotkey escape to close drawer.
-  useHotkeys('escape', () => closeDrawer());
-  // Set hotkey to handler move between sections.
-  useHotkeys('h', () => {
-    window.location.hash = 'hero'; // Go hero section.
-    closeDrawer();
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1280px)',
   });
-  useHotkeys('a', () => {
-    window.location.hash = 'about'; // Go about section.
-    closeDrawer();
-  });
-  useHotkeys('p', () => {
-    window.location.hash = 'proyects'; // Go proyects section.
-    closeDrawer();
-  });
-  useHotkeys('c', () => {
-    window.location.hash = 'contact'; // Go contact section.
-    closeDrawer();
-  });
-  // Render Component
+  // Show design for 1280 or more.
+  if (isDesktopOrLaptop)
+    return (
+      <Overlay
+        ChildrenButton={<MenuIconSVG />}
+        ChildrenAside={<ContentNav1280 />}
+      />
+    );
+  // Normal design return.
   return (
-    <>
-      {/* SVG Button to open Drawer */}
-      <MenuIconSVG onClick={openDrawer} />
-      {/* Show Drawer */}
-      {isOpen && <ContainerNav close={closeDrawer} />}
-    </>
+    <Overlay ChildrenButton={<MenuIconSVG />} ChildrenAside={<ContentNav />} />
   );
 };
 
