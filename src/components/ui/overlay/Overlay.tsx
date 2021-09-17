@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useHotkeys } from 'react-hotkeys-hook';
+import OverlayHotKeys from './OverlayHotKeys';
 import * as css from './overlay.module.css';
 /**
  * Generic overlay from multiple proposes.
@@ -18,30 +18,8 @@ const Overlay = ({
   // Handlers.
   const openOverlay = (): void => setIsOpen(true);
   const closeOverlay = (): void => setIsOpen(false);
-  /*
-   ** All Hotkeys for Overlay
-   */
-  // Set hotkey to open/close drawer.
-  useHotkeys('m', () => setIsOpen((open) => !open));
-  // Set hotkey escape to close drawer.
-  useHotkeys('escape', () => closeOverlay());
-  // Set hotkey to handler move between sections.
-  useHotkeys('h', () => {
-    window.location.hash = 'hero'; // Go hero section.
-    closeOverlay();
-  });
-  useHotkeys('a', () => {
-    window.location.hash = 'about'; // Go about section.
-    closeOverlay();
-  });
-  useHotkeys('p', () => {
-    window.location.hash = 'proyects'; // Go proyects section.
-    closeOverlay();
-  });
-  useHotkeys('c', () => {
-    window.location.hash = 'contact'; // Go contact section.
-    closeOverlay();
-  });
+  // Set HotKeys.
+  OverlayHotKeys(closeOverlay);
   // Render.
   return (
     <>
