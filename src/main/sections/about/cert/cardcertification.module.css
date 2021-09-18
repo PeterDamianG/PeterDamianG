@@ -1,0 +1,47 @@
+.CardCertification {
+  width: 80%;
+  background-color: var(--background);
+  border-radius: 6px;
+  border: 2px solid var(--border-card-certification);
+  margin-bottom: 3vh;
+  text-align: center;
+}
+.CardTitle {
+  display: block;
+  margin: 1vh 0;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+.CardSubtitle a {
+  color: var(--foreground);
+  display: block;
+  margin: 2vh 0;
+}
+.CardSubtitle a:hover {
+  text-decoration: underline;
+}
+.CardCredID {
+  display: block;
+  margin: 1vh 0;
+  font-size: 0.7em;
+}
+.CardLink a {
+  display: block;
+  margin: 1vh 0;
+  color: #0a66c2;
+}
+.CardLink a:hover {
+  text-decoration: underline;
+}
+@media all and (min-width: 640px) and (max-width: 1280px) {
+  .CardLink svg {
+    height: 40px;
+    width: 40px;
+  }
+}
+@media all and (min-width: 1280px) {
+  .CardLink svg {
+    height: 48px;
+    width: 48px;
+  }
+}
