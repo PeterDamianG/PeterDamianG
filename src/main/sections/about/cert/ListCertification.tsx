@@ -1,0 +1,25 @@
+import * as css from './listcertification.module.css';
+import CERTIFICATIONS from './certifications';
+import CardCertification from './CardCertification';
+/**
+ * A component to show list of ListCertification.
+ * @example
+ * import ListCertification from 'main/sections/about/About/cert/ListCertification'
+ * <ListCertification />
+ */
+const ListCertification = (): JSX.Element => (
+  <ul className={css['listCertification']}>
+    {CERTIFICATIONS.map(({ id, title, emit, emitURL, credID, URL }) => (
+      <CardCertification
+        key={id}
+        title={title}
+        emit={emit}
+        emitURL={emitURL}
+        credID={credID}
+        URL={URL}
+      />
+    ))}
+  </ul>
+);
+
+export default ListCertification;
