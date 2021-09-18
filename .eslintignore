@@ -1,7 +1,6 @@
-/.husky
 /.next
+/logs
 /coverage
-/docs
 /node_modules
 /out
 /public

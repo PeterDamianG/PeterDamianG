@@ -10,6 +10,8 @@ _v 0.2:_ Coming Soon - Proximamente
 - Better structure to folders.
 - Reduce CSS and animations.
 - Remove JSDOC.
+- Refactor all sections.
+- Remove husky in future change for other tool.
 
 
 _v 0.1:_

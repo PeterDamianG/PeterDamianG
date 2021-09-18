@@ -1,6 +1,6 @@
 {
   "name": "@peterdg/peterdg-personalweb",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Una Web Personal, para el desarrollador Peter Damián Gómez",
   "keywords": [
     "nextjs",
@@ -8,18 +8,17 @@
     "next",
     "react",
     "web",
-    "personal"
+    "personal",
+    "portfolio"
   ],
   "author": "Peter Damián Gómez <PeterDamianG@Gmail.com> (https://github.com/PeterDamianG)",
   "license": "MIT",
   "scripts": {
-    "export": "next build && next export && cd out && index.html",
     "dev": "next dev",
     "dev-debug": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
-    "prepare": "husky install",
-    "prettier": "prettier --write src/**/*.{js,jsx,css,ts,tsx} && prettier --check src/**/*.{js,jsx,css,ts,tsx}",
+    "prettier": "prettier --ignore-path .gitignore --write src/**/*.{js,jsx,css,ts,tsx} && prettier --check src/**/*.{js,jsx,css,ts,tsx}",
     "eslint": "next lint",
     "test": "jest --verbose --runInBand",
     "coverage": "jest --coverage --verbose --runInBand && cd coverage/lcov-report && index.html"
@@ -55,7 +54,6 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.25.1",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^7.0.2",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.1.0",
     "prettier": "^2.3.2",
