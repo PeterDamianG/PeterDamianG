@@ -4,13 +4,13 @@ html {
   scroll-snap-type: y mandatory;
   overscroll-behavior-y: contain;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
 }
 a:link,
 a:visited,
@@ -25,6 +25,9 @@ svg {
 }
 * {
   box-sizing: border-box;
+}
+.noScroll {
+  overflow-y: hidden;
 }
 /* Animation */
 @keyframes animOpacity {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import OverlayHotKeys from './OverlayHotKeys';
 import * as css from './overlay.module.css';
 /**
@@ -15,6 +15,11 @@ const Overlay = ({
   ChildrenAside: JSX.Element;
 }): JSX.Element => {
   const [isOpen, setIsOpen] = useState(false);
+  // Effect to remove scroll in HTML document.
+  useEffect(() => {
+    if (isOpen) document.body.classList.add('noScroll');
+    else document.body.classList.remove('noScroll');
+  }, [isOpen]);
   // Handlers.
   const openOverlay = (): void => setIsOpen(true);
   const closeOverlay = (): void => setIsOpen(false);
