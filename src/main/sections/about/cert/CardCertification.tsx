@@ -1,5 +1,6 @@
 import * as css from './cardcertification.module.css';
 import ExternalLinkSVG from '@icons/utils/link/ExternalLinkSVG';
+import BaseCard from '@components/ui/basecard/BaseCard';
 
 type CardCertificationProps = {
   title: string;
@@ -32,25 +33,27 @@ const CardCertification = ({
   credID,
   URL,
 }: CardCertificationProps): JSX.Element => (
-  <li className={css['CardCertification']}>
-    <span className={css['CardTitle']}>{title}</span>
-    <span className={css['CardSubtitle']}>
-      <a href={emitURL} target='_blank' rel='noreferrer'>
-        {emit}
-      </a>
-    </span>
-    {credID && (
-      <span className={css['CardCredID']}>
-        ID de la credencial: <b>{credID}</b>
+  <BaseCard>
+    <>
+      <span className={css['CardTitle']}>{title}</span>
+      <span className={css['CardSubtitle']}>
+        <a href={emitURL} target='_blank' rel='noreferrer'>
+          {emit}
+        </a>
       </span>
-    )}
-    <span className={css['CardLink']}>
-      <a href={URL} target='_blank' rel='noreferrer'>
-        Ver Credencial
-        <ExternalLinkSVG />
-      </a>
-    </span>
-  </li>
+      {credID && (
+        <span className={css['CardCredID']}>
+          ID de la credencial: <b>{credID}</b>
+        </span>
+      )}
+      <span className={css['CardLink']}>
+        <a href={URL} target='_blank' rel='noreferrer'>
+          Ver Credencial
+          <ExternalLinkSVG />
+        </a>
+      </span>
+    </>
+  </BaseCard>
 );
 
 export default CardCertification;

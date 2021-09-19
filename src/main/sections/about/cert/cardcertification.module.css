@@ -1,11 +1,3 @@
-.CardCertification {
-  width: 80%;
-  background-color: var(--background);
-  border-radius: 6px;
-  border: 2px solid var(--border-card-certification);
-  margin-bottom: 3vh;
-  text-align: center;
-}
 .CardTitle {
   display: block;
   margin: 1vh 0;

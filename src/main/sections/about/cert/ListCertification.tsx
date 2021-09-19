@@ -8,7 +8,7 @@ import CardCertification from './CardCertification';
  * <ListCertification />
  */
 const ListCertification = (): JSX.Element => (
-  <ul className={css['listCertification']}>
+  <span className={css['listCertification']}>
     {CERTIFICATIONS.map(({ id, title, emit, emitURL, credID, URL }) => (
       <CardCertification
         key={id}
@@ -19,7 +19,7 @@ const ListCertification = (): JSX.Element => (
         URL={URL}
       />
     ))}
-  </ul>
+  </span>
 );
 
 export default ListCertification;
