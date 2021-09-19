@@ -155,6 +155,35 @@ const content = [
       </>
     ),
   },
+  {
+    title: 'TypeScript',
+    caption: '¿Podrá TypeScript convertirse en el estándar web?',
+    html: (): JSX.Element => (
+      <>
+        <p>
+          <span className={css['reserve']}>
+            const&nbsp;
+            <span className={css['val']}>MyComponent&nbsp;</span>
+            <span className={css['reserve']}>():&nbsp;</span>
+            <span className={css['prop']}>JSX.Element&nbsp;</span>
+            <span className={css['reserve']}>=&gt; &#123;</span>
+          </span>
+        </p>
+        <p>
+          <span>&nbsp;&nbsp;/* Your Component... */</span>
+        </p>
+        <p>
+          <span className={css['reserve']}>&#125;;</span>
+        </p>
+        <br />
+        <p>
+          <span className={css['reserve']}>export default&nbsp;</span>
+          <span className={css['val']}>MyComponent</span>
+          <span className={css['reserve']}>;</span>
+        </p>
+      </>
+    ),
+  },
 ] as const;
 
 export default content;

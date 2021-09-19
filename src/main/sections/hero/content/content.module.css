@@ -4,3 +4,6 @@
 .val {
   color: var(--ide-values);
 }
+.reserve {
+  color: var(--ide-reserve);
+}
