@@ -1,6 +1,7 @@
 import ScrollDownSVG from '@icons/utils/scrolldown/ScrollDownSVG';
 import Button from '@components/ui/button/Button';
 import Overlay from '@components/ui/overlay/Overlay';
+import TitleSection from '@components/ui/titlesection/TitleSection';
 import Avatar from './avatar/Avatar';
 import * as css from './about.module.css';
 import ListCertification from './cert/ListCertification';
@@ -12,7 +13,7 @@ import ListCertification from './cert/ListCertification';
  */
 const About = (): JSX.Element => (
   <>
-    <h2 className={css['title']}>Sobre Mí</h2>
+    <TitleSection value='Sobre Mí' />
     <Avatar />
     <article className={css['content']}>
       <p>
