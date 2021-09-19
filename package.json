@@ -12,6 +12,7 @@
     "portfolio"
   ],
   "author": "Peter Damián Gómez <PeterDamianG@Gmail.com> (https://github.com/PeterDamianG)",
+  "homepage": "https://peterdg.com.ar/",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
