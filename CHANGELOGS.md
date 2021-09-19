@@ -12,6 +12,7 @@ _v 0.2:_ Coming Soon - Proximamente
 - Remove JSDOC.
 - Refactor all sections.
 - Remove husky in future change for other tool.
+- Remove normalize.css, add to global only important css.
 
 
 _v 0.1:_
