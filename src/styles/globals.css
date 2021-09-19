@@ -1,4 +1,6 @@
 html {
+  line-height: 1.15; /* Correct the line height in all browsers.*/
+  -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. */
   scroll-snap-type: mandatory; /* for older browsers */
   scroll-snap-points-y: repeat(100vh); /* for older browsers */
   scroll-snap-type: y mandatory;
@@ -12,12 +14,41 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   overflow-x: hidden;
 }
+main {
+  display: block; /* Render the `main` element consistently in IE. */
+}
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
 a:link,
 a:visited,
 a:active {
+  background-color: transparent;
   text-decoration: none;
   font-weight: bold;
   color: var(--background);
+}
+b,
+strong {
+  font-weight: bolder;
+}
+code,
+kbd,
+samp {
+  font-size: 1em;
+}
+small {
+  font-size: 75%;
 }
 svg {
   cursor: pointer;
