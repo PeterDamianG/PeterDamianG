@@ -14,7 +14,7 @@ const Proyects = dynamic(() => import('./sections/proyects'), {
   loading: () => <LoaderSpinner />,
   ssr: false,
 });
-const Contact = dynamic(() => import('./sections/contact'), {
+const Contact = dynamic(() => import('./sections/contact/Contact'), {
   loading: () => <LoaderSpinner />,
   ssr: false,
 });
