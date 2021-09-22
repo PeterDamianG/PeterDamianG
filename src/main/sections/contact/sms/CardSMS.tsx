@@ -13,7 +13,7 @@ const CardSMS = (): JSX.Element => (
     <div className={css['cardFlex']}>
       <h3 className={css['title']}>Mensajería Directa</h3>
       <aside className={css['smsIconFlex']}>
-        <a href='bit.ly/3kwROHZ' target='_blank' rel='noreferrer'>
+        <a href='https://bit.ly/3kwROHZ' target='_blank' rel='noreferrer'>
           <WhatsAppSVG />
         </a>
         <a href='https://t.me/PeterDamianG' target='_blank' rel='noreferrer'>
