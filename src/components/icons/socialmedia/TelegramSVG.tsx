@@ -12,7 +12,7 @@ const TelegramSVG = (props: SVGProps<SVGSVGElement>): JSX.Element => (
     role='button'
     height={24}
     width={24}
-    viewBox='0 0 512 512'
+    viewBox='0 0 24 24'
     {...props}
   >
     <title>Enviarme un mensaje a Telegram.</title>
