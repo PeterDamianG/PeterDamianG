@@ -19,10 +19,6 @@
   align-items: center;
   justify-content: space-around;
 }
-.containerMain svg {
-  height: 48px;
-  width: 48px;
-}
 .title {
   font-size: 3em;
   text-shadow: 1px 1px 1px var(--foreground);

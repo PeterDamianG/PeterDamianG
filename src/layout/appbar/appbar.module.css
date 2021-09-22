@@ -29,25 +29,9 @@
   text-shadow: 2px 2px 4px var(--foreground);
   transition: text-shadow 0.2s linear;
 }
-.svgController svg {
-  height: 32px;
-  width: 32px;
-  margin: 1vh;
-  filter: drop-shadow(2px 2px 4px var(--foreground));
-}
-@media all and (min-width: 1280px) {
-  .svgController svg {
-    margin: 5vh;
-  }
-}
 @media all and (max-height: 640px) and (orientation: landscape) {
   .headerFlex h1 {
     font-size: 1em;
     letter-spacing: 2vw;
-  }
-  .svgController svg {
-    height: 16px;
-    width: 16px;
-    margin: 5vh;
   }
 }

@@ -1,7 +1,5 @@
 .arrow {
   position: absolute;
-  width: 6vw;
-  height: 6vh;
   right: 2vw;
   top: 385vh;
   animation: movearrowup ease 2s infinite;

@@ -10,8 +10,6 @@ const TelegramSVG = (props: SVGProps<SVGSVGElement>): JSX.Element => (
   <svg
     aria-label='Telegram Button'
     role='button'
-    height={24}
-    width={24}
     viewBox='0 0 24 24'
     {...props}
   >

@@ -10,8 +10,6 @@ const DarkIconSVG = (props: SVGProps<SVGSVGElement>): JSX.Element => (
   <svg
     aria-label='Dark Button'
     role='button'
-    height={24}
-    width={24}
     viewBox='-12 0 500 500'
     {...props}
   >

@@ -14,8 +14,6 @@ const ScollDownSVG = (props: SVGProps<SVGSVGElement>): JSX.Element => (
     className={css['all']}
     aria-label='Scroll Down'
     role='figure'
-    width='48px'
-    height='48px'
     viewBox='0 0 247 390'
     {...props}
   >

@@ -10,8 +10,6 @@ const LightIconSVG = (props: SVGProps<SVGSVGElement>): JSX.Element => (
   <svg
     aria-label='Light Button'
     role='button'
-    height={24}
-    width={24}
     viewBox='0 0 612 612'
     {...props}
   >

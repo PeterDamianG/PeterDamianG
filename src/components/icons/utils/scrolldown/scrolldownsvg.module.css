@@ -1,7 +1,6 @@
 .all {
-  margin: 0.25vh;
   stroke: var(--foreground);
-  cursor: all-scroll;
+  cursor: pointer;
 }
 .scrollAnim {
   animation: scroll ease 3s infinite;

@@ -10,8 +10,6 @@ const LinkedInSVG = (props: SVGProps<SVGSVGElement>): JSX.Element => (
   <svg
     aria-label='LinkedIn Button'
     role='button'
-    height={24}
-    width={24}
     viewBox='-21 -35 682.7 682'
     {...props}
   >

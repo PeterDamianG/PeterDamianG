@@ -7,10 +7,6 @@
   text-shadow: 1px 1px 1px var(--foreground);
   transition: text-shadow 0.2s linear;
 }
-.containerMain svg {
-  height: 26px;
-  width: 26px;
-}
 .title {
   font-size: 1.75em;
   margin: 2vh 0;
@@ -41,10 +37,6 @@
   .subtitle {
     font-size: 2em;
   }
-  .containerMain svg {
-    height: 40px;
-    width: 40px;
-  }
   .textContent {
     font-size: 2em;
   }
@@ -56,10 +48,6 @@
   .subtitle {
     font-size: 3em;
   }
-  .containerMain svg {
-    height: 46px;
-    width: 46px;
-  }
   .textContent {
     font-size: 2.5em;
   }
@@ -70,10 +58,6 @@
   }
   .subtitle {
     font-size: 2.5em;
-  }
-  .containerMain svg {
-    height: 40px;
-    width: 40px;
   }
   .textContent {
     font-size: 2em;

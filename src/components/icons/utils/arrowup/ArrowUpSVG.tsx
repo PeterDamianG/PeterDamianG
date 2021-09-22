@@ -12,8 +12,6 @@ const ArrowUpSVG = (props: SVGProps<SVGSVGElement>): JSX.Element => (
   <svg
     className={css['arrow']}
     viewBox='0 0 512 512'
-    width='50%'
-    height='50%'
     aria-label='Arrow Up'
     {...props}
   >

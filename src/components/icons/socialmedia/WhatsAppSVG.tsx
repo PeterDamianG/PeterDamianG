@@ -10,8 +10,6 @@ const WhatsAppSVG = (props: SVGProps<SVGSVGElement>): JSX.Element => (
   <svg
     aria-label='WhatsApp Button'
     role='button'
-    height={24}
-    width={24}
     viewBox='0 0 512 512'
     {...props}
   >

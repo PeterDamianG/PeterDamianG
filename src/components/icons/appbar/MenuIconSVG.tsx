@@ -10,8 +10,6 @@ const MenuIconSVG = (props: SVGProps<SVGSVGElement>): JSX.Element => (
   <svg
     aria-label='Menu Button'
     role='button'
-    height={24}
-    width={24}
     {...props}
     viewBox='0 -53 384 384'
   >

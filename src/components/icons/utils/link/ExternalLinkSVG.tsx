@@ -10,8 +10,6 @@ const ExternalLinkSVG = (props: SVGProps<SVGSVGElement>): JSX.Element => (
   <svg
     aria-label='External Link'
     role='button'
-    height={24}
-    width={24}
     viewBox='0 -3 24 24'
     fill='#0a66c2'
     stroke='#0a66c2'

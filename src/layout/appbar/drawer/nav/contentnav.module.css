@@ -27,10 +27,6 @@
   .sidenav a {
     font-size: 4.25em;
   }
-  .sidenav svg {
-    height: 64px;
-    width: 64px;
-  }
 }
 @media all and (max-height: 640px) and (orientation: landscape) {
   .sidenav a {
