@@ -59,8 +59,8 @@ small {
 svg {
   cursor: pointer;
   fill: var(--foreground);
-  width: 8vw;
-  height: 8vh;
+  width: 6.5vw;
+  height: 6.5vh;
   filter: drop-shadow(0.5px 0.5px 1px var(--foreground));
   transition: filter 0.2s linear;
   animation: svgOpacity 3s linear alternate infinite;

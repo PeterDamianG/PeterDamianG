@@ -1,32 +1,32 @@
-/** @module Sections/Proyects */
 import { useMediaQuery } from 'react-responsive';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
-import { container } from './card.module.css';
+import * as css from './card.module.css';
 import CardNav from './CardNav';
+
+type CardProps = {
+  name: string;
+  URL: string;
+  description: string;
+  tech: string;
+  img: string;
+  upIndex: Function;
+  downIndex: Function;
+};
 /**
- * A component to render cards.
- * @function Card
+ * A component to render card proyect.
  * @example
- * import Card from 'components/main/sections/setproyects/card/Card'
- * <Card />
- * @returns {JSX.Element} An element of React.
+ * import CardProyect from 'main/sections/showproyect/card/CardProyect'
+ * <CardProyect />
  */
 const Card = ({
   name,
-  url,
-  desc,
-  lang,
+  URL,
+  description,
+  tech,
   img,
-  isBitbucket,
   upIndex,
   downIndex,
-}) => {
-  // Handle Click Arrow.
-  const handleClickArrow = (upOrDown) => {
-    upOrDown();
-  };
-  // Other design.
+}: CardProps): JSX.Element => {
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1280px)',
   });

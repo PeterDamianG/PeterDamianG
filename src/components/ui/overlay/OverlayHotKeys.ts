@@ -1,5 +1,10 @@
 import { useHotkeys } from 'react-hotkeys-hook';
-
+/**
+ * A custom hook for set hotkeys to overlay.
+ * @example
+ * import OverlayHotKeys from 'components/ui/overlay/OverlayHotKeys'
+ * OverlayHotKeys(closeOverlay);
+ */
 const OverlayHotKeys = (close: Function): void => {
   // Set hotkey escape to close drawer.
   useHotkeys('escape', () => close());

@@ -1,15 +1,3 @@
-/* Flat Mode for Mobile Devices */
-.container {
-  width: 85vw;
-  height: 75vh;
-  display: flex;
-  flex-direction: column;
-  border-radius: 5%;
-  border: 2px solid var(--background);
-  background-color: var(--foreground);
-  color: var(--background);
-  text-align: justify;
-}
 .container div {
   width: 100%;
   height: 100%;

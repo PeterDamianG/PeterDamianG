@@ -10,7 +10,7 @@ const About = dynamic(() => import('./sections/about/About'), {
   loading: () => <LoaderSpinner />,
   ssr: false,
 });
-const Proyects = dynamic(() => import('./sections/proyects'), {
+const Proyects = dynamic(() => import('./sections/proyects/Proyects'), {
   loading: () => <LoaderSpinner />,
   ssr: false,
 });
