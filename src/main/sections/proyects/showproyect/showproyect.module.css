@@ -1,0 +1,18 @@
+.container {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.slide-button {
+  font-size: 2em;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.containerCardPag {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+}
