@@ -1,0 +1,23 @@
+.spaceButtonDot {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.3vh 0;
+}
+.buttonDot {
+  cursor: pointer;
+  border-radius: 100%;
+}
+.buttonDotActive {
+  cursor: pointer;
+  border-radius: 100%;
+  animation: animPagDot 2.5s linear alternate infinite;
+}
+@keyframes animPagDot {
+  from {
+    background-color: var(--foreground);
+  }
+  to {
+    background-color: var(--background);
+  }
+}
