@@ -1,15 +1,13 @@
 import Image from 'next/image';
-import CardNav from './CardNav';
 import BaseCard from '@components/ui/basecard/BaseCard';
 import * as css from './card.module.css';
+
 type CardProps = {
   name: string;
   URL: string;
   description: string;
   tech: string;
   img: string;
-  upIndex: Function;
-  downIndex: Function;
 };
 /**
  * A component to render card proyect.
@@ -21,18 +19,14 @@ type CardProps = {
  *   description={description}
  *   tech={tech}
  *   img={img}
- *   upIndex={handleUpIndex}
- *   downIndex={handleDownIndex}
  * />
  */
-const Card = ({
+const CardProyect = ({
   name,
   URL,
   description,
   tech,
   img,
-  upIndex,
-  downIndex,
 }: CardProps): JSX.Element => (
   <BaseCard>
     {[name].map((key) => (
@@ -48,10 +42,10 @@ const Card = ({
           blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkmAkAAJ8AmzsOXcYAAAAASUVORK5CYII='
         />
         <p>{description}</p>
-        <CardNav upIndex={upIndex} downIndex={downIndex} URL={URL} />
+        <p>{URL}</p>
       </div>
     ))}
   </BaseCard>
 );
 
-export default Card;
+export default CardProyect;
