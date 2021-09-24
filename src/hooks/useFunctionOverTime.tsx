@@ -9,6 +9,7 @@ import { useState, useEffect } from 'react';
  * useFunctionOverTime(myFunc, 3000);
  */
 const useFunctionOverTime = (callback: Function, time = 6000): number => {
+  // State to count every call of function.
   const [count, setCount] = useState(0);
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -17,7 +18,7 @@ const useFunctionOverTime = (callback: Function, time = 6000): number => {
     }, time);
     return (): void => clearTimeout(timer);
   }, [callback, time]);
-
+  // Return number of call to function.
   return count;
 };
 
