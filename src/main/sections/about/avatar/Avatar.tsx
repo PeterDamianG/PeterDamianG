@@ -15,7 +15,6 @@ const Avatar = (): JSX.Element => (
     alt='Picture of Author. Peter DG.'
     priority
     placeholder='blur'
-    quality='50'
   />
 );
 
