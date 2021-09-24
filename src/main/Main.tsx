@@ -29,7 +29,7 @@ const Main = (): JSX.Element => (
     {/* Section Hero */}
     <WrapperSection
       title='Sección Hero - Peter Damián Gómez'
-      description='Sección hero de la web personal de Peter Damián Gómez. Donde se muestra una entrada simple y dinámica para los visitantes.'
+      description='Sección hero de la web personal de Peter Damián Gómez. Donde se muestra una entrada dinámica para los visitantes.'
       hash='hero'
     >
       <Hero />
@@ -37,7 +37,7 @@ const Main = (): JSX.Element => (
     {/* Section About */}
     <WrapperSection
       title='Sección Sobre Mí - Peter Damián Gómez'
-      description='Sección sobre mí de la web personal de Peter Damián Gómez. Un extracto sobre mí persona.'
+      description='Sección sobre mí de la web personal de Peter Damián Gómez. Un extracto sobre mí persona y algo de información.'
       hash='about'
     >
       <About />
