@@ -5,7 +5,16 @@ import * as css from './overlay.module.css';
  * Generic overlay from multiple proposes.
  * @example
  * import Overlay from 'components/ui/overlay/Overlay'
- * <Overlay />
+ * <Overlay
+ *    ChildrenButton={
+ *      <u>
+ *         <em>
+ *           <b>certificaciones.</b>
+ *         </em>
+ *      </u>
+ *     }
+ *     ChildrenAside={<ListCertification />}
+ * />
  */
 const Overlay = ({
   ChildrenButton,
