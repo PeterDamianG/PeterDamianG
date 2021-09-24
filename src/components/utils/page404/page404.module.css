@@ -1,5 +1,5 @@
 /* Flat Mode for Mobile Devices */
-.mainStyle {
+.page404 :global {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,80 +13,45 @@
   scroll-snap-align: center;
   animation: animOpacity 1s linear;
 }
-.mainStyle h2 {
+.page404 h2 {
   padding-top: 2vh;
   font-size: 3em;
   text-align: center;
 }
-.mainStyle p {
+.page404 p {
   width: 50%;
   font-size: 2em;
   text-align: center;
 }
-.mainStyle h3 {
+.page404 h3 {
   width: 75%;
   font-size: 1.5em;
   text-align: center;
 }
-/* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
 @media all and (min-width: 640px) and (max-width: 1280px) {
-  .mainStyle h2 {
-    padding-top: 2vh;
+  .page404 h2 {
     font-size: 4em;
   }
-  .mainStyle p {
+  .page404 p {
     width: 75%;
     font-size: 3em;
-    text-align: center;
   }
-  .mainStyle h3 {
+  .page404 h3 {
     width: 85%;
     font-size: 2.5em;
-    text-align: center;
   }
 }
-/* Animation Mode for PC and TV Devices */
 @media all and (min-width: 1280px) {
-  .mainStyle h2 {
+  .page404 h2 {
     font-size: 4em;
   }
-  .mainStyle p {
-    width: 50%;
+  .page404 p {
     font-size: 4em;
-    text-align: center;
     margin: 0;
   }
-  .mainStyle h3 {
+  .page404 h3 {
     width: 100%;
     font-size: 3.5em;
-    text-align: center;
     margin: 0;
-  }
-}
-/* Landscape */
-@media all and (max-height: 640px) and (orientation: landscape) {
-  .mainStyle h2 {
-    padding-top: 2vh;
-    font-size: 3em;
-    text-align: center;
-  }
-  .mainStyle p {
-    width: 50%;
-    font-size: 2em;
-    text-align: center;
-  }
-  .mainStyle h3 {
-    width: 75%;
-    font-size: 1.5em;
-    text-align: center;
-  }
-}
-/* Animations */
-@keyframes animOpacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
