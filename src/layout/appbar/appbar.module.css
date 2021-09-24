@@ -2,16 +2,16 @@
   position: fixed;
   background-color: var(--background);
   border-bottom: 1px solid var(--foreground);
-  height: 5vh;
+  height: 6vh;
   width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1vh;
   z-index: 1;
-  animation: animOpacity 1s linear;
   box-shadow: 1px 1px 4px var(--foreground);
   transition: box-shadow 0.2s linear;
+  animation: animOpacity 1s linear;
 }
 .headerFlex:hover {
   box-shadow: 2px 2px 8px var(--foreground);
@@ -20,8 +20,7 @@
 .headerFlex h1 {
   color: var(--foreground) !important;
   font-size: 2em;
-  letter-spacing: 1.75vw;
-  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: 2vw;
   text-shadow: 1px 1px 2px var(--foreground);
   transition: text-shadow 0.2s linear;
 }
