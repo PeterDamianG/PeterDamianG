@@ -42,7 +42,6 @@ const Overlay = ({
         className={css['overlayShowButton']}
         type='button'
         onClick={openOverlay}
-        title='Mostrar listado de certificados.'
       >
         {ChildrenButton}
       </button>
@@ -56,6 +55,7 @@ const Overlay = ({
           >
             ×
           </button>
+          {/* Use React Clone, to pass params to children. */}
           {React.cloneElement(ChildrenAside, { close: closeOverlay })}
         </aside>
       )}
