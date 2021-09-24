@@ -6,7 +6,7 @@ import ErrorFallback from '@components/utils/errorfallback/ErrorFallback';
 import * as css from './wrappersection.module.css';
 
 type WrapperProps = {
-  children: JSX.Element | JSX.Element[];
+  children: JSX.Element;
   title: string;
   description: string;
   hash: 'hero' | 'about' | 'proyects' | 'contact';
@@ -14,21 +14,27 @@ type WrapperProps = {
 };
 /**
  * A Wrapper for add sections with intersection observer, frame motion and next/head .
- * @param children - A component of react.
- * @param title - A title for change seo, change title tag in html document.
- * @param description - A description for seo, changre meta description tag in html document.
- * @param hash - A string to make a hash router redirection.
- * @param threshold - A number in range [0,1], to set percent of show component to set inView true or false.
+ * @param props.children - A component of react.
+ * @param props.title - A title for change seo, change title tag in html document.
+ * @param props.description - A description for seo, changre meta description tag in html document.
+ * @param props.hash - A string to make a hash router redirection.
+ * @param props.threshold - A number in range [0,1], to set percent of show component to set inView true or false.
  * @example
  * import WrapperSection from 'main/WrapperSection'
- * <WrapperSection />
+ * <WrapperSection
+ *   title='Sección Sobre Mí - Peter Damián Gómez'
+ *   description='Sección sobre mí de la web personal de Peter Damián Gómez. Un extracto sobre mí persona y algo de información.'
+ *   hash='about'
+ * >
+ *  <About />
+ * </WrapperSection>
  */
 const WrapperSection = ({
   children,
   title,
   description,
   hash,
-  threshold = 0.75,
+  threshold = 0.25,
 }: WrapperProps): JSX.Element => {
   // State for check element exist to render or not.
   const [exist, isExist] = useState(false);
