@@ -4,12 +4,12 @@
   top: 385vh;
   animation: movearrowup ease 2s infinite;
 }
-/* Animations */
+/* Animation */
 @keyframes movearrowup {
   0% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-2vh);
+    transform: translateY(-4vh);
   }
 }
