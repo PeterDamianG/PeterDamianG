@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import useFunctionOverTime from 'hooks/useFunctionOverTime';
 import ShowProyectHotKeys from './ShowProyectHotKeys';
 import listProyects from './listProyects';
 import Button from '@components/ui/button/Button';
@@ -25,8 +24,6 @@ const ShowProyect = (): JSX.Element => {
       ? setIndex(listProyects.length - 1)
       : setIndex((prevIndex) => prevIndex - 1);
   const handleSetIndex = (number: number): void => setIndex(number);
-  // Hook to change states automatic.
-  useFunctionOverTime(handleUpIndex, 16000);
   // Set hotkeys.
   ShowProyectHotKeys(handleUpIndex, handleDownIndex, index);
   // Destructuring.

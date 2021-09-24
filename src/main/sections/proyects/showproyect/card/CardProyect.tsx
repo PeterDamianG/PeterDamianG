@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import BaseCard from '@components/ui/basecard/BaseCard';
+import Overlay from '@components/ui/overlay/Overlay';
 import Button from '@components/ui/button/Button';
+import ExternalLinkSVG from '@icons/utils/link/ExternalLinkSVG';
+import WrapperIMG from './WrapperIMG';
 import * as css from './cardproyect.module.css';
 
 type CardProps = {
@@ -32,17 +35,14 @@ const CardProyect = ({
   <BaseCard>
     {[name].map((key) => (
       <div key={key} className={css['containerAll']}>
-        <Image
-          src={img}
-          alt={name}
-          width={1280}
-          height={764}
-          layout='responsive'
-          objectFit='cover'
-          objectPosition='top'
-          placeholder='blur'
-          blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkmAkAAJ8AmzsOXcYAAAAASUVORK5CYII='
-          quality='50'
+        <WrapperIMG name={name} img={img} />
+        <Overlay
+          ChildrenButton={<ExternalLinkSVG className={css['buttonOverlay']} />}
+          ChildrenAside={
+            <div className={css['cardOverlay']}>
+              <WrapperIMG name={name} img={img} quality={100} />
+            </div>
+          }
         />
         <div className={css['containerData']}>
           <h3 className={css['title']}>{name}</h3>

@@ -1,9 +1,22 @@
 .containerAll :global {
+  position: relative;
   animation: animOpacity 1s linear;
 }
 .containerAll img {
   animation: animOpacity 1s linear;
   border: 2px solid var(--border-card-certification) !important;
+}
+.buttonOverlay {
+  position: absolute;
+  width: 10vw;
+  height: 10vh;
+  left: 92%;
+  bottom: 92%;
+}
+.cardOverlay div:nth-child(1) {
+  margin: 5vh auto !important;
+  min-height: 90vh !important;
+  width: 75% !important;
 }
 .containerData {
   margin-bottom: 2vh;
