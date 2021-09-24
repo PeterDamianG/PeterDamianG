@@ -10,7 +10,7 @@ const textDinamicNav = [
   'Está página esta contruida con NextJS, excelente Framework.',
   'Aprovechando la tecnología de Vercel, la web es JAMStack.',
   'Mis conocimientos son preferentemente sobre la web.',
-  'También soy un fanático de los videojuegos, ¡Buscame en Steam!',
+  'También soy un fanático de los videojuegos, ¡Búscame en Steam!',
   'He trabajado con más de diez personas en equipo.',
   'Las tecnologías son sólo herramientas, depende del desarrolador lo demás.',
   'La web es principalmente JavaScript, pero esto está hecho en TypeScript.',
