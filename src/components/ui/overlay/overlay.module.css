@@ -13,8 +13,6 @@
 .overlayShowButton {
   background: transparent;
   border: none;
-  color: var(--foreground);
-  cursor: pointer;
 }
 .closebtn {
   position: absolute;
@@ -24,6 +22,7 @@
   border-color: transparent;
   color: var(--a-color);
   font-size: 2.5em;
+  font-weight: bold;
   cursor: pointer;
   transition: all 0.2s linear;
 }
