@@ -1,6 +1,5 @@
 import { SVGProps } from 'react';
 import * as css from './scrolldownsvg.module.css';
-
 /**
  * Use a svg img like a scroll down visual help.
  * @param props - A object type SVGProps, with propieties pass to svg tag.

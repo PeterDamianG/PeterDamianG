@@ -1,9 +1,9 @@
 import { SVGProps } from 'react';
 /**
- * A icon decorator to info for user that is a link.
+ * A icon decorator to info for user that is a clickeable button link.
  * @param props - A object type SVGProps, with propieties pass to svg tag.
  * @example
- * import ExternalLinkSVG from 'components/icons/appbar/ExternalLinkSVG'
+ * import ExternalLinkSVG from 'components/icons/utils/link/ExternalLinkSVG'
  * <ExternalLinkSVG height={32} width={32} />
  */
 const ExternalLinkSVG = (props: SVGProps<SVGSVGElement>): JSX.Element => (
@@ -11,7 +11,6 @@ const ExternalLinkSVG = (props: SVGProps<SVGSVGElement>): JSX.Element => (
     aria-label='External Link'
     role='button'
     viewBox='0 -3 24 24'
-    fill='#0a66c2'
     stroke='#0a66c2'
     {...props}
   >
