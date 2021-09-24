@@ -10,7 +10,7 @@ import ArrowUpSVG from '@components/icons/utils/arrowup/ArrowUpSVG';
  */
 const Contact = (): JSX.Element => (
   <>
-    <TitleSection value='Contacto' />
+    <TitleSection>Contacto</TitleSection>
     <CardSocial />
     <CardSMS />
     <h3>Gracias por su consideración.</h3>

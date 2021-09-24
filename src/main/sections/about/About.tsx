@@ -13,7 +13,7 @@ import ListCertification from './cert/ListCertification';
  */
 const About = (): JSX.Element => (
   <>
-    <TitleSection value='Sobre Mí' />
+    <TitleSection>Sobre Mí</TitleSection>
     <Avatar />
     <article className={css['content']}>
       <p>

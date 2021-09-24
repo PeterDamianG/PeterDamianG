@@ -6,9 +6,9 @@ import * as css from './titlesection.module.css';
  * <TitleSection />
  */
 const TitleSection = ({
-  value = 'Title Section',
+  children = <>Title Section</>,
 }: {
-  value: string;
-}): JSX.Element => <h2 className={css['title']}>{value}</h2>;
+  children: React.ReactNode;
+}): JSX.Element => <h2 className={css['title']}>{children}</h2>;
 
 export default TitleSection;

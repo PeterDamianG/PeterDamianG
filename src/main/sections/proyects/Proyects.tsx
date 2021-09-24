@@ -9,7 +9,7 @@ import ShowProyects from './showproyect/ShowProyect';
  */
 const Proyects = (): JSX.Element => (
   <>
-    <TitleSection value='Proyectos' />
+    <TitleSection>Proyectos</TitleSection>
     <ShowProyects />
     <a href='#contact'>
       <ScrollDownSVG />
