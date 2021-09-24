@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import BaseCard from '@components/ui/basecard/BaseCard';
 import Overlay from '@components/ui/overlay/Overlay';
 import Button from '@components/ui/button/Button';
