@@ -1,129 +1,88 @@
-.container div {
-  width: 100%;
-  height: 100%;
+.containerAll :global {
+  animation: animOpacity 1s linear;
+}
+.containerAll img {
+  animation: animOpacity 1s linear;
+  border: 2px solid var(--border-card-certification) !important;
+}
+.containerData {
+  margin-bottom: 2vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-.container h3 {
+.title {
+  margin-bottom: 0.5vh;
+  font-size: 1.4em;
   text-decoration: underline;
+  text-shadow: 0px 0px 1px var(--foreground);
+  transition: text-shadow 0.2s linear;
+}
+.title:hover {
+  text-shadow: 1px 1px 2px var(--foreground);
+  transition: text-shadow 0.2s linear;
+}
+.subtitle {
   margin: 0;
-}
-.container h4 {
+  font-size: 1.3em;
   color: var(--subtitle-card-color);
-  margin: 1vh 1vh;
+  text-shadow: 0px 0px 1px var(--foreground);
+  transition: text-shadow 0.2s linear;
 }
-.container img {
-  border: 2px solid var(--background) !important;
+.subtitle:hover {
+  text-shadow: 1px 1px 1px var(--foreground);
+  transition: text-shadow 0.2s linear;
 }
-.container p {
-  width: 80%;
+.dataDesc {
+  font-size: 1.2em;
+  width: 85%;
+  text-shadow: 0px 0px 1px var(--foreground);
 }
-.container nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 4px;
-}
-/* Transition Mode for Ultra Mobile/Tablets/Low PC Devices */
 @media all and (min-width: 640px) and (max-width: 1280px) {
-  .container h3 {
+  .title {
+    font-size: 2.5em;
+  }
+  .subtitle {
     font-size: 2em;
-    text-shadow: 1px 1px 4px var(--background);
-    transition: text-shadow 0.3s linear;
   }
-  .container h3:hover {
-    text-shadow: 2px 2px 6px var(--background);
-    transition: text-shadow 0.3s linear;
-  }
-  .container h4 {
-    font-size: 1.75em;
-    text-shadow: 2px 2px 4px var(--background);
-    transition: text-shadow 0.3s linear;
-  }
-  .container h4:hover {
-    text-shadow: 2px 2px 6px var(--background);
-    transition: text-shadow 0.3s linear;
-  }
-  .container p {
+  .dataDesc {
     font-size: 1.5em;
-    text-shadow: 2px 2px 6px var(--background);
-  }
-  .container button {
-    font-size: 2em;
-    text-shadow: 2px 2px 4px var(--background);
-  }
-}
-/* Animation Mode for PC and TV Devices */
-@media all and (min-width: 1280px) {
-  .container {
-    width: 90vw;
-    height: 60vh;
-    border-radius: 0;
-    display: flex;
-    flex-direction: row;
-  }
-  .container article,
-  .container div {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .container h3 {
-    font-size: 2em;
-    text-shadow: 2px 2px 4px var(--background);
-    transition: text-shadow 0.3s linear;
-  }
-  .container h3:hover {
-    text-shadow: 3px 3px 6px var(--background);
-    transition: text-shadow 0.3s linear;
-  }
-  .container h4 {
-    font-size: 1.75em;
-    text-shadow: 1px 1px 4px var(--background);
-    transition: text-shadow 0.3s linear;
-  }
-  .container h4:hover {
-    text-shadow: 3px 3px 6px var(--background);
-    transition: text-shadow 0.3s linear;
-  }
-  .container p {
-    width: 90%;
-    font-size: 1.5em;
-    text-shadow: 2px 2px 6px var(--background);
-  }
-  .container button {
-    font-size: 2em;
-    text-shadow: 1px 1px 4px var(--background);
-  }
-}
-/* Landscape */
-@media all and (max-height: 640px) and (orientation: landscape) {
-  .container h3 {
-    font-size: 1.5em;
-    margin: 0;
-  }
-  .container h4 {
-    font-size: 1.25em;
-    margin: 0;
-  }
-  .container p {
-    font-size: 0.75em;
-    text-align: center;
-  }
-  .container button {
-    font-size: 1em;
-  }
-  .container div:nth-child(3) {
-    width: 50%;
   }
 }
 @media all and (min-width: 640px) and (max-width: 1280px) and (orientation: landscape) {
-  .container div:nth-child(3) {
-    width: 65%;
+  .containerAll div:nth-child(1) {
+    height: 25vh !important;
+  }
+}
+@media all and (min-width: 1280px) {
+  .containerAll div:nth-child(1) {
+    height: 30vh !important;
+  }
+  .title {
+    font-size: 2em;
+  }
+  .subtitle {
+    font-size: 1.75em;
+  }
+  .dataDesc {
+    font-size: 1.5em;
+  }
+}
+@media all and (max-height: 640px) and (orientation: landscape) {
+  .containerAll div:nth-child(1) {
+    height: 25vh !important;
+  }
+  .containerData {
+    font-size: 0.6em;
+  }
+  .title {
+    font-size: 2em;
+  }
+  .subtitle {
+    font-size: 1.5em;
+  }
+  .dataDesc {
+    font-size: 1.25em;
   }
 }

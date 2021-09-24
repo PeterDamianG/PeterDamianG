@@ -26,7 +26,7 @@ const ShowProyect = (): JSX.Element => {
       : setIndex((prevIndex) => prevIndex - 1);
   const handleSetIndex = (number: number): void => setIndex(number);
   // Hook to change states automatic.
-  useFunctionOverTime(handleUpIndex, 10000);
+  useFunctionOverTime(handleUpIndex, 16000);
   // Set hotkeys.
   ShowProyectHotKeys(handleUpIndex, handleDownIndex, index);
   // Destructuring.
@@ -44,7 +44,7 @@ const ShowProyect = (): JSX.Element => {
       >
         &lt;
       </Button>
-      <aside className={css['containerCardPag']}>
+      <div className={css['containerCardPag']}>
         <CardProyect
           name={name}
           URL={URL}
@@ -57,11 +57,11 @@ const ShowProyect = (): JSX.Element => {
           active={index}
           setIndex={handleSetIndex}
         />
-      </aside>
+      </div>
       <Button
         type='button'
         className={css['slide-button']}
-        aria-label='Previous Button'
+        aria-label='Next Button'
         role='button'
         onClick={handleUpIndex}
         title='Avanzar al siguiente proyecto. Acceso rápido flecha derecha →.'

@@ -17,7 +17,7 @@
   /* Card Certifications */
   --border-card-certification: rgba(0, 0, 0, 0.4);
   /* Card Proyects */
-  --subtitle-card-color: #c2b3b3;
+  --subtitle-card-color: #464646;
 }
 /* Dark theme */
 [data-theme='dark'] {
@@ -38,5 +38,5 @@
   /* Card Certifications */
   --border-card-certification: rgba(255, 255, 255, 0.4);
   /* Card Proyects */
-  --subtitle-card-color: #464646;
+  --subtitle-card-color: #c2b3b3;
 }

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import BaseCard from '@components/ui/basecard/BaseCard';
-import * as css from './card.module.css';
+import Button from '@components/ui/button/Button';
+import * as css from './cardproyect.module.css';
 
 type CardProps = {
   name: string;
@@ -30,19 +31,27 @@ const CardProyect = ({
 }: CardProps): JSX.Element => (
   <BaseCard>
     {[name].map((key) => (
-      <div key={key}>
-        <h3>{name}</h3>
-        <h4>{tech}</h4>
+      <div key={key} className={css['containerAll']}>
         <Image
           src={img}
           alt={name}
-          width={300}
-          height={300}
+          width={1280}
+          height={764}
+          layout='responsive'
+          objectFit='cover'
+          objectPosition='top'
           placeholder='blur'
           blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkmAkAAJ8AmzsOXcYAAAAASUVORK5CYII='
+          quality='50'
         />
-        <p>{description}</p>
-        <p>{URL}</p>
+        <div className={css['containerData']}>
+          <h3 className={css['title']}>{name}</h3>
+          <h4 className={css['subtitle']}>{tech}</h4>
+          <p className={css['dataDesc']}>{description}</p>
+          <a href={URL} target='_blank' rel='noreferrer'>
+            <Button>¡Ir a Repositorio!</Button>
+          </a>
+        </div>
       </div>
     ))}
   </BaseCard>
