@@ -1,4 +1,3 @@
-import BaseCard from '@components/ui/basecard/BaseCard';
 import Button from '@components/ui/button/Button';
 import * as css from './paginationdot.module.css';
 
