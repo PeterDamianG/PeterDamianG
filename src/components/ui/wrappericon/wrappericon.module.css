@@ -1,11 +1,5 @@
 .wrapperIcon {
-  width: 50vw;
+  width: 40vw;
   display: flex;
   justify-content: space-around;
-}
-@media all and (min-width: 640px) and (max-width: 1280px) {
-  .wrapperIcon {
-    width: 80vw;
-    margin-top: 2vh;
-  }
 }

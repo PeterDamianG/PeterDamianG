@@ -10,9 +10,9 @@ import * as css from './wrappericon.module.css';
  * </WrapperIcon>
  */
 const WrapperIcon = ({
-  Children,
+  children,
 }: {
-  Children: JSX.Element | JSX.Element[];
-}): JSX.Element => <article className={css['wrapperIcon']}>{Children}</article>;
+  children: JSX.Element | JSX.Element[];
+}): JSX.Element => <article className={css['wrapperIcon']}>{children}</article>;
 
 export default WrapperIcon;
