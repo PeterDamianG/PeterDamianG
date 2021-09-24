@@ -21,6 +21,7 @@
   display: block;
   margin: 1vh 0;
   color: #0a66c2;
+  -webkit-text-stroke: 1px var(--foreground);
 }
 .CardLink a:hover {
   text-decoration: underline;
