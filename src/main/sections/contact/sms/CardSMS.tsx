@@ -1,4 +1,5 @@
 import BaseCard from '@components/ui/basecard/BaseCard';
+import WrapperIcon from '@components/ui/wrappericon/WrapperIcon';
 import WhatsAppSVG from '@icons/socialmedia/WhatsAppSVG';
 import TelegramSVG from '@icons/socialmedia/TelegramSVG';
 import * as css from './cardsms.module.css';
@@ -12,14 +13,14 @@ const CardSMS = (): JSX.Element => (
   <BaseCard>
     <div className={css['cardFlex']}>
       <h3 className={css['title']}>Mensajería Directa</h3>
-      <aside className={css['smsIconFlex']}>
+      <WrapperIcon>
         <a href='https://bit.ly/3kwROHZ' target='_blank' rel='noreferrer'>
           <WhatsAppSVG />
         </a>
         <a href='https://t.me/PeterDamianG' target='_blank' rel='noreferrer'>
           <TelegramSVG />
         </a>
-      </aside>
+      </WrapperIcon>
     </div>
   </BaseCard>
 );
