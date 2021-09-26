@@ -30,7 +30,7 @@
 }
 @media all and (max-height: 640px) and (orientation: landscape) {
   .headerFlex h1 {
-    font-size: 1em;
-    letter-spacing: 2vw;
+    font-size: 1.25em;
+    letter-spacing: 3vw;
   }
 }

@@ -41,6 +41,7 @@
   flex-direction: column;
   justify-content: space-around;
   border: 2px solid var(--foreground);
+  color: var(--foreground);
 }
 .about {
   grid-area: about;
@@ -69,6 +70,7 @@
   flex-direction: column;
   justify-content: space-around;
   border: 2px solid var(--foreground);
+  color: var(--foreground);
 }
 .detail {
   grid-area: detail;
@@ -78,4 +80,5 @@
   justify-content: space-around;
   align-items: center;
   border: 2px solid var(--foreground);
+  color: var(--foreground);
 }
