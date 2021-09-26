@@ -8,11 +8,11 @@
   transition: text-shadow 0.2s linear;
 }
 .title {
-  font-size: 1.75em;
+  font-size: 2em;
   margin: 2vh 0;
 }
 .subtitle {
-  font-size: 1.5em;
+  font-size: 2em;
   margin: 0 0 2vh 0;
 }
 .title:hover,
@@ -27,7 +27,7 @@
   cursor: pointer;
 }
 .textContent {
-  margin: 6px;
+  margin: 1vh;
   font-size: 1.5em;
 }
 @media all and (max-height: 640px) and (orientation: landscape) {
@@ -43,10 +43,10 @@
 }
 @media all and (min-width: 640px) and (max-width: 1280px) {
   .title {
-    font-size: 3.5em;
+    font-size: 3.75em;
   }
   .subtitle {
-    font-size: 3em;
+    font-size: 3.25em;
   }
   .textContent {
     font-size: 2.5em;
@@ -54,15 +54,15 @@
 }
 @media all and (min-width: 640px) and (max-width: 1280px) and (orientation: landscape) {
   .title {
-    font-size: 3.5em;
+    font-size: 4em;
   }
   .subtitle {
-    font-size: 2.5em;
+    font-size: 3em;
   }
   .textContent {
-    font-size: 2em;
+    font-size: 2.25em;
   }
   .containerDinamic {
-    width: 60vw;
+    width: 75vw;
   }
 }
