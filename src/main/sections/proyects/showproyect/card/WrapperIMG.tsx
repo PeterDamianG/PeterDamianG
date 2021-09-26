@@ -9,10 +9,12 @@ const WrapperIMG = ({
   img,
   name,
   quality = 50,
+  objectFit = 'cover',
 }: {
   img: string;
   name: string;
   quality?: number;
+  objectFit?: 'contain' | 'cover' | 'fill';
 }): JSX.Element => (
   <Image
     onClick={(): null => null}
@@ -21,7 +23,7 @@ const WrapperIMG = ({
     width={1280}
     height={764}
     layout='responsive'
-    objectFit='cover'
+    objectFit={objectFit}
     objectPosition='top'
     placeholder='blur'
     blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkmAkAAJ8AmzsOXcYAAAAASUVORK5CYII='

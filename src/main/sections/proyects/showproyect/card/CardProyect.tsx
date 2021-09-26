@@ -39,7 +39,12 @@ const CardProyect = ({
           ChildrenButton={<ExternalLinkSVG className={css['buttonOverlay']} />}
           ChildrenAside={
             <div className={css['cardOverlay']}>
-              <WrapperIMG name={name} img={img} quality={100} />
+              <WrapperIMG
+                name={name}
+                img={img}
+                quality={100}
+                objectFit='fill'
+              />
             </div>
           }
         />
