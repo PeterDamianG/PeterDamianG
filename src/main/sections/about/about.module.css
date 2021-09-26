@@ -6,22 +6,21 @@
 }
 .resumeButton {
   font-size: 1em;
+  margin-bottom: 1vh;
 }
 .certificationButton {
   cursor: pointer;
-  border: none;
-  background-color: transparent;
-  font-weight: bold;
-  text-decoration: underline;
+  color: var(--foreground);
 }
 @media all and (min-width: 640px) and (max-width: 1280px) {
   .content p {
-    width: 75vw;
+    width: 80vw;
     font-size: 2.25em;
     text-align: center;
   }
   .resumeButton {
     font-size: 2em;
+    margin-bottom: 2vh;
   }
 }
 @media all and (min-width: 640px) and (max-width: 1280px) and (orientation: landscape) {
@@ -43,6 +42,7 @@
   }
   .resumeButton {
     font-size: 1.5em;
+    margin-bottom: 2vh;
   }
 }
 @media all and (max-height: 640px) and (orientation: landscape) {

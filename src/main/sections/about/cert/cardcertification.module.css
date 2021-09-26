@@ -15,7 +15,7 @@
 .CardCredID {
   display: block;
   margin: 1vh 0;
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 .CardLink a {
   display: block;
@@ -25,4 +25,15 @@
 }
 .CardLink a:hover {
   text-decoration: underline;
+}
+@media all and (max-height: 640px) and (orientation: landscape) {
+  .CardSubtitle a {
+    font-size: 1.1em;
+  }
+  .CardCredID {
+    font-size: 1em;
+  }
+  .CardLink a {
+    font-size: 1.25em;
+  }
 }

@@ -25,7 +25,10 @@ const About = (): JSX.Element => (
         puedes observar algunas de mis
         <Overlay
           ChildrenButton={
-            <u title='Mostrar listado de certificados.'>
+            <u
+              className={css['certificationButton']}
+              title='Mostrar listado de certificados.'
+            >
               <em>
                 <b>certificaciones.</b>
               </em>
