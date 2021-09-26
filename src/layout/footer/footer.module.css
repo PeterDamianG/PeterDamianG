@@ -2,7 +2,7 @@
   background-color: var(--background);
   color: var(--foreground);
   border-top: 1px solid var(--foreground);
-  font-size: 1em;
+  font-size: 2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,13 +11,13 @@
 }
 @media all and (min-width: 640px) and (max-width: 1280px) {
   .footer {
-    font-size: 2em;
+    font-size: 3em;
     flex-direction: column;
     align-items: center;
   }
 }
 @media all and (min-width: 1280px) {
   .footer {
-    font-size: 2em;
+    font-size: 4em;
   }
 }
