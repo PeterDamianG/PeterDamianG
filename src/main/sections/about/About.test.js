@@ -1,6 +1,6 @@
 import { render, screen, cleanup } from '@testing-library/react';
 import { Context as ResponsiveContext } from 'react-responsive';
-import About from './index';
+import About from './About';
 
 afterAll(cleanup);
 

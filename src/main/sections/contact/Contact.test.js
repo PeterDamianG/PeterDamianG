@@ -1,5 +1,5 @@
 import { render, screen, cleanup, fireEvent } from '@testing-library/react';
-import Contact from './index';
+import Contact from './Contact';
 
 beforeEach(() => render(<Contact />));
 

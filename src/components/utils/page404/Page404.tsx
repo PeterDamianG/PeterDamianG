@@ -16,7 +16,7 @@ const Page404 = (): JSX.Element => {
     setTimeout(() => {
       if (time !== 0) setTime((prevState) => prevState - 1);
     }, 1000);
-    return function cleanup() {
+    return function cleanup(): void {
       clearTimeout();
     };
   }, [time]);
@@ -25,7 +25,7 @@ const Page404 = (): JSX.Element => {
     setTimeout(() => {
       router.push('/');
     }, 5000);
-    return function cleanup() {
+    return function cleanup(): void {
       clearTimeout();
     };
   }, [router]);

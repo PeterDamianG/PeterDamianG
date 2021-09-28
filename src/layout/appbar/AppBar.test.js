@@ -1,5 +1,5 @@
 import { render, screen, cleanup } from '@testing-library/react';
-import AppBar from './index';
+import AppBar from './AppBar';
 
 afterAll(cleanup);
 

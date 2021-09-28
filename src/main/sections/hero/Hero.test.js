@@ -1,7 +1,7 @@
 import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 import { Context as ResponsiveContext } from 'react-responsive';
-import textContent from './content/textContent';
-import Hero from './index';
+import textContent from './content/content';
+import Hero from './Hero';
 
 afterAll(cleanup);
 

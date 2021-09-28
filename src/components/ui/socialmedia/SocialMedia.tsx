@@ -1,7 +1,7 @@
-import WrapperIcon from '../wrappericon/WrapperIcon';
 import GitHubSVG from '@icons/socialmedia/GitHubSVG';
 import GoogleMailSVG from '@icons/socialmedia/GoogleMailSVG';
 import LinkedInSVG from '@icons/socialmedia/LinkedInSVG';
+import WrapperIcon from '../wrappericon/WrapperIcon';
 /**
  * An container for icons like a button links for social media networks.
  * @example

@@ -1,7 +1,7 @@
 import { useState } from 'react';
+import Button from '@components/ui/button/Button';
 import ShowProyectHotKeys from './ShowProyectHotKeys';
 import listProyects from './listProyects';
-import Button from '@components/ui/button/Button';
 import CardProyect from './card/CardProyect';
 import PaginationDot from './pagination/PaginationDot';
 import * as css from './showproyect.module.css';

@@ -1,6 +1,6 @@
 import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 import { ThemeProvider } from 'next-themes';
-import ThemeChanger from './index';
+import ThemeChanger from './ThemeChanger';
 
 const localStorageMock = {};
 

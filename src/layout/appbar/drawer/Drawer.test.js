@@ -2,7 +2,7 @@ import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom/extend-expect';
 import { Context as ResponsiveContext } from 'react-responsive';
-import Drawer from '.';
+import Drawer from './Drawer';
 
 beforeEach(() => {
   delete window.location;

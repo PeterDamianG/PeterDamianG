@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-use-before-define
 import React from 'react';
 import type { AppProps } from 'next/app';
 import 'styles/themes.css';
@@ -18,7 +19,7 @@ if (process.env.NODE_ENV !== 'production' && !(typeof window === 'undefined')) {
 /**
  * A component of Next like a wrapper for whole app.
  */
-const App = ({ Component, pageProps }: AppProps) => (
+const App = ({ Component, pageProps }: AppProps): JSX.Element => (
   <ThemeProvider>
     <AppBar />
     <Component {...pageProps} />

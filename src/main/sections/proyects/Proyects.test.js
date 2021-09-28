@@ -1,7 +1,7 @@
 import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 import { Context as ResponsiveContext } from 'react-responsive';
-import Proyects from './index';
-import listProyects from './setproyects/list/listProyects';
+import Proyects from './Proyects';
+import listProyects from './showproyect/listProyects';
 
 afterAll(cleanup);
 

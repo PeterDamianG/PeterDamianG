@@ -1,6 +1,6 @@
-import * as css from './cardcertification.module.css';
 import ExternalLinkSVG from '@icons/utils/link/ExternalLinkSVG';
 import BaseCard from '@components/ui/basecard/BaseCard';
+import * as css from './cardcertification.module.css';
 
 type CardCertificationProps = {
   title: string;

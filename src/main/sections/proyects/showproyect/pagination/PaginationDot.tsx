@@ -25,7 +25,7 @@ const PaginationDot = ({
           active === number ? css['buttonDotActive'] : css['buttonDot']
         }
         title={`Haz me click, para ir proyecto número: ${number}.`}
-        onClick={() => setIndex(number)}
+        onClick={(): void => setIndex(number)}
       >
         &nbsp;
       </Button>

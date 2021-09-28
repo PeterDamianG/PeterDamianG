@@ -1,10 +1,11 @@
+// eslint-disable-next-line @next/next/no-document-import-in-page
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 /**
  * A class manager for base public html by nextjs.
  * @class MyDocument
  */
 class MyDocument extends Document {
-  render() {
+  render(): JSX.Element {
     return (
       <Html lang='es'>
         <Head>

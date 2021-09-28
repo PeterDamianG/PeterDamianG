@@ -1,7 +1,7 @@
 import TitleSection from '@components/ui/titlesection/TitleSection';
+import ArrowUpSVG from '@components/icons/utils/arrowup/ArrowUpSVG';
 import CardSMS from './sms/CardSMS';
 import CardSocial from './social/CardSocial';
-import ArrowUpSVG from '@components/icons/utils/arrowup/ArrowUpSVG';
 import * as css from './arrowup.module.css';
 /**
  * A section call contact in the web.

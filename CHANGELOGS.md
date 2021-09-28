@@ -1,5 +1,11 @@
 # ChangeLogs
 
+_v 0.2.1:_
+- Add Preact for production.
+- Run eslint with new linter out of box from nextjs.
+- Fix warning/error from linter advices.
+- Fix dinamic ssr.
+
 _v 0.2:_
 
 - Add logs folder for control versions.

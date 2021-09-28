@@ -8,6 +8,7 @@ import * as css from './button.module.css';
  */
 const Button = (
   props: ButtonHTMLAttributes<HTMLButtonElement>,
+// eslint-disable-next-line react/button-has-type
 ): JSX.Element => <button className={css['button']} {...props} />;
 
 export default Button;
