@@ -97,7 +97,7 @@
     font-size: 1.5em;
   }
   .cardOverlay div:nth-child(1) {
-      margin: 5vh auto !important;
+    margin: 5vh auto !important;
     min-height: 90vh !important;
   }
 }
