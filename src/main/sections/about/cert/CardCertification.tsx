@@ -1,6 +1,6 @@
 import ExternalLinkSVG from '@icons/utils/link/ExternalLinkSVG';
 import BaseCard from '@components/ui/basecard/BaseCard';
-import * as css from './cardcertification.module.css';
+import style from './cardcertification.module.css';
 
 type CardCertificationProps = {
   title: string;
@@ -35,18 +35,18 @@ const CardCertification = ({
 }: CardCertificationProps): JSX.Element => (
   <BaseCard>
     <>
-      <span className={css['CardTitle']}>{title}</span>
-      <span className={css['CardSubtitle']}>
+      <span className={style.CardTitle}>{title}</span>
+      <span className={style.CardSubtitle}>
         <a href={emitURL} target='_blank' rel='noreferrer'>
           {emit}
         </a>
       </span>
       {credID && (
-        <span className={css['CardCredID']}>
+        <span className={style.CardCredID}>
           ID de la credencial: <b>{credID}</b>
         </span>
       )}
-      <span className={css['CardLink']}>
+      <span className={style.CardLink}>
         <a href={URL} target='_blank' rel='noreferrer'>
           Ver Credencial
           <ExternalLinkSVG />

@@ -1,5 +1,5 @@
 import { SVGProps } from 'react';
-import * as css from './scrolldownsvg.module.css';
+import style from './scrolldownsvg.module.css';
 /**
  * Use a svg img like a scroll down visual help.
  * @param props - A object type SVGProps, with propieties pass to svg tag.
@@ -10,7 +10,7 @@ import * as css from './scrolldownsvg.module.css';
  */
 const ScollDownSVG = (props: SVGProps<SVGSVGElement>): JSX.Element => (
   <svg
-    className={css['all']}
+    className={style.all}
     aria-label='Scroll Down'
     role='figure'
     viewBox='0 0 247 390'
@@ -18,7 +18,7 @@ const ScollDownSVG = (props: SVGProps<SVGSVGElement>): JSX.Element => (
   >
     <title>Baja para seguir viendo más secciones.</title>
     <path
-      className={css['scrollAnim']}
+      className={style.scrollAnim}
       d='M123.359,79.775l0,72.843'
       strokeWidth={25}
     />

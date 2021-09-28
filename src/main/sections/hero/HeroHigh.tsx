@@ -3,7 +3,7 @@ import { useState } from 'react';
 import SocialMedia from '@components/ui/socialmedia/SocialMedia';
 import ScrollDownSVG from '@components/icons/utils/scrolldown/ScrollDownSVG';
 import useFunctionOverTime from 'hooks/useFunctionOverTime';
-import * as css from './herohigh.module.css';
+import style from './herohigh.module.css';
 import Ide from './ide/Ide';
 import content from './content/content';
 /**
@@ -24,10 +24,10 @@ const HeroHigh = (): JSX.Element => {
   useFunctionOverTime(handlerClickChangeState, 15000);
   // Render.
   return (
-    <section className={css['containerMain']}>
-      <article className={css['header']}>
-        <h2 className={css['title']}>Peter Damián Gómez</h2>
-        <h3 className={css['subtitle']}>Web Developer</h3>
+    <section className={style.containerMain}>
+      <article className={style.header}>
+        <h2 className={style.title}>Peter Damián Gómez</h2>
+        <h3 className={style.subtitle}>Web Developer</h3>
         <SocialMedia />
       </article>
       {[number].map((numberInt) => (
@@ -35,7 +35,7 @@ const HeroHigh = (): JSX.Element => {
           onClick={handlerClickChangeState}
           onKeyPress={handlerClickChangeState}
           key={`IDE ${numberInt}`}
-          className={css['containerIDE']}
+          className={style.containerIDE}
         >
           <Ide title={content[number].title}>{content[number].html()}</Ide>
         </article>
@@ -45,14 +45,14 @@ const HeroHigh = (): JSX.Element => {
           onClick={handlerClickChangeState}
           onKeyPress={handlerClickChangeState}
           key={`Caption ${numberInt}`}
-          className={css['textContent']}
+          className={style.textContent}
         >
           <h4 title='Haz me click, para leer el siguiente de mis pensamientos.'>
             {content[number].caption}
           </h4>
         </article>
       ))}
-      <a className={css['scrollsvg']} href='#about'>
+      <a className={style.scrollsvg} href='#about'>
         <ScrollDownSVG />
       </a>
     </section>

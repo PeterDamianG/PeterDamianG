@@ -1,4 +1,4 @@
-import * as css from './basecard.module.css';
+import style from './basecard.module.css';
 /**
  * Generic background card.
  * @example
@@ -9,6 +9,6 @@ const BaseCard = ({
   children,
 }: {
   children: JSX.Element | JSX.Element[];
-}): JSX.Element => <aside className={css['BaseCard']}>{children}</aside>;
+}): JSX.Element => <aside className={style.BaseCard}>{children}</aside>;
 
 export default BaseCard;

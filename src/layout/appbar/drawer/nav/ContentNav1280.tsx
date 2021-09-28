@@ -2,7 +2,7 @@ import { useState } from 'react';
 import useFunctionOverTime from 'hooks/useFunctionOverTime';
 import SocialMedia from '@components/ui/socialmedia/SocialMedia';
 import textDinamicNav from './textDinamicNav';
-import * as css from './contentnav1280.module.css';
+import style from './contentnav1280.module.css';
 /**
  * A content of navigation when you have in 1280 or more of resolution width.
  * @example
@@ -25,8 +25,8 @@ const ContentNav1280 = ({
   useFunctionOverTime(handlerClickText);
   // Render.
   return (
-    <nav className={css['sidenav']}>
-      <article className={css['hero']}>
+    <nav className={style.sidenav}>
+      <article className={style.hero}>
         <a
           title='Presiona H, para acceder rápidamente a esa sección.'
           href='#hero'
@@ -36,7 +36,7 @@ const ContentNav1280 = ({
         </a>
         <p>Inicio de la web, donde les comparto algunos pensamientos.</p>
       </article>
-      <article className={css['about']}>
+      <article className={style.about}>
         <a
           title='Presiona A, para acceder rápidamente a esa sección.'
           href='#about'
@@ -46,7 +46,7 @@ const ContentNav1280 = ({
         </a>
         <p>Conoceme más. Algunos detalles sobre mí persona.</p>
       </article>
-      <article className={css['proyects']}>
+      <article className={style.proyects}>
         <a
           title='Presiona P, para acceder rápidamente a esa sección.'
           href='#proyects'
@@ -56,7 +56,7 @@ const ContentNav1280 = ({
         </a>
         <p>Los proyectos públicos que he llevado a cabo.</p>
       </article>
-      <article className={css['contact']}>
+      <article className={style.contact}>
         <a
           title='Presiona C, para acceder rápidamente a esa sección.'
           href='#contact'
@@ -66,12 +66,12 @@ const ContentNav1280 = ({
         </a>
         <p>Sí estás interesado en contactarme, aquí las mejores opciones.</p>
       </article>
-      <article className={css['detail']}>
+      <article className={style.detail}>
         <h3>Peter DG</h3>
         <SocialMedia />
         {[number].map((numberInt) => (
           <p
-            className={css['textDinamicNavStyle']}
+            className={style.textDinamicNavStyle}
             onClick={handlerClickText}
             aria-hidden='true'
             key={numberInt}

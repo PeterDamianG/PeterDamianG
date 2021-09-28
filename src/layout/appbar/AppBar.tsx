@@ -1,6 +1,6 @@
 import ThemeChanger from './themechanger/ThemeChanger';
 import Drawer from './drawer/Drawer';
-import * as css from './appbar.module.css';
+import style from './appbar.module.css';
 /**
  * An app bar with title, theme button and drawer like a menu.
  * @param props.appTitle - Set a title for app bar.
@@ -14,7 +14,7 @@ const AppBar = ({
 }: {
   appTitle?: string;
 }): JSX.Element => (
-  <header className={css['headerFlex']}>
+  <header className={style.headerFlex}>
     <a title='¡Soy yo! Haz me click para volver al inicio.' href='#hero'>
       <h1>{appTitle}</h1>
     </a>

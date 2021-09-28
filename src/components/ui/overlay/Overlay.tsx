@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-use-before-define
 import React, { useState, useEffect } from 'react';
 import OverlayHotKeys from './OverlayHotKeys';
-import * as css from './overlay.module.css';
+import style from './overlay.module.css';
 /**
  * Generic overlay from multiple proposes.
  * @example
@@ -40,7 +40,7 @@ const Overlay = ({
     <>
       {/* Button show overlay. */}
       <button
-        className={css['overlayShowButton']}
+        className={style.overlayShowButton}
         type='button'
         onClick={openOverlay}
       >
@@ -48,10 +48,10 @@ const Overlay = ({
       </button>
       {/* Overlay. */}
       {isOpen && (
-        <aside className={css['overlay']}>
+        <aside className={style.overlay}>
           <button
             type='button'
-            className={css['closebtn']}
+            className={style.closebtn}
             onClick={closeOverlay}
           >
             ×

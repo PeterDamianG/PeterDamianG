@@ -1,4 +1,4 @@
-import * as css from './listcertification.module.css';
+import style from './listcertification.module.css';
 import CERTIFICATIONS from './certifications';
 import CardCertification from './CardCertification';
 /**
@@ -8,7 +8,7 @@ import CardCertification from './CardCertification';
  * <ListCertification />
  */
 const ListCertification = (): JSX.Element => (
-  <span className={css['listCertification']}>
+  <span className={style.listCertification}>
     {CERTIFICATIONS.map(({ id, title, emit, emitURL, credID, URL }) => (
       <CardCertification
         key={id}

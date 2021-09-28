@@ -1,5 +1,5 @@
 import SocialMedia from '@components/ui/socialmedia/SocialMedia';
-import * as css from './contentnav.module.css';
+import style from './contentnav.module.css';
 /**
  * A content of navigation when you have in 1280 less of resolution width.
  * @example
@@ -11,7 +11,7 @@ const ContentNav = ({
 }: {
   close?: Function;
 }): JSX.Element => (
-  <nav className={css['sidenav']}>
+  <nav className={style.sidenav}>
     <a
       title='Presiona H, para acceder rápidamente a esa sección.'
       href='#hero'

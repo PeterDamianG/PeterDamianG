@@ -1,4 +1,4 @@
-import * as css from './content.module.css';
+import style from './content.module.css';
 /**
  * A var type const for contain info set to display in section Hero.
  * @remarks
@@ -16,22 +16,22 @@ const content = [
     html: (): JSX.Element => (
       <>
         <p>
-          &quot;<span className={css['prop']}>dependencies</span>&quot;: &#123;
+          &quot;<span className={style.prop}>dependencies</span>&quot;: &#123;
         </p>
         <p>
-          &nbsp;&nbsp;&quot;<span className={css['prop']}>next</span>&quot;:
+          &nbsp;&nbsp;&quot;<span className={style.prop}>next</span>&quot;:
           &quot;
-          <span className={css['val']}>^11.1.2</span>&quot;,
+          <span className={style.val}>^11.1.2</span>&quot;,
         </p>
         <p>
-          &nbsp;&nbsp;&quot;<span className={css['prop']}>react</span>&quot;:
+          &nbsp;&nbsp;&quot;<span className={style.prop}>react</span>&quot;:
           &quot;
-          <span className={css['val']}>^17.0.2</span>&quot;,
+          <span className={style.val}>^17.0.2</span>&quot;,
         </p>
         <p>
-          &nbsp;&nbsp;&quot;<span className={css['prop']}>react-dom</span>
+          &nbsp;&nbsp;&quot;<span className={style.prop}>react-dom</span>
           &quot;: &quot;
-          <span className={css['val']}>^17.0.2</span>&quot;,
+          <span className={style.val}>^17.0.2</span>&quot;,
         </p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;. &nbsp;&nbsp; . &nbsp;&nbsp; .</p>
       </>
@@ -43,25 +43,25 @@ const content = [
     html: (): JSX.Element => (
       <>
         <p>
-          <span className={css['prop']}>&lt;div&gt;</span>Bad for sections
-          <span className={css['prop']}>&lt;/div&gt;</span>
+          <span className={style.prop}>&lt;div&gt;</span>Bad for sections
+          <span className={style.prop}>&lt;/div&gt;</span>
         </p>
         <p>
-          <span className={css['prop']}>&lt;section&gt;</span>Good
-          <span className={css['prop']}>&lt;/section&gt;</span>
+          <span className={style.prop}>&lt;section&gt;</span>Good
+          <span className={style.prop}>&lt;/section&gt;</span>
         </p>
         <p>
-          <span className={css['prop']}>&lt;p&gt;</span>Bad for Footer
-          <span className={css['prop']}>&lt;/p&gt;</span>
+          <span className={style.prop}>&lt;p&gt;</span>Bad for Footer
+          <span className={style.prop}>&lt;/p&gt;</span>
         </p>
         <p>
-          <span className={css['prop']}>&lt;footer&gt;</span>
-          <span className={css['prop']}>&lt;small&gt;</span>
+          <span className={style.prop}>&lt;footer&gt;</span>
+          <span className={style.prop}>&lt;small&gt;</span>
         </p>
         <p>&nbsp;&nbsp;Good © Peter DG</p>
         <p>
-          <span className={css['prop']}>&lt;/small&gt;</span>
-          <span className={css['prop']}>&lt;/footer&gt;</span>
+          <span className={style.prop}>&lt;/small&gt;</span>
+          <span className={style.prop}>&lt;/footer&gt;</span>
         </p>
       </>
     ),
@@ -72,28 +72,28 @@ const content = [
     html: (): JSX.Element => (
       <>
         <p>
-          <span className={css['prop']}>
+          <span className={style.prop}>
             &lt;abbr title=
-            <span className={css['val']}>&quot;Buenos Aires&quot;</span>
+            <span className={style.val}>&quot;Buenos Aires&quot;</span>
           </span>
-          <span className={css['prop']}>&gt;</span>BS AS
-          <span className={css['prop']}>&lt;/abbr&gt;</span>
+          <span className={style.prop}>&gt;</span>BS AS
+          <span className={style.prop}>&lt;/abbr&gt;</span>
         </p>
         <p>
-          <span className={css['prop']}>
+          <span className={style.prop}>
             &lt;base href=
-            <span className={css['val']}>
+            <span className={style.val}>
               &quot;https://peterdg.com.ar/&quot;
             </span>
             &nbsp;/&gt;
           </span>
         </p>
         <p>
-          <span className={css['prop']}>&lt;cite&gt;</span>
+          <span className={style.prop}>&lt;cite&gt;</span>
         </p>
         <p>&nbsp;&nbsp;You Aren&apos;t Gonna Need It.</p>
         <p>
-          <span className={css['prop']}>&lt;/cite&gt;</span>
+          <span className={style.prop}>&lt;/cite&gt;</span>
         </p>
       </>
     ),
@@ -104,50 +104,50 @@ const content = [
     html: (): JSX.Element => (
       <>
         <p>
-          <span className={css['prop']}>
+          <span className={style.prop}>
             &lt;canvas id=
-            <span className={css['val']}>&quot;myCanvas&quot;</span>
+            <span className={style.val}>&quot;myCanvas&quot;</span>
             &gt;
           </span>
           <br />
           &nbsp;&nbsp;Your browser does not support canvas tag.
         </p>
         <p>
-          <span className={css['prop']}>&lt;/canvas&gt;</span>
+          <span className={style.prop}>&lt;/canvas&gt;</span>
         </p>
         <p>
-          <span className={css['prop']}>
+          <span className={style.prop}>
             &lt;svg width=
-            <span className={css['val']}>&quot;100&quot;</span>
-            <span className={css['prop']}>
-              &nbsp;height=<span className={css['val']}>&quot;100&quot;</span>
+            <span className={style.val}>&quot;100&quot;</span>
+            <span className={style.prop}>
+              &nbsp;height=<span className={style.val}>&quot;100&quot;</span>
             </span>
             &gt;
           </span>
         </p>
         <p>
           &nbsp; &nbsp;
-          <span className={css['prop']}>
+          <span className={style.prop}>
             &lt;circle cx=
-            <span className={css['val']}>&quot;50&quot;</span>
-            <span className={css['prop']}>
-              &nbsp;cy=<span className={css['val']}>&quot;50&quot;</span>
+            <span className={style.val}>&quot;50&quot;</span>
+            <span className={style.prop}>
+              &nbsp;cy=<span className={style.val}>&quot;50&quot;</span>
             </span>
-            <span className={css['prop']}>
-              &nbsp;r=<span className={css['val']}>&quot;50&quot;</span>
+            <span className={style.prop}>
+              &nbsp;r=<span className={style.val}>&quot;50&quot;</span>
             </span>
             &nbsp;/&gt;
           </span>
         </p>
         <p>
-          <span className={css['prop']}>&lt;/svg&gt;</span>
+          <span className={style.prop}>&lt;/svg&gt;</span>
         </p>
         <p>
-          <span className={css['prop']}>
+          <span className={style.prop}>
             &lt;img src=
-            <span className={css['val']}>&quot;/profile.jpg&quot;</span>
-            <span className={css['prop']}>
-              &nbsp;alt=<span className={css['val']}>&quot;My photo&quot;</span>
+            <span className={style.val}>&quot;/profile.jpg&quot;</span>
+            <span className={style.prop}>
+              &nbsp;alt=<span className={style.val}>&quot;My photo&quot;</span>
             </span>
             &nbsp;/&gt;
           </span>
@@ -161,25 +161,25 @@ const content = [
     html: (): JSX.Element => (
       <>
         <p>
-          <span className={css['reserve']}>
+          <span className={style.reserve}>
             const&nbsp;
-            <span className={css['val']}>MyComponent&nbsp;</span>
-            <span className={css['reserve']}>():&nbsp;</span>
-            <span className={css['prop']}>JSX.Element&nbsp;</span>
-            <span className={css['reserve']}>=&gt; &#123;</span>
+            <span className={style.val}>MyComponent&nbsp;</span>
+            <span className={style.reserve}>():&nbsp;</span>
+            <span className={style.prop}>JSX.Element&nbsp;</span>
+            <span className={style.reserve}>=&gt; &#123;</span>
           </span>
         </p>
         <p>
           <span>&nbsp;&nbsp;/* Your Component... */</span>
         </p>
         <p>
-          <span className={css['reserve']}>&#125;;</span>
+          <span className={style.reserve}>&#125;;</span>
         </p>
         <br />
         <p>
-          <span className={css['reserve']}>export default&nbsp;</span>
-          <span className={css['val']}>MyComponent</span>
-          <span className={css['reserve']}>;</span>
+          <span className={style.reserve}>export default&nbsp;</span>
+          <span className={style.val}>MyComponent</span>
+          <span className={style.reserve}>;</span>
         </p>
       </>
     ),

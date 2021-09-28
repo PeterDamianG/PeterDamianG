@@ -3,7 +3,7 @@ import { useMediaQuery } from 'react-responsive';
 import SocialMedia from '@components/ui/socialmedia/SocialMedia';
 import ScrollDownSVG from '@components/icons/utils/scrolldown/ScrollDownSVG';
 import useFunctionOverTime from 'hooks/useFunctionOverTime';
-import * as css from './herolow.module.css';
+import style from './herolow.module.css';
 import Ide from './ide/Ide';
 import content from './content/content';
 /**
@@ -30,9 +30,9 @@ const HeroLow = (): JSX.Element => {
   // Render.
   return (
     <>
-      <article className={css['containerMain']}>
-        <h2 className={css['title']}>Peter Damián Gómez</h2>
-        <h3 className={css['subtitle']}>Web Developer</h3>
+      <article className={style.containerMain}>
+        <h2 className={style.title}>Peter Damián Gómez</h2>
+        <h3 className={style.subtitle}>Web Developer</h3>
         <SocialMedia />
       </article>
       {[number].map((numberInt) => (
@@ -41,14 +41,14 @@ const HeroLow = (): JSX.Element => {
           onClick={handlerClickChangeState}
           onKeyPress={handlerClickChangeState}
           key={numberInt}
-          className={css['containerDinamic']}
+          className={style.containerDinamic}
         >
           {(isPortrait || isEnoughWidth) && (
             <Ide title={content[number].title}>{content[number].html()}</Ide>
           )}
           <h4
             title='Haz me click, para leer el siguiente de mis pensamientos.'
-            className={css['textContent']}
+            className={style.textContent}
           >
             {content[number].caption}
           </h4>

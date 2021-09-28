@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { InView } from 'react-intersection-observer';
 import { ErrorBoundary } from 'react-error-boundary';
 import ErrorFallback from '@components/utils/errorfallback/ErrorFallback';
-import * as css from './wrappersection.module.css';
+import style from './wrappersection.module.css';
 
 type WrapperProps = {
   children: JSX.Element;
@@ -51,7 +51,7 @@ const WrapperSection = ({
     <ErrorBoundary FallbackComponent={ErrorFallback}>
       <InView threshold={threshold}>
         {({ inView, ref }): JSX.Element => (
-          <section ref={ref} className={css['sectionStyle']} id={hash}>
+          <section ref={ref} className={style.sectionStyle} id={hash}>
             {exist && children}
             {inView && (
               <>

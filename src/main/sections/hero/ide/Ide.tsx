@@ -1,4 +1,4 @@
-import * as css from './ide.module.css';
+import style from './ide.module.css';
 /**
  * A internal component for section Hero, simulate a un ide.
  * @example
@@ -14,10 +14,10 @@ const Ide = ({
 }): JSX.Element => (
   <section
     title='Haz me click, para leer el siguiente de mis pensamientos.'
-    className={css['containerIde']}
+    className={style.containerIde}
   >
-    <p className={css['headerIde']}>{title}</p>
-    <div className={css['contentCode']}>
+    <p className={style.headerIde}>{title}</p>
+    <div className={style.contentCode}>
       <code>{children}</code>
     </div>
   </section>

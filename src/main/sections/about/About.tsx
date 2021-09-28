@@ -3,7 +3,7 @@ import Button from '@components/ui/button/Button';
 import Overlay from '@components/ui/overlay/Overlay';
 import TitleSection from '@components/ui/titlesection/TitleSection';
 import Avatar from './avatar/Avatar';
-import * as css from './about.module.css';
+import style from './about.module.css';
 import ListCertification from './cert/ListCertification';
 /**
  * A section call about in the web.
@@ -15,7 +15,7 @@ const About = (): JSX.Element => (
   <>
     <TitleSection>Sobre Mí</TitleSection>
     <Avatar />
-    <article className={css['content']}>
+    <article className={style.content}>
       <p>
         ¡Hola! <b>¿Quién soy?</b> Soy un apasionado por la{' '}
         <b>tecnología, juegos y programación.</b>
@@ -26,7 +26,7 @@ const About = (): JSX.Element => (
         <Overlay
           ChildrenButton={
             <u
-              className={css['certificationButton']}
+              className={style.certificationButton}
               title='Mostrar listado de certificados.'
             >
               <em>
@@ -46,7 +46,7 @@ const About = (): JSX.Element => (
       href='/profile/cv.pdf'
       target='_blank'
       rel='noreferrer'
-      className={css['resumeButton']}
+      className={style.resumeButton}
     >
       <Button title='Curriculum Vitae o Resume'>Resume</Button>
     </a>

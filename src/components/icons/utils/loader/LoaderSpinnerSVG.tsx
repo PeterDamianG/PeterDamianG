@@ -1,5 +1,5 @@
 import { SVGProps } from 'react';
-import * as css from './loadersvg.module.css';
+import style from './loadersvg.module.css';
 /**
  * Svg img a spinnner to use like a loader.
  * @param props - A object type SVGProps, with propieties pass to svg tag.
@@ -9,7 +9,7 @@ import * as css from './loadersvg.module.css';
  * <LoaderSpinnerSVG height={128} width={128} />
  */
 const LoaderSpinnerSVG = (props: SVGProps<SVGSVGElement>): JSX.Element => (
-  <svg viewBox='-100 -10 300 125' className={css['loader']} {...props}>
+  <svg viewBox='-100 -10 300 125' className={style.loader} {...props}>
     <title>Estoy cargando, no te impacientes.</title>
     <rect width={12} height={12} x={44} y={19} rx={8.8} ry={3.8}>
       <animate

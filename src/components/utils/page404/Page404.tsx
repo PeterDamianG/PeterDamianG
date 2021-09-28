@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import * as css from './page404.module.css';
+import style from './page404.module.css';
 /**
  * A component for simulate a 404 page error not found and redirect to index.
  * @example
@@ -31,7 +31,7 @@ const Page404 = (): JSX.Element => {
   }, [router]);
   // Render
   return (
-    <main className={css['page404']}>
+    <main className={style.page404}>
       <h2>404 - Página no encontrada.</h2>
       <p>Serás redireccionado a la página principal en {time} segundos.</p>
       <h3>Lo siento, la página que buscabas no se encuentra.</h3>

@@ -1,5 +1,5 @@
 import Button from '@components/ui/button/Button';
-import * as css from './errorfallback.module.css';
+import style from './errorfallback.module.css';
 /**
  * A wrapper component to handler errors, is a complement for react-error-boundary.
  * @function ErrorFallback
@@ -27,7 +27,7 @@ const ErrorFallback = ({
   error: Error;
   resetErrorBoundary: Function;
 }): JSX.Element => (
-  <section className={css['sectionError']} role='alert'>
+  <section className={style.sectionError} role='alert'>
     <h3>Un error ha ocurrido:</h3>
     <p>{error.message}</p>
     <Button type='button' onClick={(): void => resetErrorBoundary()}>

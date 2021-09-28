@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes } from 'react';
-import * as css from './button.module.css';
+import style from './button.module.css';
 /**
  * Generic button to use. Props are same a normal button html 5.
  * @example
@@ -8,7 +8,7 @@ import * as css from './button.module.css';
  */
 const Button = (
   props: ButtonHTMLAttributes<HTMLButtonElement>,
-// eslint-disable-next-line react/button-has-type
-): JSX.Element => <button className={css['button']} {...props} />;
+  // eslint-disable-next-line react/button-has-type
+): JSX.Element => <button className={style.button} {...props} />;
 
 export default Button;

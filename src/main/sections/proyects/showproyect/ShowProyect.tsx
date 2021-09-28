@@ -4,7 +4,7 @@ import ShowProyectHotKeys from './ShowProyectHotKeys';
 import listProyects from './listProyects';
 import CardProyect from './card/CardProyect';
 import PaginationDot from './pagination/PaginationDot';
-import * as css from './showproyect.module.css';
+import style from './showproyect.module.css';
 /**
  * A component to set up what proyects is render.
  * @example
@@ -30,10 +30,10 @@ const ShowProyect = (): JSX.Element => {
   const { name, URL, description, tech, img } = listProyects[index];
   // Render.
   return (
-    <section className={css['container']}>
+    <section className={style.container}>
       <Button
         type='button'
-        className={css['slide-button']}
+        className={style.slideButton}
         aria-label='Previous Button'
         role='button'
         onClick={handleDownIndex}
@@ -41,7 +41,7 @@ const ShowProyect = (): JSX.Element => {
       >
         &lt;
       </Button>
-      <div className={css['containerCardPag']}>
+      <div className={style.containerCardPag}>
         <CardProyect
           name={name}
           URL={URL}
@@ -57,7 +57,7 @@ const ShowProyect = (): JSX.Element => {
       </div>
       <Button
         type='button'
-        className={css['slide-button']}
+        className={style.slideButton}
         aria-label='Next Button'
         role='button'
         onClick={handleUpIndex}

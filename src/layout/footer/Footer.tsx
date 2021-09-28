@@ -1,5 +1,5 @@
 import SocialMedia from '@components/ui/socialmedia/SocialMedia';
-import * as css from './footer.module.css';
+import style from './footer.module.css';
 /**
  * A footer for app web, with social medial links.
  * @example
@@ -7,7 +7,7 @@ import * as css from './footer.module.css';
  * <Footer />
  */
 const Footer = (): JSX.Element => (
-  <footer className={css['footer']}>
+  <footer className={style.footer}>
     <SocialMedia />
     <small>
       <b>Peter DG</b> {`© ${new Date().getFullYear()}`}

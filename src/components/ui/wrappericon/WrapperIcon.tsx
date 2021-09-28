@@ -1,4 +1,4 @@
-import * as css from './wrappericon.module.css';
+import style from './wrappericon.module.css';
 /**
  * An container for icons like a button links for social media networks or anothers.
  * @example
@@ -13,6 +13,6 @@ const WrapperIcon = ({
   children,
 }: {
   children: JSX.Element | JSX.Element[];
-}): JSX.Element => <article className={css['wrapperIcon']}>{children}</article>;
+}): JSX.Element => <article className={style.wrapperIcon}>{children}</article>;
 
 export default WrapperIcon;

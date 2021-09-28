@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import me from '@public/profile/me.jpg';
-import * as css from './avatar.module.css';
+import style from './avatar.module.css';
 /**
  * A component to render img Avatar.
  * @example
@@ -9,7 +9,7 @@ import * as css from './avatar.module.css';
  */
 const Avatar = (): JSX.Element => (
   <Image
-    className={css['avatarStyle']}
+    className={style.avatarStyle}
     src={me}
     aria-label='Avatar'
     alt='Picture of Author. Peter DG.'

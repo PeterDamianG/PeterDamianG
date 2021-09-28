@@ -1,5 +1,5 @@
 import Button from '@components/ui/button/Button';
-import * as css from './paginationdot.module.css';
+import style from './paginationdot.module.css';
 
 type PaginationDotProps = {
   size: number[];
@@ -17,13 +17,11 @@ const PaginationDot = ({
   active,
   setIndex,
 }: PaginationDotProps): JSX.Element => (
-  <section className={css['spaceButtonDot']}>
+  <section className={style.spaceButtonDot}>
     {size.map((number) => (
       <Button
         key={number}
-        className={
-          active === number ? css['buttonDotActive'] : css['buttonDot']
-        }
+        className={active === number ? style.buttonDotActive : style.buttonDot}
         title={`Haz me click, para ir proyecto número: ${number}.`}
         onClick={(): void => setIndex(number)}
       >
