@@ -4,19 +4,15 @@ import WrapperSection from './WrapperSection';
 
 const Hero = dynamic(() => import('./sections/hero/Hero'), {
   loading: () => <LoaderSpinner />,
-  ssr: false,
 });
 const About = dynamic(() => import('./sections/about/About'), {
   loading: () => <LoaderSpinner />,
-  ssr: false,
 });
 const Proyects = dynamic(() => import('./sections/proyects/Proyects'), {
   loading: () => <LoaderSpinner />,
-  ssr: false,
 });
 const Contact = dynamic(() => import('./sections/contact/Contact'), {
   loading: () => <LoaderSpinner />,
-  ssr: false,
 });
 /**
  * A tag main container for sections of the web.

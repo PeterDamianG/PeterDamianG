@@ -1,11 +1,5 @@
-import dynamic from 'next/dynamic';
-import LoaderSpinner from '@components/icons/utils/loader/LoaderSpinnerSVG';
 import Head from 'next/head';
-
-const Main = dynamic(() => import('main/Main'), {
-  loading: () => <LoaderSpinner />,
-  ssr: false,
-});
+import Main from 'main/Main';
 /**
  * A component home is entry of page web. After _document and _app.
  */
