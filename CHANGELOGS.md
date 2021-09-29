@@ -5,6 +5,7 @@ _v 0.2.1:_
 - Run eslint with new linter out of box from nextjs.
 - Fix warning/error from linter advices.
 - Fix dinamic ssr.
+- Add bundle analyzer.
 
 _v 0.2:_
 
