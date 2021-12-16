@@ -32,11 +32,7 @@ class MyDocument extends Document {
           {/*
            * Refer to me GitHub.
            */}
-          <link
-            rel='me'
-            href='https://github.com/PeterDamianG'
-            type='text/html'
-          />
+          <link href='https://github.com/PeterDamianG' type='text/html' />
           {/* Need reload cache 48hs */}
           <meta httpEquiv='expires' content='172800' />
           {/* Facebook Open Graph */}
