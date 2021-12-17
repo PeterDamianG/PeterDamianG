@@ -1,5 +1,9 @@
 # ChangeLogs
 
+_v 0.2.2:_
+- Update dependencies, upgrato to NextJS 12.
+- Reduce complexity in component section home.
+
 _v 0.2.1:_
 - Add Preact for production.
 - Run eslint with new linter out of box from nextjs.
