@@ -69,16 +69,14 @@ const ContentNav1280 = ({
       <article className={style.detail}>
         <h3>Peter DG</h3>
         <SocialMedia />
-        {[number].map((numberInt) => (
-          <p
-            className={style.textDinamicNavStyle}
-            onClick={handlerClickText}
-            aria-hidden='true'
-            key={numberInt}
-          >
-            {textDinamicNav[number]}
-          </p>
-        ))}
+        <p
+          className={style.textDinamicNavStyle}
+          onClick={handlerClickText}
+          aria-hidden='true'
+          key={number}
+        >
+          {textDinamicNav[number]}
+        </p>
         <small>© {new Date().getFullYear()} Peter DG.</small>
       </article>
     </nav>

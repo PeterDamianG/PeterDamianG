@@ -7,6 +7,11 @@
   justify-content: space-between;
   text-align: center;
 }
+.containerIDE :global {
+  width: 85%;
+  animation: animOpacity 1s linear;
+  cursor: pointer;
+}
 .header {
   display: flex;
   flex-direction: column;

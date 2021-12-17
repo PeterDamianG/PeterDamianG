@@ -32,32 +32,25 @@ const CardProyect = ({
   img,
 }: CardProps): JSX.Element => (
   <BaseCard>
-    {[name].map((key) => (
-      <div key={key} className={style.containerAll}>
-        <WrapperIMG name={name} img={img} />
-        <Overlay
-          ChildrenButton={<ExternalLinkSVG className={style.buttonOverlay} />}
-          ChildrenAside={
-            <div className={style.cardOverlay}>
-              <WrapperIMG
-                name={name}
-                img={img}
-                quality={100}
-                objectFit='fill'
-              />
-            </div>
-          }
-        />
-        <div className={style.containerData}>
-          <h3 className={style.title}>{name}</h3>
-          <h4 className={style.subtitle}>{tech}</h4>
-          <p className={style.dataDesc}>{description}</p>
-          <a href={URL} target='_blank' rel='noreferrer'>
-            <Button>¡Ir a Repositorio!</Button>
-          </a>
-        </div>
+    <div key={name} className={style.containerAll}>
+      <WrapperIMG name={name} img={img} />
+      <Overlay
+        ChildrenButton={<ExternalLinkSVG className={style.buttonOverlay} />}
+        ChildrenAside={
+          <div className={style.cardOverlay}>
+            <WrapperIMG name={name} img={img} quality={100} objectFit='fill' />
+          </div>
+        }
+      />
+      <div className={style.containerData}>
+        <h3 className={style.title}>{name}</h3>
+        <h4 className={style.subtitle}>{tech}</h4>
+        <p className={style.dataDesc}>{description}</p>
+        <a href={URL} target='_blank' rel='noreferrer'>
+          <Button>¡Ir a Repositorio!</Button>
+        </a>
       </div>
-    ))}
+    </div>
   </BaseCard>
 );
 

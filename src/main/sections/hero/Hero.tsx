@@ -13,7 +13,7 @@ import content from './content/content';
  * <Hero />
  */
 const Hero = (): JSX.Element => {
-  // State for change containt.
+  // State for change content.
   const [number, setNumber] = useState(0);
   // Handler click for change state.
   const handlerClickChangeState = (): void => {
@@ -35,25 +35,22 @@ const Hero = (): JSX.Element => {
         <h3 className={style.subtitle}>Web Developer</h3>
         <SocialMedia />
       </article>
-      {[number].map((numberInt) => (
-        // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
-        <article
-          key={numberInt}
-          onClick={handlerClickChangeState}
-          onKeyPress={(): null => null}
-          className={style.containerIDE}
+      <article
+        key={number}
+        onClick={handlerClickChangeState}
+        className={style.containerIDE}
+        role='presentation'
+      >
+        {(isPortrait || isEnoughWidth) && (
+          <Ide title={content[number].title}>{content[number].html()}</Ide>
+        )}
+        <h4
+          title='Haz me click, para ver otro de mis pensamientos.'
+          className={style.textContent}
         >
-          {(isPortrait || isEnoughWidth) && (
-            <Ide title={content[number].title}>{content[number].html()}</Ide>
-          )}
-          <h4
-            title='Haz me click, para ver otro de mis pensamientos.'
-            className={style.textContent}
-          >
-            {content[number].caption}
-          </h4>
-        </article>
-      ))}
+          {content[number].caption}
+        </h4>
+      </article>
       <a className={style.scrollsvg} href='#about'>
         <ScrollDownSVG />
       </a>
