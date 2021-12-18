@@ -1,8 +1,8 @@
 import dynamic from 'next/dynamic';
-import LoaderSpinner from '@components/icons/utils/loader/LoaderSpinnerSVG';
 import HomePlacerholderSVG from '@components/placeholders/home/HomePlaceholderSVG';
 import AboutPlacerholderSVG from '@components/placeholders/about/AboutPlaceholderSVG';
 import ProyectsPlacerholderSVG from '@components/placeholders/proyects/ProyectsPlaceholderSVG';
+import ContactPlaceholderSVG from '@components/placeholders/contact/ContactPlaceholderSVG';
 import WrapperSection from './WrapperSection';
 
 const Hero = dynamic(
@@ -23,9 +23,12 @@ const Proyects = dynamic(
     loading: () => <ProyectsPlacerholderSVG />,
   },
 );
-const Contact = dynamic(() => import('./sections/contact/Contact'), {
-  loading: () => <LoaderSpinner />,
-});
+const Contact = dynamic(
+  () => import('../components/placeholders/contact/ContactPlaceholderSVG'),
+  {
+    loading: () => <ContactPlaceholderSVG />,
+  },
+);
 /**
  * A tag main container for sections of the web.
  * @example
