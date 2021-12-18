@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic';
 import LoaderSpinner from '@components/icons/utils/loader/LoaderSpinnerSVG';
 import HomePlacerholderSVG from '@components/placeholders/home/HomePlaceholderSVG';
+import AboutPlacerholderSVG from '@components/placeholders/about/AboutPlaceholderSVG';
 import WrapperSection from './WrapperSection';
 
 const Hero = dynamic(
@@ -9,9 +10,12 @@ const Hero = dynamic(
     loading: () => <HomePlacerholderSVG />,
   },
 );
-const About = dynamic(() => import('./sections/about/About'), {
-  loading: () => <LoaderSpinner />,
-});
+const About = dynamic(
+  () => import('../components/placeholders/about/AboutPlaceholderSVG'),
+  {
+    loading: () => <AboutPlacerholderSVG />,
+  },
+);
 const Proyects = dynamic(() => import('./sections/proyects/Proyects'), {
   loading: () => <LoaderSpinner />,
 });
