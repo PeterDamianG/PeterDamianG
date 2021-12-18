@@ -1,34 +1,5 @@
-import dynamic from 'next/dynamic';
-import HomePlacerholderSVG from '@components/placeholders/home/HomePlaceholderSVG';
-import AboutPlacerholderSVG from '@components/placeholders/about/AboutPlaceholderSVG';
-import ProyectsPlacerholderSVG from '@components/placeholders/proyects/ProyectsPlaceholderSVG';
-import ContactPlaceholderSVG from '@components/placeholders/contact/ContactPlaceholderSVG';
+import { Hero, About, Proyects, Contact } from './Placeholders';
 import WrapperSection from './WrapperSection';
-
-const Hero = dynamic(
-  () => import('../components/placeholders/home/HomePlaceholderSVG'),
-  {
-    loading: () => <HomePlacerholderSVG />,
-  },
-);
-const About = dynamic(
-  () => import('../components/placeholders/about/AboutPlaceholderSVG'),
-  {
-    loading: () => <AboutPlacerholderSVG />,
-  },
-);
-const Proyects = dynamic(
-  () => import('../components/placeholders/proyects/ProyectsPlaceholderSVG'),
-  {
-    loading: () => <ProyectsPlacerholderSVG />,
-  },
-);
-const Contact = dynamic(
-  () => import('../components/placeholders/contact/ContactPlaceholderSVG'),
-  {
-    loading: () => <ContactPlaceholderSVG />,
-  },
-);
 /**
  * A tag main container for sections of the web.
  * @example
