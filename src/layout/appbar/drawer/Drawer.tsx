@@ -6,11 +6,9 @@ import { useMediaQuery } from 'react-responsive';
 
 const ContentNav = dynamic(() => import('./nav/ContentNav'), {
   loading: () => <LoaderSpinner />,
-  ssr: false,
 });
 const ContentNav1280 = dynamic(() => import('./nav/ContentNav1280'), {
   loading: () => <LoaderSpinner />,
-  ssr: false,
 });
 /**
  * An drawer for contain a menu to navigate using component Overlay and render by resolution.
