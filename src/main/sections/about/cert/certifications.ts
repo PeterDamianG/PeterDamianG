@@ -7,7 +7,7 @@
  */
 const CERTIFICATIONS = [
   {
-    id: 5,
+    id: 6,
     title: 'JavaScript Algorithms and Data Structures',
     emit: 'freeCodeCamp',
     emitURL: 'https://www.linkedin.com/school/free-code-camp/',
@@ -15,12 +15,20 @@ const CERTIFICATIONS = [
     URL: 'https://www.freecodecamp.org/certification/peterdg/javascript-algorithms-and-data-structures',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Aceleración FullStack en React, Node. Job Ready.',
     emit: 'Alkemy',
     emitURL: 'https://www.linkedin.com/company/alkemy2020/',
     credID: '042-344',
     URL: 'https://drive.google.com/file/d/1Ok8El_CKfCYyhfnkDs6v7FC7oIElLb9W/view',
+  },
+  {
+    id: 4,
+    title: 'Google Activate Introducción Básica al Desarrollo App Móviles',
+    emit: 'Google Actívate',
+    emitURL: 'https://www.linkedin.com/company/activatecongoogle/',
+    credID: '6KF G9N N33',
+    URL: 'https://learndigital.withgoogle.com/activate/validate-certificate-code',
   },
   {
     id: 3,
