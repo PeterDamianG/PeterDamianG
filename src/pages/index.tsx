@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Main from 'main/Main';
+import Main from '@components/main/Main';
 /**
  * A component home is entry of page web. After _document and _app.
  */

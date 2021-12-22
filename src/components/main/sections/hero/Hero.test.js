@@ -23,6 +23,7 @@ describe('/src/components/main/section/hero - <Hero> - Renders', () => {
 describe('/src/components/main/section/hero - <Hero> - Responsive', () => {
   beforeEach(() =>
     render(
+      // eslint-disable-next-line react/jsx-no-constructed-context-values
       <ResponsiveContext.Provider value={{ width: 1280 }}>
         <Hero />
       </ResponsiveContext.Provider>,
@@ -53,6 +54,7 @@ describe('/src/components/main/section/hero - <Hero> - Responsive', () => {
 describe('/src/components/main/section/hero - <Hero> - Responsive Portrait', () => {
   beforeEach(() =>
     render(
+      // eslint-disable-next-line react/jsx-no-constructed-context-values
       <ResponsiveContext.Provider value={{ orientation: 'portrait' }}>
         <Hero />
       </ResponsiveContext.Provider>,

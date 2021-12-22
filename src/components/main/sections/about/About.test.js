@@ -20,6 +20,7 @@ describe('/src/components/main/section/about - <About> - Render', () => {
 describe('/src/components/main/section/about - <About> - Responsive', () => {
   test('does render section about', () => {
     render(
+      // eslint-disable-next-line react/jsx-no-constructed-context-values
       <ResponsiveContext.Provider value={{ width: 1280 }}>
         <About />
       </ResponsiveContext.Provider>,
@@ -35,6 +36,7 @@ describe('/src/components/main/section/about - <About> - Responsive', () => {
   });
   test('does render section about avatar with portrait responsive', () => {
     render(
+      // eslint-disable-next-line react/jsx-no-constructed-context-values
       <ResponsiveContext.Provider value={{ orientation: 'portrait' }}>
         <About />
       </ResponsiveContext.Provider>,

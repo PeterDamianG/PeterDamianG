@@ -51,6 +51,7 @@ describe('/src/components/main/section/proyects - <Proyects> - Render', () => {
 describe('/src/components/main/section/about - <Proyects> - Responsive', () => {
   beforeEach(() =>
     render(
+      // eslint-disable-next-line react/jsx-no-constructed-context-values
       <ResponsiveContext.Provider value={{ width: 1280 }}>
         <Proyects />
       </ResponsiveContext.Provider>,
