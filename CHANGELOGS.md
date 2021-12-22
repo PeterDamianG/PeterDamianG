@@ -4,6 +4,7 @@ _v 0.2.2:_
 - Update dependencies, upgrato to NextJS 12.
 - Reduce complexity in component section home.
 - Change generic spinner loader to placeholders loader in sections and main.
+- Restructure folders.
 
 _v 0.2.1:_
 - Add Preact for production.
