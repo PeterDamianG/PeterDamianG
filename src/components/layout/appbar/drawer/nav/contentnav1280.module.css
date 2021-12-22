@@ -29,7 +29,7 @@
   text-shadow: 2px 2px 3px var(--foreground);
   transition: text-shadow 0.2s linear;
 }
-.textDinamicNavStyle :global {
+.DrawerTextStyle :global {
   cursor: pointer;
   font-weight: bold;
   animation: animOpacity 1.25s linear;

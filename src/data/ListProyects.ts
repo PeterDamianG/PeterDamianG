@@ -2,10 +2,10 @@
  * An array with contain info about proyectos for set to display.
  * @const
  * @example
- * import Card from 'main/sections/showproyect/listProyect'
- * listProyects[0].name
+ * import Card from 'data/ListProyect'
+ * ListProyects[0].name
  */
-const listProyects = [
+const ListProyects = [
   {
     name: 'ChallengeJS Alkemy',
     URL: 'https://github.com/PeterDamianG/challengejs-alkemy',
@@ -87,4 +87,4 @@ const listProyects = [
   },
 ] as const;
 
-export default listProyects;
+export default ListProyects;

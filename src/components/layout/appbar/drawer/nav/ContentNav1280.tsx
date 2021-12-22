@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import useFunctionOverTime from 'hooks/useFunctionOverTime';
 import SocialMedia from '@components/ui/socialmedia/SocialMedia';
-import textDinamicNav from './textDinamicNav';
+import DrawerText from '@data/DrawerText';
 import style from './contentnav1280.module.css';
 /**
  * A content of navigation when you have in 1280 or more of resolution width.
@@ -14,11 +14,11 @@ const ContentNav1280 = ({
 }: {
   close?: Function;
 }): JSX.Element => {
-  // State for show/change textDinamicNav.
+  // State for show/change DrawerText.
   const [number, setNumber] = useState(0);
-  // Handler click on textDinamicNav.
+  // Handler click on DrawerText.
   const handlerClickText = (): void => {
-    if (number === textDinamicNav.length - 1) setNumber(0);
+    if (number === DrawerText.length - 1) setNumber(0);
     else setNumber((prevNumber) => prevNumber + 1);
   };
   // Hook to change states automatic.
@@ -70,12 +70,12 @@ const ContentNav1280 = ({
         <h3>Peter DG</h3>
         <SocialMedia />
         <p
-          className={style.textDinamicNavStyle}
+          className={style.DrawerTextStyle}
           onClick={handlerClickText}
           aria-hidden='true'
           key={number}
         >
-          {textDinamicNav[number]}
+          {DrawerText[number]}
         </p>
         <small>© {new Date().getFullYear()} Peter DG.</small>
       </article>

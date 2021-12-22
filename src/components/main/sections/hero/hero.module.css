@@ -40,7 +40,7 @@
   animation: animOpacity 1s linear;
   cursor: pointer;
 }
-.textContent {
+.heroContent {
   margin: 1vh;
   font-size: 1.5em;
 }
@@ -123,7 +123,7 @@
     grid-column: x1 / x2;
   }
   /* Container Text in grid */
-  .textContent :global {
+  .heroContent :global {
     position: relative;
     right: 50%;
     text-align: center;

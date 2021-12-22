@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Button from '@components/ui/button/Button';
+import ListProyects from '@data/ListProyects';
 import ShowProyectHotKeys from './ShowProyectHotKeys';
-import listProyects from './listProyects';
 import CardProyect from './card/CardProyect';
 import PaginationDot from './pagination/PaginationDot';
 import style from './showproyect.module.css';
@@ -16,18 +16,18 @@ const ShowProyect = (): JSX.Element => {
   const [index, setIndex] = useState(0);
   // Handler for states.
   const handleUpIndex = (): void =>
-    index === listProyects.length - 1
+    index === ListProyects.length - 1
       ? setIndex(0)
       : setIndex((prevIndex) => prevIndex + 1);
   const handleDownIndex = (): void =>
     index === 0
-      ? setIndex(listProyects.length - 1)
+      ? setIndex(ListProyects.length - 1)
       : setIndex((prevIndex) => prevIndex - 1);
   const handleSetIndex = (number: number): void => setIndex(number);
   // Set hotkeys.
   ShowProyectHotKeys(handleUpIndex, handleDownIndex, index);
   // Destructuring.
-  const { name, URL, description, tech, img } = listProyects[index];
+  const { name, URL, description, tech, img } = ListProyects[index];
   // Render.
   return (
     <section className={style.container}>
@@ -50,7 +50,7 @@ const ShowProyect = (): JSX.Element => {
           img={img}
         />
         <PaginationDot
-          size={Array.from(Array(listProyects.length).keys())}
+          size={Array.from(Array(ListProyects.length).keys())}
           active={index}
           setIndex={handleSetIndex}
         />

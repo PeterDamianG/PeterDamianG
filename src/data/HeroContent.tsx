@@ -1,15 +1,15 @@
-import style from './content.module.css';
+import style from './herocontent.module.css';
 /**
  * A var type const for contain info set to display in section Hero.
  * @remarks
  * Limits of <li> tags in html props is 6, for effect typing.
  * @const
  * @example
- * import content from 'main/sections/hero/content/content'
- * content[0].title
+ * import HeroContent from 'data/HeroContent'
+ * HeroContent[0].title
  * // return "NPM"
  */
-const content = [
+const HeroContent = [
   {
     title: 'NPM',
     caption: '¿Cómo pasamos de tres archivos, a montones de dependencias?',
@@ -224,4 +224,4 @@ const content = [
   },
 ] as const;
 
-export default content;
+export default HeroContent;
