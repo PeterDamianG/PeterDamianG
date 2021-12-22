@@ -7,11 +7,12 @@
       "@icons/*": ["components/icons/*"],
       "@layout/*": ["components/layout/*"],
       "@hooks/*": ["hooks/*"],
-      "@data/*": ["data/*"]
+      "@data/*": ["data/*"],
+      "@test/*": ["../tests/*"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
+    "allowJs": false,
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
