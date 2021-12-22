@@ -46,6 +46,7 @@ describe('/src/components/layout/appbar/Drawer.js - <Drawer> - Renders', () => {
 describe('/src/components/layout/appbar/Drawer.js - <Drawer> - Responsive', () => {
   beforeEach(() =>
     render(
+      // eslint-disable-next-line react/jsx-no-constructed-context-values
       <ResponsiveContext.Provider value={{ width: 1280 }}>
         <Drawer />
       </ResponsiveContext.Provider>,
