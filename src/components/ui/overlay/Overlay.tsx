@@ -7,14 +7,8 @@ import style from './overlay.module.css';
  * @example
  * import Overlay from 'components/ui/overlay/Overlay'
  * <Overlay
- *    ChildrenButton={
- *      <u>
- *         <em>
- *           <b>certificaciones.</b>
- *         </em>
- *      </u>
- *     }
- *     ChildrenAside={<ListCertification />}
+ *    ChildrenButton={ <button>certificaciones.</button> }
+ *    ChildrenAside={ <ListCertification /> }
  * />
  */
 const Overlay = ({
