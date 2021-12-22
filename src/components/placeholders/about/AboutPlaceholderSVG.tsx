@@ -1,5 +1,6 @@
 import { SVGProps } from 'react';
 import { useMediaQuery } from 'react-responsive';
+import style from '../style/placeholder.module.css';
 /**
  * Svg img to use like a placeholder loader.
  * @param props - A object type SVGProps, with propieties pass to svg tag.
@@ -12,7 +13,7 @@ const AboutPlacerholderSVG = (props: SVGProps<SVGSVGElement>): JSX.Element => {
     query: '(min-width: 1280px)',
   });
   return (
-    <svg className='placeholder' viewBox='0 0 400 400' {...props}>
+    <svg className={style.placeholder} viewBox='0 0 400 400' {...props}>
       <title>Estoy cargando, no te impacientes.</title>
       {isHighMedia ? (
         <>

@@ -69,13 +69,6 @@ svg:hover {
   filter: drop-shadow(1px 1px 1.5px var(--foreground));
   transition: filter 0.2s linear;
 }
-.placeholder {
-  opacity: 0.3;
-  width: 100vw;
-  height: 100vh;
-  scroll-snap-align: center;
-  animation: placeHolderOpacity 2s linear alternate infinite;
-}
 * {
   box-sizing: border-box;
 }
