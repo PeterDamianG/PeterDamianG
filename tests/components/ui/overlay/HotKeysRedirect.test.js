@@ -1,6 +1,6 @@
 import { render, cleanup } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import Drawer from './Overlay';
+import Drawer from '@components/ui/overlay/Overlay';
 
 beforeEach(() => {
   delete window.location;

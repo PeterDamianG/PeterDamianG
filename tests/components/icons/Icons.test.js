@@ -1,12 +1,12 @@
 import { render, screen, cleanup } from '@testing-library/react';
-import MenuIconSVG from 'components/icons/appbar/MenuIconSVG';
-import LightIconSVG from 'components/icons/appbar/LightIconSVG';
-import DarkIconSVG from 'components/icons/appbar/DarkIconSVG';
-import GitHubSVG from 'components/icons/socialmedia/GitHubSVG';
-import GoogleMailSVG from 'components/icons/socialmedia/GoogleMailSVG';
-import LinkedInSVG from 'components/icons/socialmedia/LinkedInSVG';
-import ScollDownSVG from '@components/icons/utils/scrolldown/ScrollDownSVG';
-import ArrowUp from '@components/icons/utils/arrowup/ArrowUpSVG';
+import MenuIconSVG from '@icons/appbar/MenuIconSVG';
+import LightIconSVG from '@icons/appbar/LightIconSVG';
+import DarkIconSVG from '@icons/appbar/DarkIconSVG';
+import GitHubSVG from '@icons/socialmedia/GitHubSVG';
+import GoogleMailSVG from '@icons/socialmedia/GoogleMailSVG';
+import LinkedInSVG from '@icons/socialmedia/LinkedInSVG';
+import ScollDownSVG from '@icons/utils/scrolldown/ScrollDownSVG';
+import ArrowUp from '@icons/utils/arrowup/ArrowUpSVG';
 
 afterAll(cleanup);
 

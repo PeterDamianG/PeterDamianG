@@ -6,6 +6,7 @@
       "@components/*": ["components/*"],
       "@icons/*": ["components/icons/*"],
       "@layout/*": ["components/layout/*"],
+      "@sections/*": ["components/main/sections/*"],
       "@hooks/*": ["hooks/*"],
       "@data/*": ["data/*"],
       "@test/*": ["../tests/*"]
