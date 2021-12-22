@@ -2,7 +2,7 @@ import style from './content.module.css';
 /**
  * A var type const for contain info set to display in section Hero.
  * @remarks
- * Limits of <p> tags in html props is 6, for effect typing.
+ * Limits of <li> tags in html props is 6, for effect typing.
  * @const
  * @example
  * import content from 'main/sections/hero/content/content'
@@ -15,25 +15,25 @@ const content = [
     caption: '¿Cómo pasamos de tres archivos, a montones de dependencias?',
     html: (): JSX.Element => (
       <>
-        <p>
+        <li>
           &quot;<span className={style.prop}>dependencies</span>&quot;: &#123;
-        </p>
-        <p>
+        </li>
+        <li>
           &nbsp;&nbsp;&quot;<span className={style.prop}>next</span>&quot;:
           &quot;
           <span className={style.val}>^11.1.2</span>&quot;,
-        </p>
-        <p>
+        </li>
+        <li>
           &nbsp;&nbsp;&quot;<span className={style.prop}>react</span>&quot;:
           &quot;
           <span className={style.val}>^17.0.2</span>&quot;,
-        </p>
-        <p>
+        </li>
+        <li>
           &nbsp;&nbsp;&quot;<span className={style.prop}>react-dom</span>
           &quot;: &quot;
           <span className={style.val}>^17.0.2</span>&quot;,
-        </p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;. &nbsp;&nbsp; . &nbsp;&nbsp; .</p>
+        </li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;. &nbsp;&nbsp; . &nbsp;&nbsp; .</li>
       </>
     ),
   },
@@ -42,27 +42,27 @@ const content = [
     caption: '¿Cuándo la semantica cambie, re-adaptaremos todas las webs?',
     html: (): JSX.Element => (
       <>
-        <p>
+        <li>
           <span className={style.prop}>&lt;div&gt;</span>Bad for sections
           <span className={style.prop}>&lt;/div&gt;</span>
-        </p>
-        <p>
+        </li>
+        <li>
           <span className={style.prop}>&lt;section&gt;</span>Good
           <span className={style.prop}>&lt;/section&gt;</span>
-        </p>
-        <p>
+        </li>
+        <li>
           <span className={style.prop}>&lt;p&gt;</span>Bad for Footer
           <span className={style.prop}>&lt;/p&gt;</span>
-        </p>
-        <p>
+        </li>
+        <li>
           <span className={style.prop}>&lt;footer&gt;</span>
           <span className={style.prop}>&lt;small&gt;</span>
-        </p>
-        <p>&nbsp;&nbsp;Good © Peter DG</p>
-        <p>
+        </li>
+        <li>&nbsp;&nbsp;Good © Peter DG</li>
+        <li>
           <span className={style.prop}>&lt;/small&gt;</span>
           <span className={style.prop}>&lt;/footer&gt;</span>
-        </p>
+        </li>
       </>
     ),
   },
@@ -71,15 +71,15 @@ const content = [
     caption: '¿Hace cuánto que no utilizo algunas etiquetas?',
     html: (): JSX.Element => (
       <>
-        <p>
+        <li>
           <span className={style.prop}>
             &lt;abbr title=
             <span className={style.val}>&quot;Buenos Aires&quot;</span>
           </span>
           <span className={style.prop}>&gt;</span>BS AS
           <span className={style.prop}>&lt;/abbr&gt;</span>
-        </p>
-        <p>
+        </li>
+        <li>
           <span className={style.prop}>
             &lt;base href=
             <span className={style.val}>
@@ -87,14 +87,14 @@ const content = [
             </span>
             &nbsp;/&gt;
           </span>
-        </p>
-        <p>
+        </li>
+        <li>
           <span className={style.prop}>&lt;cite&gt;</span>
-        </p>
-        <p>&nbsp;&nbsp;You Aren&apos;t Gonna Need It.</p>
-        <p>
+        </li>
+        <li>&nbsp;&nbsp;You Aren&apos;t Gonna Need It.</li>
+        <li>
           <span className={style.prop}>&lt;/cite&gt;</span>
-        </p>
+        </li>
       </>
     ),
   },
@@ -103,7 +103,7 @@ const content = [
     caption: '¿Cuándo aparecerá el sistema de gráficos definitivo?',
     html: (): JSX.Element => (
       <>
-        <p>
+        <li>
           <span className={style.prop}>
             &lt;canvas id=
             <span className={style.val}>&quot;myCanvas&quot;</span>
@@ -111,11 +111,11 @@ const content = [
           </span>
           <br />
           &nbsp;&nbsp;Your browser does not support canvas tag.
-        </p>
-        <p>
+        </li>
+        <li>
           <span className={style.prop}>&lt;/canvas&gt;</span>
-        </p>
-        <p>
+        </li>
+        <li>
           <span className={style.prop}>
             &lt;svg width=
             <span className={style.val}>&quot;100&quot;</span>
@@ -124,8 +124,8 @@ const content = [
             </span>
             &gt;
           </span>
-        </p>
-        <p>
+        </li>
+        <li>
           &nbsp; &nbsp;
           <span className={style.prop}>
             &lt;circle cx=
@@ -138,11 +138,11 @@ const content = [
             </span>
             &nbsp;/&gt;
           </span>
-        </p>
-        <p>
+        </li>
+        <li>
           <span className={style.prop}>&lt;/svg&gt;</span>
-        </p>
-        <p>
+        </li>
+        <li>
           <span className={style.prop}>
             &lt;img src=
             <span className={style.val}>&quot;/profile.jpg&quot;</span>
@@ -151,7 +151,7 @@ const content = [
             </span>
             &nbsp;/&gt;
           </span>
-        </p>
+        </li>
       </>
     ),
   },
@@ -160,7 +160,7 @@ const content = [
     caption: '¿Podrá TypeScript convertirse en el estándar web?',
     html: (): JSX.Element => (
       <>
-        <p>
+        <li>
           <span className={style.reserve}>
             const&nbsp;
             <span className={style.val}>MyComponent&nbsp;</span>
@@ -168,19 +168,57 @@ const content = [
             <span className={style.prop}>JSX.Element&nbsp;</span>
             <span className={style.reserve}>=&gt; &#123;</span>
           </span>
-        </p>
-        <p>
+        </li>
+        <li>
           <span>&nbsp;&nbsp;/* Your Component... */</span>
-        </p>
-        <p>
+        </li>
+        <li>
           <span className={style.reserve}>&#125;;</span>
-        </p>
+        </li>
         <br />
-        <p>
+        <li>
           <span className={style.reserve}>export default&nbsp;</span>
           <span className={style.val}>MyComponent</span>
           <span className={style.reserve}>;</span>
-        </p>
+        </li>
+      </>
+    ),
+  },
+  {
+    title: 'Frameworks',
+    caption: '¿Por qué reinventar las ruedas? Usemos Frameworks.',
+    html: (): JSX.Element => (
+      <>
+        <li>
+          <span className={style.reserve}>import&nbsp;</span>
+          <span>&#123; NestFactory as nf &#125;&nbsp;</span>
+          <span className={style.reserve}>from&nbsp;</span>
+          <span className={style.prop}>&apos;@nestjs/core&apos;</span>
+          <span>;</span>
+        </li>
+        <br />
+        <li>
+          <span className={style.reserve}>async function</span>
+          <span className={style.prop}>&nbsp;bootstrap()&nbsp;</span>
+          <span>&#123;</span>
+        </li>
+        <li>
+          <span className={style.reserve}>&nbsp;&nbsp;const</span>
+          <span>&nbsp;app =&nbsp;</span>
+          <span className={style.reserve}>await&nbsp;</span>
+          <span>nf.</span>
+          <span className={style.prop}>create</span>
+          <span>(AppModule);</span>
+        </li>
+        <li>
+          <span className={style.reserve}>&nbsp;&nbsp;await&nbsp;</span>
+          <span>app.</span>
+          <span className={style.prop}>listen(3000)</span>
+          <span>;</span>
+        </li>
+        <li>
+          <span>&#125;</span>
+        </li>
       </>
     ),
   },
