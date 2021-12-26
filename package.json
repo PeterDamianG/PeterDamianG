@@ -24,7 +24,8 @@
     "prettier": "prettier --ignore-path .gitignore --write src/**/*.{js,jsx,css,ts,tsx} && prettier --check src/**/*.{js,jsx,css,ts,tsx}",
     "lint": "next lint",
     "test": "jest --verbose --runInBand",
-    "coverage": "jest --coverage --verbose --runInBand && cd coverage/lcov-report && index.html"
+    "coverage": "jest --coverage --verbose --runInBand && cd coverage/lcov-report && index.html",
+    "test:e2e": "npm run build && npm run start && playwright test"
   },
   "dependencies": {
     "next": "^12.0.7",
@@ -40,6 +41,7 @@
   "devDependencies": {
     "@axe-core/react": "^4.3.2",
     "@next/bundle-analyzer": "^12.0.7",
+    "@playwright/test": "^1.17.1",
     "@testing-library/dom": "^8.11.1",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
