@@ -17,7 +17,6 @@ const WrapperIMG = ({
   objectFit?: 'contain' | 'cover' | 'fill';
 }): JSX.Element => (
   <Image
-    onClick={(): null => null}
     src={img}
     alt={name}
     width={1280}
