@@ -1,7 +1,5 @@
 import BaseCard from '@components/ui/basecard/BaseCard';
-import Overlay from '@components/ui/overlay/Overlay';
 import Button from '@components/ui/button/Button';
-import ExternalLinkSVG from '@icons/utils/link/ExternalLinkSVG';
 import WrapperIMG from './WrapperIMG';
 import style from './cardproyect.module.css';
 
@@ -34,14 +32,6 @@ const CardProyect = ({
   <BaseCard>
     <div key={name} className={style.containerAll}>
       <WrapperIMG name={name} img={img} />
-      <Overlay
-        ChildrenButton={<ExternalLinkSVG className={style.buttonOverlay} />}
-        ChildrenAside={
-          <div className={style.cardOverlay}>
-            <WrapperIMG name={name} img={img} quality={100} objectFit='fill' />
-          </div>
-        }
-      />
       <div className={style.containerData}>
         <h3 className={style.title}>{name}</h3>
         <h4 className={style.subtitle}>{tech}</h4>
