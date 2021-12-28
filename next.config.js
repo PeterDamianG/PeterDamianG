@@ -3,6 +3,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 });
 module.exports = withBundleAnalyzer({
   reactStrictMode: true,
+  swcMinify: true,
   webpack(config, { dev, isServer }) {
     if (!dev && !isServer) {
       Object.assign(config.resolve.alias, {
