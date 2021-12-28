@@ -3,31 +3,18 @@
   animation: animOpacity 1s linear;
 }
 .containerAll img {
-  animation: animOpacity 1s linear;
   border: 2px solid var(--border-card-certification) !important;
 }
-.buttonOverlay {
-  position: absolute;
-  width: 12vw;
-  height: 12vh;
-  left: 90%;
-  bottom: 90%;
-}
-.cardOverlay div:nth-child(1) {
-  margin: 10vh auto !important;
-  min-height: 50vh !important;
-  width: 85% !important;
-}
 .containerData {
-  margin-bottom: 2vh;
+  height: 45vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 .title {
-  margin-bottom: 0.5vh;
-  font-size: 1.4em;
+  margin-bottom: 0.2vh;
+  font-size: 1.3em;
   text-decoration: underline;
   text-shadow: 0px 0px 1px var(--foreground);
   transition: text-shadow 0.2s linear;
@@ -38,7 +25,7 @@
 }
 .subtitle {
   margin: 0;
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: var(--subtitle-card-color);
   text-shadow: 0px 0px 1px var(--foreground);
   transition: text-shadow 0.2s linear;
@@ -48,8 +35,9 @@
   transition: text-shadow 0.2s linear;
 }
 .dataDesc {
-  font-size: 1.2em;
-  width: 85%;
+  margin: 0;
+  font-size: 1.15em;
+  width: 90%;
   text-shadow: 0px 0px 1px var(--foreground);
 }
 @media all and (min-width: 640px) and (max-width: 1280px) {

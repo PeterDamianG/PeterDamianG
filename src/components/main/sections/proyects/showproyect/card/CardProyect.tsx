@@ -1,6 +1,6 @@
 import BaseCard from '@components/ui/basecard/BaseCard';
 import Button from '@components/ui/button/Button';
-import WrapperIMG from './WrapperIMG';
+import Image from 'next/image';
 import style from './cardproyect.module.css';
 
 type CardProps = {
@@ -31,7 +31,13 @@ const CardProyect = ({
 }: CardProps): JSX.Element => (
   <BaseCard>
     <div key={name} className={style.containerAll}>
-      <WrapperIMG name={name} img={img} />
+      <Image
+        aria-label='Proyect'
+        priority
+        src={img}
+        alt={name}
+        placeholder='blur'
+      />
       <div className={style.containerData}>
         <h3 className={style.title}>{name}</h3>
         <h4 className={style.subtitle}>{tech}</h4>

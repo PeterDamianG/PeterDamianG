@@ -1,3 +1,10 @@
+import AlkemyChallenger from '@proyectsIMG/AlkemyChallenger.jpg';
+import AngularChallengerAlkemy from '@proyectsIMG/AngularChallengerAlkemy.jpg';
+import TemplarKnightGuild from '@proyectsIMG/TemplarKnightGuild.jpg';
+import LoRHelper from '@proyectsIMG/LoRHelper.jpg';
+import ArtifactHelper from '@proyectsIMG/ArtifactHelper.jpg';
+import AlkemyFinalProyect from '@proyectsIMG/AlkemyFinalProyect.jpg';
+import InvertirArgentina from '@proyectsIMG/InvertirArgentina.jpg';
 /**
  * An array with contain info about proyectos for set to display.
  * @const
@@ -12,14 +19,23 @@ const ListProyects = [
     description:
       'Este repositorio, es una posible solución al desafío de javascript propuesto por la aceleradora Alkemy.',
     tech: 'JavaScript React',
-    img: '/proyects/AlkemyChallenger.jpg',
+    img: AlkemyChallenger,
+  },
+  {
+    name: 'ONG Team 42 - t42-project',
+    URL: 'https://github.com/PeterDamianG/AlkemyFinalProyect',
+    description:
+      'Proyecto colaborativo entre más de 10 personas, conformado por desarrolladores y supervisores.',
+    tech: 'React Express',
+    img: AlkemyFinalProyect,
   },
   {
     name: 'Challenge Angular Blog',
     URL: 'https://github.com/PeterDamianG/ChallengeAngularBlog',
-    description: 'Desarrollo de un blog en angular.',
+    description:
+      'Desarrollo de un blog en angular. Como desafío propuesto por acelleradora Alkemy.',
     tech: 'TypeScript Angular',
-    img: '/proyects/AngularBlogHome.jpg',
+    img: AngularChallengerAlkemy,
   },
   {
     name: 'TemplarKnightsGuild',
@@ -27,7 +43,7 @@ const ListProyects = [
     description:
       'Este es un sitio web, desarrollado como practica. Es una página de una guild de videojuegos, con contenido minimo sobre el mismo.',
     tech: 'JavaScript Vue',
-    img: '/proyects/TemplarKnightGuild.jpg',
+    img: TemplarKnightGuild,
   },
   {
     name: 'LoRHelper',
@@ -35,7 +51,7 @@ const ListProyects = [
     description:
       'Esta es un prototipo de una APP de escritorio, a modo de tracker para el juego de cartas de Legends of Runeterra.',
     tech: 'C# WPF',
-    img: '/proyects/LoRHelper.jpg',
+    img: LoRHelper,
   },
   {
     name: 'ArtifactHelper',
@@ -43,31 +59,7 @@ const ListProyects = [
     description:
       'Un prototipo para una APP no oficial, a modo de "helper" para el juego de cartas de Artifact Card Game Dota2.',
     tech: 'JavaScript Electron',
-    img: '/proyects/ArtifactHelper.jpg',
-  },
-  {
-    name: 'ONG Team 42 - t42-project Client',
-    URL: 'https://bitbucket.org/alkemy-dev/t42-project-client/src/master/',
-    description:
-      'Proyecto colaborativo entre más de 10 personas, conformado por desarrolladores y supervisores. Cliente del proyecto.',
-    tech: 'JavaScript React',
-    img: '/proyects/ONGClient.jpg',
-  },
-  {
-    name: 'ONG Team 42 - t42-project Server',
-    URL: 'https://bitbucket.org/alkemy-dev/t42-project-server/src/master/',
-    description:
-      'Proyecto colaborativo entre más de 10 personas, conformado por desarrolladores y supervisores. Servidor del proyecto',
-    tech: 'JavaScript NodeJS',
-    img: '/proyects/ONGServer.jpg',
-  },
-  {
-    name: 'Template Next',
-    URL: 'https://github.com/PeterDamianG/template-next',
-    description:
-      'Una plantilla para nuevos proyectos, utilizando toda la potencia de NextJS.',
-    tech: 'JavaScript Next',
-    img: '/proyects/TemplateNext.jpg',
+    img: ArtifactHelper,
   },
   {
     name: 'InvertirArgentina',
@@ -75,15 +67,7 @@ const ListProyects = [
     description:
       'Prototipo de una página web, desarrollada con React y Firebase. Con la tematica de economía y finanzas en argentina.',
     tech: 'JavaScript Firebase',
-    img: '/proyects/InvertirArgentina.jpg',
-  },
-  {
-    name: 'PeterDamianG Site Web',
-    URL: 'https://github.com/PeterDamianG/PeterDamianG',
-    description:
-      'El desarrollo del sitio web personal, donde te encuentras actualmente.',
-    tech: 'JavaScript Next',
-    img: '/proyects/PersonalWeb.jpg',
+    img: InvertirArgentina,
   },
 ] as const;
 
