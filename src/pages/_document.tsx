@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-title-in-document-head */
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 /**
  * A class manager for base public html by nextjs.
@@ -10,7 +9,6 @@ class MyDocument extends Document {
       <Html lang='es'>
         <Head>
           <meta charSet='utf-8' />
-          <title>Peter Damián G - Personal Web</title>
           <meta name='robots' content='index,follow' />
           <meta name='subject' content='Sitio web de Peter Damián Gómez.' />
           <meta name='mobile-web-app-capable' content='yes' />

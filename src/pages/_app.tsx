@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app';
 import 'styles/themes.css';
 import 'styles/globals.css';
 import { ThemeProvider } from 'next-themes';
+import Head from 'next/head';
 import AppBar from '@layout/appbar/AppBar';
 import Footer from '@layout/footer/Footer';
 // Conditional import for add a11y with axe-core
@@ -20,6 +21,9 @@ if (process.env.NODE_ENV !== 'production' && !(typeof window === 'undefined')) {
  */
 const App = ({ Component, pageProps }: AppProps): JSX.Element => (
   <ThemeProvider>
+    <Head>
+      <title>Peter Damián G - Personal Web</title>
+    </Head>
     <AppBar />
     <Component {...pageProps} />
     <Footer />
