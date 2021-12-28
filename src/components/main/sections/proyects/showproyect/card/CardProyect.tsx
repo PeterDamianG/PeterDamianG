@@ -8,7 +8,7 @@ type CardProps = {
   URL: string;
   description: string;
   tech: string;
-  img: string;
+  img: StaticImageData;
 };
 /**
  * A component to render card proyect.
