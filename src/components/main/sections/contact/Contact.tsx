@@ -12,8 +12,8 @@ import style from './arrowup.module.css';
 const Contact = (): JSX.Element => (
   <>
     <TitleSection>Contacto</TitleSection>
-    <CardSocial />
     <CardSMS />
+    <CardSocial />
     <h3>Gracias por su consideración.</h3>
     <a href='#hero'>
       <ArrowUpSVG className={style.arrow} />
