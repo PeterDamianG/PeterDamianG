@@ -4,6 +4,9 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 module.exports = withBundleAnalyzer({
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    formats: ['image/avif', 'image/webp'],
+  },
   webpack(config, { dev, isServer }) {
     if (!dev && !isServer) {
       Object.assign(config.resolve.alias, {
