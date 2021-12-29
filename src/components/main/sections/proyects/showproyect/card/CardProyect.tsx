@@ -31,13 +31,19 @@ const CardProyect = ({
 }: CardProps): JSX.Element => (
   <BaseCard>
     <div key={name} className={style.containerAll}>
-      <Image
-        aria-label='Proyect'
-        priority
-        src={img}
-        alt={name}
-        placeholder='blur'
-      />
+      <div className={style.containerIMG}>
+        <Image
+          aria-label='Proyect'
+          priority
+          quality={50}
+          src={img}
+          alt={name}
+          placeholder='blur'
+          layout='fill'
+          objectFit='cover'
+          objectPosition='center top'
+        />
+      </div>
       <div className={style.containerData}>
         <h3 className={style.title}>{name}</h3>
         <h4 className={style.subtitle}>{tech}</h4>

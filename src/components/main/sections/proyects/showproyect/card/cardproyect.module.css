@@ -1,12 +1,15 @@
 .containerAll :global {
-  position: relative;
   animation: animOpacity 1s linear;
 }
-.containerAll img {
+.containerIMG {
+  height: 35vh;
+  position: relative;
+}
+.containerIMG img {
   border: 2px solid var(--border-card-certification) !important;
 }
 .containerData {
-  height: 45vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -24,7 +27,7 @@
   transition: text-shadow 0.2s linear;
 }
 .subtitle {
-  margin: 0;
+  margin: 0.6vh;
   font-size: 1.2em;
   color: var(--subtitle-card-color);
   text-shadow: 0px 0px 1px var(--foreground);
@@ -35,79 +38,65 @@
   transition: text-shadow 0.2s linear;
 }
 .dataDesc {
-  margin: 0;
+  margin: 0.6vh;
   font-size: 1.15em;
   width: 90%;
   text-shadow: 0px 0px 1px var(--foreground);
 }
 @media all and (min-width: 640px) and (max-width: 1280px) {
-  .title {
-    font-size: 2.5em;
+  .containerIMG {
+    height: 40vh;
   }
-  .subtitle {
+  .title {
     font-size: 2.25em;
   }
-  .dataDesc {
-    font-size: 1.75em;
+  .subtitle {
+    font-size: 1.8em;
   }
-  .cardOverlay div:nth-child(1) {
-    min-height: 60vh !important;
+  .dataDesc {
+    font-size: 1.6em;
   }
 }
 @media all and (min-width: 640px) and (max-width: 1280px) and (orientation: landscape) {
-  .containerAll div:nth-child(1) {
-    height: 25vh !important;
+  .containerIMG {
+    height: 30vh;
   }
   .title {
     font-size: 2.25em;
   }
   .subtitle {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   .dataDesc {
-    font-size: 1.5em;
-  }
-  .cardOverlay div:nth-child(1) {
-    min-height: 80vh !important;
+    font-size: 1.6em;
   }
 }
 @media all and (min-width: 1280px) {
-  .containerAll div:nth-child(1) {
-    height: 30vh !important;
+  .containerIMG {
+    height: 40vh;
   }
   .title {
-    font-size: 2em;
+    margin: 0;
+    font-size: 2.25em;
   }
   .subtitle {
-    font-size: 1.75em;
+    font-size: 1.8em;
   }
   .dataDesc {
-    font-size: 1.5em;
-  }
-  .cardOverlay div:nth-child(1) {
-    margin: 5vh auto !important;
-    min-height: 90vh !important;
+    font-size: 1.6em;
   }
 }
 @media all and (max-height: 640px) and (orientation: landscape) {
-  .cardOverlay div:nth-child(1) {
-    margin: 5vh auto !important;
-    min-height: 90vh !important;
-    width: 75% !important;
-  }
-  .containerAll div:nth-child(1) {
-    height: 25vh !important;
-  }
-  .containerData {
-    font-size: 0.6em;
+  .containerIMG {
+    height: 30vh;
   }
   .title {
-    font-size: 2em;
-  }
-  .subtitle {
     font-size: 1.5em;
   }
+  .subtitle {
+    font-size: 1em;
+  }
   .dataDesc {
-    font-size: 1.25em;
+    font-size: 0.75em;
   }
 }

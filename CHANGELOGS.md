@@ -5,6 +5,7 @@ _v 0.2.2:_
 - Reduce complexity in component section home.
 - Change generic spinner loader to placeholders loader in sections and main.
 - Restructure folders.
+- Refactor cardproyect, add avif img, change css, reduce complexity, etc.
 
 _v 0.2.1:_
 - Add Preact for production.
