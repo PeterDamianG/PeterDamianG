@@ -14,7 +14,7 @@ const HeroContent = [
     title: 'NPM',
     caption: '¿Cómo pasamos de tres archivos, a montones de dependencias?',
     html: (): JSX.Element => (
-      <>
+      <ul>
         <li>
           &quot;<span className={style.prop}>dependencies</span>&quot;: &#123;
         </li>
@@ -34,14 +34,14 @@ const HeroContent = [
           <span className={style.val}>^17.0.2</span>&quot;,
         </li>
         <li>&nbsp;&nbsp;&nbsp;&nbsp;. &nbsp;&nbsp; . &nbsp;&nbsp; .</li>
-      </>
+      </ul>
     ),
   },
   {
     title: 'HTML 5',
     caption: '¿Cuándo la semantica cambie, re-adaptaremos todas las webs?',
     html: (): JSX.Element => (
-      <>
+      <ul>
         <li>
           <span className={style.prop}>&lt;div&gt;</span>Bad for sections
           <span className={style.prop}>&lt;/div&gt;</span>
@@ -63,14 +63,14 @@ const HeroContent = [
           <span className={style.prop}>&lt;/small&gt;</span>
           <span className={style.prop}>&lt;/footer&gt;</span>
         </li>
-      </>
+      </ul>
     ),
   },
   {
     title: '<br />',
     caption: '¿Hace cuánto que no utilizo algunas etiquetas?',
     html: (): JSX.Element => (
-      <>
+      <ul>
         <li>
           <span className={style.prop}>
             &lt;abbr title=
@@ -95,14 +95,14 @@ const HeroContent = [
         <li>
           <span className={style.prop}>&lt;/cite&gt;</span>
         </li>
-      </>
+      </ul>
     ),
   },
   {
     title: 'Images',
     caption: '¿Cuándo aparecerá el sistema de gráficos definitivo?',
     html: (): JSX.Element => (
-      <>
+      <ul>
         <li>
           <span className={style.prop}>
             &lt;canvas id=
@@ -152,14 +152,14 @@ const HeroContent = [
             &nbsp;/&gt;
           </span>
         </li>
-      </>
+      </ul>
     ),
   },
   {
     title: 'TypeScript',
     caption: '¿Podrá TypeScript convertirse en el estándar web?',
     html: (): JSX.Element => (
-      <>
+      <ul>
         <li>
           <span className={style.reserve}>
             const&nbsp;
@@ -181,14 +181,14 @@ const HeroContent = [
           <span className={style.val}>MyComponent</span>
           <span className={style.reserve}>;</span>
         </li>
-      </>
+      </ul>
     ),
   },
   {
     title: 'Frameworks',
     caption: '¿Por qué reinventar las ruedas? Usemos Frameworks.',
     html: (): JSX.Element => (
-      <>
+      <ul>
         <li>
           <span className={style.reserve}>import&nbsp;</span>
           <span>&#123; NestFactory as nf &#125;&nbsp;</span>
@@ -219,7 +219,7 @@ const HeroContent = [
         <li>
           <span>&#125;</span>
         </li>
-      </>
+      </ul>
     ),
   },
 ] as const;
