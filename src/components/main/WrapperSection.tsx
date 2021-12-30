@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { InView } from 'react-intersection-observer';
 import { ErrorBoundary } from 'react-error-boundary';
 import ErrorFallback from '@components/utils/errorfallback/ErrorFallback';
+import setPathHash from '@components/utils/setPathHash';
 import style from './wrappersection.module.css';
 
 type WrapperProps = {
@@ -34,33 +35,25 @@ const WrapperSection = ({
   title,
   description,
   hash,
-  threshold = 0.25,
+  threshold = 0.8,
 }: WrapperProps): JSX.Element => {
   // State for check element exist to render or not.
   const [exist, isExist] = useState(false);
-  // Function to change history in browser.
-  const setPathHash = (stringHash: string): void => {
-    if (window.history.replaceState) {
-      window.history.replaceState(null, '', `#${stringHash}`);
-    } else {
-      window.location.hash = `#${stringHash}`;
-    }
-  };
   // Render.
   return (
     <ErrorBoundary FallbackComponent={ErrorFallback}>
       <InView threshold={threshold}>
         {({ inView, ref }): JSX.Element => (
           <section ref={ref} className={style.sectionStyle} id={hash}>
-            {exist && children}
             {inView && (
               <>
-                {isExist(true)}
                 <Head>
                   <title>{title}</title>
                   <meta name='description' content={description} />
                 </Head>
                 {setPathHash(hash)}
+                {isExist(true)}
+                {exist && children}
               </>
             )}
           </section>
