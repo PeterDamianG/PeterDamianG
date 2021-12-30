@@ -67,6 +67,22 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
+          <noscript
+            style={{
+              height: '100vh',
+              width: '100vw',
+              position: 'fixed',
+              top: 0,
+              backgroundColor: 'white',
+              zIndex: 3,
+              fontSize: '6em',
+            }}
+          >
+            <p style={{ width: '90%' }}>
+              Necesitas tener javascript, para ver y disfrutar correctamente
+              está página web.
+            </p>
+          </noscript>
           <Main />
           <NextScript />
         </body>
