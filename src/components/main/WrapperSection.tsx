@@ -11,7 +11,7 @@ type WrapperProps = {
   title: string;
   description: string;
   hash: 'hero' | 'about' | 'proyects' | 'contact';
-  threshold?: number;
+  threshold?: number | number[];
 };
 /**
  * A Wrapper for add sections with intersection observer, frame motion and next/head .
@@ -42,20 +42,24 @@ const WrapperSection = ({
   // Render.
   return (
     <ErrorBoundary FallbackComponent={ErrorFallback}>
-      <InView threshold={threshold}>
+      <InView
+        threshold={threshold}
+        onChange={(inView): void => {
+          if (inView) {
+            isExist(true);
+            setPathHash(hash);
+          }
+        }}
+      >
         {({ inView, ref }): JSX.Element => (
           <section ref={ref} className={style.sectionStyle} id={hash}>
             {inView && (
-              <>
-                <Head>
-                  <title>{title}</title>
-                  <meta name='description' content={description} />
-                </Head>
-                {setPathHash(hash)}
-                {isExist(true)}
-                {exist && children}
-              </>
+              <Head>
+                <title>{title}</title>
+                <meta name='description' content={description} />
+              </Head>
             )}
+            {exist && children}
           </section>
         )}
       </InView>

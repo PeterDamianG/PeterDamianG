@@ -1,13 +1,16 @@
 # ChangeLogs
 
 _v 0.2.2:_
+
 - Update dependencies, upgrato to NextJS 12.
 - Reduce complexity in component section home.
 - Change generic spinner loader to placeholders loader in sections and main.
 - Restructure folders.
 - Refactor cardproyect, add avif img, change css, reduce complexity, etc.
+- Refactor wrapper and fix useState internal error.
 
 _v 0.2.1:_
+
 - Add Preact for production.
 - Run eslint with new linter out of box from nextjs.
 - Fix warning/error from linter advices.
@@ -34,6 +37,14 @@ _v 0.1:_
 - First version of portfolio.
 
 # Issues
+
+_v 0.2.2:_
+
+- Minor conflicts with tag accessibility.
+
+_v 0.2.1:_
+
+- Wrapper Section, useState conflict.
 
 _v 0.2:_
 
