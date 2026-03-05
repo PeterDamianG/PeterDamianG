@@ -1,0 +1,39 @@
+.CardTitle {
+  display: block;
+  margin: 1vh 0;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+.CardSubtitle a {
+  color: var(--foreground);
+  display: block;
+  margin: 2vh 0;
+}
+.CardSubtitle a:hover {
+  text-decoration: underline;
+}
+.CardCredID {
+  display: block;
+  margin: 1vh 0;
+  font-size: 0.8em;
+}
+.CardLink a {
+  display: block;
+  margin: 1vh 0;
+  color: #0a66c2;
+  -webkit-text-stroke: 1px var(--foreground);
+}
+.CardLink a:hover {
+  text-decoration: underline;
+}
+@media all and (max-height: 640px) and (orientation: landscape) {
+  .CardSubtitle a {
+    font-size: 1.1em;
+  }
+  .CardCredID {
+    font-size: 1em;
+  }
+  .CardLink a {
+    font-size: 1.25em;
+  }
+}

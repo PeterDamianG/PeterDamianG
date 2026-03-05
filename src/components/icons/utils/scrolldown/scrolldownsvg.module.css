@@ -1,0 +1,15 @@
+.all {
+  stroke: var(--foreground);
+}
+.scrollAnim {
+  animation: scroll ease 3s infinite;
+}
+/* Animations */
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+}

@@ -1,0 +1,5 @@
+# https://www.peterdg.com.ar/robots.txt
+User-agent: *
+Disallow:
+
+Sitemap: https://www.peterdg.com.ar/sitemap.xml

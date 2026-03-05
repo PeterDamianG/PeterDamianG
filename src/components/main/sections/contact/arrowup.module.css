@@ -1,0 +1,15 @@
+.arrow {
+  position: absolute;
+  right: 2vw;
+  top: 385vh;
+  animation: movearrowup ease 2s infinite;
+}
+/* Animation */
+@keyframes movearrowup {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4vh);
+  }
+}

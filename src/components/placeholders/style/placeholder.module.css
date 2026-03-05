@@ -1,0 +1,7 @@
+.placeholder :global {
+  opacity: 0.3;
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: center;
+  animation: placeHolderOpacity 2s linear alternate infinite;
+}

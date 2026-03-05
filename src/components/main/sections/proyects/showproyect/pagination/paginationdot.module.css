@@ -1,0 +1,40 @@
+.spaceButtonDot {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.2vh 0;
+}
+.buttonDot {
+  cursor: pointer;
+  border-radius: 100%;
+}
+.buttonDotActive {
+  cursor: pointer;
+  border-radius: 100%;
+  animation: animPagDot 2s linear alternate infinite;
+}
+@media all and (min-width: 640px) and (max-width: 1280px) {
+  .buttonDot {
+    font-size: 2em;
+  }
+  .buttonDotActive {
+    font-size: 2em;
+  }
+}
+@media all and (min-width: 1280px) {
+  .buttonDot {
+    font-size: 1.5em;
+  }
+  .buttonDotActive {
+    font-size: 1.5em;
+  }
+}
+@keyframes animPagDot {
+  from {
+    background-color: var(--foreground);
+  }
+  to {
+    background-color: var(--background);
+  }
+}

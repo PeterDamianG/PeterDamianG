@@ -1,0 +1,131 @@
+html {
+  line-height: 1.15; /* Correct the line height in all browsers.*/
+  -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. */
+  scroll-snap-type: mandatory; /* for older browsers */
+  scroll-snap-points-y: repeat(100vh); /* for older browsers */
+  scroll-snap-type: y mandatory;
+  overscroll-behavior-y: contain;
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
+}
+main {
+  display: block; /* Render the `main` element consistently in IE. */
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+a:link,
+a:visited,
+a:active {
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--background);
+}
+b,
+strong {
+  font-weight: bolder;
+}
+code,
+kbd,
+samp {
+  font-size: 1em;
+}
+small {
+  font-size: 75%;
+}
+svg {
+  cursor: pointer;
+  fill: var(--foreground);
+  width: 6vw;
+  height: 6vh;
+  filter: drop-shadow(0.5px 0.5px 1px var(--foreground));
+  transition: filter 0.2s linear;
+  animation: svgOpacity 3s linear alternate infinite;
+}
+svg:hover {
+  filter: drop-shadow(1px 1px 1.5px var(--foreground));
+  transition: filter 0.2s linear;
+}
+* {
+  box-sizing: border-box;
+}
+.noScroll {
+  overflow-y: hidden;
+}
+/* Skip to content link — visible only on focus (accesibilidad) */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  padding: 0.5rem 1rem;
+  background: var(--foreground);
+  color: var(--background);
+  font-weight: bold;
+  z-index: 9999;
+  border-radius: 0 0 4px 0;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 0;
+}
+/* Noscript warning */
+.noscript-warning {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  z-index: 9999;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+/* Animation */
+@keyframes animOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes svgOpacity {
+  from {
+    opacity: 0.9;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes placeHolderOpacity {
+  from {
+    fill: var(--foreground);
+  }
+  to {
+    fill: var(--background);
+  }
+}

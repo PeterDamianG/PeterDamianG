@@ -1,0 +1,17 @@
+.sectionError {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.sectionError h3 {
+  font-size: 3em;
+}
+.sectionError p {
+  text-align: left;
+  width: 75%;
+  font-size: 2em;
+}

@@ -1,0 +1,16 @@
+/.next
+/logs
+/coverage
+/node_modules
+/out
+/public
+CHANGELOGS.md
+env.local.example
+jest.config.mjs
+LICENSE
+next-env.d.ts
+next.config.js
+package-lock.json
+package.json
+tsconfig.json
+README.md

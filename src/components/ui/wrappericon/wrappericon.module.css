@@ -1,0 +1,5 @@
+.wrapperIcon {
+  width: 40vw;
+  display: flex;
+  justify-content: space-around;
+}
