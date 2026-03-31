@@ -8,23 +8,25 @@ export default defineConfig({
   plugins: [preact()],
   resolve: {
     alias: {
-      '@components': resolve(__dirname, 'src/components'),
-      '@icons': resolve(__dirname, 'src/components/icons'),
-      '@layout': resolve(__dirname, 'src/components/layout'),
-      '@sections': resolve(__dirname, 'src/components/main/sections'),
-      '@hooks': resolve(__dirname, 'src/hooks'),
-      '@data': resolve(__dirname, 'src/data'),
+      '@components': resolve(import.meta.dirname, 'src/components'),
+      '@icons': resolve(import.meta.dirname, 'src/components/icons'),
+      '@layout': resolve(import.meta.dirname, 'src/components/layout'),
+      '@sections': resolve(import.meta.dirname, 'src/components/main/sections'),
+      '@hooks': resolve(import.meta.dirname, 'src/hooks'),
+      '@data': resolve(import.meta.dirname, 'src/data'),
     },
   },
   build: {
     outDir: 'dist',
     target: ['es2020', 'chrome80', 'firefox78', 'safari13.1', 'edge80'],
-    minify: 'esbuild',
     cssMinify: true,
     rollupOptions: {
       output: {
-        manualChunks: {
-          preact: ['preact', 'preact/hooks', 'preact/compat'],
+        manualChunks(id: string): string | undefined {
+          if (id.includes('node_modules/preact')) {
+            return 'preact';
+          }
+          return undefined;
         },
       },
     },

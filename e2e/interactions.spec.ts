@@ -116,32 +116,31 @@ test.describe('Projects carousel', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/');
     await scrollTo(page, 'proyects');
-    await expect(page.getByRole('heading', { name: 'ChallengeJS Alkemy' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'ONG Team 42 - t42-project' })).toBeVisible();
   });
 
   test('Next button advances to second project', async ({ page }) => {
     await page.getByRole('button', { name: 'Next Button' }).click();
-    await expect(page.getByRole('heading', { name: /ONG Team 42/i })).toBeVisible();
+    await expect(page.getByRole('heading', { name: /Challenge Angular Blog/i })).toBeVisible();
   });
 
   test('Previous button from first project goes to last', async ({ page }) => {
     await page.getByRole('button', { name: 'Previous Button' }).click();
-    // Cicla al último proyecto (InvertirArgentina es el 7mo)
-    await expect(page.getByRole('heading', { name: 'InvertirArgentina' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'ArtifactHelper' })).toBeVisible();
   });
 
   test('ArrowRight key advances project', async ({ page }) => {
     await page.keyboard.press('ArrowRight');
-    await expect(page.getByRole('heading', { name: /ONG Team 42/i })).toBeVisible();
+    await expect(page.getByRole('heading', { name: /Challenge Angular Blog/i })).toBeVisible();
   });
 
   test('ArrowLeft key goes to previous project', async ({ page }) => {
     // Avanzar primero
     await page.getByRole('button', { name: 'Next Button' }).click();
-    await expect(page.getByRole('heading', { name: /ONG Team 42/i })).toBeVisible();
+    await expect(page.getByRole('heading', { name: /Challenge Angular Blog/i })).toBeVisible();
     // Retroceder
     await page.keyboard.press('ArrowLeft');
-    await expect(page.getByRole('heading', { name: 'ChallengeJS Alkemy' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'ONG Team 42 - t42-project' })).toBeVisible();
   });
 });
 

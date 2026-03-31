@@ -49,7 +49,7 @@ const ShowProyect = (): JSX.Element => {
       >
         &lt;
       </Button>
-      <div className={style.containerCardPag}>
+      <div className={style.containerCardPag} aria-live='polite'>
         <CardProyect
           name={name}
           URL={URL}

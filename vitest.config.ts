@@ -30,12 +30,12 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@components': resolve(__dirname, 'src/components'),
-      '@icons': resolve(__dirname, 'src/components/icons'),
-      '@layout': resolve(__dirname, 'src/components/layout'),
-      '@sections': resolve(__dirname, 'src/components/main/sections'),
-      '@hooks': resolve(__dirname, 'src/hooks'),
-      '@data': resolve(__dirname, 'src/data'),
+      '@components': resolve(import.meta.dirname, 'src/components'),
+      '@icons': resolve(import.meta.dirname, 'src/components/icons'),
+      '@layout': resolve(import.meta.dirname, 'src/components/layout'),
+      '@sections': resolve(import.meta.dirname, 'src/components/main/sections'),
+      '@hooks': resolve(import.meta.dirname, 'src/hooks'),
+      '@data': resolve(import.meta.dirname, 'src/data'),
     },
   },
 });

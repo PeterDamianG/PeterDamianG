@@ -24,7 +24,7 @@ test.describe('Hero section', () => {
   });
 
   test('shows developer title', async ({ page }) => {
-    await expect(page.getByRole('heading', { name: 'Web Developer' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: /Sr CS Engineer/ })).toBeVisible();
   });
 
   test('shows initial caption', async ({ page }) => {
@@ -64,7 +64,7 @@ test.describe('About section', () => {
   });
 
   test('shows bio text', async ({ page }) => {
-    await expect(page.getByText(/¡Hola! ¿Quién soy\?/)).toBeVisible();
+    await expect(page.getByText(/¡Hola! Soy/)).toBeVisible();
   });
 
   test('shows avatar image', async ({ page }) => {
@@ -98,7 +98,7 @@ test.describe('Projects section', () => {
   });
 
   test('shows first project name', async ({ page }) => {
-    await expect(page.getByRole('heading', { name: 'ChallengeJS Alkemy' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'ONG Team 42 - t42-project' })).toBeVisible();
   });
 
   test('shows previous and next buttons', async ({ page }) => {
@@ -112,7 +112,7 @@ test.describe('Projects section', () => {
   });
 
   test('first project links to GitHub', async ({ page }) => {
-    const repoLink = page.getByRole('link', { name: /Ver repositorio de ChallengeJS Alkemy/i });
+    const repoLink = page.getByRole('link', { name: /Ver repositorio de ONG Team 42/i });
     await expect(repoLink).toHaveAttribute('href', /github\.com/);
   });
 });

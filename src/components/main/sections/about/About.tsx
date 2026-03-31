@@ -17,18 +17,21 @@ const About = (): JSX.Element => (
     <Avatar />
     <article className={style.content}>
       <p>
-        ¡Hola! <b>¿Quién soy?</b> Soy un apasionado por la{' '}
-        <b>tecnología, juegos y programación.</b>
+        ¡Hola! Soy <b>desarrollador web</b> y{' '}
+        <b>analista de seguridad informática de aplicaciones</b> con
+        experiencia en ambos campos.
       </p>
       <p>
-        Estoy interesado en formarme constantemente y mejorar día a día. Aquí
-        puedes observar algunas de mis
+        Actualmente trabajo como <b>Sr CS Engineer en Mercado Libre</b>,
+        donde realizo modelados de amenazas, evaluaciones de seguridad
+        aplicativa y revisión de código. Aquí puedes ver mis
         <Overlay
           ChildrenButton={
             <span
               className={style.certificationButton}
               title='Mostrar listado de certificados.'
             >
+              {' '}
               certificaciones.
             </span>
           }
@@ -36,7 +39,7 @@ const About = (): JSX.Element => (
         />
       </p>
       <p>
-        Puedes obtener un <b>RESUME o CV</b> de mí persona, en el siguiente
+        Puedes obtener un <b>RESUME o CV</b> de mi persona, en el siguiente
         botón:
       </p>
     </article>
