@@ -4,7 +4,7 @@ import style from './paginationdot.module.css';
 type PaginationDotProps = {
   size: number[];
   active: number;
-  setIndex: Function;
+  setIndex: (index: number) => void;
 };
 /**
  * A component to render dots like a pagination.

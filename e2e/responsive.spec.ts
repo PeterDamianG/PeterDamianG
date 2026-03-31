@@ -56,7 +56,7 @@ test.describe('Mobile viewport', () => {
     await scrollTo(page, 'proyects');
     await expect(page.getByRole('button', { name: 'Next Button' })).toBeVisible();
     await page.getByRole('button', { name: 'Next Button' }).click();
-    await expect(page.getByRole('heading', { name: /ONG Team 42/i })).toBeVisible();
+    await expect(page.getByRole('heading', { name: /Challenge Angular Blog/i })).toBeVisible();
   });
 });
 

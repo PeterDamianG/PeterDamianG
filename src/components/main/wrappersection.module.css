@@ -11,4 +11,15 @@
   /* Color */
   background-color: var(--background);
   color: var(--foreground);
+  /* Transition */
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  /* Render optimization for off-screen sections */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 100vh;
+}
+.sectionStyle.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

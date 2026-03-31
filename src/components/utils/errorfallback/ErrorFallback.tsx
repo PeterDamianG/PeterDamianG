@@ -25,7 +25,7 @@ const ErrorFallback = ({
   resetErrorBoundary,
 }: {
   error: Error;
-  resetErrorBoundary: Function;
+  resetErrorBoundary: () => void;
 }): JSX.Element => (
   <section className={style.sectionError} role='alert'>
     <h3>Un error ha ocurrido:</h3>

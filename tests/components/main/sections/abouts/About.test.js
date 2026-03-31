@@ -7,7 +7,7 @@ describe('/src/components/main/section/about - <About> - Render', () => {
   test('does render section about', () => {
     render(<About />);
     screen.getByText(/Sobre Mí/i);
-    screen.getByText(/¡Hola!/i, { selector: 'p' });
+    screen.getByText(/¡Hola!/i);
     screen.getByText(/certificaciones\./i);
     // "RESUME o CV" is inside a <b> tag
     screen.getByText('RESUME o CV');

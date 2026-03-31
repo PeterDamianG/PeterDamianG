@@ -4,6 +4,7 @@ import SocialMedia from '@components/ui/socialmedia/SocialMedia';
 import ScrollDownSVG from '@components/icons/utils/scrolldown/ScrollDownSVG';
 import useFunctionOverTime from '@hooks/useFunctionOverTime';
 import HeroContent from '@data/HeroContent';
+import { PERSONAL_INFO } from '@data/siteData';
 import Ide from './ide/Ide';
 import style from './hero.module.css';
 /**
@@ -29,8 +30,8 @@ const Hero = (): JSX.Element => {
   return (
     <section className={style.containerMain}>
       <article className={style.header}>
-        <h2 className={style.title}>Peter Damián Gómez</h2>
-        <h3 className={style.subtitle}>Web Developer</h3>
+        <h2 className={style.title}>{PERSONAL_INFO.name}</h2>
+        <h3 className={style.subtitle}>{PERSONAL_INFO.title}</h3>
         <SocialMedia />
       </article>
       <article
@@ -47,6 +48,7 @@ const Hero = (): JSX.Element => {
         <h4
           title='Haz me click, para ver otro de mis pensamientos.'
           className={style.heroContent}
+          aria-live='polite'
         >
           {HeroContent[number].caption}
         </h4>

@@ -25,13 +25,21 @@ const CardProyect = ({
   <BaseCard>
     <div className={style.containerAll}>
       <div className={style.containerIMG}>
-        <img
-          aria-label={`Imagen del proyecto ${name}`}
-          src={img}
-          alt={name}
-          loading='lazy'
-          style={{ objectFit: 'cover', objectPosition: 'center top', width: '100%', height: '100%' }}
-        />
+        <picture>
+          <source srcSet={`${img}.webp`} type='image/webp' />
+          <img
+            aria-label={`Imagen del proyecto ${name}`}
+            src={`${img}.jpg`}
+            alt={name}
+            loading='lazy'
+            style={{
+              objectFit: 'cover',
+              objectPosition: 'center top',
+              width: '100%',
+              height: '100%',
+            }}
+          />
+        </picture>
       </div>
       <div className={style.containerData}>
         <h3 className={style.title}>{name}</h3>

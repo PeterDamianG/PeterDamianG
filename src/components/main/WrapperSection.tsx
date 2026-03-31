@@ -41,7 +41,7 @@ const WrapperSection = ({
     <ErrorBoundary>
       <section
         ref={ref}
-        className={style.sectionStyle}
+        className={`${style.sectionStyle}${exist ? ` ${style.visible}` : ''}`}
         id={hash}
         aria-label={hash}
       >

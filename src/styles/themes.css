@@ -1,42 +1,61 @@
 :root {
-  /* Default theme */
-  --background: #faf6f6;
-  --background-button-hover: #1d1818;
-  --foreground: #0c0a0a;
-  --a-color: #5f5d5d;
-  --a-hover: #030303;
+  /* Base colors */
+  --background: #fafafa;
+  --background-button-hover: #1a1a2e;
+  --foreground: #1a1a1a;
+  --a-color: #4a4a4a;
+  --a-hover: #0a0a0a;
+  /* Accent */
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
   /* IDE colors */
-  --ide-backgroud: #edeff3;
+  --ide-backgroud: #f0f2f5;
   --ide-title: #1f2022;
-  --ide-properties: #3604be;
-  --ide-values: #794408;
-  --ide-reserve: #bd1f34;
+  --ide-properties: #2563eb;
+  --ide-values: #7c4408;
+  --ide-reserve: #be1f3e;
   /* Modal aka Overlay */
-  --background-nav-modal: #faf6f6b0;
-  --background-nav-modal-invert: #0c0a0ada;
-  /* Card Certifications */
-  --border-card-certification: rgba(0, 0, 0, 0.4);
-  /* Card Proyects */
-  --subtitle-card-color: #464646;
+  --background-nav-modal: rgba(250, 250, 250, 0.85);
+  --background-nav-modal-invert: rgba(26, 26, 26, 0.85);
+  /* Card */
+  --border-card-certification: rgba(0, 0, 0, 0.08);
+  --subtitle-card-color: #555555;
+  /* Spacing scale (8px base) */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 /* Dark theme */
 [data-theme='dark'] {
-  --background: #0c0a0a;
-  --background-button-hover: #d4d0d0;
-  --foreground: #faf6f6;
-  --a-color: #777474;
+  --background: #0f0f0f;
+  --background-button-hover: #d0d0d0;
+  --foreground: #e8e8e8;
+  --a-color: #a0a0a0;
   --a-hover: #ffffff;
+  /* Accent */
+  --accent: #60a5fa;
+  --accent-hover: #93bbfd;
   /* IDE colors */
-  --ide-backgroud: #0c0c0d;
+  --ide-backgroud: #141418;
   --ide-title: #c5c8d4;
-  --ide-properties: #c92733;
-  --ide-values: #ddba1f;
-  --ide-reserve: #3604be;
+  --ide-properties: #60a5fa;
+  --ide-values: #e2b93d;
+  --ide-reserve: #f472b6;
   /* Modal aka Overlay */
-  --background-nav-modal: #0c0a0ada;
-  --background-nav-modal-invert: #faf6f6b0;
-  /* Card Certifications */
-  --border-card-certification: rgba(255, 255, 255, 0.4);
-  /* Card Proyects */
-  --subtitle-card-color: #c2b3b3;
+  --background-nav-modal: rgba(15, 15, 15, 0.85);
+  --background-nav-modal-invert: rgba(232, 232, 232, 0.7);
+  /* Card */
+  --border-card-certification: rgba(255, 255, 255, 0.08);
+  --subtitle-card-color: #b0b0b0;
+  /* Shadows (lighter on dark bg) */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
