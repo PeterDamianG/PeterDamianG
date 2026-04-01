@@ -6,7 +6,7 @@ import style from './wrappersection.module.css';
 
 type WrapperProps = {
   children: JSX.Element;
-  hash: 'hero' | 'about' | 'proyects' | 'contact';
+  hash: 'hero' | 'about' | 'certifications' | 'proyects' | 'contact';
   threshold?: number;
 };
 /**

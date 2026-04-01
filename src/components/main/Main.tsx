@@ -1,4 +1,4 @@
-import { Hero, About, Proyects, Contact } from './Placeholders';
+import { Hero, About, Certifications, Proyects, Contact } from './Placeholders';
 import WrapperSection from './WrapperSection';
 /**
  * A tag main container for sections of the web.
@@ -13,6 +13,9 @@ const Main = (): JSX.Element => (
     </WrapperSection>
     <WrapperSection hash='about'>
       <About />
+    </WrapperSection>
+    <WrapperSection hash='certifications'>
+      <Certifications />
     </WrapperSection>
     <WrapperSection hash='proyects'>
       <Proyects />

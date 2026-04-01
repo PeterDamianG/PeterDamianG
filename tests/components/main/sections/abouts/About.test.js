@@ -11,7 +11,7 @@ describe('/src/components/main/section/about - <About> - Render', () => {
     screen.getByText(/certificaciones\./i);
     // "RESUME o CV" is inside a <b> tag
     screen.getByText('RESUME o CV');
-    screen.getByText('Resume');
+    screen.getByText('Resume / CV');
     screen.getByLabelText(/Avatar/i);
     screen.getByLabelText(/Scroll Down/i);
   });

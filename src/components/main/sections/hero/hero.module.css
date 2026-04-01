@@ -27,10 +27,19 @@
 }
 .subtitle {
   font-size: 1.25em;
-  margin: 0 0 2vh 0;
+  margin: 0;
   letter-spacing: 0.02em;
+  color: var(--foreground);
+  text-shadow: none;
+  font-weight: 600;
+}
+.specialization {
+  font-size: 0.95em;
+  margin: 0.5vh 0 2vh 0;
   color: var(--a-color);
   text-shadow: none;
+  letter-spacing: 0.03em;
+  font-weight: 400;
 }
 .title:hover,
 .subtitle:hover {
@@ -52,7 +61,10 @@
     font-size: 3em;
   }
   .subtitle {
-    font-size: 2em;
+    font-size: 1.4em;
+  }
+  .specialization {
+    font-size: 1em;
   }
   .textContent {
     font-size: 2em;
@@ -63,7 +75,10 @@
     font-size: 3.75em;
   }
   .subtitle {
-    font-size: 1.5em;
+    font-size: 1.75em;
+  }
+  .specialization {
+    font-size: 1.25em;
   }
   .textContent {
     font-size: 2.5em;
@@ -75,6 +90,9 @@
   }
   .subtitle {
     font-size: 1.5em;
+  }
+  .specialization {
+    font-size: 1.1em;
   }
   .textContent {
     font-size: 2.25em;
@@ -108,10 +126,13 @@
     transition: text-shadow 0.2s linear;
   }
   .subtitle {
-    font-size: 1.5em;
-    color: var(--a-color);
+    font-size: 1.75em;
+    color: var(--foreground);
     text-shadow: none;
     letter-spacing: 0.02em;
+  }
+  .specialization {
+    font-size: 1.2em;
   }
   .title:hover,
   .subtitle:hover {

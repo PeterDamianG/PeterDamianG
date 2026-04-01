@@ -11,7 +11,8 @@ describe('/src/components/main/section/hero - <Hero> - Renders', () => {
 
   test('does render hero section', () => {
     screen.getByText(/Peter Damián Gómez/i);
-    screen.getByText(/Sr CS Engineer/i);
+    screen.getByText(/Senior Cybersecurity Engineer/i);
+    screen.getByText(/Application Security/i);
     screen.getByLabelText(/GitHub Button/);
     screen.getByLabelText(/GoogleMail Button/);
     screen.getByLabelText(/LinkedIn Button/);

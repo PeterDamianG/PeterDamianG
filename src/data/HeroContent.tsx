@@ -222,6 +222,47 @@ const HeroContent = [
       </ul>
     ),
   },
+  {
+    title: 'AI',
+    caption: '¿Hasta dónde llegará la inteligencia artificial en el desarrollo?',
+    html: (): JSX.Element => (
+      <ul>
+        <li>
+          <span className={style.reserve}>import&nbsp;</span>
+          <span>Anthropic&nbsp;</span>
+          <span className={style.reserve}>from&nbsp;</span>
+          <span className={style.prop}>&apos;@anthropic-ai/sdk&apos;</span>
+          <span>;</span>
+        </li>
+        <br />
+        <li>
+          <span className={style.reserve}>const&nbsp;</span>
+          <span>msg =&nbsp;</span>
+          <span className={style.reserve}>await&nbsp;</span>
+          <span>client.</span>
+          <span className={style.prop}>messages.create</span>
+          <span>(&#123;</span>
+        </li>
+        <li>
+          <span>&nbsp;&nbsp;</span>
+          <span className={style.prop}>model</span>
+          <span>:&nbsp;</span>
+          <span className={style.val}>&apos;claude-sonnet-4-6&apos;</span>
+          <span>,</span>
+        </li>
+        <li>
+          <span>&nbsp;&nbsp;</span>
+          <span className={style.prop}>max_tokens</span>
+          <span>:&nbsp;</span>
+          <span className={style.val}>1024</span>
+          <span>,</span>
+        </li>
+        <li>
+          <span>&#125;);</span>
+        </li>
+      </ul>
+    ),
+  },
 ] as const;
 
 export default HeroContent;

@@ -1,19 +1,45 @@
 .container {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: var(--space-sm);
+  padding: 0 var(--space-sm);
 }
 .slideButton {
-  font-size: 2em;
-  font-weight: bold;
-  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-radius: 50%;
+  border: 1px solid var(--border-card-certification);
+  background: var(--background);
+  color: var(--foreground);
   cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: var(--shadow-sm);
+}
+.slideButton:hover {
+  background: var(--foreground);
+  color: var(--background);
+  box-shadow: var(--shadow-md);
 }
 .containerCardPag {
   width: 85%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: unset;
+}
+@media all and (min-width: 768px) {
+  .slideButton {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    font-size: 1.4em;
+  }
 }

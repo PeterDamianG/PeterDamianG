@@ -8,13 +8,14 @@
 export const PERSONAL_INFO = {
   name: 'Peter Damián Gómez',
   displayName: 'Peter DG',
-  title: 'Sr CS Engineer — Seguridad Aplicativa & Desarrollo Web',
+  role: 'Senior Cybersecurity Engineer',
+  specialization: 'Application Security & Web Development',
   email: 'PeterDamianG@Gmail.com',
   githubURL: 'https://github.com/PeterDamianG',
   linkedInURL: 'https://www.linkedin.com/in/peterdamiang/',
   telegramURL: 'https://t.me/PeterDamianG',
   whatsAppURL: 'https://bit.ly/3kwROHZ',
-  cvURL: '/profile/cv.pdf',
+  cvURL: './resume.pdf',
   siteURL: 'https://peterdamiang.github.io/PeterDamianG',
 } as const;
 

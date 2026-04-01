@@ -1,5 +1,4 @@
 import ScrollDownSVG from '@icons/utils/scrolldown/ScrollDownSVG';
-import Button from '@components/ui/button/Button';
 import Overlay from '@components/ui/overlay/Overlay';
 import TitleSection from '@components/ui/titlesection/TitleSection';
 import Avatar from './avatar/Avatar';
@@ -44,14 +43,15 @@ const About = (): JSX.Element => (
       </p>
     </article>
     <a
-      href='/profile/cv.pdf'
+      href='./resume.pdf'
       target='_blank'
       rel='noreferrer'
       className={style.resumeButton}
+      title='Descargar Curriculum Vitae'
     >
-      <Button title='Curriculum Vitae o Resume'>Resume</Button>
+      Resume / CV
     </a>
-    <a href='#proyects'>
+    <a href='#certifications'>
       <ScrollDownSVG />
     </a>
   </>

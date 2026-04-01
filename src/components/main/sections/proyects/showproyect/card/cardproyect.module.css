@@ -1,100 +1,82 @@
 .containerAll :global {
-  animation: animOpacity 1s linear;
+  animation: animOpacity 0.4s ease;
 }
 .containerIMG {
-  height: 35vh;
+  height: 28vh;
   position: relative;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
 }
 .containerIMG img {
-  border: 2px solid var(--border-card-certification) !important;
+  border: none !important;
+  border-radius: 8px 8px 0 0;
 }
 .containerData {
-  height: 100%;
+  padding: var(--space-md);
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  gap: var(--space-xs);
   align-items: center;
 }
 .title {
-  margin-bottom: 0.2vh;
-  font-size: 1.3em;
-  text-decoration: underline;
-  text-shadow: 0px 0px 1px var(--foreground);
-  transition: text-shadow 0.2s linear;
-}
-.title:hover {
-  text-shadow: 1px 1px 2px var(--foreground);
-  transition: text-shadow 0.2s linear;
+  margin: 0;
+  font-size: 1.15em;
+  font-weight: 700;
+  text-decoration: none;
 }
 .subtitle {
-  margin: 0.6vh;
-  font-size: 1.2em;
-  color: var(--subtitle-card-color);
-  text-shadow: 0px 0px 1px var(--foreground);
-  transition: text-shadow 0.2s linear;
-}
-.subtitle:hover {
-  text-shadow: 1px 1px 1px var(--foreground);
-  transition: text-shadow 0.2s linear;
+  margin: 0;
+  font-size: 0.9em;
+  color: var(--accent);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 .dataDesc {
-  margin: 0.6vh;
-  font-size: 1.15em;
-  width: 90%;
-  text-shadow: 0px 0px 1px var(--foreground);
+  margin: 0;
+  font-size: 0.95em;
+  width: 100%;
+  text-align: center;
+  color: var(--a-color);
+  line-height: 1.5;
 }
 @media all and (min-width: 640px) and (max-width: 1280px) {
   .containerIMG {
-    height: 40vh;
-  }
-  .title {
-    font-size: 2.25em;
-  }
-  .subtitle {
-    font-size: 1.8em;
-  }
-  .dataDesc {
-    font-size: 1.6em;
-  }
-}
-@media all and (min-width: 640px) and (max-width: 1280px) and (orientation: landscape) {
-  .containerIMG {
-    height: 30vh;
-  }
-  .title {
-    font-size: 2.25em;
-  }
-  .subtitle {
-    font-size: 1.8em;
-  }
-  .dataDesc {
-    font-size: 1.6em;
-  }
-}
-@media all and (min-width: 1280px) {
-  .containerIMG {
-    height: 40vh;
-  }
-  .title {
-    margin: 0;
-    font-size: 2.25em;
-  }
-  .subtitle {
-    font-size: 1.8em;
-  }
-  .dataDesc {
-    font-size: 1.6em;
-  }
-}
-@media all and (max-height: 640px) and (orientation: landscape) {
-  .containerIMG {
-    height: 30vh;
+    height: 32vh;
   }
   .title {
     font-size: 1.5em;
   }
   .subtitle {
-    font-size: 1em;
+    font-size: 1.1em;
+  }
+  .dataDesc {
+    font-size: 1.2em;
+  }
+}
+@media all and (min-width: 1280px) {
+  .containerIMG {
+    height: 35vh;
+  }
+  .title {
+    font-size: 1.5em;
+  }
+  .subtitle {
+    font-size: 1.1em;
+  }
+  .dataDesc {
+    font-size: 1.15em;
+  }
+}
+@media all and (max-height: 640px) and (orientation: landscape) {
+  .containerIMG {
+    height: 25vh;
+  }
+  .title {
+    font-size: 1.1em;
+  }
+  .subtitle {
+    font-size: 0.85em;
   }
   .dataDesc {
     font-size: 0.75em;

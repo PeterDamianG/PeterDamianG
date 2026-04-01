@@ -22,7 +22,7 @@ const Hero = (): JSX.Element => {
     else setNumber((prevNumber) => prevNumber + 1);
   };
   // Hook to change states automatic.
-  useFunctionOverTime(handlerClickChangeState, 15000);
+  useFunctionOverTime(handlerClickChangeState, 8000);
   // Check responsive — mostrar IDE en portrait o en pantallas ≥768px
   const isPortrait = useMediaQuery('(orientation: portrait)');
   const isEnoughWidth = useMediaQuery('(min-width: 768px)');
@@ -31,7 +31,8 @@ const Hero = (): JSX.Element => {
     <section className={style.containerMain}>
       <article className={style.header}>
         <h2 className={style.title}>{PERSONAL_INFO.name}</h2>
-        <h3 className={style.subtitle}>{PERSONAL_INFO.title}</h3>
+        <h3 className={style.subtitle}>{PERSONAL_INFO.role}</h3>
+        <p className={style.specialization}>{PERSONAL_INFO.specialization}</p>
         <SocialMedia />
       </article>
       <article

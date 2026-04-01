@@ -24,7 +24,7 @@ test.describe('Hero section', () => {
   });
 
   test('shows developer title', async ({ page }) => {
-    await expect(page.getByRole('heading', { name: /Sr CS Engineer/ })).toBeVisible();
+    await expect(page.getByRole('heading', { name: /Senior Cybersecurity Engineer/ })).toBeVisible();
   });
 
   test('shows initial caption', async ({ page }) => {
@@ -77,9 +77,9 @@ test.describe('About section', () => {
   });
 
   test('CV link points to pdf', async ({ page }) => {
-    const cvLink = page.getByRole('link', { name: 'Resume' });
+    const cvLink = page.getByRole('link', { name: 'Resume / CV' });
     await expect(cvLink).toBeVisible();
-    await expect(cvLink).toHaveAttribute('href', '/profile/cv.pdf');
+    await expect(cvLink).toHaveAttribute('href', './resume.pdf');
   });
 
   test('shows certifications overlay trigger', async ({ page }) => {

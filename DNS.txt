@@ -1,0 +1,10 @@
+Registros DNS a agregar
+Tipo	Nombre	Valor
+A	@	185.199.108.153
+A	@	185.199.109.153
+A	@	185.199.110.153
+A	@	185.199.111.153
+CNAME	www	peterdamiang.github.io
+Los 4 registros A apuntan al @ (raíz del dominio, peterdg.com.ar).
+El CNAME de www es opcional, pero cubre www.peterdg.com.ar.
+
