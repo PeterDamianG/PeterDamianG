@@ -4,93 +4,75 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-align: center;
-}
-.containerIDE {
-  width: 85%;
-  cursor: pointer;
-  min-height: 25vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  gap: 1vh;
 }
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   text-align: center;
-  text-shadow: 1px 1px 1px var(--foreground);
-  transition: text-shadow 0.2s linear;
 }
 .title {
-  font-size: 2em;
-  margin: 2vh 0;
+  font-size: 2.25em;
+  margin: 0;
+  color: var(--foreground);
+  letter-spacing: -0.01em;
 }
 .subtitle {
-  font-size: 1.25em;
-  margin: 0;
+  font-size: 1.15em;
+  margin: 0.25em 0 0;
   letter-spacing: 0.02em;
   color: var(--foreground);
-  text-shadow: none;
   font-weight: 600;
 }
 .specialization {
-  font-size: 0.95em;
-  margin: 0.5vh 0 2vh 0;
+  font-size: 0.9em;
+  margin: 0.25em 0 0.75em;
   color: var(--a-color);
-  text-shadow: none;
   letter-spacing: 0.03em;
   font-weight: 400;
 }
-.title:hover,
-.subtitle:hover {
-  text-shadow: 2px 2px 2px var(--foreground);
-  transition: text-shadow 0.2s linear;
-}
-.containerDinamic :global {
-  text-align: center;
-  width: 90vw;
-  animation: animOpacity 1s linear;
+.containerIDE {
+  width: 90%;
+  max-width: 520px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .heroContent {
-  margin: 1vh;
-  font-size: 1.5em;
+  margin: 0.75em 0 0;
+  font-size: 1.1em;
+  color: var(--a-color);
+  font-weight: 400;
+  text-align: center;
 }
+.scrollsvg {
+  display: block;
+}
+
+/* ── Landscape mobile ── */
 @media all and (max-height: 640px) and (orientation: landscape) {
   .title {
-    font-size: 3em;
-  }
-  .subtitle {
-    font-size: 1.4em;
-  }
-  .specialization {
-    font-size: 1em;
-  }
-  .textContent {
-    font-size: 2em;
-  }
-}
-@media all and (min-width: 640px) and (max-width: 1280px) {
-  .title {
-    font-size: 3.75em;
-  }
-  .subtitle {
-    font-size: 1.75em;
-  }
-  .specialization {
-    font-size: 1.25em;
-  }
-  .textContent {
     font-size: 2.5em;
   }
+  .subtitle {
+    font-size: 1.2em;
+  }
+  .specialization {
+    font-size: 0.95em;
+  }
+  .heroContent {
+    font-size: 1em;
+  }
 }
-@media all and (min-width: 640px) and (max-width: 1280px) and (orientation: landscape) {
+
+/* ── Tablet ── */
+@media all and (min-width: 640px) and (max-width: 1279px) {
   .title {
-    font-size: 4em;
+    font-size: 3.25em;
   }
   .subtitle {
     font-size: 1.5em;
@@ -98,74 +80,67 @@
   .specialization {
     font-size: 1.1em;
   }
-  .textContent {
-    font-size: 2.25em;
+  .containerIDE {
+    max-width: 600px;
   }
-  .containerDinamic {
-    width: 75vw;
+  .heroContent {
+    font-size: 1.35em;
   }
 }
+
+/* ── Tablet landscape ── */
+@media all and (min-width: 640px) and (max-width: 1279px) and (orientation: landscape) {
+  .title {
+    font-size: 3em;
+  }
+  .subtitle {
+    font-size: 1.35em;
+  }
+}
+
+/* ── Desktop ── */
 @media all and (min-width: 1280px) {
   .containerMain {
     display: grid;
-    grid-template-columns: [x0] 1fr [x1] 1fr [x2];
-    grid-template-rows: [y0] 7fr [y1] 2.5fr [y2] 0.5fr [y3];
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
     align-items: center;
     justify-items: center;
+    gap: 0;
+    padding: 0 2vw;
   }
-  /* Header content in grid */
   .header {
-    height: 100%;
-    width: 100%;
-    grid-column: x0 / x1;
-    grid-row: y0 / y1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    grid-column: 1;
+    grid-row: 1;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 4vw;
+    justify-self: start;
   }
   .title {
-    font-size: 3em;
-    text-shadow: 1px 1px 1px var(--foreground);
-    transition: text-shadow 0.2s linear;
+    font-size: 3.25em;
   }
   .subtitle {
-    font-size: 1.75em;
-    color: var(--foreground);
-    text-shadow: none;
-    letter-spacing: 0.02em;
+    font-size: 1.6em;
   }
   .specialization {
-    font-size: 1.2em;
+    font-size: 1.15em;
   }
-  .title:hover,
-  .subtitle:hover {
-    text-shadow: 2px 2px 2px var(--foreground);
-    transition: text-shadow 0.2s linear;
-  }
-  /* Container IDE in grid */
   .containerIDE {
-    height: 85%;
-    width: 100%;
-    cursor: pointer;
-    grid-column: x1 / x2;
-    min-height: auto;
+    grid-column: 2;
+    grid-row: 1;
+    max-width: none;
+    width: 90%;
+    height: 75%;
   }
-  /* Container Text in grid */
-  .heroContent :global {
-    position: relative;
-    right: 50%;
+  .heroContent {
+    font-size: 1.25em;
+    grid-column: 1 / -1;
+    grid-row: 2;
     text-align: center;
-    animation: animOpacity 1s linear;
-    cursor: pointer;
-    font-size: 2.5em;
   }
-  /* ScrollSVG in grid */
   .scrollsvg {
-    height: 100%;
-    width: 100%;
+    grid-column: 1 / -1;
     text-align: center;
-    grid-column: x0 / x2;
-    grid-row: y2 / y3;
   }
 }
