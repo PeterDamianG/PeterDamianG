@@ -6,6 +6,9 @@ import ContactPlaceholderSVG from '@components/placeholders/contact/ContactPlace
 
 const HeroSection = lazy(() => import('./sections/hero/Hero'));
 const AboutSection = lazy(() => import('./sections/about/About'));
+const ExperienceSection = lazy(
+  () => import('./sections/experience/Experience'),
+);
 const CertificationsSection = lazy(
   () => import('./sections/certifications/Certifications'),
 );
@@ -28,6 +31,12 @@ export const Hero = (): JSX.Element => (
 export const About = (): JSX.Element => (
   <Suspense fallback={<AboutPlacerholderSVG />}>
     <AboutSection />
+  </Suspense>
+);
+
+export const Experience = (): JSX.Element => (
+  <Suspense fallback={<AboutPlacerholderSVG />}>
+    <ExperienceSection />
   </Suspense>
 );
 

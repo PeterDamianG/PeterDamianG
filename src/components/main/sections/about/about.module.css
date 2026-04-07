@@ -19,7 +19,7 @@
   letter-spacing: 0.04em;
   background-color: var(--accent);
   color: #ffffff !important;
-  border: 1px solid transparent;
+  border: 2px solid var(--accent);
   border-radius: 6px;
   text-decoration: none;
   transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;

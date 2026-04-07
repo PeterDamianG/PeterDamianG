@@ -75,4 +75,22 @@ describe('useIntersectionObserver', () => {
 
     vi.restoreAllMocks();
   });
+
+  test('calls observe and disconnect on cleanup', () => {
+    const observeMock = vi.fn();
+    const disconnectMock = vi.fn();
+
+    vi.stubGlobal(
+      'IntersectionObserver',
+      vi.fn().mockImplementation(() => ({
+        observe: observeMock,
+        disconnect: disconnectMock,
+      })),
+    );
+
+    const { unmount } = renderHook(() => useIntersectionObserver(0.5));
+    unmount();
+
+    vi.restoreAllMocks();
+  });
 });

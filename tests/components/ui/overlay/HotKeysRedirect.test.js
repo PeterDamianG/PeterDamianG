@@ -24,3 +24,55 @@ describe('/src/components/ui/overlay/Overlay - HotKeys Nav', () => {
     expect(window.location.hash).toBe('#contact');
   });
 });
+
+describe('/src/components/ui/overlay/Overlay - Focus Trap', () => {
+  test('opens overlay and traps Tab focus within it', () => {
+    const { getByText, getByLabelText } = render(
+      <Overlay
+        ChildrenButton={<span>Open</span>}
+        ChildrenAside={
+          <nav>
+            <a href='#one'>Link One</a>
+            <a href='#two'>Link Two</a>
+          </nav>
+        }
+      />,
+    );
+    // Open overlay
+    fireEvent.click(getByText('Open'));
+    const closeBtn = getByLabelText('Cerrar menú');
+    expect(closeBtn).toBeTruthy();
+
+    // Tab forward from last focusable element should wrap to first
+    const linkTwo = getByText('Link Two');
+    linkTwo.focus();
+    fireEvent.keyDown(document, { key: 'Tab' });
+
+    // Tab backward from first focusable should wrap to last
+    closeBtn.focus();
+    fireEvent.keyDown(document, { key: 'Tab', shiftKey: true });
+  });
+
+  test('closes overlay and restores focus', () => {
+    const { getByText, getByLabelText, queryByLabelText } = render(
+      <Overlay
+        ChildrenButton={<span>Open</span>}
+        ChildrenAside={<div>Content</div>}
+      />,
+    );
+    fireEvent.click(getByText('Open'));
+    expect(getByLabelText('Cerrar menú')).toBeTruthy();
+    fireEvent.click(getByLabelText('Cerrar menú'));
+    expect(queryByLabelText('Cerrar menú')).toBeNull();
+  });
+
+  test('pressing unknown key does nothing', () => {
+    render(
+      <Overlay
+        ChildrenButton={<span>Open</span>}
+        ChildrenAside={<div>Content</div>}
+      />,
+    );
+    fireEvent.keyDown(document, { key: 'z' });
+  });
+});

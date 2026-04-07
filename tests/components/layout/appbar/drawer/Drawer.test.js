@@ -18,12 +18,20 @@ describe('/src/components/layout/appbar/Drawer - Mobile (default)', () => {
     fireEvent.click(screen.getByRole('button', { name: /Abrir menú/i }));
     screen.getByText('Inicio');
     screen.getByText('Sobre Mí');
+    screen.getByText('Experiencia');
+    screen.getByText('Certificaciones');
     screen.getByText('Proyectos');
     screen.getByText('Contacto');
     screen.getByLabelText(/GitHub Button/);
     screen.getByLabelText(/GoogleMail Button/);
     screen.getByLabelText(/LinkedIn Button/);
     screen.getByText(/Peter DG\./i);
+  });
+
+  test('clicking nav link closes drawer', () => {
+    fireEvent.click(screen.getByRole('button', { name: /Abrir menú/i }));
+    fireEvent.click(screen.getByText('Experiencia'));
+    expect(screen.queryByText('Experiencia')).toBeNull();
   });
 
   test('closes drawer with close button', () => {
@@ -70,15 +78,32 @@ describe('/src/components/layout/appbar/Drawer - Desktop (≥768px)', () => {
     fireEvent.click(screen.getByRole('button', { name: /Abrir menú/i }));
     screen.getByText('Inicio');
     screen.getByText('Sobre Mí');
+    screen.getByText('Experiencia');
+    screen.getByText('Certificaciones');
     screen.getByText('Proyectos');
     screen.getByText('Contacto');
     screen.getByText(/Inicio de la web/i);
     screen.getByText(/Conoceme más/i);
+    screen.getByText(/trayectoria profesional/i);
+    screen.getByText(/certificaciones profesionales/i);
     screen.getByText(/proyectos públicos/i);
     screen.getByText(/aquí las mejores opciones/i);
     screen.getByText(/También puedes cambiar/i);
     screen.getByLabelText(/GitHub Button/);
     screen.getByLabelText(/GoogleMail Button/);
     screen.getByLabelText(/LinkedIn Button/);
+  });
+
+  test('clicking drawer text cycles to next item', () => {
+    fireEvent.click(screen.getByRole('button', { name: /Abrir menú/i }));
+    const firstText = screen.getByText(/También puedes cambiar/i);
+    fireEvent.click(firstText);
+    screen.getByText(/Seguridad aplicativa/i);
+  });
+
+  test('clicking nav link in desktop closes drawer', () => {
+    fireEvent.click(screen.getByRole('button', { name: /Abrir menú/i }));
+    fireEvent.click(screen.getByText('Experiencia'));
+    expect(screen.queryByText('Experiencia')).toBeNull();
   });
 });

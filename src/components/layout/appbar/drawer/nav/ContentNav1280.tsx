@@ -46,6 +46,18 @@ const ContentNav1280 = ({
         </a>
         <p>Conoceme más. Algunos detalles sobre mí persona.</p>
       </article>
+      <article className={style.experience}>
+        <a href='#experience' onClick={(): void => close()}>
+          Experiencia
+        </a>
+        <p>Mi trayectoria profesional en seguridad y desarrollo.</p>
+      </article>
+      <article className={style.certifications}>
+        <a href='#certifications' onClick={(): void => close()}>
+          Certificaciones
+        </a>
+        <p>Mis certificaciones profesionales en seguridad y desarrollo.</p>
+      </article>
       <article className={style.proyects}>
         <a
           title='Presiona P, para acceder rápidamente a esa sección.'

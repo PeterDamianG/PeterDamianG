@@ -1,0 +1,132 @@
+.timeline {
+  width: 90%;
+  max-width: 700px;
+  position: relative;
+  padding: var(--space-md) 0;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--accent);
+}
+.item {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: var(--space-xl);
+}
+.item:last-child {
+  margin-bottom: 0;
+}
+.dot {
+  position: absolute;
+  left: 2px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--background);
+  z-index: 1;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5em;
+  margin-bottom: 0.25em;
+}
+.role {
+  font-size: 1.05em;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 0;
+}
+.company {
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0;
+}
+.meta {
+  font-size: 0.8em;
+  color: var(--a-color);
+  margin: 0.15em 0 0.5em;
+}
+.description {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.description li {
+  font-size: 0.9em;
+  line-height: 1.5;
+  color: var(--foreground);
+  padding: 0.15em 0;
+}
+.description li::before {
+  content: '\2022';
+  color: var(--accent);
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+@media all and (min-width: 640px) {
+  .timeline {
+    max-width: 750px;
+  }
+  .timeline::before {
+    left: 12px;
+  }
+  .item {
+    padding-left: 44px;
+  }
+  .dot {
+    left: 5px;
+    width: 16px;
+    height: 16px;
+  }
+  .role {
+    font-size: 1.2em;
+  }
+  .company {
+    font-size: 1.05em;
+  }
+  .meta {
+    font-size: 0.85em;
+  }
+  .description li {
+    font-size: 0.95em;
+  }
+}
+@media all and (min-width: 1280px) {
+  .timeline {
+    max-width: 800px;
+  }
+  .role {
+    font-size: 1.3em;
+  }
+  .company {
+    font-size: 1.1em;
+  }
+  .meta {
+    font-size: 0.9em;
+  }
+  .description li {
+    font-size: 1em;
+  }
+}
+@media all and (max-height: 640px) and (orientation: landscape) {
+  .item {
+    margin-bottom: var(--space-sm);
+  }
+  .role {
+    font-size: 1em;
+  }
+  .description li {
+    font-size: 0.85em;
+    padding: 0.1em 0;
+  }
+}

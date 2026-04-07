@@ -46,4 +46,26 @@ describe('/src/components/main/section/proyects - <Proyects> - Render', () => {
     screen.getByText(listProyects[0].name);
     screen.getByAltText(listProyects[0].name);
   });
+
+  test('does navigate with ArrowRight hotkey', () => {
+    fireEvent.keyDown(document, { key: 'ArrowRight' });
+    screen.getByText(listProyects[1].name);
+  });
+
+  test('does navigate with ArrowLeft hotkey', () => {
+    fireEvent.keyDown(document, { key: 'ArrowLeft' });
+    const last = listProyects[listProyects.length - 1];
+    screen.getByText(last.name);
+  });
+
+  test('does render pagination dots', () => {
+    const dots = screen.getAllByRole('button', { name: /proyecto número/i });
+    expect(dots.length).toBe(listProyects.length);
+  });
+
+  test('does navigate to specific project via pagination dot', () => {
+    const dots = screen.getAllByRole('button', { name: /proyecto número/i });
+    fireEvent.click(dots[2]);
+    screen.getByText(listProyects[2].name);
+  });
 });

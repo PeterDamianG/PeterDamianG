@@ -4,6 +4,7 @@
   display: grid;
   grid-template-areas:
     'hero about detail'
+    'experience certifications detail'
     'proyects contact detail';
   justify-content: normal;
   text-align: center;
@@ -45,6 +46,25 @@
 }
 .about {
   grid-area: about;
+  height: 100%;
+  background-color: var(--background-nav-modal-invert);
+  color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid var(--foreground);
+}
+.experience {
+  grid-area: experience;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid var(--foreground);
+  color: var(--foreground);
+}
+.certifications {
+  grid-area: certifications;
   height: 100%;
   background-color: var(--background-nav-modal-invert);
   color: var(--background);

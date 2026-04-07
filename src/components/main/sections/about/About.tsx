@@ -51,7 +51,7 @@ const About = (): JSX.Element => (
     >
       Resume / CV
     </a>
-    <a href='#certifications'>
+    <a href='#experience'>
       <ScrollDownSVG />
     </a>
   </>

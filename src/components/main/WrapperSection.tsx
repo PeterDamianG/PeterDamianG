@@ -6,7 +6,7 @@ import style from './wrappersection.module.css';
 
 type WrapperProps = {
   children: JSX.Element;
-  hash: 'hero' | 'about' | 'certifications' | 'proyects' | 'contact';
+  hash: 'hero' | 'about' | 'experience' | 'certifications' | 'proyects' | 'contact';
   threshold?: number;
 };
 /**
@@ -31,8 +31,8 @@ const WrapperSection = ({
   const { ref, inView } = useIntersectionObserver(threshold);
 
   useEffect(() => {
-    if (inView && !exist) {
-      setExist(true);
+    if (inView) {
+      if (!exist) setExist(true);
       setPathHash(hash);
     }
   }, [inView, exist, hash]);

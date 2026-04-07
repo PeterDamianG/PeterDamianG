@@ -26,6 +26,12 @@ const ContentNav = ({
     >
       Sobre Mí
     </a>
+    <a href='#experience' onClick={(): void => close()}>
+      Experiencia
+    </a>
+    <a href='#certifications' onClick={(): void => close()}>
+      Certificaciones
+    </a>
     <a
       title='Presiona P, para acceder rápidamente a esa sección.'
       href='#proyects'

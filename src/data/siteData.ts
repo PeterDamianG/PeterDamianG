@@ -102,6 +102,64 @@ export const DRAWER_TEXT = [
   '¡Haz llegado hasta aquí! Gracias por tu tiempo.',
 ] as const;
 
+// ─── Experiencia laboral ───────────────────────────────────────────────────
+
+export type Experience = {
+  readonly company: string;
+  readonly role: string;
+  readonly type: string;
+  readonly period: string;
+  readonly location: string;
+  readonly modality: string;
+  readonly description: readonly string[];
+};
+
+export const EXPERIENCES: readonly Experience[] = [
+  {
+    company: 'Mercado Libre',
+    role: 'Sr CS Engineer',
+    type: 'Jornada completa',
+    period: 'abr. 2022 - actualidad',
+    location: 'Provincia de Buenos Aires, Argentina',
+    modality: 'Híbrido',
+    description: [
+      'Desarrollo y seguridad de productos propios de la empresa.',
+      'Análisis e informes de riesgos informáticos.',
+      'Realización de Modelados de Amenazas para productos internos.',
+      'Realización de Evaluación de Seguridad de Aplicaciones para productos internos.',
+      'Revisión de código productivo, enfocado en seguridad.',
+      'Desarrollo de aplicaciones de seguridad.',
+      'Manejo de data sensible y control de la información.',
+    ],
+  },
+  {
+    company: 'Ticmas',
+    role: 'Desarrollador de software',
+    type: 'Jornada completa',
+    period: 'dic. 2021 - abr. 2022',
+    location: 'Argentina',
+    modality: 'Remoto',
+    description: [
+      'Desarrollo de software de producto propio en React, Angular, Next y Nest.',
+      'Trabajo en equipo y coordinación para entrega de objetivos.',
+      'Revisión y pruebas sobre código de desarrollo.',
+    ],
+  },
+  {
+    company: 'Correa Construcciones',
+    role: 'Administración y Soporte de IT',
+    type: 'Jornada parcial',
+    period: 'dic. 2019 - oct. 2021',
+    location: 'Pigüé, Provincia de Buenos Aires, Argentina',
+    modality: 'Presencial',
+    description: [
+      'Negociación de proyectos con clientes finales.',
+      'Administración de requisitos con entes gubernamentales.',
+      'Actualización de procesos hacia nuevos métodos y tecnologías.',
+    ],
+  },
+] as const;
+
 // ─── Certificaciones ───────────────────────────────────────────────────────
 
 export type Certification = {
@@ -115,6 +173,7 @@ export const CERTIFICATIONS: readonly Certification[] = [
   {
     name: 'IriusRisk - Threat Modeling Champion (IR-TMC)',
     issuer: 'IriusRisk',
+    url: 'https://www.credential.net/703a2073-9953-4c84-b141-895ce34b16b9',
   },
   {
     name: 'CVSS v4.0 Certificate',
@@ -156,6 +215,7 @@ export const CERTIFICATIONS: readonly Certification[] = [
   {
     name: 'GOLANG — Curso profesional de Go',
     issuer: 'Udemy',
+    url: 'https://www.udemy.com/certificate/UC-56d7c9db-8b2a-44d0-b2b9-a916978ca1df/',
   },
   {
     name: 'JavaScript Algorithms and Data Structures',
