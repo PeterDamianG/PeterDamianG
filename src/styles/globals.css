@@ -3,7 +3,6 @@ html {
   -webkit-text-size-adjust: 100%;
   scroll-snap-type: y mandatory;
   overscroll-behavior-y: contain;
-  scroll-behavior: smooth;
 }
 body {
   padding: 0;
@@ -61,13 +60,10 @@ svg {
   fill: var(--foreground);
   width: clamp(24px, 4vw, 40px);
   height: clamp(24px, 4vh, 40px);
-  filter: drop-shadow(0.5px 0.5px 1px var(--foreground));
-  transition: filter 0.2s linear;
-  animation: svgOpacity 3s linear alternate infinite;
+  transition: opacity 0.15s ease;
 }
 svg:hover {
-  filter: drop-shadow(1px 1px 1.5px var(--foreground));
-  transition: filter 0.2s linear;
+  opacity: 0.75;
 }
 * {
   box-sizing: border-box;
@@ -117,14 +113,6 @@ svg:hover {
 @keyframes animOpacity {
   from {
     opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes svgOpacity {
-  from {
-    opacity: 0.9;
   }
   to {
     opacity: 1;

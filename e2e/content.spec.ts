@@ -82,11 +82,6 @@ test.describe('About section', () => {
     await expect(cvLink).toHaveAttribute('href', './resume.pdf');
   });
 
-  test('shows certifications overlay trigger', async ({ page }) => {
-    // Las certificaciones viven dentro de un Overlay — hay que abrir el trigger primero
-    await page.getByText('certificaciones.').click();
-    await expect(page.getByText('JavaScript Algorithms and Data Structures')).toBeVisible();
-  });
 });
 
 // ─── Projects ──────────────────────────────────────────────────────────────

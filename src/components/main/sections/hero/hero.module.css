@@ -112,10 +112,8 @@
   .header {
     grid-column: 1;
     grid-row: 1;
-    align-items: flex-start;
-    text-align: left;
-    padding-left: 4vw;
-    justify-self: start;
+    align-items: center;
+    text-align: center;
   }
   .title {
     font-size: 3.25em;

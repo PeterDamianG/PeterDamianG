@@ -18,7 +18,7 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    target: ['es2020', 'chrome80', 'firefox78', 'safari13.1', 'edge80'],
+    target: ['es2022', 'chrome105', 'firefox104', 'safari16', 'edge105'],
     cssMinify: true,
     rollupOptions: {
       output: {

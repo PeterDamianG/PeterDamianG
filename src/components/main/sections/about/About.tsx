@@ -1,9 +1,7 @@
 import ScrollDownSVG from '@icons/utils/scrolldown/ScrollDownSVG';
-import Overlay from '@components/ui/overlay/Overlay';
 import TitleSection from '@components/ui/titlesection/TitleSection';
 import Avatar from './avatar/Avatar';
 import style from './about.module.css';
-import ListCertification from './cert/ListCertification';
 /**
  * A section call about in the web.
  * @example
@@ -23,19 +21,7 @@ const About = (): JSX.Element => (
       <p>
         Actualmente trabajo como <b>Sr CS Engineer en Mercado Libre</b>,
         donde realizo modelados de amenazas, evaluaciones de seguridad
-        aplicativa y revisión de código. Aquí puedes ver mis
-        <Overlay
-          ChildrenButton={
-            <span
-              className={style.certificationButton}
-              title='Mostrar listado de certificados.'
-            >
-              {' '}
-              certificaciones.
-            </span>
-          }
-          ChildrenAside={<ListCertification />}
-        />
+        aplicativa y revisión de código.
       </p>
       <p>
         Puedes obtener un <b>RESUME o CV</b> de mi persona, en el siguiente

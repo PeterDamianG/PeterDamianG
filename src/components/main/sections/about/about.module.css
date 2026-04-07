@@ -21,8 +21,8 @@
   font-size: 0.95em;
   font-weight: 600;
   letter-spacing: 0.04em;
-  background-color: var(--accent);
-  color: #ffffff !important;
+  background-color: var(--foreground);
+  color: var(--background) !important;
   border: 2px solid var(--foreground);
   border-radius: 6px;
   text-decoration: none;
@@ -33,25 +33,17 @@
 .resumeButton:link,
 .resumeButton:visited,
 .resumeButton:active {
-  color: #ffffff !important;
+  color: var(--background) !important;
 }
 .resumeButton:hover {
-  background-color: var(--accent-hover);
+  background-color: var(--accent);
+  border-color: var(--accent);
   color: #ffffff !important;
   box-shadow: var(--shadow-md);
   transform: translateY(-1px);
 }
 .resumeButton:active {
   transform: translateY(0);
-}
-.certificationButton {
-  cursor: pointer;
-  text-decoration: underline;
-  font-weight: bold;
-  color: var(--accent) !important;
-}
-.certificationButton:hover {
-  color: var(--accent-hover) !important;
 }
 @media all and (min-width: 640px) and (max-width: 1280px) {
   .content {
