@@ -36,7 +36,6 @@ const Hero = (): JSX.Element => {
         <SocialMedia />
       </article>
       <article
-        key={number}
         onClick={handlerClickChangeState}
         className={style.containerIDE}
         role='presentation'

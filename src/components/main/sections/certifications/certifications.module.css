@@ -4,9 +4,25 @@
   gap: var(--space-sm);
   width: 90%;
   max-width: 900px;
-  padding: var(--space-sm) 0;
+  padding: var(--space-sm) var(--space-xs);
   overflow-y: auto;
   max-height: 65vh;
+  /* Themed scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: var(--a-color) transparent;
+}
+.grid::-webkit-scrollbar {
+  width: 6px;
+}
+.grid::-webkit-scrollbar-track {
+  background: transparent;
+}
+.grid::-webkit-scrollbar-thumb {
+  background: var(--a-color);
+  border-radius: 3px;
+}
+.grid::-webkit-scrollbar-thumb:hover {
+  background: var(--foreground);
 }
 .card {
   padding: var(--space-sm) var(--space-md);
@@ -31,6 +47,31 @@
   font-size: 0.8em;
   color: var(--accent);
   font-weight: 500;
+}
+.cardLink {
+  text-decoration: none;
+  cursor: pointer;
+}
+.cardLink:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+.cardLink .certName {
+  color: var(--foreground);
+}
+.linkIcon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+.linkIcon svg {
+  width: 14px;
+  height: 14px;
+  min-width: 14px;
+  fill: var(--accent);
+  animation: none;
+  filter: none;
 }
 @media all and (min-width: 640px) {
   .grid {

@@ -17,8 +17,8 @@
   font-size: 0.95em;
   font-weight: 600;
   letter-spacing: 0.04em;
-  color: var(--background);
-  background-color: var(--foreground);
+  background-color: var(--accent);
+  color: #ffffff !important;
   border: 1px solid transparent;
   border-radius: 6px;
   text-decoration: none;
@@ -26,8 +26,14 @@
   box-shadow: var(--shadow-sm);
   margin-bottom: 1vh;
 }
+.resumeButton:link,
+.resumeButton:visited,
+.resumeButton:active {
+  color: #ffffff !important;
+}
 .resumeButton:hover {
-  background-color: var(--background-button-hover);
+  background-color: var(--accent-hover);
+  color: #ffffff !important;
   box-shadow: var(--shadow-md);
   transform: translateY(-1px);
 }

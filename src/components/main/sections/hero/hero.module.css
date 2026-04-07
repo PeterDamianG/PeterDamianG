@@ -7,10 +7,14 @@
   justify-content: space-between;
   text-align: center;
 }
-.containerIDE :global {
+.containerIDE {
   width: 85%;
-  animation: animOpacity 1s linear;
   cursor: pointer;
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .header {
   display: flex;
@@ -140,12 +144,12 @@
     transition: text-shadow 0.2s linear;
   }
   /* Container IDE in grid */
-  .containerIDE :global {
+  .containerIDE {
     height: 85%;
     width: 100%;
-    animation: animOpacity 1s linear;
     cursor: pointer;
     grid-column: x1 / x2;
+    min-height: auto;
   }
   /* Container Text in grid */
   .heroContent :global {

@@ -160,10 +160,12 @@ export const CERTIFICATIONS: readonly Certification[] = [
   {
     name: 'JavaScript Algorithms and Data Structures',
     issuer: 'freeCodeCamp',
+    url: 'https://www.freecodecamp.org/certification/peterdg/javascript-algorithms-and-data-structures',
   },
   {
     name: 'Aceleración FullStack en React y Node',
     issuer: 'Alkemy',
+    url: 'https://drive.google.com/file/d/1Ok8El_CKfCYyhfnkDs6v7FC7oIElLb9W/view',
   },
   // Soft skills
   {
@@ -182,9 +184,11 @@ export const CERTIFICATIONS: readonly Certification[] = [
   {
     name: 'Google Activate — Cloud Computing',
     issuer: 'Google',
+    url: 'https://learndigital.withgoogle.com/activate/validate-certificate-code',
   },
   {
     name: 'EF SET English Certificate (B1)',
     issuer: 'EF Standard English Test',
+    url: 'https://www.efset.org/cert/QAFMtr',
   },
 ] as const;
